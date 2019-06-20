@@ -1,7 +1,7 @@
-body{
+body {
   margin: 0px;
   padding: 0px;
-  font-family: helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   min-width: 800px;
   position: relative;
@@ -9,15 +9,18 @@ body{
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
 a:link {
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  color: black;
+  text-decoration: underline;
 }
 
 #menu {
@@ -25,41 +28,85 @@ a:hover {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 50px;
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  background-color: rgba(0,0,0,0.85);
-  border-bottom: 1px solid black;
+  background-color: rgba(255,255,255);
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: solid 1px rgb(200,200,200);
 }
 
-#menu div {
-  width: 200px;
+#menu .iconTab {
+  display: block;
+  line-height: 60px;
+  min-width: 50px;
   text-align: center;
-  line-height: 50px;
-  height: 50px;
-  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-#menu div:hover {
-  color: rgb(120,120,120);
+#menu .dropdown {
+  text-align: left;
+  line-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dropdown:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: none;
+  position: absolute;
+  top: 61px;
+  background-color: white;
+  line-height: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: fixed;
+  border: none;
+  background-color: white;
+  left: 0px;
+  width: 100%;
+  border-bottom: solid 1px rgb(200,200,200);
+}
+
+#menu table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+
+}
+
+#menu td, #menu th {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+#menu .dropdown-content a:hover {
+  text-decoration: underline;
 }
 
 #corps {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding-bottom: 30px;
-  padding-top: 50px;
 }
 
 #corps .partie {
   flex-grow: 1;
-  margin-left: 7%;
-  margin-right: 7%;
   padding-left: 5%;
   padding-right: 5%;
   border-top: solid rgb(200,200,200) 1px;
+  padding-bottom: 10px;
+  text-align: left;
+  flex-direction: column;
 }
 
 #corps .partie span {
@@ -70,18 +117,14 @@ a:hover {
   color: #077AFF;
 }
 
-#corps div span:hover {
+#corps .partie span:hover {
   background-color: #077AFF;
   color: white;
+  text-decoration: none;
 }
 
 #corps a {
   color: #077AFF;
-  text-decoration: none;
-}
-
-#corps a:hover {
-  text-decoration: underline;
 }
 
 mark {
@@ -89,7 +132,7 @@ mark {
   color: #ff3b30;
 }
 
-.blocs {
+.partie {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -101,19 +144,68 @@ mark {
 #corps .tableau {
   width: 100%;
   table-layout: fixed;
-  text-align: center;
   border-collapse: collapse;
-  margin-bottom: 10px;
-  border: solid 1px rgb(150,150,150);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: rgb(245,245,245);  
+  border-radius: 5px;
 }
 
-#corps .tableau th {
-  border: solid 1px rgb(150,150,150);
+#corps .tableau th  {
+  text-align: left;
 }
 
-#corps .tableau td {
-  border-right: solid 1px rgb(150,150,150);
-  border-left: solid 1px rgb(150,150,150);
+.partie .boites2{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: line;
+  text-align: center;
+}
+
+.partie .boites2 section{
+  background-color: rgb(245,245,245);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 50%;
+  border-right: solid 0.1cm white ;
+  border-left: solid 0.1cm white;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  display: flex;
+  flex-direction: column;
+}
+
+.partie .boites3{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.partie .boites3 section {
+  background-color: rgb(245,245,245);/*rgb(29, 37, 45);*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.33%;
+  margin-bottom: 0.1cm;
+  border-right: solid 0.1cm white;
+  border-left: solid 0.1cm white;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  display: flex;
+  flex-direction: column;
+}
+
+.blocs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .blocs div {
@@ -126,7 +218,7 @@ mark {
   color : black;
 }
 
-#corps .blocs a:hover {
+.blocs a {
   text-decoration: none;
 }
 
@@ -176,83 +268,11 @@ mark {
 }
 
 .blocs .boxblanc:hover {
-  background-color: #f1f1f1;
+  background-color: #ffcc00;
   color: black;
 }
 
 .blocs .boxgris:hover {
   background-color: #888888;
   color: white;
-}
-
-
-.bleu {
-  color: #007aff;
-  font-weight: normal;
-  margin: 0%;
-}
-
-.sousligne {
-  text-decoration:  underline;  
-}
-
-.chrono {
-  vertical-align: top;
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.chrono td{
-    padding-bottom : 10px;
-    vertical-align : top;
-}
-
-.chrono .date {
-    white-space: nowrap;
-    padding-right: 10px;
-}
-
-.liste {
-  width: 100%;
-  table-layout: fixed;
-  text-align: center;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-}
-
-.liste th {
-  border: solid 1px rgb(150,150,150);
-}
-
-.liste  td {
-  border: solid 1px rgb(150,150,150);
-}
-
-.liste2 {
-  width: 100%;
-  table-layout: fixed;
-  text-align: center;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-}
-
-.liste2 .petit {
-    width: 10px;
-    border:   none;
-}
-
-
-.liste2 .fantome {
-    border:   none;
-}
-
-.liste2  td {
-  border: solid 1px rgb(150,150,150);
-}
-
-table ul {
-  margin: 0px;
 }
