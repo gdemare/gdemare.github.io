@@ -112,7 +112,8 @@ a:hover {
 #corps .partie span {
   border: solid 1px #077AFF;
   border-radius: 4px;
-  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
   text-decoration: none;
   color: #077AFF;
 }
