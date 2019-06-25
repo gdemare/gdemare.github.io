@@ -171,8 +171,7 @@ mark {
   margin-right: auto;
   border-radius: 5px;
   width: 50%;
-  border-right: solid 0.1cm white ;
-  border-left: solid 0.1cm white;
+  border: solid 5px white;
   padding-left: 0.5cm;
   padding-right: 0.5cm;
   display: flex;
@@ -193,7 +192,7 @@ mark {
   margin-right: auto;
   width: 33.33%;
   margin-bottom: 0.1cm;
-  border: solid 10px white;
+  border: solid 5px white;
   padding-left: 2px;
   padding-right: 2px;
   display: flex;
