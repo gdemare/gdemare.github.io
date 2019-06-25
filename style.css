@@ -96,7 +96,7 @@ a:hover {
 }
 
 #corps {
-  padding-top: 40px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -274,4 +274,13 @@ mark {
 .blocs .boxgris:hover {
   background-color: #888888;
   color: white;
+}
+
+.partie ul, p, span {
+	margin: 0px;
+}
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
