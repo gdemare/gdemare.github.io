@@ -119,11 +119,11 @@ a:link {
   text-decoration: none;
 }
 
-#corps a {
+.partie a {
   color: #077AFF;
 }
 
-#corps a:hover {
+.partie a:hover {
   text-decoration: underline;
 }
 
@@ -214,7 +214,7 @@ mark {
   color : black;
 }
 
-.blocs a {
+.blocs a:link {
   text-decoration: none;
 }
 
