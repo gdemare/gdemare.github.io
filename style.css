@@ -45,6 +45,11 @@ a:hover {
   padding-right: 20px;
 }
 
+#menu a:hover {
+  backgroup-color: rgb(210,210,210);
+  text-decoration: none;
+}
+
 #menu .dropdown {
   text-align: left;
   line-height: 60px;
