@@ -150,7 +150,7 @@ mark {
   border-collapse: collapse;
   background-color: rgb(245,245,245);  
   border-radius: 5px;
-  border: 10px rgb(245,245,245) solid
+  border: 5px rgb(245,245,245) solid;
 }
 
 #corps .tableau th  {
