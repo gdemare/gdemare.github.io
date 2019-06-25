@@ -20,7 +20,6 @@ a:link {
 
 a:hover {
   color: black;
-  text-decoration: underline;
 }
 
 #menu {
@@ -47,7 +46,6 @@ a:hover {
 
 #menu .iconTab:hover {
   background-color: rgb(210,210,210);
-  text-decoration: none;
 }
 
 #menu .dropdown {
@@ -128,6 +126,10 @@ a:hover {
 
 #corps a {
   color: #077AFF;
+}
+
+#corps a:hover {
+  text-decoration: underline;
 }
 
 mark {
