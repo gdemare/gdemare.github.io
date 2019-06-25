@@ -45,7 +45,7 @@ a:hover {
   padding-right: 20px;
 }
 
-#menu a:hover {
+#menu .iconTab:hover {
   backgroup-color: rgb(210,210,210);
   text-decoration: none;
 }
