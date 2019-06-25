@@ -223,6 +223,10 @@ mark {
   text-decoration: none;
 }
 
+.blocs a:hover {
+  text-decoration: none;
+}
+
 .blocs div:hover {
   background-color: #000000;
   color: white;
