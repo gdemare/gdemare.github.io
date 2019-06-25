@@ -53,8 +53,7 @@ a:hover {
 }
 
 .dropdown:hover {
-    background-color: rgb(97,97,97);
-    color: white;
+    background-color: rgb(210,210,210);
 }
 
 .dropdown-content {
@@ -63,8 +62,7 @@ a:hover {
   display: none;
   position: absolute;
   top: 61px;
-  color: white;
-  background-color: rgb(97,97,97);
+  background-color: rgb(210,210,210);
   line-height: 20px;
 }
 
