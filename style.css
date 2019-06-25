@@ -192,10 +192,9 @@ mark {
   margin-right: auto;
   width: 33.33%;
   margin-bottom: 0.1cm;
-  border-right: solid 0.1cm white;
-  border-left: solid 0.1cm white;
-  padding-left: 0.5cm;
-  padding-right: 0.5cm;
+  border: solid 10px white;
+  padding-left: 2px;
+  padding-right: 2px;
   display: flex;
   flex-direction: column;
 }
