@@ -1,135 +1,164 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  min-width: 800px;
   position: relative;
   line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
+  min-width: 600px;
+  min-height: 100%;
+  background-color: rgb(245,245,245);
+  display: flex;      
+  flex-direction: column;
 }
 
 a:link {
-  color: black;
   text-decoration: none;
-}
-
-#menu a:visited {
-  color: black;
 }
 
 #menu {
   z-index : 2;
   position: fixed;
-  top: 0px;
-  width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
+  top: 0cm;
+  width: 100%;
   padding-left: 5%;
-  padding-right: 5%;
-  border-bottom: solid 1px rgb(200,200,200);
+  text-align: center;
+  border: 1px solid rgb(235,235,235);
+  height: 60px;
 }
 
-#menu .iconTab {
-  display: block;
-  line-height: 60px;
-  min-width: 50px;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+#page {
+  margin-left: 0.4cm;
+  margin-right: 0.4cm;
+  background-color: white;
+  margin-top: 70px;
+  flex: 1;
+  border-radius:  0.1cm;
+}
+
+.boxList {
+  min-width: 3.5cm;
+  width: 25%;
+  padding-left: 0cm;
+}
+
+.boxList ul {
+  padding-left: 0.3cm;
+  padding-right: 0.3cm;
+  margin-top: 0cm;
+  margin-bottom: 0cm;
+}
+
+.boxList li, .subMenuBox li {
+  list-style-type: none;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  min-width: 100%;
+}
+
+/*Menu settings*/
+
+#menu a {
   color: black;
 }
 
-#menu .iconTab:hover {
-  background-color: rgb(210,210,210);
-}
-
-#menu .dropdown {
-  text-align: left;
-  line-height: 60px;
+#menu .tab {
+  display: block;
+  min-width: 50px;
   padding-left: 20px;
   padding-right: 20px;
+  line-height: 60px;
+  text-align: center;
 }
 
-.dropdown:hover {
-    background-color: rgb(210,210,210);
+#menu .tab li:hover{
+  border-radius: 0.1cm;
+}
+
+#menu a:hover, .tab:hover {
+  background-color: rgb(235,235,235);
 }
 
 .dropdown-content {
-  padding-left: 5%;
-  padding-right: 5%;
   display: none;
-  position: absolute;
-  top: 60px;
-  background-color: rgb(210,210,210);
-  line-height: 20px;
+  color: rgb(97,97,97);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-  position: fixed;
-  border: none;
+  display: flex;
+  position: absolute;
   left: 0px;
   width: 100%;
-  border-bottom: solid 1px rgb(200,200,200);
+  line-height: 20px;
+  padding-left: 5%;
 }
 
-#menu table {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-collapse: collapse;
+.menuBox {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px rgb(235,235,235);
+  box-shadow: 1px 3px 3px rgba(0,0,0,.2);
+  background-color: white;
+  width: auto;
+  border-radius: 0.1cm;
 }
 
-#menu td, #menu th {
-  padding-left: 20px;
-  padding-right: 20px;
+.subMenuBox {
+  border-left: solid 1px rgb(235,235,235);
+  padding-top: 0.1cm;
+  min-width: 4cm;
+}
+
+.subMenuBox ul {
+  text-align: left;
+  margin: 0cm;
+  margin-top: 0.1cm;
+  padding: 0cm;
+  padding-right: 0.4cm;
+}
+
+.subMenuBox ul li a {
+  display: flex;
+  width: 100%;
+  padding-left: 0.2cm;
+  padding-right: 0.2cm;
+  padding-top: 0.1cm;
+  padding-bottom: 0.1cm; 
 }
 
 #menu .dropdown-content a:hover {
-  text-decoration: underline;
+  background-color: rgba(7, 122, 255,0.05);
+  color: #077AFF;
 }
 
-#corps {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-}
+/*Page settings*/
 
-#corps .partie {
-  flex-grow: 1;
-  padding-left: 5%;
-  padding-right: 5%;
-  border-top: solid rgb(200,200,200) 1px;
-  padding-bottom: 10px;
-  text-align: left;
-  flex-direction: column;
-}
 
-#corps .partie span {
+.part a.linkCode {
   border: solid 1px #077AFF;
   border-radius: 4px;
   padding-left: 4px;
   padding-right: 4px;
   text-decoration: none;
   color: #077AFF;
+  background-color: rgba(7, 122, 255,0.2);
 }
 
-#corps .partie span:hover {
-  background-color: #077AFF;
+.part a.linkCode:hover {
+  background-color: rgba(7, 122, 255,0.8);
   color: white;
   text-decoration: none;
-}
-
-.partie a {
-  color: #077AFF;
-}
-
-.partie a:hover {
-  text-decoration: underline;
 }
 
 mark {
@@ -137,156 +166,117 @@ mark {
   color: #ff3b30;
 }
 
-.partie {
+/**/
+
+.part {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  border: none;
-  padding: 0px;
-  margin: 0px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 0.3cm;
 }
 
-#corps .tableau {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  background-color: rgb(245,245,245);  
-  border-radius: 5px;
-  border: 5px rgb(245,245,245) solid;
+.partBorder {
+border-top: solid 2px rgb(245,245,245) ;
 }
 
-#corps .tableau th  {
-  text-align: left;
-}
-
-.partie .boites2{
-  margin: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: line;
+.part .boxList ul {
   text-align: center;
+  min-height: 3cm;
+  margin-top: 0.25cm;
+  margin-left: 0.25cm;
+  background-color: rgba(7, 122, 255,0.05);
+  border-radius: 0.1cm;
+  padding-top: 0.2cm;
+  padding-bottom: 0.2cm;  
 }
 
-.partie .boites2 section{
-  background-color: rgb(245,245,245);
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  width: 50%;
-  border: solid 5px white;
-  padding-left: 0.5cm;
-  padding-right: 0.5cm;
-  display: flex;
+.part .boxList .image {
+  margin-top: 0.25cm;
+  margin-left: 0.25cm;
+  border-radius: 0.1cm;
+  padding: 0cm;
+  line-height: 0cm; 
+}
+
+.part .boxList .image img{
+  border-radius: 0.1cm;
+}
+.part a {
+  color: #077AFF;
+}
+
+.part a:hover {
+  text-decoration: underline;
+}
+
+/** **/
+.partLeft {
+  justify-content: center;
   flex-direction: column;
 }
 
-.partie .boites3{
-  margin: auto;
-  width: 100%;
-  display: flex;
+/** **/
+.partCenter {
+  justify-content: center;
   flex-direction: row;
+}
+
+.part .boxApp {
+  align-content: flex-start;
+  border: 0.03cm solid rgba(7, 122, 255, 1);
+  border-radius: 0.5cm;
+  margin-top: 0.1cm;
+  margin-left: 0.1cm;
+  min-width: 2cm;
+  color: rgba(7, 122, 255, 1);
   text-align: center;
+  line-height: 1cm;
+  background-color: rgba(7, 122, 255,0.2);
 }
 
-.partie .boites3 section {
-  background-color: rgb(245,245,245);/*rgb(29, 37, 45);*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 33.33%;
-  border: solid 5px white;
-  padding-left: 2px;
-  padding-right: 2px;
-  display: flex;
-  flex-direction: column;
-}
-
-.blocs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.blocs div {
-  height: 20px;
-  margin: 5px;
-  padding: 10px;
-  text-align: center;
-  border-radius: 3px;
-  border: solid 1px rgb(150,150,150);
-  color : black;
-}
-
-.blocs a:link {
-  text-decoration: none;
-}
-
-.blocs a:hover {
-  text-decoration: none;
-}
-
-.blocs div:hover {
-  background-color: #000000;
+.boxApp:hover {
+  background-color: rgba(7, 122, 255,0.8);
   color: white;
 }
 
-.blocs .boxrouge:hover {
-  background-color: #ff3b30;
-  color: white;
+.part .boxAppLink:hover {
+  text-decoration:  none;
 }
 
-.blocs .boxorange:hover {
-  background-color: #ff9500;
-  color: white;
-}
-
-.blocs .boxjaune:hover {
-  background-color: #ffcc00;
-  color: white;
-}
-
-.blocs .boxvert:hover {
-  background-color: #4cd964;
-  color: white;
-}
-
-.blocs .boxbleuclair:hover {
-  background-color: #5ac8fa;
-  color: white;
-}
-
-.blocs .boxbleu:hover {
-  background-color: #007aff;
-  color: white;
-}
-
-.blocs .boxviolet:hover {
-  background-color: #5856d6;
-  color: white;
-}
-
-.blocs .boxrose:hover {
-  background-color: #ff2d55;
-  color: white;
-}
-
-.blocs .boxblanc:hover {
-  background-color: #ffcc00;
+.part .boxAppLink {
   color: black;
 }
 
-.blocs .boxgris:hover {
-  background-color: #888888;
-  color: white;
+/*footer*/
+
+footer {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  background-color: background-color: rgb(245,245,245);
+  padding-top:0.15cm;
+  padding-bottom:0.2cm;
 }
 
-.partie ul, p, span {
-	margin: 0px;
+footer a  {
+  color: rgb(125,125,125);
 }
 
-h3 {
-	margin-top: 5px;
-	margin-bottom: 5px;
+.boxApp #plusPlusExtension a {
+  color: #077AFF;
+}
+
+.boxApp #plusPlusExtension a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
