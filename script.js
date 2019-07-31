@@ -67,7 +67,7 @@ $(document).ready(function() {
         //load application sheet
         else if (idPage == 'applications') {
             $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/applications.html");
-        } else if (dPage == 'links')
+        } else if (idPage == 'links')
         	$("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/liens.html");
         ;
     };
