@@ -43,14 +43,13 @@ nav {
 
 #page {
   flex: 1;
-  padding-left: 0.5cm;
-  padding-right: 0.5cm;
   display: flex;
   flex-direction: row;
   background-color: var(--color-page);
 }
 
 #mementoMenu {
+  padding-left: 0.5cm;
   padding-top: 0.5cm;
   display: flex;
   flex-direction: row;
@@ -60,12 +59,6 @@ nav {
   color: var(--color-write);
   border-right: solid 1px var(--color-border);
   /*overflow-y: scroll;*/
-}
-
-#contenaire {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 #contenu {
