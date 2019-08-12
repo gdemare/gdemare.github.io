@@ -351,13 +351,30 @@ responsive web site for mobile device
   }
   #styleCSS {
   width: 3.5em;
-}
-  #mementoMenu {
-    min-width: 100%;
   }
 
   #page {
     flex-direction: column;
+  }
+
+  #mementoMenuSpace {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  #mementoMenu {
+    position: static;
+    min-width: 100%;
+  }
+
+  #navInvisible, #footerInvisible {
+    display: none;
+  }
+
+  #mementoMenu ul {
+    min-width: 100%;
+    font-size: 1em; 
   }
     .col3 {
     column-count: 2;
