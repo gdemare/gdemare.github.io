@@ -60,6 +60,7 @@ nav {
   width: 30%;
   color: var(--color-grey3);
   height: 100%;
+  top: 0px;
 }
 
 #footerInvisible {
