@@ -34,9 +34,9 @@ nav {
   background-color: var(--color-blue);
 }
 
-#menuSpace {
-  padding:0.2cm;
-  color: var(--color-white);
+#menuSpace, #navInvisible {
+  padding: 0.2cm;
+  color: transparent;
 }
 
 #page {
@@ -45,15 +45,24 @@ nav {
   flex-direction: row;
 }
 
-#mementoMenu {
-  display: flex;
-  flex-direction: row;
+#mementoMenuSpace {
   max-width: 9cm;
   width: 30%;
-  margin-bottom: : 0.5cm;
-  font-size: 15px;
+}
+
+#mementoMenu {
+  z-index : 1;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  max-width: 9cm;
+  width: 30%;
   color: var(--color-grey3);
-  border-right: 0px;
+  height: 100%;
+}
+
+#footerInvisible {
+  color: transparent;
 }
 
 #contenu {
@@ -96,12 +105,18 @@ nav .tab:hover {
 /*************************
 Memento menu
 /*************************/
+#mementoMenu #mementoMenuBox {
+  flex-grow: 1;
+  background-color: var(--color-grey1);
+  overflow-y: scroll;
+}
 
 #mementoMenu ul {
+  max-width: 9cm;
+  font-size: 15px;
   margin: 0cm;
   padding: 0cm;
   width: 100%;
-  background-color: var(--color-grey1);
 }
 
 #mementoMenu li {
@@ -176,7 +191,7 @@ contenu
   min-width: 2cm;
   color: var(--color-blue);
   text-align: center;
-  background-color: var(--color-blue2);
+  background-color: var(--color-grey1);
   margin-top: 0.1cm;
   margin-right: 0.1cm;
 }
@@ -205,7 +220,7 @@ contenu
 }
 
 .part .boxList ul {
-  background-color: var(--color-blue2);
+  background-color: var(--color-grey1);
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid; /* Firefox is dumb */
   break-inside: avoid;
@@ -270,18 +285,20 @@ table {
   width: 100%;
 }
 
-th:first-child {
-    border-top-left-radius: 0.1cm; 
-    border-bottom-left-radius: 0.1cm;
+tr:first-child {
+  background-color: var(--color-blue2);
 }
 
-th {
+tr:first-child  th:first-child {
+    border-top-left-radius: 0.1cm; 
+}
+
+tr:first-child th {
     padding: 0.2cm;
     font-weight: normal;
-     background-color: var(--color-blue2);
 }
 
-th:last-child {
+tr:first-child th:last-child {
     border-bottom-right-radius: 0.1cm; 
     border-top-right-radius: 0.1cm;  
 }
@@ -319,6 +336,10 @@ footer a {
 .select {
   font-weight: bold;
 }
+
+/*************************
+responsive web site for mobile device
+/*************************/
 
 @media only screen and (max-device-width:768px) {
 
