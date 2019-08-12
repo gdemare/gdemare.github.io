@@ -4,6 +4,8 @@ $(document).ready(function() {
     //----------------------------------------------
     // Print the memento menu
     var varMemento = false;
+    $("#mementoMenu").hide();
+    $("#mementoMenuSpace").hide();
     $("#mementoButton").click(function() {
         if (varMemento == false) {
             $("#mementoMenu").show();
@@ -50,7 +52,7 @@ $(document).ready(function() {
     });
     //----------------------------------------------
     //contenu des onglets
-    //contenu('applications');
+    contenu('applications');
     $("#applications").click(function() {
         contenu('applications');
     });
