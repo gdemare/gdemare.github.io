@@ -176,7 +176,7 @@ contenu
   min-width: 2cm;
   color: var(--color-blue);
   text-align: center;
-  background-color: var(--color-grey1);
+  background-color: var(--color-blue2);
   margin-top: 0.1cm;
   margin-right: 0.1cm;
 }
@@ -205,7 +205,7 @@ contenu
 }
 
 .part .boxList ul {
-  background-color: var(--color-grey1);
+  background-color: var(--color-blue2);
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid; /* Firefox is dumb */
   break-inside: avoid;
