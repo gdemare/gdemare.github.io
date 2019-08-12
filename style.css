@@ -270,21 +270,18 @@ table {
   width: 100%;
 }
 
-.tableL1 {
-  background-color: var(--color-blue2);
-}
-
-.tableL1 th:first-child {
+th:first-child {
     border-top-left-radius: 0.1cm; 
     border-bottom-left-radius: 0.1cm;
 }
 
-.tableL1 th {
+th {
     padding: 0.2cm;
     font-weight: normal;
+     background-color: var(--color-blue2);
 }
 
-.tableL1 th:last-child {
+th:last-child {
     border-bottom-right-radius: 0.1cm; 
     border-top-right-radius: 0.1cm;  
 }
