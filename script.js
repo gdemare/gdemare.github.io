@@ -4,15 +4,16 @@ $(document).ready(function() {
     //----------------------------------------------
     // Print the memento menu
     var varMemento = false;
-    $("#mementoMenu").hide();
     $("#mementoButton").click(function() {
         if (varMemento == false) {
             $("#mementoMenu").show();
+            $("#mementoMenuSpace").show();
             document.getElementById("mementoButton").style.background = "var(--color-grey1)";
             document.getElementById("mementoButton").style.color = "var(--color-black)";
             varMemento = true;
         } else {
             $("#mementoMenu").hide();
+            $("#mementoMenuSpace").hide();
             document.getElementById("mementoButton").style.background = "transparent";
             document.getElementById("mementoButton").style.color = "var(--color-white)";
             varMemento = false;
@@ -49,7 +50,7 @@ $(document).ready(function() {
     });
     //----------------------------------------------
     //contenu des onglets
-    contenu('applications');
+    //contenu('applications');
     $("#applications").click(function() {
         contenu('applications');
     });
@@ -72,7 +73,7 @@ $(document).ready(function() {
         else if (idPage == 'applications') {
             $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/applications.html");
         } else if (idPage == 'links')
-        	$("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/liens.html");
+            $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/liens.html");
         ;
     };
 
