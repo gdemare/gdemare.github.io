@@ -86,6 +86,7 @@ $(document).ready(function() {
         let root = document.documentElement;
         if (darkStyle == true) {
             root.style.setProperty('--color-blue', 'rgb(64,156,255)');
+            root.style.setProperty('--color-blue2', 'rgb(0,14,34)');
             root.style.setProperty('--color-red', 'rgb(255,105,97)');
             root.style.setProperty('--color-white', 'rgb(0,0,0)');
             root.style.setProperty('--color-grey1', 'rgb(24, 24, 34)');
@@ -96,6 +97,7 @@ $(document).ready(function() {
             return false;
         } else {
             root.style.setProperty('--color-blue', 'rgb(0,122,255)');
+            root.style.setProperty('--color-blue2', 'rgb(217,235,255)');
             root.style.setProperty('--color-red', 'rgb(255,105,97)');
             root.style.setProperty('--color-white', 'rgb(255,255,255)');
             root.style.setProperty('--color-grey1', 'rgb(243, 243, 243)');
