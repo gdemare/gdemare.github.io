@@ -48,6 +48,7 @@ nav {
 #mementoMenuSpace {
   max-width: 9cm;
   width: 30%;
+  background-color: var(--color-grey1);
 }
 
 #mementoMenu {
