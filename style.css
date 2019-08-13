@@ -167,14 +167,11 @@ contenu
 
 .part {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
   max-width: 25cm;
   width: 100%;
 }
-
-
 
 .part .favorite {
   display: flex;
