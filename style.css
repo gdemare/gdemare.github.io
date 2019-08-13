@@ -237,6 +237,10 @@ contenu
   list-style-type: none;
 }
 
+.part .boxList li:first-child {
+    font-weight:  bold;
+}
+
 .part a {
   color: var(--color-blue);
 }
