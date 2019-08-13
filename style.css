@@ -72,6 +72,8 @@ nav {
   width: 100%;
   padding-top: 0.5cm;
   padding-bottom: 0.5cm;
+  padding-left: 3%;
+  padding-right: 3%;
   background-color: var(--color-white);
 }
 
@@ -163,8 +165,6 @@ contenu
 .part {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 3%;
-  padding-right: 3%;
   flex-direction: wrap;
   justify-content: center;
 }
