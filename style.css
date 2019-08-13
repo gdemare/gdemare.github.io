@@ -293,6 +293,7 @@ tr:first-child {
 
 tr:first-child  th:first-child {
     border-top-left-radius: 0.1cm; 
+    border-bottom-left-radius: 0.1cm; 
 }
 
 tr:first-child th {
