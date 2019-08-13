@@ -75,6 +75,8 @@ nav {
   padding-left: 3%;
   padding-right: 3%;
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: center;
 }
 
 a:link {
@@ -162,21 +164,17 @@ Memento menu
 /*************************
 contenu
 /*************************/
+
 .part {
   display: flex;
   flex-wrap: wrap;
   flex-direction: wrap;
   justify-content: center;
-}
-
-.chapter, .part h2 {
   max-width: 25cm;
   width: 100%;
 }
 
-.boxBorder {
-  border-top: solid 2px var(--color-grey1);
-}
+
 
 .part .favorite {
   display: flex;
@@ -272,14 +270,19 @@ mark {
   border-radius: 0.1cm;
 }
 
-.part h2 {
+h2 {
+  border-top: solid 2px var(--color-grey1);
   color: var(--color-black);
   font-size: 35px;
   margin: 0cm;
   padding: 0cm;
+  width: 100%;
+}
+h2:first-child {
+	border: none;
 }
 
-.part h3 {
+h3 {
   color: var(--color-black);
   font-size: 25px
   margin: 0px;
