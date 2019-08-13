@@ -110,7 +110,7 @@ Memento menu
 #mementoMenu #mementoMenuBox {
   flex-grow: 1;
   background-color: var(--color-grey1);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #mementoMenu ul {
