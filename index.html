@@ -1,93 +1,229 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link id='pagestyle' href="style.css" rel="stylesheet">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="script.js"></script>
-    <title>gdem</title>
-  </head>
-  <body>
-    <nav>
-      <a href="#" class="tab" id="mementoButton">Memento</a>
-      <a href="#" class="tab" id="applications">Applications</a>
-      <a href="https://outlook.live.com/mail/inbox" class="tab" target="blank">Mail</a>
-      <div id="emptySpace"></div>
-      <a href="#" id="styleCSS"></a>
-    </nav>
-    <section id="menuSpace">
-      G
-    </section>
-    <section id="page">
-      <section id="mementoMenuSpace">
-        <section id="mementoMenu">
-          <div id="navInvisible">G</div>
-          <div id="mementoMenuBox">
-      <ul>
-        <li class="lvl1"><a href="#" id="statistics">&ensp;Statistics</a></li>
-        <li><div class="SubMenuAccess"><i></i>&ensp;Company</div>
-        <ul class="subMenu">
-          <li class="lvl2"><a href="#" id="animateur">animateur</a></li>
-          <li class="lvl2"><a href="#" id="MOA-MOE">MOA-MOE</a></li>
-          <li class="lvl2"><a href="#" id="job-interview">job-interview</a></li>
-        </ul>
+  <h2>Preparation des donnees</h3>
+<h3>Automatiser, formater et manipuler les données</h3>
+<ul>
+  <li>
+    <a href="#" id="automatiser">Automatiser</a>
+    <mark class="r">R</mark>
+    <mark class="sas">SAS</mark>
+  </li>
+  <li>
+    Formater
+    <mark class="r">R</mark>
+    <mark class="sas">SAS</mark>
+  </li>
+    <li>
+      Manipuler
+      <mark class="r">R</mark>
+      <mark class="sas">SAS</mark>
+    </li>
+    <li>
+      Tableau de bord
+      <mark class="r">R</mark>
+    </li>
+  </ul>
+  <h3>Discrétiser des variables</h3>
+  <h3>Détecter les valeurs abérrantes et atypiques</h3>
+  <h3>Imputer les valeurs manquantes</h3>
+  <ul>
+    <li>Espérance-maximisation (EM)</li>
+    <li>K-voisin le plus proche (KNN)</li>
+    <li>Moyenne, médiane</li>
+  </ul>
+  <h2>Statistique descriptive</h2>
+  <h3>Décrire les individus</h3>
+  <table>
+    <tr>
+      <th>Type d'indicateurs</th>
+      <th>Indicateurs 
+        <mark class="r">R</mark>
+        <mark class="sas">SAS</mark>
+      </th>
+    </tr>
+    <tr>
+      <td>Tendance centrale</td>
+      <td>Moyenne, Medianne</td>
+    </tr>
+  </tr>
+  <tr>
+    <td>Dispersion</td>
+    <td>Variance, Écart type, Covariance</td>
+  </tr>
+</tr>
+<tr>
+  <td>Corrélation</td>
+  <td>Coefficent de correlation de Pearson, Coefficient de correlation de Spearman</td>
+</tr>
+</table>
+<ul>
+<li>Graphiques
+  <mark class="r">R</mark>
+  <mark class="sas">SAS</mark>
+</li>
+</ul>
+<h3>Les cartes</h3>
+<p><mark class="r">R</mark></p>
+<h2>Data mining</h2>
+<h3>Cluestering</h3>
+<p>Grouper les individus ou les variables avec des caractéristiques proches.</p>
+<mark>Attention aux variables fortement corrélées !</mark>
+<ul>
+  <li>Individus</li>
+  <ul>
+    <li>
+      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/carte-auto-adaptative.md">Cartes auto adaptatives</a>
+    </li>
+    <li>
+      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/centre-mobile.md">Centres mobiles ou nuées dynamiques (k-means)</a>
+      <mark class="sas">SAS</mark>
+    </li>
+    <li>
+      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/CAH.md">Classification Ascendante Hiérarchique (CAH)</a>
+      <mark class="r">R</mark>
+      <mark class="sas">SAS</mark>
+    </li>
+  </ul>
+  <li>Variables</li>
+  <ul>
+    <li>
+      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/clustering-variables.md">Clustering des variables</a>
+      <mark class="sas">SAS</mark>
+    </li>
+  </ul>
+</ul>
+<h3>Modeliser</h3>
+<mark>Attention aux variables fortement corrélées !</mark>
+<ul>
+  <li>Classification : générer une probabilité d'appartenance à une classe.</li>
+  <ul>
+    <li>Classificateur binaire</li>
+    <ul>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/perceptron.md">Perceptron</a>
       </li>
-      <li><div class="SubMenuAccess"><i></i>&ensp;Database</div>
-      <ul class="subMenu">
-        <li class="lvl2"><a href="#" id="data-warehouse">data-warehouse</a></li>
-        <li class="lvl2"><a href="#" id="json">json</a></li>
-        <li class="lvl2"><a href="#" id="sql">sql</a></li>
-      </ul></li>
-      <li><div class="SubMenuAccess"><i></i>&ensp;english</div>
-      <ul class="subMenu">
-        <li class="lvl2"><a href="#" id="verbe">verbe</a></li>
-      </ul></li>
-      <li><div class="SubMenuAccess"><i></i>&ensp;microsoft</div>
-      <ul class="subMenu">
-        <li class="lvl2"><a href="#" id="excel">excel</a></li>
-        <li class="lvl2"><a href="#" id="word">word</a></li>
-      </ul></li>
-      <li><div class="SubMenuAccess"><i></i>&ensp;programming</div>
-      <ul class="subMenu">
-        <li class="lvl2"><a href="#" id="java">java</a></li>
-        <li class="lvl2"><a href="#" id="python">python</a></li>
-      </ul></li>
-      <li><div class="SubMenuAccess"><i></i>&ensp;projects</div>
-      <ul class="subMenu">
-        <li class="lvl2"><a href="#" id="raspberry-wifi">raspberry-wifi</a></li>
-      </ul></li>
-      <li><div class="SubMenuAccess"><i></i>&ensp;unix</div>
-      <ul class="subMenu">
-        <li class="lvl2"><a href="#" id="bash">bash</a></li>
-        <li class="lvl2"><a href="#" id="folders-linux">folders-linux</a></li>
-        <li class="lvl2"><a href="#" id="shell">shell</a></li>
-        <li class="lvl2"><a href="#" id="vim">vim</a></li>
-      </ul></li>
-      <li><div class="SubMenuAccess"><i> </i>&ensp;web</div>
-      <ul class="subMenu">
-        <li class="lvl2"><a href="#" id="css">css</a></li>
-        <li class="lvl2"><a href="#" id="html">html</a></li>
-        <li class="lvl2"><a href="#" id="js">js</a></li>
-        <li class="lvl2"><a href="#" id="php">php</a></li>
-      </ul></li>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/regression-logistique.md">Régression logistique</a>
+        <mark class="r">R</mark>
+        <mark class="sas">SAS</mark>
+      </li>
     </ul>
-  </div>
-  <div id="footerInvisible">G</div>
-</section>
-</section>
-<section id="contenant">
-<section id="contenu">
-</section>
-</section>
-</section>
-<footer>
-<a href="https://github.com/gdemare/aide-memoire">Memento</a>
-<a href="https://github.com/gdemare/gdemare.github.io">Website Code</a>
-<a href="#" id="links">Links</a>
-</footer>
-</body>
-</html>
+    <li>Classificateur multi-classes</li>
+    <ul>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/analyse-discriminante.md">Analyse discrimante</a>
+        <mark class="r">R</mark>
+        <mark class="sas">SAS</mark>
+      </li>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/arbre-de-decision.md">Arbre de décision</a>
+        <mark class="r">R</mark>
+        <mark class="sas">SAS</mark>
+      </li>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/boosting.md">Boosting</a>
+      </li>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/classificateur-baysien.md">Classificateur naïve bayésien</a>
+        <mark class="r">R</mark>
+      </li>
+      <li>Espérance-maximisation (EM)</li>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/foret-aleatoire.md">Forêt aléatoire</a>
+      </li>
+      <li>k-plus proches voisins</li>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/SVM.md">Support Vector Machine (SVM)</a>
+        <mark class="r">R</mark>
+      </li>
+      <li>
+        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/reseaux-neurones.md">Réseau de neurones</a>
+        <mark class="r">R</mark>
+      </li>
+    </ul>
+  </ul>
+  <li>Régression : modéliser une variable quantitative continue.</li>
+  <ul>
+    <li>
+      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/regression-lineaire.md">Régression linéaire</a>
+      <mark class="sas">SAS</mark>
+    </li>
+    <li>
+      Arbre de régression
+      <mark class="sas">SAS</mark>
+    </li>
+    <li>
+      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ANOVA.md">ANalysis Of VAriance (ANOVA)</a>
+      <mark class="r">R</mark>
+      <mark class="sas">SAS</mark>
+    </li>
+    <li>Forêt aléatoire
+      <mark class="r">R</mark>
+    </li>
+  </ul>
+  Prédire et évaluer avec <mark class="r">R</mark>.
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/serie-temporelle.md">Série temporelle</a>
+  </li>
+  <ul>
+    <li>
+      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ARMA.md">AutoRegressive Moving Average (ARMA)</a>
+    </li>
+    <li><a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/lissage-exponentiel.md">Lissage exponentionel</a>
+  </li>
+  <li>Série temporelle simple</li>
+</ul>
+<h3>Réduire le nombre de dimensions</h3>
+<p>Les variables quantitatives et qualitatives peuvent être représentées dans un espace mathématique. Les méthodes de réductions de dimensions créent un nouveau repére qui maximise l'information sur les premiers axes. Elles sont utilisées pour :</p>
+<ul>
+  <li>Explorer un jeu de données (analyse discrimante, ACM, ACP, ACF).</li>
+  <li>Créer de nouvelles variables non correlés (ACP).</li>
+  <li>Regrouper des modalités (AFC, ACM).</li>
+</ul>
+Méthodes :
+<ul>
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ACM.md">Analyse des Correspondances Multiples (ACM)</a>
+    <mark class="r">R</mark>
+    <mark class="sas">SAS</mark>
+  </li>
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/analyse-discriminante.md">Analyse discrimante</a>
+    <mark class="r">R</mark>
+    <mark class="sas">SAS</mark>
+  </li>
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ACP.md">Analyse en Composantes Principales (ACP)</a>
+    <mark class="r">R</mark>
+    <mark class="sas">SAS</mark>
+  </li>
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/AFC.md">Analyse Factorielle des Correpondances (AFC)</a>
+    <mark class="r">R</mark>
+    <mark class="sas">SAS</mark>
+  </li>
+</ul>
+<h2>Statistique inferentielle</h2>
+<h3>Tester des hypothèses</h3>
+<p>
+  <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/tests.md">Générale avec R</a>
+  <mark class="r">R</mark>
+  <mark class="sas">SAS</mark>
+</p>
+<h2>Autre</h2>
+<h3>A approfondir</h3>
+<ul>
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/centroide.md">Centroïde</a>
+    <mark class="sas">SAS</mark>
+  </li>
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/esperance-maximisation.md">Espérance-maximisation</a>
+    <mark class="sas">SAS</mark>
+  </li>
+</ul>
+<h3>Projets méthodes</h3>
+<ul>
+  <li>
+    <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/methode/cluestering-sans-cible.md">
+    Construire des groupes d'individus similaire en fonction d'une variable d'intérêt non triviale</a>
+  </li>
+</ul>
