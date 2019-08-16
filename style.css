@@ -249,7 +249,7 @@ a.linkCode {
   color: var(--color-blue);
 }
 
-a.linkCode:hover {
+#contenu a.linkCode:hover {
   background-color: var(--color-blue);
   color: white;
   text-decoration: none;
