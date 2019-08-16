@@ -236,7 +236,7 @@ a {
   color: var(--color-blue);
 }
 
-a:hover {
+.contenu a:hover {
   text-decoration: underline;
 }
 
