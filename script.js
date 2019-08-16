@@ -125,4 +125,90 @@ $(document).ready(function() {
             varStyle = false;
         };
     });
+var menFolder = [
+  'company',
+  'company',
+  'company',
+  'database',
+  'database',
+  'database',
+  'english',
+  'microsoft',
+  'microsoft',
+  'programming',
+  'programming',
+  'projects',
+  'unix',
+  'unix',
+  'unix',
+  'unix',
+  'web',
+  'web',
+  'web',
+  'web'
+  ];
+  var menFile = [
+  'animateur',
+  'MOA-MOE',
+  'job-interview',
+  'data-warehouse',
+  'json',
+  'sql',
+  'verbe',
+  'excel',
+  'word',
+  'java',
+  'python',
+  'raspberry-wifi',
+  'bash',
+  'folders-linux',
+  'shell',
+  'vim',
+  'css',
+  'html',
+  'js',
+  'php'
+  ];
+
+  //******************************
+  // BEGINING load the content of each page
+  //******************************
+  function loadContenu(idContenu) {
+  var menIdLine = menFile.indexOf(idContenu);
+  var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + menFolder[menIdLine] + '/' + menFile[menIdLine] + '.md'
+  var aPromise = fetch(url);
+  // Work with Promise object:
+  aPromise
+  .then(function(response) {
+  console.log("OK! Server returns a response object:");
+  console.log(response);
+  
+  if(!response.ok)  {
+  throw new Error("HTTP error, status = " + response.status);
+  }
+  
+  response.text()
+  .then(function(myText) {
+  document.getElementById('contenu').innerHTML = marked(myText);
+  })
+  .catch(function(error) {
+  // Never happened.
+  });
+  })
+  .catch(function(error)  {
+  console.log("Noooooo! Something error:");
+  // Network Error!
+  console.log(error);
+  });
+  };
+  //******************************
+  // END load the content of each page
+  //******************************
+  for (var i = 0; i <= menFile.length - 1; i++) {
+  var nameA = menFile[i];
+  $( '#' + nameA ).click( function() {
+  idContenu = $(this)[0].id;
+  loadContenu(idContenu);
+  });
+  };
 });
