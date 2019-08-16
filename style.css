@@ -206,9 +206,10 @@ contenant
   column-count: 4;
 }
 
-pre {
-	background-color: var(--color-grey1);
-	border-radus: 0.1cm;
+pre, code {
+   background-color: var(--color-grey1);
+   border-radius: 0.1cm;
+   padding: 0.1cm;
 }
 
 .boxList ul {
