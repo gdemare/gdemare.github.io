@@ -206,7 +206,7 @@ contenant
   column-count: 4;
 }
 
-prec {
+pre {
 	background-color: var(--color-grey1);
 	border-radus: 0.1cm;
 }
