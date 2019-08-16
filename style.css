@@ -202,19 +202,13 @@ contenant
 
 .boxList {
   width: 100%;
-  column-gap: 0.2cm; 
-}
-
-.col2 {
-  column-count: 2;
-}
-
-.col3 {
-  column-count: 3;
-}
-
-.col4 {
+  column-gap: 0.2cm;
   column-count: 4;
+}
+
+prec {
+	background-color: var(--color-grey1);
+	border-radus: 0.1cm;
 }
 
 .boxList ul {
