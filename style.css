@@ -240,26 +240,26 @@ a {
   text-decoration: underline;
 }
 
-a.linkCode {
-  border: solid 1px var(--color-blue);
-  border-radius: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
-  text-decoration: none;
-  color: var(--color-blue);
-}
-
-#contenu a.linkCode:hover {
-  background-color: var(--color-blue);
-  color: white;
-  text-decoration: none;
-}
-
 mark {
   color: var(--color-red);
   margin: 0px;
   background-color: transparent;
   border-radius: 0.1cm;
+}
+
+.r, .sas {
+  border-radius: 0.5cm;
+  font-size: 0.9em;
+  padding-left: 0.2cm;
+  padding-right: 0.2cm;
+  color: var(--color-white);
+}
+.r { 
+  background-color: var(--color-orange);
+}
+
+.sas {
+  background-color: var(--color-purple);
 }
 
 h2 {
