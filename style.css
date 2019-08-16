@@ -67,7 +67,7 @@ nav {
   color: transparent;
 }
 
-#contenu {
+#contenant {
   flex: 1;
   width: 100%;
   padding-top: 0.5cm;
@@ -162,8 +162,13 @@ Memento menu
 }
 
 /*************************
-contenu
+contenant
 /*************************/
+
+#contenu {
+  display: flex;
+  flex-direction: column;
+}
 
 .part {
   display: flex;
