@@ -174,7 +174,7 @@ contenant
   th: 100%;
 }
 
-.part .favorite {
+.favorite {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -182,7 +182,7 @@ contenant
   margin-bottom: 0.3cm;
 }
 
-.part .boxAppLink {
+.boxAppLink {
   align-content: flex-start;
   border-radius: 0.5cm;
   padding:0.2cm;
@@ -194,13 +194,13 @@ contenant
   margin-right: 0.1cm;
 }
 
-.part .boxAppLink:hover {
+.boxAppLink:hover {
   background-color: var(--color-blue);
   color: white;
   text-decoration: none;
 }
 
-.part .boxList {
+.boxList {
   width: 100%;
   column-gap: 0.2cm; 
 }
@@ -217,7 +217,7 @@ contenant
   column-count: 4;
 }
 
-.part .boxList ul {
+.boxList ul {
   background-color: var(--color-blue2);
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid; /* Firefox is dumb */
@@ -230,23 +230,23 @@ contenant
   padding-bottom: 0.1cm;
 }
 
-.part .boxList li {
+.boxList li {
   list-style-type: none;
 }
 
-.part .boxList li:first-child {
+.boxList li:first-child {
     font-weight:  bold;
 }
 
-.part a {
+a {
   color: var(--color-blue);
 }
 
-.part a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-.part a.linkCode {
+a.linkCode {
   border: solid 1px var(--color-blue);
   border-radius: 4px;
   padding-left: 4px;
@@ -255,7 +255,7 @@ contenant
   color: var(--color-blue);
 }
 
-.part a.linkCode:hover {
+a.linkCode:hover {
   background-color: var(--color-blue);
   color: white;
   text-decoration: none;
@@ -396,7 +396,7 @@ responsive web site for mobile device
   , {
 
   }
-  .part .boxAppLink {
+  .boxAppLink {
     border-radius: 1.5cm;
     padding: 0.4em;
     min-width:3.5cm;
