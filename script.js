@@ -52,7 +52,7 @@ $(document).ready(function() {
     });
     //----------------------------------------------
     //contenu des onglets
-    contenu('applications');
+    //contenu('statistics');
     $("#applications").click(function() {
         contenu('applications');
     });
@@ -96,6 +96,8 @@ $(document).ready(function() {
             root.style.setProperty('--color-grey2', 'rgb(40,40,40)');
             root.style.setProperty('--color-grey3', 'rgb(204,204,204)');
             root.style.setProperty('--color-black', 'rgb(255,255,255)');
+            root.style.setProperty('--color-orange', 'rgb(255,159,10');
+            root.style.setProperty('--color-purple', 'rgb(94,92,230');
             document.getElementById("styleCSS").style.background = "rgb(225,225,255)";
             return false;
         } else {
@@ -107,6 +109,8 @@ $(document).ready(function() {
             root.style.setProperty('--color-grey2', 'rgb(215,215,215)');
             root.style.setProperty('--color-grey3', 'rgb(51,51,51)');
             root.style.setProperty('--color-black', 'rgb(0,0,0)');
+            root.style.setProperty('--color-orange', 'rgb(255,149,0');
+            root.style.setProperty('--color-purple', 'rgb(88,86,214');
             document.getElementById("styleCSS").style.background = "rgb(54,54,54)";
             return true;
         };
@@ -175,7 +179,7 @@ var menFolder = [
   //******************************
   function loadContenu(idContenu) {
   var menIdLine = menFile.indexOf(idContenu);
-  var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + menFolder[menIdLine] + '/' + menFile[menIdLine] + '.md'
+  var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + menFolder[menIdLine] + '/' + menFile[menIdLine] + '.md';
   var aPromise = fetch(url);
   // Work with Promise object:
   aPromise
@@ -186,7 +190,6 @@ var menFolder = [
   if(!response.ok)  {
   throw new Error("HTTP error, status = " + response.status);
   }
-  
   response.text()
   .then(function(myText) {
   document.getElementById('contenu').innerHTML = marked(myText);
@@ -205,10 +208,63 @@ var menFolder = [
   // END load the content of each page
   //******************************
   for (var i = 0; i <= menFile.length - 1; i++) {
-  var nameA = menFile[i];
-  $( '#' + nameA ).click( function() {
-  idContenu = $(this)[0].id;
-  loadContenu(idContenu);
-  });
+    var nameA = menFile[i];
+    $( '#' + nameA ).click( function() {
+      idContenu = $(this)[0].id;
+      loadContenu(idContenu);
+    });
   };
+  //******************************
+  //statistics
+  //******************************
+  // dossier, fichier, general, r, sas
+var sumaryStat = 
+[
+  ['data-mining/', 'ACM', 1, 1, 1],
+  ['data-mining/', 'ACP', 1, 1, 1],
+  ['data-mining/', 'AFC', 1, 1, 1],
+  ['data-mining/', 'ANOVA', 1, 1, 1],
+  ['data-mining/', 'ARMA', 1, 0, 0],
+  ['data-mining/', 'CAH', 1, 1, 1],
+  ['data-mining/', 'CDH', 1, 0, 0],
+  ['data-mining/', 'SVM', 1, 1, 0],
+  ['data-mining/', 'analyse-discriminante', 1, 1, 1],
+  ['data-mining/', 'arbre-de-decision', 1, 1, 1],
+  ['data-mining/', 'boosting', 1, 0, 0],
+  ['data-mining/', 'carte-auto-adaptative', 1, 0, 0],
+  ['data-mining/', 'centre-mobiles', 1, 0, 1],
+  ['data-mining/', 'centroide', 1, 0, 1],
+  ['data-mining/', 'classificateur-baysien', 1, 1, 0],
+  ['data-mining/', 'cluestering-variables', 1, 0, 1],
+  ['data-mining/', 'esperance-maximisation', 1, 0, 1],
+  ['data-mining/', 'foret-aleatoire', 1, 1, 0],
+  ['data-mining/', 'lissage-exponentiel', 1, 0, 0],
+  ['data-mining/', 'perceptron', 1, 0, 0],
+  ['data-mining/', 'predire-evaluer', 0, 1, 0],
+  ['data-mining/', 'probleme-correlation', 1, 0, 0],
+  ['data-mining/', 'regression-lineaire', 1, 0, 1],
+  ['data-mining/', 'regression-logistique', 1, 1, 1],
+  ['data-mining/', 'reseaux-neurones', 1, 1, 0],
+  ['data-mining/', 'serie-temporelle-simple', 0, 1, 0],
+  ['data-mining/', 'serie-temporelle', 1, 0, 0],
+  ['methode/', 'cluestering-sans-cible', 1, 0, 0],
+  ['', 'automatiser', 0, 1, 1],
+  ['', 'carte', 0, 1, 0],
+  ['', 'classification', 1, 0, 0],
+  ['', 'deploy-Rshinny-shinyapps', 1, 0, 0],
+  ['', 'dictionnaire-statistique', 1, 0, 0],
+  ['', 'formater-donnees', 0, 1, 1],
+  ['', 'graphiques', 0, 1, 1],
+  ['', 'manipuler-donnees', 0, 1, 1],
+  ['', 'reduction-dimensions', 1, 0, 0],
+  ['', 'statistique-descriptive', 0, 1, 1],
+  ['', 'tableau-de-bord', 1, 0, 0],
+  ['', 'tests', 1, 0, 1]
+];
+
+
+var statLoad = sumaryStat[28];
+console.log( url );
+var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + statLoad[0] + statLoad[1] + '.md';
+console.log( url );
 });
