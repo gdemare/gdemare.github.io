@@ -168,14 +168,10 @@ contenant
 #contenu {
   display: flex;
   flex-direction: column;
-}
-
-.part {
-  display: flex;
-  flex-direction: column;
   justify-content: left;
   max-width: 25cm;
   width: 100%;
+  th: 100%;
 }
 
 .part .favorite {
