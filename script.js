@@ -52,7 +52,7 @@ $(document).ready(function() {
     });
     //----------------------------------------------
     //contenu des onglets
-    //contenu('statistics');
+    contenu('applications');
     $("#applications").click(function() {
         contenu('applications');
     });
