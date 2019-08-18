@@ -197,6 +197,9 @@ contenant
 .boxAppLink:hover {
   background-color: var(--color-blue);
   color: white;
+}
+
+.boxAppLink a:hover {
   text-decoration: none;
 }
 
