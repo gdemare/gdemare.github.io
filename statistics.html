@@ -394,4 +394,18 @@ var sumaryStat =
   //******************************
   // END load the content of each page
   //******************************
+  function contenu(idPage) {
+        removeSelect();
+        //load statistics sheet
+        if (idPage == 'statistics') {
+            $("#statistics").addClass('select');
+            $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/statistics.html");
+        }
+        //load application sheet
+        else if (idPage == 'applications') {
+            $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/applications.html");
+        } else if (idPage == 'links')
+            $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/liens.html");
+        ;
+    };
     </script>
