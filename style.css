@@ -76,7 +76,8 @@ nav {
   padding-right: 3%;
   background-color: var(--color-white);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a:link {
@@ -164,6 +165,23 @@ Memento menu
 /*************************
 contenant
 /*************************/
+#navBarre {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 25cm;
+}
+
+#navBarre a {
+  border: solid 1px var(--color-grey2);
+  min-width: 2.5cm;
+  margin-right: 0.1cm;
+  padding-top: 0.2cm;
+  padding-bottom: 0.2cm;
+}
 
 #contenu {
   display: flex;
@@ -171,7 +189,6 @@ contenant
   justify-content: left;
   max-width: 25cm;
   width: 100%;
-  th: 100%;
 }
 
 .favorite {
@@ -199,7 +216,7 @@ contenant
   color: white;
 }
 
-.boxAppLink a:hover {
+#contenu .favorite a:hover {
   text-decoration: none;
 }
 
@@ -270,19 +287,21 @@ mark {
 h2 {
   border-top: solid 2px var(--color-grey1);
   color: var(--color-black);
-  font-size: 35px;
+  font-size: 1.4em;
   margin: 0cm;
   padding: 0cm;
   width: 100%;
 }
+
 h2:first-child {
 	border: none;
 }
 
 h3 {
-  color: var(--color-black);
-  font-size: 25px
+  color: var(--color-grey3);
+  font-size: 1.2em;
   margin: 0px;
+  font-weight: normal;
   min-width: 100%;
 }
 
@@ -292,31 +311,31 @@ table {
   width: 100%;
 }
 
-tr:first-child {
+th {
   background-color: var(--color-blue2);
+  font-weight: normal;
 }
 
-tr:first-child  th:first-child {
-    border-top-left-radius: 0.1cm; 
-    border-bottom-left-radius: 0.1cm; 
+th:first-child {
+  border-top-left-radius: 0.2cm;
+  border-bottom-left-radius: 0.2cm;
 }
 
-tr:first-child th {
-    padding: 0.2cm;
-    font-weight: normal;
-}
-
-tr:first-child th:last-child {
-    border-bottom-right-radius: 0.1cm; 
-    border-top-right-radius: 0.1cm;  
+th:last-child {
+  border-top-right-radius: 0.2cm;
+  border-bottom-right-radius: 0.2cm;
 }
 
 tr {
   border-top: 1px solid var(--color-grey2);
 }
 
-tr:first-child, tr:nth-child(2) {
+tr:first-child {
   border: none;
+}
+
+th {
+  padding: 0.2cm;
 }
 
 td {
