@@ -117,8 +117,8 @@ $(document).ready(function() {
 
     };
 
-    var varStyle = false;
-    varStyle = darkStyle(varStyle);
+    var varStyle = true;
+    darkStyle(varStyle);
 
     $("#styleCSS").click(function() {
         if (varStyle == false) {
