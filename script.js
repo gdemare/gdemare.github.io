@@ -302,7 +302,15 @@ for (var i = 0; i <= content.length - 1; i++) {
           } else {
             fichier = content[i][0]
           };
-        fichier = fichier + '/' + content[i][2] + '.md';
+          if (content[i][3] == 1) {
+            fichier = fichier + '/' + content[i][2] + '.md';
+          } else if (content[i][4] == 1) {
+            fichier = fichier + '/' + content[i][2] + '_r.md';
+          } else if (content[i][5] == 1) {
+            fichier = fichier + '/' + content[i][2] + '_sas.md';
+          } else if (content[i][6] == 1) {
+            fichier = fichier + '/' + content[i][2] + '_sas.md';
+          }
       }
     };
     url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + fichier;
