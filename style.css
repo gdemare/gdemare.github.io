@@ -118,52 +118,43 @@ Memento menu
   flex-grow: 1;
   background-color: var(--color-grey1);
   overflow-y: auto;
-}
-
-#mementoMenu ul {
   max-width: 9cm;
+  padding: 0cm;
   font-size: 15px;
   margin: 0cm;
-  padding: 0cm;
   width: 100%;
 }
 
-#mementoMenu li {
-  margin: 0cm;
-  list-style-type: none;
-}
-
-#mementoMenu a {
-  display: flex;
+#mementoMenu div {
+  padding-left: 0.2cm;
   padding-top: 0.2cm;
   padding-bottom: 0.1cm;
-  color: var(--color-grey3); 
 }
 
-#mementoMenu a:hover {
+#mementoMenu div:hover {
   background-color: var(--color-grey2);
-  color: var(--color-blue);
-}
-
-#mementoMenu .lvl1 a {
-  padding-left: 0.3cm;
-}
-
-#mementoMenu .lvl2 a {
-  padding-left: 0.8cm;
-}
-
-#mementoMenu .SubMenuAccess {
-  padding-top: 0.2cm;
-  padding-bottom: 0.1cm;
-  padding-left: 0.3cm;
-}
-
-#mementoMenu .SubMenuAccess:hover {
   cursor: pointer;
-  background-color: var(--color-grey2);
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-grey1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey2); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-grey3); 
+}
 /*************************
 contenant
 /*************************/
