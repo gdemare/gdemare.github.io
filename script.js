@@ -258,7 +258,12 @@ for (var i = 0; i <= content.length - 1; i++) {
   } else {
     libelle = '&ensp;&ensp;&ensp;'+content[i][2];
   };
-  mementoMenuHtml = mementoMenuHtml + '<div class="'+ classe +'" id=' + content[i][2]+ ' style="display: none;">'+ libelle +"</div>";
+  var langage = "";
+  if (content[i][4] == 1) {langage = langage + '<span class="r">R</span>';};
+  if (content[i][5] == 1) {langage = langage + '<span class="sas">SAS</span>';};
+  if (content[i][6] == 1) {langage = langage + '<span class="python">pyt</span>';};
+
+  mementoMenuHtml = mementoMenuHtml + '<div class="'+ classe +'" id=' + content[i][2]+ ' style="display: none;">'+ libelle + langage + "</div>";
 };
 document.getElementById('mementoMenuBox').innerHTML = mementoMenuHtml;
 
