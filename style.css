@@ -262,11 +262,12 @@ mark {
   border-radius: 0.1cm;
 }
 
-.r, .sas {
+.r, .sas, .python {
+  margin-left: 0.05cm; 
   border-radius: 0.5cm;
   font-size: 0.9em;
-  padding-left: 0.2cm;
-  padding-right: 0.2cm;
+  padding-left: 0.1cm;
+  padding-right: 0.15cm;
   color: var(--color-white);
 }
 .r { 
@@ -275,6 +276,10 @@ mark {
 
 .sas {
   background-color: var(--color-purple);
+}
+
+.python { 
+  background-color: rgb(52,199,89);/*rgb(8,209,88) dark*/
 }
 
 h2 {
