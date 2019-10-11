@@ -136,24 +136,8 @@ Memento menu
   cursor: pointer;
 }
 
-/* width */
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--color-grey1);
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--color-grey2); 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-grey3); 
+  display: none;
 }
 /*************************
 contenant
