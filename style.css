@@ -1,3 +1,16 @@
+:root {
+  --color-blue : rgb(64,156,255);
+  --color-blue2 : rgb(0,14,34);
+  --color-red : rgb(255,105,97);
+  --color-white : rgb(0,0,0);
+  --color-grey1 : rgb(24, 24, 24);
+  --color-grey2 : rgb(40,40,40);
+  --color-grey3 : rgb(204,204,204);
+  --color-black : rgb(255,255,255);
+  --color-orange : rgb(255,159,10);
+  --color-purple : rgb(94,92,230);
+}
+
 html {
   height: 100%;
 }
@@ -13,151 +26,14 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 17px;
   color: var(--color-grey3);
-}
-
-/*************************
-global strurcture
-/*************************/
-
-nav {
-  z-index : 2;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  top: 0cm;
-  left: 0cm;
-  right: 0cm;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: var(--color-blue);
-}
-
-#menuSpace, #navInvisible {
-  padding: 0.2cm;
-  color: transparent;
-}
-
-#page {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-}
-
-#mementoMenuSpace {
-  max-width: 9cm;
-  width: 30%;
-  background-color: var(--color-grey1);
-}
-
-#mementoMenu {
-  z-index : 1;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  max-width: 9cm;
-  width: 30%;
-  color: var(--color-grey3);
-  height: 100%;
-  top: 0px;
-}
-
-#footerInvisible {
-  color: transparent;
-}
-
-#contenant {
-  flex: 1;
-  width: 100%;
-  padding-top: 0.5cm;
-  padding-bottom: 0.5cm;
-  padding-left: 3%;
-  padding-right: 3%;
   background-color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 a:link {
   text-decoration: none;
-}
-
-/*************************
-Navigation bar
-/*************************/
-
-nav .tab {
-  padding: 0.2cm;
-  min-width: 2cm;
-  text-align: center;
-  color: var(--color-white);
-}
-
-nav .tab:hover {
-  color: var(--color-grey3);
-}
-
-#styleCSS {
-    font-size: large;
-    width: 1.4cm;
-    height: 0.7cm;
-    border-radius: 0.1cm;
-    margin: auto;
-}
-
-#emptySpace {
-  flex: 1;
-}
-
-/*************************
-Memento menu
-/*************************/
-#mementoMenu #mementoMenuBox {
-  flex-grow: 1;
-  background-color: var(--color-grey1);
-  overflow-y: auto;
-  max-width: 9cm;
-  padding: 0cm;
-  font-size: 15px;
-  margin: 0cm;
-  width: 100%;
-}
-
-#mementoMenu div {
-  padding-left: 0.2cm;
-  padding-top: 0.2cm;
-  padding-bottom: 0.1cm;
-}
-
-#mementoMenu div:hover {
-  background-color: var(--color-grey2);
-  cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-/*************************
-contenant
-/*************************/
-#navBarre {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  text-align: center;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 25cm;
-}
-
-#navBarre a {
-  border: solid 1px var(--color-grey2);
-  min-width: 2.5cm;
-  margin-right: 0.1cm;
-  padding-top: 0.2cm;
-  padding-bottom: 0.2cm;
 }
 
 #contenu {
@@ -193,7 +69,7 @@ contenant
   color: white;
 }
 
-#contenu .favorite a:hover {
+.favorite a:hover {
   text-decoration: none;
 }
 
@@ -201,13 +77,6 @@ contenant
   width: 100%;
   column-gap: 0.2cm;
   column-count: 4;
-}
-
-pre, code {
-   background-color: var(--color-grey1);
-   border-radius: 0.1cm;
-   padding: 0.1cm;
-   overflow-x: auto;
 }
 
 .boxList ul {
@@ -233,172 +102,4 @@ pre, code {
 
 a {
   color: var(--color-blue);
-}
-
-#contenu a:hover {
-  text-decoration: underline;
-}
-
-mark {
-  color: var(--color-red);
-  margin: 0px;
-  background-color: transparent;
-  border-radius: 0.1cm;
-}
-
-.r, .sas, .python {
-  margin-left: 0.05cm; 
-  border-radius: 0.5cm;
-  font-size: 0.9em;
-  padding-left: 0.1cm;
-  padding-right: 0.15cm;
-  color: var(--color-white);
-}
-.r { 
-  background-color: var(--color-orange);
-}
-
-.sas {
-  background-color: var(--color-purple);
-}
-
-.python { 
-  background-color: rgb(52,199,89);/*rgb(8,209,88) dark*/
-}
-
-h2 {
-  border-top: solid 2px var(--color-grey1);
-  color: var(--color-black);
-  font-size: 1.4em;
-  margin: 0cm;
-  padding: 0cm;
-  width: 100%;
-}
-
-h2:first-child {
-	border: none;
-}
-
-h3 {
-  color: var(--color-grey3);
-  font-size: 1.2em;
-  margin: 0px;
-  font-weight: normal;
-  min-width: 100%;
-}
-
-table {
-  text-align: left;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th {
-  background-color: var(--color-blue2);
-  font-weight: normal;
-}
-
-th:first-child {
-  border-top-left-radius: 0.2cm;
-  border-bottom-left-radius: 0.2cm;
-}
-
-th:last-child {
-  border-top-right-radius: 0.2cm;
-  border-bottom-right-radius: 0.2cm;
-}
-
-tr {
-  border-top: 1px solid var(--color-grey2);
-}
-
-tr:first-child {
-  border: none;
-}
-
-th {
-  padding: 0.2cm;
-}
-
-td {
-  font-size: 0.9em;
-  padding: 0.2cm;
-}
-
-/*************************
-footer
-/*************************/
-
-footer {
-  z-index : 2;
-  background-color: var(--color-grey1);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 0.1cm;
-}
-
-footer a {
-  color: var(--color-grey3);
-  font-size: 14px;
-}
-
-.select {
-  font-weight: bold;
-}
-
-/*************************
-responsive web site for mobile device
-/*************************/
-
-@media only screen and (max-device-width:768px) {
-
-  body {
-     font-size: 2.3em;
-  }
-  #mementoMenu, footer a {
-     font-size: 1em;
-  }
-  #styleCSS {
-  width: 3.5em;
-  }
-
-  #page {
-    flex-direction: column;
-  }
-
-  #mementoMenuSpace {
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-  }
-
-  #mementoMenu {
-    position: static;
-    min-width: 100%;
-  }
-
-  #navInvisible, #footerInvisible {
-    display: none;
-  }
-
-  #mementoMenu ul {
-    min-width: 100%;
-    font-size: 1em; 
-  }
-    .col3 {
-    column-count: 2;
-  }
-
-  .col4 {
-    column-count: 2;
-  }
-  , {
-
-  }
-  .boxAppLink {
-    border-radius: 1.5cm;
-    padding: 0.4em;
-    min-width:3.5cm;
-  }
 }
