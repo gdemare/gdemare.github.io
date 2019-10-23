@@ -1,12 +1,19 @@
 $(document).ready(function() {
+
+  var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
+      largeurMenu = document.getElementById("menu").offsetWidth + 'px';
+  document.getElementById("page").style.setProperty("margin-top", hauteurNav);
+  document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
+  document.getElementById("page").style.setProperty("margin-left", largeurMenu);
+
   // changer les couleurs
   $("#styleCSS").click( function() {
     if ($(this)[0].className.indexOf("dark") == -1) {
       $(this).addClass("dark");
-      document.getElementsByTagName('section')[0].style.boxShadow = "none";
+      document.getElementById('page').style.boxShadow = "none";
     } else {
       $(this).removeClass("dark");
-      document.getElementsByTagName('section')[0].style.boxShadow = "-5px 0px 10px rgb(243,243,243)";
+      document.getElementById('page').style.boxShadow = "-5px 0px 10px rgb(243,243,243)";
     }
     dark();
   });
