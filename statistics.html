@@ -1,411 +1,142 @@
-        <h1>Statistics</h1>
-        <h2>Preparation des donnees</h3>
-        <h3>Automatiser, formater et manipuler les données</h3>
-        <ul>
-          <li>
-            <a href="#" id="automatiser">Automatiser</a>
-            <mark class="r">R</mark>
-            <mark class="sas">SAS</mark>
-          </li>
-          <li>
-            <a href="#" id="formater">Formater</a>
-            <mark class="r">R</mark>
-            <mark class="sas">SAS</mark>
-          </li>
-          <li>
-            <a href="#" id="manipuler">Manipuler</a>
-            <mark class="r">R</mark>
-            <mark class="sas">SAS</mark>
-          </li>
-          <li>
-            <a href="#" id="tableau-de-bord">Tableau de bord</a>
-            <mark class="r">R</mark>
-          </li>
-        </ul>
-        <h3>Discrétiser des variables</h3>
-        <h3>Détecter les valeurs abérrantes et atypiques</h3>
-        <h3>Imputer les valeurs manquantes</h3>
-        <ul>
-          <li>Espérance-maximisation (EM)</li>
-          <li>K-voisin le plus proche (KNN)</li>
-          <li>Moyenne, médiane</li>
-        </ul>
-        <h2>Statistique descriptive</h2>
-        <h3>Décrire les individus</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Type d'indicateurs</th>
-              <th>
-                <a href="#" id="statistique-descriptive">Indicateurs</a>
-                <mark class="r">R</mark>
-                <mark class="sas">SAS</mark>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tendance centrale</td>
-              <td>Moyenne, Medianne</td>
-            </tr>
-          </tr>
-          <tr>
-            <td>Dispersion</td>
-            <td>Variance, Écart type, Covariance</td>
-          </tr>
-        </tr>
-        <tr>
-          <td>Corrélation</td>
-          <td>Coefficent de correlation de Pearson, Coefficient de correlation de Spearman</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li>
-        <a href="#" id='graphiques'>Graphiques</a>
-        <mark class="r">R</mark>
-        <mark class="sas">SAS</mark>
-      </li>
-    </ul>
-    <h3>
-      <a href="#" id='carte'>Les cartes</a><mark class="r">R</mark>
-    </h3>
-    <h2>Data mining</h2>
-    <h3>Cluestering</h3>
-    <p>Grouper les individus ou les variables avec des caractéristiques proches.</p>
-    <mark>Attention aux variables fortement corrélées !</mark>
-    <ul>
-      <li>Individus</li>
-      <ul>
-        <li>
-          <a href="#" id="carte-auto-adaptative">Cartes auto adaptatives</a>
-        </li>
-        <li>
-          <a href="#" id="centre-mobiles">Centres mobiles ou nuées dynamiques (k-means)</a>
-          <mark class="sas">SAS</mark>
-        </li>
-        <li>
-          <a href="#" id="CAH">Classification Ascendante Hiérarchique (CAH)</a>
-          <mark class="r">R</mark>
-          <mark class="sas">SAS</mark>
-        </li>
-      </ul>
-      <li>Variables</li>
-      <ul>
-        <li>
-          <a href="#" id="cluestering-variables">Clustering des variables</a>
-          <mark class="sas">SAS</mark>
-        </li>
-      </ul>
-    </ul>
-    <h3>Modeliser</h3>
-    <mark>Attention aux variables fortement corrélées !</mark>
-    <ul>
-      <li>Classification : générer une probabilité d'appartenance à une classe.</li>
-      <ul>
-        <li>Classificateur binaire</li>
-        <ul>
-          <li>
-            <a href="#" id="perceptron">Perceptron</a>
-          </li>
-          <li>
-            <a href="#" id="regression-logistique">Régression logistique</a>
-            <mark class="r">R</mark>
-            <mark class="sas">SAS</mark>
-          </li>
-        </ul>
-        <li>Classificateur multi-classes</li>
-        <ul>
-          <li>
-            <a href="#" id="analyse-discriminante">Analyse discrimante</a>
-            <mark class="r">R</mark>
-            <mark class="sas">SAS</mark>
-          </li>
-          <li>
-            <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/arbre-de-decision.md">Arbre de décision</a>
-            <mark class="r">R</mark>
-            <mark class="sas">SAS</mark>
-          </li>
-          <li>
-            <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/boosting.md">Boosting</a>
-          </li>
-          <li>
-            <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/classificateur-baysien.md">Classificateur naïve bayésien</a>
-            <mark class="r">R</mark>
-          </li>
-          <li>Espérance-maximisation (EM)</li>
-          <li>
-            <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/foret-aleatoire.md">Forêt aléatoire</a>
-          </li>
-          <li>k-plus proches voisins</li>
-          <li>
-            <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/SVM.md">Support Vector Machine (SVM)</a>
-            <mark class="r">R</mark>
-          </li>
-          <li>
-            <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/reseaux-neurones.md">Réseau de neurones</a>
-            <mark class="r">R</mark>
-          </li>
-        </ul>
-      </ul>
-      <li>Régression : modéliser une variable quantitative continue.</li>
-      <ul>
-        <li>
-          <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/regression-lineaire.md">Régression linéaire</a>
-          <mark class="sas">SAS</mark>
-        </li>
-        <li>
-          Arbre de régression
-          <mark class="sas">SAS</mark>
-        </li>
-        <li>
-          <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ANOVA.md">ANalysis Of VAriance (ANOVA)</a>
-          <mark class="r">R</mark>
-          <mark class="sas">SAS</mark>
-        </li>
-        <li>Forêt aléatoire
-          <mark class="r">R</mark>
-        </li>
-      </ul>
-      Prédire et évaluer avec <mark class="r">R</mark>.
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/serie-temporelle.md">Série temporelle</a>
-      </li>
-      <ul>
-        <li>
-          <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ARMA.md">AutoRegressive Moving Average (ARMA)</a>
-        </li>
-        <li><a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/lissage-exponentiel.md">Lissage exponentionel</a>
-      </li>
-      <li>Série temporelle simple</li>
-    </ul>
-    <h3>Réduire le nombre de dimensions</h3>
-    <p>Les variables quantitatives et qualitatives peuvent être représentées dans un espace mathématique. Les méthodes de réductions de dimensions créent un nouveau repére qui maximise l'information sur les premiers axes. Elles sont utilisées pour :</p>
-    <ul>
-      <li>Explorer un jeu de données (analyse discrimante, ACM, ACP, ACF).</li>
-      <li>Créer de nouvelles variables non correlés (ACP).</li>
-      <li>Regrouper des modalités (AFC, ACM).</li>
-    </ul>
-    Méthodes :
-    <ul>
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ACM.md">Analyse des Correspondances Multiples (ACM)</a>
-        <mark class="r">R</mark>
-        <mark class="sas">SAS</mark>
-      </li>
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/analyse-discriminante.md">Analyse discrimante</a>
-        <mark class="r">R</mark>
-        <mark class="sas">SAS</mark>
-      </li>
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/ACP.md">Analyse en Composantes Principales (ACP)</a>
-        <mark class="r">R</mark>
-        <mark class="sas">SAS</mark>
-      </li>
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/AFC.md">Analyse Factorielle des Correpondances (AFC)</a>
-        <mark class="r">R</mark>
-        <mark class="sas">SAS</mark>
-      </li>
-    </ul>
-    <h2>Statistique inferentielle</h2>
-    <h3>Tester des hypothèses</h3>
-    <p>
-      <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/tests.md">Générale avec R</a>
-      <mark class="r">R</mark>
-      <mark class="sas">SAS</mark>
-    </p>
-    <h2>Autre</h2>
-    <h3>A approfondir</h3>
-    <ul>
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/centroide.md">Centroïde</a>
-        <mark class="sas">SAS</mark>
-      </li>
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/esperance-maximisation.md">Espérance-maximisation</a>
-        <mark class="sas">SAS</mark>
-      </li>
-    </ul>
-    <h3>Projets méthodes</h3>
-    <ul>
-      <li>
-        <a href="https://github.com/gdemare/aide-memoire/blob/master/statistique/data-mining/methode/cluestering-sans-cible.md">
-        Construire des groupes d'individus similaire en fonction d'une variable d'intérêt non triviale</a>
-      </li>
-    </ul>
-    <script type="text/javascript">
-        //******************************
-  //statistics
-  //******************************
-  // dossier, fichier, general, r, sas
-var sumaryStat = 
-[
-  ['data-mining', 'ACM', 1, 1, 1],
-  ['data-mining', 'ACP', 1, 1, 1],
-  ['data-mining', 'AFC', 1, 1, 1],
-  ['data-mining', 'ANOVA', 1, 1, 1],
-  ['data-mining', 'ARMA', 1, 0, 0],
-  ['data-mining', 'CAH', 1, 1, 1],
-  ['data-mining', 'CDH', 1, 0, 0],
-  ['data-mining', 'SVM', 1, 1, 0],
-  ['data-mining', 'analyse-discriminante', 1, 1, 1],
-  ['data-mining', 'arbre-de-decision', 1, 1, 1],
-  ['data-mining', 'boosting', 1, 0, 0],
-  ['data-mining', 'carte-auto-adaptative', 1, 0, 0],
-  ['data-mining', 'centre-mobiles', 1, 0, 1],
-  ['data-mining', 'centroide', 1, 0, 1],
-  ['data-mining', 'classificateur-baysien', 1, 1, 0],
-  ['data-mining', 'cluestering-variables', 1, 0, 1],
-  ['data-mining', 'esperance-maximisation', 1, 0, 1],
-  ['data-mining', 'foret-aleatoire', 1, 1, 0],
-  ['data-mining', 'lissage-exponentiel', 1, 0, 0],
-  ['data-mining', 'perceptron', 1, 0, 0],
-  ['data-mining', 'predire-evaluer', 0, 1, 0],
-  ['data-mining', 'probleme-correlation', 1, 0, 0],
-  ['data-mining', 'regression-lineaire', 1, 0, 1],
-  ['data-mining', 'regression-logistique', 1, 1, 1],
-  ['data-mining', 'reseaux-neurones', 1, 1, 0],
-  ['data-mining', 'serie-temporelle-simple', 0, 1, 0],
-  ['data-mining', 'serie-temporelle', 1, 0, 0],
-  ['methode', 'cluestering-sans-cible', 1, 0, 0],
-  ['', 'automatiser', 0, 1, 1],
-  ['', 'carte', 0, 1, 0],
-  ['', 'classification', 1, 0, 0],
-  ['', 'deploy-Rshinny-shinyapps', 1, 0, 0],
-  ['', 'dictionnaire-statistique', 1, 0, 0],
-  ['', 'formater-donnees', 0, 1, 1],
-  ['', 'graphiques', 0, 1, 1],
-  ['', 'manipuler-donnees', 0, 1, 1],
-  ['', 'reduction-dimensions', 1, 0, 0],
-  ['', 'statistique-descriptive', 0, 1, 1],
-  ['', 'tableau-de-bord', 0, 1, 0],
-  ['', 'tests', 1, 0, 1]
-];
-
-  function searchMulti2( column, recherche) {
-    for (var i = 0; i <= sumaryStat.length - 1; i++) {
-      if (recherche == sumaryStat[i][column]) {
-        var idLine = i;
-      };
-    };
-    return idLine;
-  };
-
-  for (var i = 0; i <= sumaryStat.length - 1; i++) {
-    var nameA = sumaryStat[i][1];
-    $( '#' + nameA ).click( function() {
-      var idContenu = $(this)[0].id;
-      console.log(idContenu);
-      var idLine = searchMulti2( 1, idContenu);
-      var statSelect = sumaryStat[idLine];
-      console.log(statSelect);
-      // buttom page stat
-      document.getElementById("pageStat").style.display = "block";
-        $( '#pageStat').click( function() {
-          contenu('statistics');
-        });
-      var defaut = 0;
-      // buttom page general
-      if (statSelect[2] == 1) {
-        defaut = defaut+1;
-        document.getElementById("pageGeneral").style.display = "block";
-        var extension = '.md';
-        pageDefault( urlStat(statSelect[0], statSelect[1], extension));
-        $( '#pageGeneral').click( function() {
-          var extension = '.md';
-          file = urlStat(statSelect[0], statSelect[1], extension);
-          loadContenu(file);
-        });
-      };
-      // buttom page R
-      if (statSelect[3] == 1) {
-        defaut = defaut+1;
-        document.getElementById("pageR").style.display = "block";
-        var extension = '_r.md';
-        pageDefault(defaut, urlStat(statSelect[0], statSelect[1], extension));
-        $( '#pageR').click( function() {
-          var extension = '_r.md';
-          file = urlStat(statSelect[0], statSelect[1], extension);
-          loadContenu(file);
-        });
-      };
-      // buttom page SAS
-      if (statSelect[4] == 1) {
-        defaut = defaut+1;
-        document.getElementById("pageSas").style.display = "block";
-        var extension = '_sas.md';
-        pageDefault(defaut, urlStat(statSelect[0], statSelect[1], extension));
-        $( '#pageSas').click( function() {
-          var extension = '_sas.md';
-          file = urlStat(statSelect[0], statSelect[1], extension);
-          loadContenu(file);
-        });
-      };
-      console.log(defaut);
-      function pageDefault(defaut, file) {
-        if (defaut == 1) {
-          loadContenu(file);
-        } 
-      };
-
-      function urlStat(dossier, fichier, extension) {
-        if (dossier == '') {
-        file = 'statistique/' + fichier + extension;
-        } else {
-          file = 'statistique/' + dossier + '/' + fichier + extension;
-        };
-        return file;
-      }
-    });
-  };
-  //******************************
-  // BEGINING load the content of each page
-  //******************************
-  function loadContenu(file) {
-  
-  var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + file;
-  var aPromise = fetch(url);
-  // Work with Promise object:
-  aPromise
-  .then(function(response) {
-  console.log("OK! Server returns a response object:");
-  console.log(response);
-  
-  if(!response.ok)  {
-  throw new Error("HTTP error, status = " + response.status);
-  }
-  response.text()
-  .then(function(myText) {
-  document.getElementById('contenu').innerHTML = marked(myText);
-  })
-  .catch(function(error) {
-  // Never happened.
-  });
-  })
-  .catch(function(error)  {
-  console.log("Noooooo! Something error:");
-  // Network Error!
-  console.log(error);
-  });
-  };
-
-  //******************************
-  // END load the content of each page
-  //******************************
-  function contenu(idPage) {
-        removeSelect();
-        //load statistics sheet
-        if (idPage == 'statistics') {
-            $("#statistics").addClass('select');
-            $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/statistics.html");
-        }
-        //load application sheet
-        else if (idPage == 'applications') {
-            $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/applications.html");
-        } else if (idPage == 'links')
-            $("#contenu").load("https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/liens.html");
-        ;
-    };
-    </script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link id='pagestyle' href="style.css" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h2>Interactions</h2>
+        <div class="boutonsZone">
+          <div class="boutonsLigne">
+            <div class="bouton">
+              Theme
+              <i id="styleCSS" class="fas fa-adjust boutonClic"></i>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <section>
+      <article id='favorites'>
+        <a target="_blank" href="https://login.live.com/"><i class="fas fa-envelope" style="color: var(--color-blue);"></i>Outlook</a>
+        <a target="_blank" href="https://raw.githack.com/gdemare/aide-memoire/master/index.html"><i class="fas fa-brain" style="color: var(--color-teal)"></i></i>Memento</a>
+        <a target="_blank" href="https://app.degoo.com/my-files/0"><i class="fas fa-server" style="color: var(--color-blue);"></i>Degoo</a>
+        <a target="_blank" href="https://www.dropbox.com/fr/"><i class="fab fa-dropbox" style="color: var(--color-teal);"></i>Dropbox</a>
+        <a target="_blank" href="https://onedrive.live.com/"><i class="fas fa-cloud" style="color: var(--color-blue);"></i>OneDrive</a>
+        <a target="_blank" href="https://www.dealabs.com/"><i class="fas fa-burn" style="color: var(--color-black);"></i>Dealabs</a>
+        <a target="_blank" href="https://www.deezer.com/fr/"><i class="fas fa-music" style="color: var(--color-blue);"></i>Deezer</a>
+        <a target="_blank" href="https://www.franceinter.fr/"><i class="fas fa-broadcast-tower" style="color: var(--color-red);"></i>France Inter</a>
+        <a target="_blank" href="https://www.google.fr/maps"><i class="fas fa-map-marker-alt" style="color: var(--color-green);"></i>GMaps</a>
+        <a target="_blank" href="https://mail.protonmail.com/login"><i class="fas fa-atom" style="color: var(--color-purple);"></i>Proton mail</a>
+        <a target="_blank" href="https://www.qwant.com/"><i class="fas fa-search" style="color: var(--color-purple);"></i>Qwant</a>
+        <a target="_blank" href="https://translate.google.fr/#view=home&op=translate&sl=fr&tl=en"><i class="fas fa-language" style="color: var(--color-blue);"></i>GTranslate</a>
+        <a target="_blank" href="https://youtube.com"><i class="fab fa-youtube" style="color: var(--color-red);"></i>YouTube</a>
+      </article>
+      <article class="col col3">
+          <div>
+            <h2><i class="fas fa-shopping-bag" style="background-color: var(--color-pink);"></i>Achat</h2>
+            <a target="_blank" href="https://fr.aliexpress.com/" >AliExpress</a>
+            <a target="_blank" href="https://www.amazon.fr/" >Amazon</a>
+            <a target="_blank" href="https://www.cdiscount.com/" >cDiscount</a>
+            <a target="_blank" href="https://www.ebay.fr/" >Ebay</a>
+            <a target="_blank" href="https://fr.gearbest.com" >Gearbest</a>
+            <a target="_blank" href="https://www.leboncoin.fr/" >Le bon coin</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-newspaper" style="background-color: var(--color-teal);"></i>Acutalité</h2>
+            <a target="_blank" href="https://www.inoreader.com/" >Inoreader</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-university" style="background-color: var(--color-gray);"></i>Administration</h2>
+            <a target="_blank" href="https://www.caf.fr/" >Caf</a>
+            <a target="_blank" href="https://authentification-candidat.pole-emploi.fr" >Pôle emploi</a>
+          </div>
+          <div>
+            <h2><i class="fab fa-android" style="background-color: var(--color-green);"></i>Android</h2>
+            <a target="_blank" href="https://vanced.app/" >Youtube Vanced</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-database" style="background-color: var(--color-purple);"></i>Base de connaissance</h2>
+            <a target="_blank" href="https://www.themoviedb.org/" >The Movie Database</a>
+            <a target="_blank" href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal" >Wikipedia</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-pen" style="background-color: var(--color-red);"></i>Bureautique</h2>
+            <a target="_blank" href="https://www.onenote.com" >OneNote</a>
+            <a target="_blank" href="https://prezi.com/fr/" >Prezi</a>
+            <a target="_blank" href="https://fr.sharelatex.com" >ShareLatex</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-users" style="background-color: var(--color-yellow);"></i></i>Developpement</h2>
+            <a target="_blank" href="https://www.jdoodle.com" >jDoodle</a>
+            <a target="_blank" href="https://github.com/" >Github</a>
+          </div>
+          <div>
+            <h2><i class="fa fa-arrow-down" style="background-color: var(--color-red);"></i>Download</h2>
+            <a target="_blank" href="https://filepursuit.com/" >File Pursuit</a>
+            <a target="_blank" href="https://www.seedr.cc/" >Seedr</a>
+            <a target="_blank" href="https://mp3-youtube.download/fr" >Youtube Mp3</a>
+            <a target="_blank" href="https://www.zone-telechargement.net/" >Zone téléchargement</a>
+            <a target="_blank" href="https://www2.yggtorrent.ch" >YGG Torrent</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-users" style="background-color: var(--color-purple);"></i>Forum</h2>
+            <a target="_blank" href="https://audiobudget.com/leaderboard/iem" >AudioBudjet</a>
+            <a target="_blank" href="https://reports.exodus-privacy.eu.org/" >Exodus Privacy</a>
+            <a target="_blank" href="http://www.hikamp.com/" >Hikamp</a>
+            <a target="_blank" href="https://fr.ifixit.com/" >iFixit</a>
+            <a target="_blank" href="https://www.forumzt.com/" >Forum zone téléchargement</a>
+          </div>
+          <div>
+            <h2><i class="fab fa-google" style="background-color: var(--color-red);"></i>Google</h2>
+            <a target="_blank" href="https://earth.google.com/web/" >Google Earth</a>
+            <a target="_blank" href="https://www.google.com/intl/fr/gmail/about/#" >Gmail</a>
+            <a target="_blank" href="https://play.google.com/music/listen" >Google Play Music</a>
+            <a target="_blank" href="https://www.google.fr/" >Google</a>
+            <a target="_blank" href="https://hangouts.google.com/webchat/start" >Hangouts</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-image" style="background-color: var(--color-yellow);"></i></i>Images et icones</h2>
+            <a target="_blank" href="https://fontawesome.com/" >Font Awesome</a>
+            <a target="_blank" href="https://www.pexels.com/" >Pexels</a>
+            <a target="_blank" href="https://imgbb.com/" >Imgbb</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-globe-africa" style="background-color: var(--color-purple);"></i>Langues</h2>
+            <a target="_blank" href="https://www.duolingo.com/" >Duolingo</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-project-diagram" style="background-color: var(--color-blue);"></i>Réseau sociaux</h2>
+            <a target="_blank" href="https://fr-fr.facebook.com/" >Facebook</a>
+            <a target="_blank" href="https://www.linkedin.com/" >LinkedIn</a>
+            <a target="_blank" href="https://fr-fr.messenger.com/" >Messenger</a>
+            <a target="_blank" href="https://twitter.com" >Twitter</a>
+            <a target="_blank" href="https://web.whatsapp.com" >Whatapp</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-chart-pie" style="background-color: var(--color-purple);"></i>Statistique</h2>
+            <a target="_blank" href="https://www.kaggle.com/" >Kaggle</a>
+            <a target="_blank" href="https://www.shinyapps.io/" >Shinnyapps</a>
+            <a target="_blank" href="https://vizzlo.com" >Vizzlo</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-plane" style="background-color: var(--color-gray);"></i>Transport</h2>
+            <a target="_blank" href="https://www.oui.sncf/" >OUI Sncf</a>
+            <a target="_blank" href="https://www.blablacar.fr/" >BlaBlaCar</a>
+          </div>
+          <div>
+            <h2><i class="fas fa-briefcase" style="background-color: var(--color-green);"></i>Travail</h2>
+            <a target="_blank" href="https://www.indeed.fr" >Indeed</a>
+            <a target="_blank" href="http://stid-france.fr/" >STID France</a>
+            <a target="_blank" href="https://www.civiweb.com/FR/index.aspx" >VIE</a>
+          </div>
+      </article>
+    </section>
+</body>
+</html>
