@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
-      largeurMenu = document.getElementById("menu").offsetWidth + 'px';
+      largeurMenu = document.getElementById("menu").offsetWidth - 1 + 'px';
   document.getElementById("page").style.setProperty("margin-top", hauteurNav);
   document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
   document.getElementById("page").style.setProperty("margin-left", largeurMenu);
