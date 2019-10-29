@@ -2,9 +2,9 @@ $(document).ready(function() {
 
   var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
       largeurMenu = document.getElementById("menu").offsetWidth - 1 + 'px';
-  document.getElementById("page").style.setProperty("margin-top", hauteurNav);
   document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
   document.getElementById("page").style.setProperty("margin-left", largeurMenu);
+  document.getElementById("page").style.setProperty("margin-top", hauteurNav);
 
   // changer les couleurs
   $("#styleCSS").click( function() {
@@ -36,7 +36,7 @@ $(document).ready(function() {
       root.style.setProperty('--color-boiteH2','rgb(209,209,214)');
       root.style.setProperty('--color-write','rgb(236,238,240)');
       root.style.setProperty('--color-bouton','rgb(44,44,46)');
-      root.style.setProperty('--color-boite','rgb(48,48,48)');
+      root.style.setProperty('--color-nav','rgb(55,54,63)');
       root.style.setProperty('--color-fond','rgb(33,32,42)');
       root.style.setProperty('--color-titre','rgb(99,99,102)');
       root.style.setProperty('--color-degrade1','rgb(0,122,255)');
@@ -57,7 +57,7 @@ $(document).ready(function() {
       root.style.setProperty('--color-boiteH2','rgb(50,50,54)');
       root.style.setProperty('--color-write','rgb(118,118,119)');
       root.style.setProperty('--color-bouton','rgb(232,232,232)');
-      root.style.setProperty('--color-boite','rgb(255,255,255)');
+      root.style.setProperty('--color-nav','rgb(255,255,255)');
       root.style.setProperty('--color-fond','rgb(247,247,250)');
       root.style.setProperty('--color-titre','rgb(180,185,190)');
       root.style.setProperty('--color-degrade1','rgb(0,179,255)');
