@@ -263,7 +263,6 @@ article {
 }
 
 .col a:hover {
-  color: var(--color-degrade1);
   text-decoration: underline;
 }
 
