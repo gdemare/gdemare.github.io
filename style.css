@@ -20,13 +20,12 @@ nav {
   z-index: 2;
   top: 0px;
   right: 0px;
-  opacity: 0.9;
   padding-top: 0.2cm;
   padding-bottom: 0.2cm;
   color: var(--color-write);
   padding-left: 4em;
   padding-right: 4em;
-  background-color: var(--color-fond);
+  background-color: var(--color-nav);
   border-bottom: 1px solid var(--color-bouton);
 }
   
