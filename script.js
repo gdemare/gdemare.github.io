@@ -65,4 +65,5 @@ $(document).ready(function() {
     root.style.setProperty('--color-degrade2','rgb(76,216,254)');
     root.style.setProperty('--color-fondMenu','rgb(247,247,250)');
   };
+};
 })
