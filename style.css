@@ -270,8 +270,7 @@ article {
   flex-direction: column;
   font-size: 0.8em;
   padding-bottom: 1em;
-  opacity: 0.9;/*var(--color-boite)*/;
-  background-color: var(--color-nav);
+  background-color: var(--color-boite);
   border-radius: 0.4em;
 }
 
