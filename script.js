@@ -67,4 +67,13 @@ $(document).ready(function() {
     root.style.setProperty('--color-fondMenu','rgb(247,247,250)');
   };
 };
+  
+// modifier
+$( '#modifier' ).click( function() {
+  if (document.getElementsByClassName("selection")[0] != null) {
+    url = 'https://github.com/gdemare/gdemare.github.io/edit/master/index.html' ;
+    window.open(url);
+  };
+});
+
 })
