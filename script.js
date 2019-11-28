@@ -71,7 +71,7 @@ $(document).ready(function() {
 // modifier
 $( '#modifier' ).click( function() {
   if (document.getElementsByClassName("selection")[0] != null) {
-    url = 'https://github.com/gdemare/gdemare.github.io/edit/master/index.html' ;
+    var url = 'https://github.com/gdemare/gdemare.github.io/edit/master/index.html' ;
     window.open(url);
   };
 });
