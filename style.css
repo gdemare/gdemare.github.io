@@ -199,95 +199,114 @@ header {
   top: 0px;
   right: 0px;
   bottom: 0px;
+  padding-left: 4em;
+  padding-right: 4em;
   flex: 1;
   z-index: 1;
   background-color: var(--color-fond);
   box-shadow:-5px 0px 10px rgb(243,243,243);
-  padding-left: 4em;
-  padding-right: 4em;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  align-items: center;
   padding-top: 1em;
+  overflow-y: auto;
 }
 
 article {
-  margin-bottom: 2em;
-}
-
-
-/* favorites */
-
-#favorites {
+  max-width: 980px;
+  width: 100%;
+  align-content: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-#favorites a {
-  display: flex;
-  padding: 0px;
-  align-items: center;
-  font-size: 0.8em;
-  padding-left: 0.2em;
-  padding-right: 1.4em;
-  background-color: var(--color-bouton);
-  border-radius: 0.3em;
-  margin-left: 0.5em;
-  margin-top: 0.5em;
 }
 
 /*boite avec des niveaux*/
+h2 {
+  display: flex;
+  text-align: left;
+  padding: 0px;
+  font-size: 1.2em;
+  color: var(--color-titre); 
+  color: var(--color-boiteH2);
+  width: 100%;
+  margin: 0px;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  margin-left: 0.3em;
+  border-radius: 0.3em;
+  max-width: 980px;
+}
 
-#favorites a, .col a, .file a{
-  color: var(--color-write);
-  font-weight: bold;
+a { 
   text-decoration: none;  
 }
 
-#favorites i, .col i {
-  width: 1.4em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+.favori {
+  flex-wrap: wrap;
+  background-color: var(--color-fond);
+  width: 100%;
+  justify-content: center;
   text-align: center;
-  font-size: 1.5em;
-  color: var(--color-fond);
 }
 
-#favorites a:hover {
+.favori a {
+  border: 1px solid var(--color-nav);
+  margin-left: 0.4em;
+  margin-bottom: 0.4em;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  width: 1.8em;
+  color: var(--color-write);
+}
+
+.favori a, .fichier i {
+  font-size: 1.7em;
+}
+
+.favori a:hover, .fichier a:hover  {
   color: white;
   background-color: var(--color-degrade1);
 }
 
-.file {
+.fichier {
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  align-items: center;
   flex-wrap: wrap;
-  text-align: center;
+  align-items: stretch;
 }
 
-.file a {
+.fichier .box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-right: 0.4em;
+  margin-bottom: 0.4em;
+  flex : 1;
+  background-color: var(--color-nav);
+  border-radius: 0.3em;
+  padding-bottom: 0.4em;
+  padding-top: 0.4em;
+}
+
+.fichier a {
+  color: var(--color-write);
+  font-weight: bold; 
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bouton);
-  margin-left: 0.5em;
   align-items: center;
-  justify-content: center;
-  padding: 0.2em;
-  min-width: 4em;
-  padding-top: 0.4em;
   border-radius: 0.3em;
-  margin-top: 0.5em;
-  font-size: 0.9em;
+  padding: 0.2em;
+  width: 4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  margin-left: 0.4em;
+  height: fit-content;
+  font-size: 0. 9em;
 }
 
-.file a i {
-  font-size: 1.7em; 
-  padding-bottom: 0.2em;
+.fichier i {
+  height: 1em;
 }
 
 .excel {
@@ -298,159 +317,49 @@ article {
   color: var(--color-white);
 }
 
-.file a:hover {
-  color: white;
-  background-color: var(--color-degrade1);
+.fa-folder {
+  color: var(--color-yellow);
 }
 
-.col {
+.note {
   display: flex;
-  flex-direction: column;
-  font-size: 0.8em;
-  padding-bottom: 1em;
-  background-color: var(--color-boite);
-  border-radius: 0.4em;
+  flex-wrap: wrap;
+  height: fit-content;
+  align-items: stretch;
 }
 
-.col h2 {
-  display: flex;
-  text-align: left;
-  padding: 0px;
-  font-size: 1.2em;
-  /*color: var(--color-titre);  */ 
-  color: var(--color-boiteH2); 
-  text-transform: uppercase;
-}
-
-.col h1 {
-  display: flex;
-  text-align: left;
-  padding: 0px;
-  width: 100%;
-  color: var(--color-titre);
-  padding-top: 1em;
-  border-top: solid 4px var(--color-fond);
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  padding-left: 2em;
-  font-size: 1.3em;
-}
-
-.col h1:first-child {
-  border-top: none;
-}
-
-.theme {
-  column-count: 6;
-  column-gap: 1.5em;
-}
-
-.categorie {
-  display: flex;
-  flex-direction: column;
-  -webkit-column-break-inside: avoid;
-  padding-left: 5em;
-}
-
-.col a {
-    width: fit-content;
-    padding: 0.2em; 
-    border-radius: 0.3em;
-    line-height: 2em;
-}
-
-/*************************
-contenu 
-/*************************/
-#contenu {
-  font-size: 1em;
+.note .box {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  margin-right: 0.4em;
+  margin-bottom: 0.4em;
+  border-radius: 0.3em;
   color: var(--color-write);
+  background-color: var(--color-nav);
+  flex: 1;
 }
 
-#contenu pre, #contenu code {
-   background-color: var(--color-bouton);
-   border-radius: 0.1cm;
-   padding: 0.1cm;
-   line-height: 1.5em;
-   overflow-x: auto;
+.note h3 {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0.15em;
+  font-weight: weight;
+  font-size: 1em;
 }
 
-#contenu a {
-  color: var(--color-blue);
+.note a {
+  width: fit-content;
+  color: var(--color-boiteH2);
   text-decoration: none;
-  background: none;
+  font-size: 1em;
 }
 
-#contenu a:link {
-  text-decoration: none;
-}
-
-#contenu a:hover {
+.note a:hover {
   text-decoration: underline;
 }
 
-#contenu mark {
-  color: var(--color-red);
+p, ul {
   margin: 0px;
-  background-color: transparent;
-  border-radius: 0.1cm;
-}
-
-/*propiété du texte*/
-
-#contenu h2 {
-  border-top: solid 1px var(--color-bouton);
-  color: var(--color-boiteH2);
-  font-size: 1.4em;
-  width: 100%;
-  font-weight: normal;
-}
-
-#contenu h2:first-child {
-  border: none;
-}
-
-#contenu h3 {
-  font-size: 1.2em;
-  margin: 0px;
-  min-width: 100%;
-  font-weight: normal;
-}
-
-#contenu table {
-  text-align: left;
-  border-collapse: collapse;
-  min-width: 50%;
-}
-
-#contenu th {
-  background-color: var(--color-blue2);
-  font-weight: normal;
-}
-
-#contenu th:first-child {
-  border-top-left-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
-}
-
-#contenu th:last-child {
-  border-top-right-radius: 0.3em;
-  border-bottom-right-radius: 0.3em;
-}
-
-#contenu tr {
-  border-top: 1px solid var(--color-bouton);
-}
-
-#contenu tr:first-child {
-  border: none;
-}
-
-#contenu th {
-  padding: 0.2cm;
-}
-
-#contenu td {
-  font-size: 0.9em;
-  padding: 0.2cm;
 }
