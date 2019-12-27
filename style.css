@@ -244,14 +244,13 @@ a {
 
 .favori {
   flex-wrap: wrap;
-  background-color: var(--color-fond);
   width: 100%;
   justify-content: center;
   text-align: center;
 }
 
 .favori a {
-  border: 1px solid var(--color-nav);
+  background-color: var(--color-boite);
   margin-left: 0.4em;
   margin-bottom: 0.4em;
   border-radius: 0.3em;
@@ -283,7 +282,7 @@ a {
   margin-right: 0.4em;
   margin-bottom: 0.4em;
   flex : 1;
-  background-color: var(--color-nav);
+  background-color: var(--color-boite);
   border-radius: 0.3em;
   padding-bottom: 0.4em;
   padding-top: 0.4em;
@@ -337,7 +336,7 @@ a {
   margin-bottom: 0.4em;
   border-radius: 0.3em;
   color: var(--color-write);
-  background-color: var(--color-nav);
+  background-color: var(--color-boite);
   flex: 1;
 }
 
