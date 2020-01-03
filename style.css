@@ -26,6 +26,7 @@ nav {
   padding-left: 4em;
   padding-right: 4em;
   background-color: var(--color-nav);
+  border-bottom: 1px solid var(--color-bouton);
 }
   
 .boutonsZone {
@@ -337,6 +338,7 @@ a {
   color: var(--color-write);
   background-color: var(--color-boite);
   flex: 1;
+  min-width: 20%;
 }
 
 .note h3 {
