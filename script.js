@@ -35,9 +35,9 @@ $(document).ready(function() {
     root.style.setProperty('--color-gray','rgb(142,142,147)');
     root.style.setProperty('--color-boiteH2','rgb(209,209,214)');
     root.style.setProperty('--color-write','rgb(236,238,240)');
-    root.style.setProperty('--color-bouton','rgb(217,225,225)');
+    root.style.setProperty('--color-bouton','rgb(44,44,46)');
     root.style.setProperty('--color-nav','rgb(55,54,63)');
-    root.style.setProperty('--color-boite','rgb(217,225,225)');
+    root.style.setProperty('--color-boite','rgb(33,32,42)');
     root.style.setProperty('--color-fond','rgb(33,32,42)');
     root.style.setProperty('--color-titre','rgb(99,99,102)');
     root.style.setProperty('--color-degrade1','rgb(0,122,255)');
