@@ -25,7 +25,7 @@ nav {
   color: var(--color-write);
   padding-left: 4em;
   padding-right: 4em;
-  background-color: var(--color-nav);
+  background-color: var(--color-fond);
   border-bottom: 1px solid var(--color-bouton);
 }
   
