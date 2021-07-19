@@ -26,7 +26,7 @@ nav {
   padding-left: 4em;
   padding-right: 4em;
   background-color: var(--color-fond);
-  border-bottom: 1px solid var(--color-bouton);
+  border-bottom: 1px solid var(--color-fond);
 }
   
 .boutonsZone {
