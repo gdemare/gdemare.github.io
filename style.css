@@ -327,7 +327,7 @@ a {
   color: var(--color-white);
 }
 
-.fa-folder, .fa-file {
+.fa-folder, .fa-circle {
   color: var(--color-yellow);
 }
 
