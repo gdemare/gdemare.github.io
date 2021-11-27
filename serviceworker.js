@@ -1,4 +1,4 @@
-var staticCacheName = "Cours";
+var staticCacheName = "Starter";
  
 self.addEventListener("install", function (e) {
   e.waitUntil(
