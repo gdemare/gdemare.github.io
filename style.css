@@ -164,6 +164,7 @@ a:hover, .note a:hover {
 a {
   color: var(--color-write);
   text-decoration: none;
+  font-weight: normal;
 }
 
 #favori a {
@@ -309,7 +310,8 @@ ul {
   background-color: var(--color-fond);
   text-align: left;
   border-radius: 0.3em;
-  margin-bottom:0.1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   padding-left: 2em;

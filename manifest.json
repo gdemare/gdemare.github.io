@@ -1,0 +1,16 @@
+{
+  "name":"Starter",
+  "short_name":"Starter",
+  "start_url":"index.html",
+  "display":"standalone",
+  "background_color":"#1d1b26",
+  "theme_color":"black",
+  "scope": ".",
+  "description":"",
+  "icons":[
+{
+    "src": "images/icon-line.png",
+    "sizes": "512x512",
+    "type": "image/png"
+}]
+}

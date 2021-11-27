@@ -10,7 +10,28 @@
     <script type="text/javascript" src="script.js"></script>
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <title>Starter</title>
+    <link rel="icon" href="images/icon-full.png">
 </head>
+
+<script>
+window.addEventListener('load', () => {
+    registerSW();
+});
+
+// Register the Service Worker
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+        try {
+            await navigator
+                .serviceWorker
+                .register('serviceworker.js');
+        } catch (e) {
+            console.log('SW registration failed');
+        }
+    }
+};
+</script>
 
 <body>
     <section id="page">
