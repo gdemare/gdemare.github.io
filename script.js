@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-  var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
-      largeurMenu = document.getElementById("menu").offsetWidth - 1 + 'px';
-  document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
-  document.getElementById("page").style.setProperty("margin-left", largeurMenu);
-  document.getElementById("page").style.setProperty("margin-top", hauteurNav);
-
   // changer les couleurs
   $("#styleCSS").click( function() {
     if ($(this)[0].className.indexOf("dark") == -1) {
@@ -73,5 +67,41 @@ $( '#modifier' ).click( function() {
    var url = 'https://github.com/gdemare/gdemare.github.io/edit/master/index.html' ;
    window.open(url);
 });
+
+for (var i=1; i<=2; i++) {
+  document.getElementById("note"+i).style.display="none";
+  $( '#bout'+i ).click( function() {
+    var bouton = $(this)[0].id
+    var note = "note"+bouton.charAt(bouton.length-1)
+    var icon = $(this)[0].getElementsByClassName('lni')[0]
+    console.log(icon)
+    if (document.getElementById(note).style.display == "none") {
+      document.getElementById(note).style.display = "flex";
+      icon.classList.remove('lni-chevron-right')
+      icon.classList.add('lni-chevron-down')
+    } else {
+      document.getElementById(note).style.display = "none";
+      icon.classList.remove('lni-chevron-down')
+      icon.classList.add('lni-chevron-right')
+    }
+  });
+};
+
+for (var i=1; i<=10; i++) {
+  var liste = "liste"+i
+  $( "#"+liste ).click( function() {
+    var h3id = $(this)[0].id
+    var liens = document.getElementsByClassName(h3id)[0].getElementsByTagName("a")
+    for (var i = liens.length - 1; i >= 0; i--) {
+      console.log(liens[i].style.display == "none")
+      if (liens[i].style.display == "flex") {
+        liens[i].style.display = "none"  
+      } else {
+        liens[i].style.display = "flex"   
+      }
+    }
+       
+  });
+}
 
 })

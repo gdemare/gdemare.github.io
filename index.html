@@ -1,211 +1,433 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link id='pagestyle' href="style.css" rel="stylesheet">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <header>
-        <div id="section"></div>
-        <div id="titre"></div>
-      </header>
-      <div class="boutonsZone">
-        <div id="modifier" class="boutonsBox circle">
-            <i class="fas fa-pen"></i>
-        </div>
-        <div id="styleCSS" class="boutonsBox circle dark">
-            <i class="fas fa-adjust"></i>
-        </div>
-      </div>
-    </nav>
-    <section id="menu" style="display: none;">
-    </section>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
     <section id="page">
-      <article class="favori">
-        <a target="_blank" href="https://www-1.mailo.com/">
-          <i class="fas fa-envelope" style="color: var(--color-red);"></i>
-        </a>
-        <a target="_blank" href="https://outlook.live.com/mail/inbox">
-           <i class="fas fa-envelope" style="color: var(--color-blue);"></i>
-        </a>
-        <a target="_blank" href="https://www.dealabs.com/">
-           <i class="fas fa-burn" style="color: var(--color-black);"></i>
-        </a>
-        <a target="_blank" href="https://www.deezer.com/fr/">
-           <i class="fas fa-music" style="color: var(--color-blue);"></i>
-        </a>
-        <a target="_blank" href="https://www.franceinter.fr/">
-           <i class="fas fa-broadcast-tower" style="color: var(--color-red);"></i>
-        </a>
-      <a target="_blank" href="https://github.com/gdemare">
-           <i class="fab fa-github-alt" style="color: var(--color-gray);"></i>
-        </a>
-        <a target="_blank" href="https://www.google.fr/maps">
-           <i class="fas fa-map-marker-alt" style="color: var(--color-green);"></i>
-        </a>
-        <a target="_blank" href="https://www.qwant.com/">
-           <i class="fas fa-search" style="color: var(--color-purple);"></i>
-        </a>
-        <a target="_blank" href="https://www.fip.fr/">
-           <i class="fas fa-broadcast-tower" style="color: var(--color-purple);"></i>
-        </a>
-        <a target="_blank" href="https://translate.google.fr/#view=home&op=translate&sl=fr&tl=en">
-           <i class="fas fa-language" style="color: var(--color-blue);"></i>
-        </a>
-        <a target="_blank" href="https://youtube.com">
-           <i class="fab fa-youtube" style="color: var(--color-red);"></i>
-        </a>
-        <a target="_blank" href="https://www.nationalgeographic.fr/">
-           <i class="far fa-square" style="color: var(--color-yellow);"></i>
-        </a>
-        <a target="_blank" href="https://login.unice.fr/login?service=https://ent.unice.fr/uPortal/Login">
-           <i class="fas fa-university" style="color: var(--color-blue);"></i>
-        </a> 
-      </article>
-      <article class="fichier">
-      <h2>Fichiers</h2>
-        <div class="box">
-          <a target="_blank" href="https://gdemare.shinyapps.io/movie_dashboard/">
-            <i class="code">R</i>
-            <div>Films</div>
-          </a>
-          <a target="_blank" href="https://raw.githack.com/gdemare/aide-memoire/master/index.html">
-             <i class="fas fa-brain" style="color: var(--color-teal)"></i>
-            <div>Memento</div>
-          </a>
-          <a target="_blank" href="https://raw.githack.com/gdemare/scienceDeLaVie/main/scienceDeLaVie.html">
-            <i class="far fa-circle"></i>
-            <div>SDV</div>
-          </a>
-          <a target="_blank" href="/color/color.html">
-            <i class="far fa-circle"></i>
-            <div>Palette</div>
-          </a>
-          <a target="_blank" href="https://raw.githack.com/gdemare/projet/master/ecologie/biodiversite.html">
-            <i class="far fa-circle"></i>
-            <div>Biodiver..</div>
-          </a>
-          <a target="_blank" href="https://onedrive.live.com/edit.aspx?cid=c0433d28e5866eca&page=view&resid=C0433D28E5866ECA!3708&parId=C0433D28E5866ECA!127&app=Excel">
-            <i class="far fa-circle"></i>
-            <div>Atari</div>
-          </a>
-          <a target="_blank" href="https://taxonomie.github.io/">
-            <i class="far fa-circle" ></i>
-            <div>Science</div>
-           </a>
-          <a target="_blank" href="https://raw.githack.com/gdemare/science/master/index.html">
-            <i class="far fa-circle"></i>
-            <div>Taxono..</div>
-           </a>
-          <a target="_blank" href="https://cryptomator.org/downloads/">
-            <i class="fas fa-lock" style="color: var(--color-gray)"></i>
-            <div>Cryptom..</div>
-          </a>
-          <a target="_blank" href="https://degoo.com/me">
-            <i class="fas fa-undo-alt" style="color: var(--color-blue)"></i>
-            <div>Degoo</div>
-          </a>
-          <a target="_blank" href="https://www.dropbox.com/home">
-            <i class="fab fa-dropbox" style="color: var(--color-teal)"></i>
-            <div>Dropbox</div>
-          </a>
-          <a target="_blank" href="https://onedrive.live.com/">
-            <i class="fa fa-cloud" style="color: var(--color-blue)"></i>
-            <div>Onedrive</div>
-          </a>
-          <a target="_blank" href="https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA">
-            <i class="fas fa-folder"></i>
-            <div>Android</div>
-          </a>
-        </div>
-      </article>
-      <article class="note">
-        <h2>Notes</h2>
-        <div class="box">
-          <h3>Musique</h3>
-          <p>
-            Pour les écouteurs : <a target="_blank" href="https://audiobudget.com/leaderboard/iem" >AudioBudjet</a> <br>
-          </p>
-          <br/>Converteurs :
-          <ul>
-            <li><a target="_blank" href="http://streampocket.net/" >Stream Pocket</a></li>
-            <li><a target="_blank" href="https://mp3-youtube.download/fr" >Youtube Mp3 Converter</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Téléchargement</h3>
-          <ul>
-            <li><a target="_blank" href="https://zone-telechargement.cam/" >Zone téléchargement</a> (<a target="_blank" href="https://www.forumzt.com/" >Forum zone téléchargement</a>)</li>
-            <li><a target="_blank" href="https://www.yggtorrent.nz/" >YGG Torrent</a> (<a target="_blank" href="https://mamot.fr/@YggTorrent" >Twitter yggtorrent</a>)</li>
-            <li><a target="_blank" href="https://www.reddit.com/r/deemix/" >Deemix</a></li>
-            <li><a target="_blank" href="http://libgen.rs/" >Livre en anglais</a></li>
-          </ul>
-         Outils en ligne pour PDF notamment Optical Character Recognition : <a target="_blank" href="https://tools.pdf24.org/fr/" >PDF 24</a>
-        </div>
-        <div class="box">
-          <h3>Android</h3>
-          <ul>
-            <li><a target="_blank" href="https://vancedapp.com/" >Youtube Vanced</a></li>
-            <li><a target="_blank" href="https://f-droid.org/" >F-droid</a></li>
-            <li><a target="_blank" href="https://www.reddit.com/r/deemix/" >reddit Deemix</a></li>
-          </ul>
-          Verifier les trackers d'une application : <a target="_blank" href="https://reports.exodus-privacy.eu.org/fr/" >Exodus privacy</a>
-          Verifier la presence de virus dans un fichier : <a target="_blank" href="https://www.virustotal.com/" >virustotal</a>
-        </div>
-        <div class="box">
-          <h3>Données personnelles</h3>
-          <p>Récupérer les données stockées sur Google avec Takeout : <a target="_blank" href="takeout.google.com/settings/takeout">Google takeout</a>.</p>
-          <h3>Outils pour les sites internet</h3>
-          <ul>
-            <li><a target="_blank" href="https://search.google.com/search-console">Google Console</a></li>
-            <li><a target="_blank" href="https://www.xml-sitemaps.com/">créer un site map</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Images</h3>
-          Icones et font 
-          <ul>
-            <li><a target="_blank" href="https://fontawesome.com/">Font awesome</a></li>
-          </ul>
-          Images gratuites
-          <ul>
-            <li>dictionnaires pour kobo<a target="_blank" href="https://github.com/BoboTiG/ebook-reader-dict">kobo ebook reader dict</a>
-            <li><a target="_blank" href="pexels.com">Pexels</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Streaming</h3>
-          Direct
-          <ul>
-            <li><a target="_blank" href="https://lewebde.com/chaine-de-television-canal-plus-bein-gratuit-streaming/">Forum</a></li>
-            <li><a target="_blank" href="http://channelstream.club/">Channel stream</a></li>
-            <li><a target="_blank" href="https://www.streamonsport.info/">Stream sport</a></li>
-          </ul>
-        </div>
-        <div class="box">
-          Cartes IGN :
-          <ul>
-            <li><a target="_blank" href="https://www.strava.com/">Strava</a> faire des itinéraires<a target="_blank" href="https://github.com/53RT/Strava-Promo-Codes"></a></li>
-            <li><a target="_blank" href="https://www.geoportail.gouv.fr/carte">Geoportail</a> cartes IGN gratuit</li>
-            <li><a target="_blank" href="https://www.visorando.com/">Viso rando</a>parcours et cartes</li>
-            <li><a target="_blank" href="http://www.hikamp.com/" >Hikamp</a> Sentiers de légende</li>
-          </ul>
-        </div>
-        <div class="box">
-          Articles pas cher sur Amazon pour avoir la livraison gratuite
-          <ul>
-            <li>La Princesse de Montpensier à 1,55 euros </li>
-            <li>Lucrèce Borgia à 1,55 euros </li>
-          </ul>
-        </div>
-      </article>
+        <nav>
+            <div class="boutonsZone">
+                <div id="modifier" class="boutonsBox circle">
+                    <i class="lni lni-pencil"></i>
+                </div>
+                <div id="styleCSS" style="display: none;" class="boutonsBox circle dark">
+                    <i class="fas fa-adjust"></i>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <a target="_blank" href="https://www.idealo.fr/prix/201587592/kindle-paperwhite-2021.html">Idealo kindle</a>
+            <a target="_blank" href="https://www.leboncoin.fr/recherche?category=42&text=casio&shippable=1&locations=Nice__43.7086398151207_7.250794488543972_10000_10000&price=min-30">Le Bon Coin Casio</a>
+        </header>
+        <section id="favori">
+            <a target="_blank" href="https://www-1.mailo.com/">
+                <i class="lni lni-envelope"></i>
+                Mailo
+            </a>
+            <a target="_blank" href="https://outlook.live.com/mail/inbox"><i></i>
+                Outlook
+            </a>
+            <a target="_blank" href="https://www.dealabs.com/">
+                <i class="lni lni-drop"></i>Dealabs
+            </a>
+            <a target="_blank" href="https://www.fip.fr/">
+                <i class="lni lni-music"></i>
+                FIP
+            </a>
+            <a target="_blank" href="https://www.deezer.com/fr/">
+                <i></i>Deezer
+            </a>
+            <a target="_blank" href="https://raw.githack.com/gdemare/aide-memoire/master/index.html"><i class="lni lni-github"></i>Memento</a>
+            <a target="_blank" href="https://raw.githack.com/gdemare/scienceDeLaVie/main/scienceDeLaVie.html"><i></i>Mes Cours</a>
+            <a target="_blank" href="https://login.unice.fr/login?service=https://ent.unice.fr/uPortal/Login">
+                <i class="lni lni-graduation"></i>Université
+            </a>
+            <a target="_blank" href="https://youtube.com">
+                <i class="lni lni-youtube"></i>
+                Youtube
+            </a>
+        </section>
+        <section id="contenu">
+            <article class="liste">
+                <div class="colonne liste10">
+                    <h3 id="liste10">Bureautique</h3>
+                    <a target="_blank" href="https://prezi.com/fr/">Prezzi</a>
+                    <a target="_blank" href="https://fr.sharelatex.com">ShareLatex</a>
+                </div>
+                <div class="colonne liste9">
+                    <h3 id="liste9">Autres</h3>
+                    <a target="_blank" href="https://ltl-chinois.fr/radicaux-chinois/">Radicaux chinois</a>
+                </div>
+                <div class="colonne liste8">
+                    <h3 id="liste8">Université</h3>
+                    <a target="_blank" href="http://sites.unice.fr/JMM/">Portail L2</a>
+                    <a target="_blank" href="http://www.unisciel.fr/">Unisciel</a>
+                    <a target="_blank" href="https://sport.univ-cotedazur.fr/fr/">UCA Sport</a>
+                    <a target="_blank" href="https://tb.clarityenglish.com/#prefix=NICE">Clarity english</a>
+                </div>
+                <div class="colonne liste7">
+                    <h3 id="liste7">Cloud</h3>
+                    <a target="_blank" href="https://degoo.com/me">
+                        Degoo
+                    </a>
+                    <a target="_blank" href="https://www.dropbox.com/home">
+                        Dropbox
+                    </a>
+                    <a target="_blank" href="https://onedrive.live.com/">
+                        Onedrive
+                    </a>
+                </div>
+                <div class="colonne liste6">
+                    <h3 id="liste6">Projets Web</h3>
+                    <a target="_blank" href="https://gdemare.shinyapps.io/movie_dashboard/">
+                        Films
+                    </a>
+                    <a target="_blank" href="https://raw.githack.com/gdemare/projet/master/ecologie/biodiversite.html">Stat biodiversité
+                    </a>
+                    <a target="_blank" href="https://taxonomie.github.io/">
+                        Science
+                    </a>
+                    <a target="_blank" href="https://raw.githack.com/gdemare/science/master/index.html">
+                        Taxonomie
+                    </a>
+                </div>
+                <div class="colonne liste5">
+                    <h3 id="liste5">Bourse</h3>
+                    <a target="_blank" href="https://onedrive.live.com/edit.aspx?cid=c0433d28e5866eca&page=view&resid=C0433D28E5866ECA!3708&parId=C0433D28E5866ECA!127&app=Excel">
+                        Atari
+                    </a>
+                </div>
+                <div class="colonne liste4">
+                    <h3 id="liste4">Window</h3>
+                    <a target="_blank" href="https://keepass.info/">
+                        Cryptomator
+                    </a>
+                    <a target="_blank" href="https://keepass.info/">
+                        Keepass
+                    </a>
+                </div>
+                <div class="colonne liste3">
+                    <h3 id="liste3">Presse</h3>
+                    <a target="_blank" href="https://www.nationalgeographic.fr/">
+                        National geographic
+                    </a>
+                    <a target="_blank" href="https://theconversation.com/fr">
+                        The conversation
+                    </a>
+                    <a target="_blank" href="https://www.encyclopedie-environnement.org/">Encyclopédie de l'environnement</a>
+                </div>
+                <div class="colonne liste2">
+                    <h3 id="liste2">GAFAM</h3>
+                    <a target="_blank" href="https://www.google.fr/maps">
+                        Google map
+                    </a>
+                    <a target="_blank" href="https://translate.google.fr/#view=home&op=translate&sl=fr&tl=en">
+                        Google translate
+                    </a>
+                    <a target="_blank" href="https://github.com/gdemare">
+                        Github
+                    </a>
+                </div>
+                <div class="liste1 colonne">
+                    <h3 id="liste1">Radio</h3>
+                    <a target="_blank" href="https://www.radiomeuh.com/">Radio meuh</a>
+                    <a target="_blank" href="http://www.divergence-fm.org/">Divergence FM</a>
+                </div>
+                <div class="vide"></div>
+                <div class="vide"></div>
+                <div class="vide"></div>
+                <div class="vide"></div>
+            </article>
+            <div class="bout" id="bout1">Mes notes<i class="lni lni-chevron-right"></i></div>
+            <article class="note" id="note1">
+                <h3>Musique</h3>
+                <p>Pour les écouteurs : <a target="_blank" href="https://audiobudget.com/leaderboard/iem">AudioBudjet</a></p>
+                <p>Converteurs
+                    <a target="_blank" href="http://streampocket.net/">Stream Pocket</a>
+                    <a target="_blank" href="https://clouddownloader.net">Youtube Converter Online</a></p>
+                <h3>Téléchargement</h3>
+                <p>Torrent :
+                    <a target="_blank" href="https://www.yggtorrent.nz/">YGG Torrent</a> (<a target="_blank" href="https://mamot.fr/@YggTorrent">Twitter yggtorrent</a>)</p>
+                <p>Films :
+                    <a target="_blank" href="https://zone-telechargement.cam/">Zone téléchargement</a> (<a target="_blank" href="https://www.forumzt.com/">Forum zone téléchargement</a>)</p>
+                <p>Musique
+                    <a target="_blank" href="https://www.reddit.com/r/deemix/">Deemix</a></p>
+                <a target="_blank" href="http://libgen.rs/">Livre en anglais</a>
+                <p>Outils en ligne pour PDF notamment Optical Character Recognition : <a target="_blank" href="https://tools.pdf24.org/fr/">PDF 24</a></p>
+                <h3>Android</h3>
+                <p>
+                    <a target="_blank" href="https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA">
+                        Apk Android sur mon drive
+                    </a><a target="_blank" href="https://vancedapp.com/">Youtube Vanced</a>
+                    <a target="_blank" href="https://f-droid.org/">F-droid</a>
+                    <a target="_blank" href="https://www.reddit.com/r/deemix/">reddit Deemix</a></p>
+                <p>Verifier les trackers d'une application : <a target="_blank" href="https://reports.exodus-privacy.eu.org/fr/">Exodus privacy</a></p>
+                <p>Verifier la presence de virus dans un fichier : <a target="_blank" href="https://www.virustotal.com/">virustotal</a></p>
+                <h3>Données personnelles</h3>
+                Récupérer les données stockées sur Google avec Takeout : <a target="_blank" href="takeout.google.com/settings/takeout">Google takeout</a>
+                <h3>Outils pour les sites internet</h3>
+                <a target="_blank" href="https://search.google.com/search-console">Google Console</a>
+                <a target="_blank" href="https://www.xml-sitemaps.com/">créer un site map</a>
+                <h3>Images</h3>
+                Icones et font
+                <a target="_blank" href="https://fontawesome.com/">Font awesome</a>
+                <a target="_blank" href="https://lineicons.com/icons/?type=free
+                Images gratuites">Font awesome</a>
+                dictionnaires pour kobo<a target="_blank" href="https://github.com/BoboTiG/ebook-reader-dict">kobo ebook reader dict</a>
+                <a target="_blank" href="pexels.com">Pexels</a>
+                <h3>Streaming</h3>
+                <p>Direct
+                    <a target="_blank" href="https://lewebde.com/chaine-de-television-canal-plus-bein-gratuit-streaming/">Forum</a>
+                    <a target="_blank" href="http://channelstream.club/">Channel stream</a>
+                    <a target="_blank" href="https://www.streamonsport.info/">Stream sport</a></p>
+                <p>Cartes IGN :
+                    <a target="_blank" href="https://www.strava.com/">Strava</a> faire des itinéraires</a>
+                    <a target="_blank" href="https://www.geoportail.gouv.fr/carte">Geoportail</a> cartes IGN gratuit
+                    <a target="_blank" href="https://www.visorando.com/">Viso rando</a>parcours et cartes
+                    <a target="_blank" href="http://www.hikamp.com/">Hikamp</a>Sentiers de légende</p>
+                <p>Articles pas cher sur Amazon pour avoir la livraison gratuite
+                    <ul>
+                        <li>La Princesse de Montpensier à 1,55 euros</li>
+                        <li>Lucrèce Borgia à 1,55 euros</li>
+                    </ul>
+                </p>
+            </article>
+            <div class="bout " id="bout2">Couleurs<i class="lni lni-chevron-right"></i></div>
+            <article class="note" id="note2">
+              <div class="horizon">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Hexa</th>
+                        <th>RGB</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #9de17b;"></div>
+                        </td>
+                        <td>#9de17b</td>
+                        <td>rgb(157,225,123)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #8ecb6e;"></div>
+                        </td>
+                        <td>#8ecb6e</td>
+                        <td>rgb(142,203,110)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #e3e1da;"></div>
+                        </td>
+                        <td>#e3e1da</td>
+                        <td>rgb(227,225,218)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #cdcbc5;"></div>
+                        </td>
+                        <td>#cdcbc5</td>
+                        <td>rgb(205,203,197)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #ffccd6;"></div>
+                        </td>
+                        <td>#ffccd6</td>
+                        <td>rgb(255,204,214)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #feb0bf;"></div>
+                        </td>
+                        <td>#feb0bf</td>
+                        <td>rgb(254,176,191)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #ffd632;"></div>
+                        </td>
+                        <td>#ffd632</td>
+                        <td>rgb(255,214,50)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #ffbc25;"></div>
+                        </td>
+                        <td>#ffbc25</td>
+                        <td>rgb(255,188,37)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #22bcfb;"></div>
+                        </td>
+                        <td>#22bcfb</td>
+                        <td>rgb(34,188,251)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #0166cb;"></div>
+                        </td>
+                        <td>#0166cb</td>
+                        <td>rgb(1,102,203)</td>
+                    </tr>
+                </table>
+                
+                 <table>
+        <tr>
+          <th></th>
+          <th>Hexa</th>
+          <th>RGB</th>
+        </tr>
+        <tr>
+          <td><div style="background-color: #9c27b0;" ></div></td>
+          <td>#9c27b0</td>
+          <td>rgb(156,39,176)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: #673ab7;" ></div></td>
+          <td>#673ab7</td>
+          <td>rgb(103,58,183)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: #e91e63;" ></div></td>
+          <td>#e91e63</td>
+          <td>rgb(233,30,99)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: #f44336;" ></div></td>
+          <td>#f44336</td>
+          <td>rgb(244,67,54)</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>
+      Light</th>
+          <th>Hexa</th>
+          <th>RGB</th>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(191,90,242);" ></div></td>
+          <td>#bf5af2</td>
+          <td>rgb(191,90,242)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(94,92,230);" ></div></td>
+          <td>#5e5ce6</td>
+          <td>rgb(94,92,230)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(64,156,255);" ></div></td>
+          <td>#409cff</td>
+          <td>rgb(64,156,255)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(100,210,255);" ></div></td>
+          <td>#64d2ff</td>
+          <td>rgb(100,210,255)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(48,209,88);" ></div></td>
+          <td>#30d158</td>
+          <td>rgb(48,209,88)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(172,142,104);" ></div></td>
+          <td>#ac8e68</td>
+          <td>rgb(172,142,104)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,214,10);" ></div></td>
+          <td>#ffd60a</td>
+          <td>rgb(255,214,10)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,159,10);" ></div></td>
+          <td>#ff9f0a</td>
+          <td>rgb(255,159,10)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,55,95);" ></div></td>
+          <td>#ff375f</td>
+          <td>rgb(255,55,95)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,69,58);" ></div></td>
+          <td>#ff453a</td>
+          <td>rgb(255,69,58)</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>
+      Dark</th>
+          <th>Hexa</th>
+          <th>RGB</th>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(175,82,222);" ></div></td>
+          <td>#af52de</td>
+          <td>rgb(175,82,222)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(88,86,214);" ></div></td>
+          <td>#5856d6</td>
+          <td>rgb(88,86,214)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(0,122,255);" ></div></td>
+          <td>#007aff</td>
+          <td>rgb(0,122,255)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(90,200,250);" ></div></td>
+          <td>#5ac8fa</td>
+          <td>rgb(90,200,250)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(52,199,89);" ></div></td>
+          <td>#34c759</td>
+          <td>rgb(52,199,89)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(162,132,94);" ></div></td>
+          <td>#a2845e</td>
+          <td>rgb(0,122,255)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,204,0);" ></div></td>
+          <td>#ffcc00</td>
+          <td>rgb(255,204,0)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,149,0);" ></div></td>
+          <td>#ff9500</td>
+          <td>rgb(255,149,0)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,45,85);" ></div></td>
+          <td>#ff2d55</td>
+          <td>rgb(255,45,85)</td>
+        </tr>
+        <tr>
+          <td><div style="background-color: rgb(255,59,48);" ></div></td>
+          <td>#ff3b30</td>
+          <td>rgb(255,59,48)</td>
+        </tr>
+      </table></div>
+            </article>
+        </section>
     </section>
 </body>
+
 </html>

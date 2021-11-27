@@ -5,6 +5,7 @@ body {
   font-weight: lighter;
   min-width: 600px;
   height: 100%;
+  background-color: rgb(13 17 23);
 }
 
 
@@ -13,20 +14,14 @@ global strurcture
 /*************************/
 
 nav {
-  position: fixed;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction:  row-reverse;
   align-items:flex-end;
-  z-index: 2;
-  top: 0px;
-  right: 0px;
-  padding-top: 0.2cm;
-  padding-bottom: 0.2cm;
   color: var(--color-write);
-  padding-left: 4em;
-  padding-right: 4em;
-  background-color: var(--color-fond);
-  border-bottom: 1px solid var(--color-bouton);
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  height: fit-content;
 }
   
 .boutonsZone {
@@ -88,7 +83,7 @@ nav {
   border-bottom-right-radius: 1.2em;
 }
 
-.boutonClic:hover, .circle:hover {
+.boutonClic:hover, .circle:hover, .developper:hover {
   cursor: pointer;
   color: white;
   background-color: var(--color-degrade1);
@@ -97,13 +92,22 @@ nav {
 
 /* entête */
 header {
-  flex-grow: 1;
+  width: 100%;
   font-weight: bold; 
   text-transform : capitalize;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #section {
   color: var(--color-titre);
+}
+
+#section section {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
 }
 
 #titre {
@@ -111,266 +115,224 @@ header {
   color: var(--color-boiteH2)
 }
 
-/*menu*/
-
-#menu {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  left: 0cm;
-  height: 100%;
-  width: 5cm;
-  background-color: var(--color-fondMenu);
-  padding-top: 2em;
-  color: var(--color-boiteH2);
-  padding-left: 0.5cm;
-  padding-right: 0.5cm;
-  overflow-y: auto;
-  font-size: 0.9em;
-}
-
-#menu h2 {
-  display: flex;
-  color: var(--color-titre);
-  text-transform: uppercase;
-  font-size: 0.8em;
-  line-height: 1em;
-  margin: 0px;
-  padding-top: 1em
-}
-
-#menu div i {
-  font-size: 0.8em;
-  margin: 0px;
-  padding-right: 0.3em;
-}
-
-#menu div {
-  width: fit-content;
-  text-transform: capitalize;
-  padding: 0.2em;
-  margin-bottom: 0.2em;
-  margin-top: 0.3em;
-}
-
-#menu div:last-child {
-  padding-bottom: 5em;
-}
-
-#menu div:hover {
-  cursor: pointer;
-  background: linear-gradient(to right, var(--color-degrade1), var(--color-degrade2));
-  color: white;
-  border-radius: 0.1cm;
-}
-
-.r, .sas, .python {
-  margin-left: 0.05cm; 
-  border-radius: 0.5cm;
-  font-size: 0.9em;
-  padding-left: 0.1cm;
-  padding-right: 0.125cm;
-  color: var(--color-boite);
-}
-.r { 
-  background-color: var(--color-orange);
-}
-
-.sas {
-  background-color: var(--color-purple);
-}
-
-.python { 
-  background-color: rgb(52,199,89);/*rgb(8,209,88) dark*/
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 0.5em;
-  background: var(--color-nav);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #409cff;
-  cursor: pointer; 
-}
-
-.selection {
-  font-weight: bold;
-}
-
 /*contenu de la page*/
-#page {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  padding-left: 4em;
-  padding-right: 4em;
-  flex: 1;
-  z-index: 1;
-  background-color: var(--color-fond);
-  box-shadow:-5px 0px 10px rgb(243,243,243);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1em;
-  overflow-y: auto;
-}
-
-article {
-  max-width: 980px;
-  width: 100%;
-  align-content: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/*boite avec des niveaux*/
-h2 {
-  display: flex;
-  text-align: left;
-  padding: 0px;
-  font-size: 1.2em;
-  color: var(--color-titre); 
-  color: var(--color-boiteH2);
-  width: 100%;
-  margin: 0px;
-  margin-top: 1.5em;
-  margin-bottom: 0.4em;
-  margin-left: 0.3em;
-  border-radius: 0.3em;
-  max-width: 980px;
-}
-
-a { 
-  text-decoration: none;  
-}
-
-.favori {
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
-.favori a {
-  background-color: var(--color-boite);
-  margin-left: 0.4em;
-  margin-bottom: 0.4em;
-  border-radius: 0.3em;
-  padding: 0.2em;
-  width: 1.8em;
-  color: var(--color-write);
-}
-
-.favori a, .fichier i {
-  font-size: 1.7em;
-}
-
-.favori a:hover, .fichier a:hover  {
-  color: white;
+a:hover, .note a:hover {
   background-color: var(--color-degrade1);
 }
 
-.fichier {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-.fichier .box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-right: 0.4em;
-  margin-bottom: 0.4em;
-  flex : 1;
-  background-color: var(--color-boite);
-  border-radius: 0.3em;
-  padding-bottom: 0.4em;
-  padding-top: 0.4em;
-}
-
-.fichier a {
+#page {
   color: var(--color-write);
-  font-weight: bold; 
+  /*position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;*/
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#favori {
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 0.3em;
-  padding: 0.2em;
-  width: 4em;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-  margin-left: 0.4em;
+  background-color: var(--color-fond);
   height: fit-content;
-  font-size: 0. 9em;
+  width: fit-content;
+  margin-right: 0.3em;
+  min-width: 15%;
 }
 
-.fichier i {
-  height: 1em;
-}
-
-.excel {
-  color: var(--color-green);
-}
-
-.code {
-  color: var(--color-white);
-}
-
-.fa-folder, .fa-circle {
-  color: var(--color-yellow);
-}
-
-.note {
+#contenu {
+  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  height: fit-content;
-  align-items: stretch;
+  flex-direction: column;
+  border-radius: 0.3em;
 }
 
-.note .box {
+#contenu article {
+  margin-bottom: 0.6em;
+}
+
+a {
+  color: var(--color-write);
+  text-decoration: none;
+}
+
+#favori a {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
   padding-left: 0.8em;
   padding-right: 0.8em;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
-  margin-right: 0.4em;
-  margin-bottom: 0.4em;
+  padding-bottom: 0.3em;
+  border-top: 1px solid var(--color-fondMenu);
   border-radius: 0.3em;
+}
+
+#favori i {
+  position: relative;
+  top : -0.1em;
+  padding-right: 0.2em;
+  font-size: 1.2em;
+  text-align: center;
+  width: 1.2em;
+  margin-right: 0.2em;
+}
+
+#favori a:first-child {
+  border-top: none;
+}
+
+/**contenu***/
+.liste {
+  flex-direction: row;
+  justify-content: center ;
+  align-items: top;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:0px;
+}
+
+.vide, .colonne {
+  flex-grow: 1;
+  padding: 0;
+  width: 10em;
+  min-width: 22%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-fond);
+  height: fit-content;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.colonne:last-child, .vide:last-child {
+  margin-right: 0px;
+}
+
+.liste a {
+  display: none;
+  flex-direction: row;
   color: var(--color-write);
+  border-top: 2px solid var(--color-fondMenu);
+  padding: 0.4em;
+  padding-left: 1em;
+  padding-right: 0em;
+  border-radius: 0.3em;
+}
+
+.liste h3 {
+  margin: 0px;
+  padding: 0.4em;
+  text-align: center;
+  font-weight: normal;
+}
+
+/****Notes****/
+.note {
+  background-color: var(--color-fond);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 1.2em;
+  padding-right: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+
+
+.note a, header a {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.2em;
+  color: var(--color-write);
+  border-radius: 0.3em;
+  top: -0.2em;
+  padding: 0.5em;
+  height: fit-content;
   background-color: var(--color-boite);
-  flex: 1;
-  min-width: 20%;
+} 
+
+header a {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.note a, {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 
 .note h3 {
+  display: flex;
   margin: 0px;
-  padding: 0px;
-  margin-bottom: 0.15em;
-  font-weight: weight;
-  font-size: 1em;
+  font-weight: normal;
+  font-size: 1.6em;
+  border-top: 2px solid var(--color-fondMenu);
+  padding-top: 0.6em; 
+  padding-bottom: 0.6em;
+  width: 100%;
 }
 
-.note a {
-  width: fit-content;
-  color: var(--color-boiteH2);
-  text-decoration: none;
-  font-size: 1em;
+.note h3:first-child {
+  border-top: none;
+  margin-top: 0em;
 }
 
-.note a:hover {
+
+ul, p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;  
+  margin: 0px;
+  margin-top: 0.4em;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.bout {
+  font-size: 1.2em;
+  background-color: var(--color-fond);
+  text-align: left;
+  border-radius: 0.3em;
+  margin-bottom:0.1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 2em;
+}
+
+.bout i {
+  font-size: 0.8em;
+  padding-left: 0.5em;
+}
+
+.bout:hover, .liste h3:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
-p, ul {
-  margin: 0px;
+
+table div {
+  height: 2em;
+  min-width: 2em;
+}
+
+.horizon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align:  
 }
