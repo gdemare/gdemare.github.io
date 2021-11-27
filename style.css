@@ -193,7 +193,7 @@ a {
 /**contenu***/
 .liste {
   flex-direction: row;
-  justify-content: center ;
+  justify-content: space-between;
   align-items: top;
   display: flex;
   flex-wrap: wrap;
@@ -244,8 +244,8 @@ a {
   justify-content: flex-start;
   padding-left: 1.2em;
   padding-right: 1.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
   border-radius: 0.3em;
   border-bottom-right-radius: 0.3em;
   border-bottom-left-radius: 0.3em;
@@ -313,6 +313,8 @@ ul {
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   padding-left: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .bout i {
@@ -340,13 +342,29 @@ table div {
 
 @media only screen and (max-device-width:734px) {
     body {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     #favori {
       width:100%;
       margin-bottom: 1em;
       margin-right: 0em;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+
+    nav {
+        padding-top: 10em;
+    }
+
+    #page {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+
+    header {  
+      margin-left: 0.5em;
+      margin-right: 0.5em;
     }
 
     header a {
