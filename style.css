@@ -34,7 +34,7 @@ nav {
   flex-direction: column;
   text-align: center; 
   background-color: var(--color-bouton);
-  margin-right: 1em;
+  margin-left: 1em;
   border-radius: 0.2em;
 }
 
@@ -134,6 +134,7 @@ a:hover, .note a:hover {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-bottom: 2em;
 }
 
 #favori {
@@ -335,4 +336,28 @@ table div {
   flex-direction: row;
   flex-wrap: wrap;
   text-align:  
+}
+
+@media only screen and (max-device-width:734px) {
+    body {
+        font-size: 3em;
+    }
+
+    #favori {
+      width:100%;
+      margin-bottom: 1em;
+      margin-right: 0em;
+    }
+
+    header a {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 0.3em;
+    }
+
+    .boutonsBox i {
+    width: 2em;
+    height: 2em;
+  }
 }
