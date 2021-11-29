@@ -172,7 +172,7 @@ a {
   flex-direction: row;
   padding: 0.5em;
   padding-left: 0.8em;
-  padding-right: 0.8em;
+  padding-right:2em;
   padding-bottom: 0.3em;
   border-top: 2px solid var(--color-fondMenu);
 }
@@ -250,36 +250,43 @@ a {
   border-radius: 0.3em;
   border-bottom-right-radius: 0.3em;
   border-bottom-left-radius: 0.3em;
+  padding-bottom: 2em;
 }
 
+header a  {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-left: 0.2em;
+  color: var(--color-write);
+  border-radius: 0.3em;
+  padding: 0.5em;
+  background-color: var(--color-boite);
+}
 
-.note a, header a {
+.note a {
   display: inline-block;
   position: relative;
   margin-left: 0.2em;
   color: var(--color-write);
   border-radius: 0.3em;
-  top: -0.2em;
   padding: 0.5em;
-  height: fit-content;
   background-color: var(--color-boite);
-} 
-
-header a {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-.note a, {
+  height: fit-content;
+  flex-wrap: nowrap;
+  border: solid 1px var(--color-fondMenu);
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+} 
+
+.note a:hover {
+  border: solid 1px var(--color-fondMenu);
 }
 
 .note h3 {
   display: flex;
   margin: 0px;
   font-weight: normal;
-  font-size: 1.6em;
+  font-size: 1.5em;
   border-top: 2px solid var(--color-fondMenu);
   padding-top: 0.6em; 
   padding-bottom: 0.6em;
@@ -293,17 +300,15 @@ header a {
 
 
 ul, p {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;  
   margin: 0px;
-  margin-top: 0.4em;
 }
 
 ul {
   display: flex;
   flex-direction: column;
 }
+
 
 .bout {
   font-size: 1.2em;
@@ -329,7 +334,6 @@ ul {
   cursor: pointer;
 }
 
-
 table div {
   height: 2em;
   min-width: 2em;
@@ -353,10 +357,20 @@ table div {
       margin-right: 0em;
       margin-left: 0.5em;
       margin-right: 0.5em;
+      font-size: 1.2em;
+    }
+
+    #favori a {
+      border-top: 5px solid var(--color-blue2);
     }
 
     nav {
         padding-top: 10em;
+    }
+
+    .liste a {
+      font-size: 1.2em;
+      border-top: 5px solid var(--color-blue2);
     }
 
     #page {
@@ -374,10 +388,28 @@ table div {
       padding-left: 0px;
       padding-right: 0px;
       margin-bottom: 0.3em;
+      margin-left: 0px;
     }
 
     .boutonsBox i {
-    width: 2em;
-    height: 2em;
-  }
+      width: 2em;
+      height: 2em;
+    } 
+
+
+    .note {
+      font-size: 0.6em;
+      line-height: 3em;
+      justify-content: center;
+    }
+
+    .note h3 {
+      font-size: 2.1em;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .note a, .note ul, .note td, .note th {
+      font-size: 1.9em;
+    }
 }
