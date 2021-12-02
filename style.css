@@ -362,15 +362,24 @@ table div {
 
     #favori a {
       border-top: 5px solid rgb(13 17 23);
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;  
     }
 
     nav {
         padding-top: 10em;
     }
 
+    .liste h3 {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+
     .liste a {
       font-size: 1.2em;
       border-top: 5px solid rgb(13 17 23);
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
     }
 
     #page {
@@ -391,16 +400,15 @@ table div {
       margin-left: 0px;
     }
 
-    .boutonsBox i {
-      width: 2em;
-      height: 2em;
-    } 
-
-
     .note {
       font-size: 0.6em;
       line-height: 3em;
       justify-content: center;
+    }
+
+    .bout {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
     }
 
     .note h3 {
