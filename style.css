@@ -368,6 +368,8 @@ table div {
 
     nav {
         padding-top: 10em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 
     .liste h3 {
@@ -420,4 +422,14 @@ table div {
     .note a, .note ul, .note td, .note th {
       font-size: 1.9em;
     }
+
+    .boutonsBox { 
+
+    }
+
+    .boutonsBox i {
+      width: 2em;
+      height: 2em;
+    } 
+
 }
