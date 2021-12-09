@@ -221,7 +221,7 @@ a {
 }
 
 .liste a {
-  display: none;
+  display: flex;
   flex-direction: row;
   color: var(--color-write);
   border-top: 2px solid var(--color-fondMenu);
@@ -382,6 +382,7 @@ table div {
       border-top: 5px solid rgb(13 17 23);
       padding-top: 0.5em;
       padding-bottom: 0.5em;
+      display: none;
     }
 
     #page {
