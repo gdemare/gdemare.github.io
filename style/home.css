@@ -78,15 +78,21 @@
 }
 
 @media only screen and (max-device-width:734px) {
+  :root{
+    --color-nav: rgb(19,17,28);
+  } 
+
   .favori a {
     width: 100%;
     margin: 0px;
     border-radius: 0px;
+    border-top: 2px solid var(--color-body);
   }
 
   .favori a:first-child {
     border-top-right-radius: 0.3em;
     border-top-left-radius: 0.3em;
+    border-top: none;
   }
   .favori a:last-child {
     border-bottom-right-radius: 0.3em;

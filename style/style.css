@@ -26,6 +26,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 /* Handle */
@@ -167,7 +168,7 @@ article {
   }
 
   .bouton {
-    flex-grow: 1
+    flex-grow: 1;
   }
 
   .bouton:first-child {
@@ -202,16 +203,19 @@ article {
   }
 
   section {
-    width: 100%;
+    flex-grow:1;
+    min-width: 100%;
   }
 
-  #contenu {
+  article {
     font-size: 80%;
   }
-
+  #contenu {
+    margin-left: 3cm;
+    margin-right: 3cm;
+  }
   #contenu table {
     width: 100%;
-    font-size: 150%;
   }
 }
 

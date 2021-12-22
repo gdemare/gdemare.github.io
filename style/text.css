@@ -16,7 +16,7 @@
    border-radius: 0.1cm;
    padding: 0.1cm;
    line-height: 1.5em;
-   overflow-x: auto;
+   overflow: auto;
 }
 
 #contenu a {
@@ -103,6 +103,8 @@
   display: block;
 }
 
-#contenu code {
+#contenu pre {
   overflow:auto;
+  display: inline-grid;
+  width: 100%;
 }
