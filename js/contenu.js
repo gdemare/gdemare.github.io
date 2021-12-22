@@ -225,11 +225,11 @@ loadContenu(url+"accueil.html",0, "contenuHome");
 $('#home').click(function() {
   document.getElementById("contenu").innerHTML = "";
   loadContenu(url+"/html/accueil.html",0, "contenuHome");
-  
 });
 
 //************fonction***************//
 function edit (url) {
+  url = url.replace('https://raw.githubusercontent.com/gdemare/gdemare.github.io/', 'https://github.com/gdemare/gdemare.github.io/edit/');
   document.getElementById("edit").setAttribute('href', url);
 };
 
