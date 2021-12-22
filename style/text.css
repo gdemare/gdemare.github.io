@@ -1,0 +1,100 @@
+:root{
+  --color-hover: rgb(0,122,255);
+  --color-nav: rgb(29,27,38);
+  --color-body: rgb(33,32,42);
+  --color-police: rgb(236,238,240);
+  --color-indigo: rgb(94,92,230);
+  --color-orange: rgb(255,159,10);
+  --color-green: rgb(48, 209, 88);
+  --color-bouton: rgb(44,44,46);
+  --color-gray: rgb(142,142,147);
+  --color-red: rgb(255,55,95);
+}
+
+#contenu pre, #contenu code {
+   background-color: var(--color-bouton);
+   border-radius: 0.1cm;
+   padding: 0.1cm;
+   line-height: 1.5em;
+   overflow-x: auto;
+}
+
+#contenu a {
+  color: var(--color-hover);
+  text-decoration: none;
+  background: none;
+}
+
+#contenu a:link {
+  text-decoration: none;
+}
+
+#contenu a:hover {
+  text-decoration: underline;
+}
+
+#contenu mark {
+  color: var(--color-red);
+  margin: 0px;
+  background-color: transparent;
+  border-radius: 0.1cm;
+}
+
+/*propiété du texte*/
+
+#contenu h2 {
+  border-top: solid 1px var(--color-bouton);
+  color: var(--color-boiteH2);
+  font-size: 1.4em;
+  width: 100%;
+  font-weight: normal;
+}
+
+#contenu h2:first-child {
+  border: none;
+}
+
+#contenu h3 {
+  font-size: 1.2em;
+  margin: 0px;
+  min-width: 100%;
+  font-weight: normal;
+}
+
+#contenu table {
+  text-align: left;
+  border-collapse: collapse;
+  min-width: 50%;
+}
+
+#contenu th {
+  border-bottom: solid 1px var(--color-bouton);
+  font-weight: normal;
+}
+
+#contenu th:first-child {
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+
+#contenu th:last-child {
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+
+#contenu tr {
+  border-top: 1px solid var(--color-bouton);
+}
+
+#contenu tr:first-child {
+  border: none;
+}
+
+#contenu th {
+  padding: 0.2cm;
+}
+
+#contenu td {
+  font-size: 0.9em;
+  padding: 0.2cm;
+}

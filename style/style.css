@@ -1,0 +1,274 @@
+:root{
+  --color-hover: rgb(0,122,255);
+  --color-nav: rgb(29,27,38);
+  --color-body: rgb(33,32,42);
+  --color-police: rgb(236,238,240);
+  --color-indigo: rgb(94,92,230);
+  --color-orange: rgb(255,159,10);
+  --color-green: rgb(48, 209, 88);
+  --color-bouton: rgb(44,44,46);
+  --color-gray: rgb(142,142,147);
+}
+
+body {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  background-color: var(--color-body);
+  display: flex;
+  color: var(--color-police);
+  flex-direction: row;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5em;
+  background: var(--color-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #409cff;
+  cursor: pointer; 
+}
+
+/*****Liens <a>****/
+a, nav div:hover {
+  color: var(--color-police);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover, .bouton:hover, nav div:hover, .favori a:hover {
+  background-color: var(--color-hover);
+  border-radius: 0.3em;
+  border: none;
+  cursor: pointer;
+}
+
+#fantome {
+  height: 10cm;
+  background-color: green;
+}
+/*****structure globale******/
+nav {
+  z-index: 0;
+  display: none;/*a cachger*/
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: var(--color-nav);
+  min-width: 18%;
+  padding-top: 0.2cm;
+  padding-bottom: 1cm;
+  position: fixed;
+  overflow-y: auto;
+  bottom: 0px;
+}
+
+section {
+  flex:1 ;
+  display: flex;
+  padding-bottom: 1cm;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1cm;
+  padding-right: 1cm;
+  padding-top: 0.5cm;
+}
+
+/***nav**/
+
+nav a, nav div {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  padding-right:2em;
+  padding-bottom: 0.3em;
+  background-color: var(--color-nav);
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--color-nav);
+  display: flex;
+  padding-top: 0.2cm;
+  padding-bottom: 0.2cm;
+  text-align: center;
+  border-bottom: solid 2px var(--color-body);
+  min-height: 1cm;
+}
+
+.bouton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2em;
+  margin-right: 8px;
+  border: solid 1px var(--color-gray);
+  padding-right: 0.2cm; 
+  padding-left: 0.2cm;
+  min-width: 8%;
+}
+
+.bouton:hover {
+  border: solid 1px var(--color-nav);
+}
+
+.bouton:first-child {
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+#grand {
+  flex-grow:1;
+  min-width:1cm;
+}
+
+/**section**/
+article {
+  max-width: 25cm;
+  width: 100%;
+}
+
+#contenu {
+    line-height: 1.5;
+  }
+
+@media only screen and (max-device-width:734px) {
+  body {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 120%;
+  }
+
+  header {
+    top: 0px;
+    height: 2.5cm;
+  }
+
+  .bouton {
+    flex-grow: 1
+  }
+
+  .bouton:first-child {
+    margin-right: 8px;
+  }
+
+  #grand {
+    display: none;
+  }
+
+  nav {
+    display: none;
+    left: 0px;
+    right: 0px;
+    width: auto;
+  }
+
+  nav a {
+    margin-left: 1em;
+    margin-right: 1em;
+
+  }
+
+  #fantome {
+    display: none;
+  }
+
+  article {
+    border-radius: 0.2em;
+    margin-top: 0.5cm;
+    padding: 0cm;
+  }
+}
+
+/**spécificité nav***/
+
+nav h2 {
+  display: flex;
+  color: rgb(99,99,102);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  line-height: 1em;
+  margin: 0px;
+  padding-top: 1em;
+  padding-bottom: 0.2cm;
+}
+
+nav div {
+  text-transform: capitalize;
+}
+
+#legende {
+  flex-direction: column;
+}
+
+#legende:hover, #legende div:hover {
+  background: none;
+}
+
+#legende div {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.r, .sas, .python {
+  display: block;
+  margin-top: 0.05cm;
+  margin-left: 0.05cm;
+  border-radius: 0.5cm;
+  width: 0.7em;
+  height: 0.7em;
+  color: var(--color-boite);
+}
+
+#legende .r, #legende .sas, #legende .python {
+  margin-right: 0.2cm; 
+}
+
+.r { 
+  background-color: rgb(255,159,10,0.6);
+}
+
+.sas {
+  background-color: rgb(191,90,242,0.6);
+}
+
+.python { 
+  background-color: rgb(52,199,89,0.6);
+}
+
+/*spécificité articles*/
+#categorie {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#titre {
+  text-transform: capitalize;
+  font-size: 200%;
+  border-bottom: solid 1px var(--color-police);
+}
+
+#br, #bsas, #bpython, #bgeneral {
+  display: none;
+}
+
+.selection {
+  font-weight: bold;
+  background-color: rgb(55,54,63);
+  border-radius: 0.3em;
+}

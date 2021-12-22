@@ -1,0 +1,90 @@
+:root{
+  --color-hover: rgb(0,122,255);
+  --color-nav: rgb(29,27,38);
+  --color-body: rgb(33,32,42);
+  --color-police: rgb(236,238,240);
+  --color-indigo: rgb(94,92,230);
+  --color-orange: rgb(255,159,10);
+  --color-green: rgb(48, 209, 88);
+  --color-bouton: rgb(44,44,46);
+  --color-gray: rgb(142,142,147);
+  --color-red: rgb(255,55,95);
+}
+
+.favori {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.favori a {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0.5em;
+  background-color: var(--color-nav);
+  border-radius: 0.3em;
+  min-width: 10%;
+  margin-bottom: 0.3em;
+}
+
+.liste {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:0px;
+}
+
+.vide, .colonne {
+  flex-grow: 1;
+  padding: 0;
+  width: 10em;
+  min-width: 22%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-nav);
+  height: fit-content;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.colonne:last-child, .vide:last-child {
+  margin-right: 0px;
+}
+
+.liste a {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-write);
+  border-top: 2px solid var(--color-body);
+  padding: 0.4em;
+  padding-left: 1em;
+  padding-right: 0em;
+}
+
+.liste h3 {
+  margin: 0px;
+  padding: 0.4em;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media only screen and (max-device-width:734px) {
+  .favori a {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .colonne {
+    width: 100%;
+    margin: 0px;
+    margin-top: 1em;
+  }
+}
