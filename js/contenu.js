@@ -156,7 +156,7 @@ for (var i = 0; i <= menuSub.length - 1; i++) {
 
 //********************** selection*******************************
 
-var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' 
+var url = 'https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/' 
 
 // charger les pages et ajouter la classe sélection
 for (var i = 0; i <= content[0].length - 1; i++) {
@@ -173,7 +173,7 @@ for (var i = 0; i <= content[0].length - 1; i++) {
     for (var j = 6; j>2 ;  j--) {
       if (page[j] == 1) {stop = j;};
     };
-    var lien = url + page[7];
+    var lien = url+ 'aide-memoire/' + page[7];
     if (stop == 3 ) {loadContenu(lien+'.md', 1, "contenu")};
     if (stop == 4 ) {loadContenu(lien+'_r.md', 1, "contenu")};
     if (stop == 5 ) {loadContenu(lien+'_sas.md', 1, "contenu")};
@@ -221,16 +221,17 @@ function bouton(selection) {
   };
 };
 
-loadContenu(url+"accueil.html",0, "contenuHome");
+loadContenu(url+"html/accueil.html",0, "contenuHome");
 $('#home').click(function() {
   document.getElementById("contenu").innerHTML = "";
-  loadContenu(url+"/html/accueil.html",0, "contenuHome");
+  loadContenu(url+"html/accueil.html",0, "contenuHome");
 });
 
 //************fonction***************//
 function edit (url) {
-  url = url.replace('https://raw.githubusercontent.com/gdemare/gdemare.github.io/', 'https://github.com/gdemare/gdemare.github.io/edit/');
-  document.getElementById("edit").setAttribute('href', url);
+  console.log(url)
+  var modif = url.replace('raw.githubusercontent.com/gdemare/gdemare.github.io','github.com/gdemare/gdemare.github.io/edit');
+  document.getElementById("edit").setAttribute('href', modif);
 };
 
 // charger le contenu des pages
