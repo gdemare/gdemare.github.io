@@ -98,3 +98,11 @@
   font-size: 0.9em;
   padding: 0.2cm;
 }
+
+#contenu ul {
+  display: block;
+}
+
+#contenu code {
+  overflow:auto;
+}

@@ -221,7 +221,8 @@ function bouton(selection) {
   };
 };
 
-loadContenu(url+"accueil.html",0, "contenuHome");
+loadContenu("https://raw.githubusercontent.com/gdemare/aide-memoire/master/statistique/manipuler-donnees_r.md",1, "contenu");
+//loadContenu(url+"accueil.html",0, "contenuHome");
 $('#home').click(function() {
   document.getElementById("contenu").innerHTML = "";
   loadContenu(url+"/html/accueil.html",0, "contenuHome");

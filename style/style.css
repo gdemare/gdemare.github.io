@@ -79,8 +79,8 @@ section {
   padding-bottom: 1cm;
   flex-direction: column;
   align-items: center;
-  padding-left: 1cm;
-  padding-right: 1cm;
+  margin-left: 1cm;
+  margin-right: 1cm;
   padding-top: 0.5cm;
 }
 
@@ -107,6 +107,8 @@ header {
   text-align: center;
   border-bottom: solid 2px var(--color-body);
   min-height: 1cm;
+  left: 0px;
+  right: 0px;
 }
 
 .bouton {
@@ -158,6 +160,12 @@ article {
     height: 2.5cm;
   }
 
+  header a, header div {
+    flex-grow: 1;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .bouton {
     flex-grow: 1
   }
@@ -191,6 +199,19 @@ article {
     border-radius: 0.2em;
     margin-top: 0.5cm;
     padding: 0cm;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #contenu {
+    font-size: 80%;
+  }
+
+  #contenu table {
+    width: 100%;
+    font-size: 150%;
   }
 }
 
