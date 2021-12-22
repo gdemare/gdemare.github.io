@@ -224,7 +224,7 @@ function bouton(selection) {
 loadContenu(url+"accueil.html",0, "contenuHome");
 $('#home').click(function() {
   document.getElementById("contenu").innerHTML = "";
-  loadContenu(url+"accueil.html",0, "contenuHome");
+  loadContenu(url+"/html/accueil.html",0, "contenuHome");
   
 });
 
