@@ -218,11 +218,11 @@ dbConnect(MySQL(), paramètre)
 on.exit(dbDisconnect(con))
 ```
 Paramètre : 
-	* `dbname = "smur"`
-	* `host = "10.60.11.4"`
-	* `port = 3306`
-	* `user = "statistique"`
-	* `password = "statistique"`
+* `dbname = "smur"`
+* `host = "10.60.11.4"`
+* `port = 3306`
+* `user = "statistique"`
+* `password = "statistique"`
 
 * `requete = sqlInterpolate(connection, "SELECT * FROM acte WHERE acte_code = ?id", id = acteId)` créer et controler les variables utilisées dans la requete.
 * `dbGetQuery(connection, requete)` exécuter la requete.

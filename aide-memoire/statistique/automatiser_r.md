@@ -1,3 +1,5 @@
+# Automatiser avec R
+
 ## Fonction
 ```
 nomFonction <- function(x){
@@ -17,5 +19,5 @@ if ( test_expression1) {
 }
 ```
 
-* `assign(nom, valeur)` Créer des variables avec une boucle
-* `get(nom)` appeler une variable
+* `assign(nom, valeur)` créer des variables avec une boucle.
+* `get(nom)` appeler une variable.
