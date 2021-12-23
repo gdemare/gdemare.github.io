@@ -191,7 +191,7 @@ function bouton(selection) {
     bpython = document.getElementById("bpython"),
     bsas = document.getElementById("bsas"),
     br = document.getElementById("br"),
-    lien = url + actuel[7];
+    lien = url + 'aide-memoire/' + actuel[7];
     console.log(lien)
   // défaut masquer
   bgeneral.style.display = "none";

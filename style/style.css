@@ -6,8 +6,10 @@
   --color-indigo: rgb(94,92,230);
   --color-orange: rgb(255,159,10);
   --color-green: rgb(48, 209, 88);
-  --color-bouton: rgb(44,44,46);
+  --color-bouton: rgb(40,40,80);
   --color-gray: rgb(142,142,147);
+  --color-code: rgb(44,44,46);
+  --color-home: rgb(54,54,64);
 }
 
 body {
@@ -119,14 +121,10 @@ header {
   align-items: center;
   border-radius: 0.2em;
   margin-right: 8px;
-  border: solid 1px var(--color-gray);
+  background-color: var(--color-bouton);
   padding-right: 0.2cm; 
   padding-left: 0.2cm;
   min-width: 8%;
-}
-
-.bouton:hover {
-  border: solid 1px var(--color-nav);
 }
 
 .bouton:first-child {
@@ -153,7 +151,7 @@ article {
   body {
     flex-direction: column-reverse;
     align-items: center;
-    font-size: 250%;
+    font-size: 35px;
   }
 
   header {
@@ -169,6 +167,7 @@ article {
 
   .bouton {
     flex-grow: 1;
+    padding: 0cm;
   }
 
   .bouton:first-child {
@@ -208,14 +207,27 @@ article {
   }
 
   article {
-    font-size: 80%;
   }
+
   #contenu {
-    margin-left: 3cm;
-    margin-right: 3cm;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 50%;
   }
   #contenu table {
     width: 100%;
+    font-size: 200%;
+  }
+
+  #contenu code {
+    font-size: 120%;
+  }
+
+  #contenu table code {
+    font-size: 100%;
+  }
+  #contenu pre code {
+    font-size: 150%;
   }
 }
 

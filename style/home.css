@@ -1,16 +1,3 @@
-:root{
-  --color-hover: rgb(0,122,255);
-  --color-nav: rgb(29,27,38);
-  --color-body: rgb(33,32,42);
-  --color-police: rgb(236,238,240);
-  --color-indigo: rgb(94,92,230);
-  --color-orange: rgb(255,159,10);
-  --color-green: rgb(48, 209, 88);
-  --color-bouton: rgb(44,44,46);
-  --color-gray: rgb(142,142,147);
-  --color-red: rgb(255,55,95);
-}
-
 .favori {
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +11,7 @@
   margin-left: 5px;
   margin-right: 5px;
   padding: 0.5em;
-  background-color: var(--color-nav);
+  background-color: var(--color-home);
   border-radius: 0.3em;
   min-width: 10%;
   margin-bottom: 0.3em;
@@ -47,7 +34,7 @@
   min-width: 22%;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-nav);
+  background-color: var(--color-home);
   height: fit-content;
   border-radius: 0.3em;
   margin-left: 0.5em;

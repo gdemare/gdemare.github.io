@@ -9,7 +9,7 @@
   "description":"",
   "icons":[
 {
-    "src": "images/icon-line.png",
+    "src": "icons/icon-line.png",
     "sizes": "512x512",
     "type": "image/png"
 }]
