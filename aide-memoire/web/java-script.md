@@ -89,6 +89,7 @@ if (conditon) {
  for (i = 0; condition; i++) {
  }
 ```
+Continue tant que la condition est vraie.
 
 ### Fonction
 
