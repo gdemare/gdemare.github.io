@@ -72,8 +72,8 @@ donnee = [
     ['unix', null, 'vim', 1, 0, 0, 0],
     ['web', null, 'css', 1, 0, 0, 0],
     ['web', null, 'html', 1, 0, 0, 0],
-    ['web', null, 'js', 1, 0, 0, 0],
-    ['web', null, 'php', 1, 0, 0, 0],
+    ['web', null, 'java-script', 1, 0, 0, 0],
+    ['web', null, 'php', 1, 0, 0, 0]
 ];
 
 //******************************
@@ -192,7 +192,6 @@ function bouton(selection) {
     bsas = document.getElementById("bsas"),
     br = document.getElementById("br"),
     lien = url + 'aide-memoire/' + actuel[7];
-    console.log(lien)
   // défaut masquer
   bgeneral.style.display = "none";
   bpython.style.display = "none";
@@ -225,23 +224,22 @@ loadContenu(url+"html/accueil.html",0, "contenuHome");
 $('#home').click(function() {
   document.getElementById("contenu").innerHTML = "";
   loadContenu(url+"html/accueil.html",0, "contenuHome");
+  homeMenu();
 });
 
 //************fonction***************//
 function edit (url) {
-  console.log(url)
   var modif = url.replace('raw.githubusercontent.com/gdemare/gdemare.github.io','github.com/gdemare/gdemare.github.io/edit');
   document.getElementById("edit").setAttribute('href', modif);
 };
 
 // charger le contenu des pages
 function loadContenu(url, markdown, id) {
+  console.log(url)
   var aPromise = fetch(url);
   // Work with Promise object:
   aPromise
       .then(function(response) {
-          console.log("OK! Server returns a response object:");
-          console.log(response);
           if (!response.ok) {
               throw new Error("HTTP error, status = " + response.status);
           }
@@ -289,6 +287,25 @@ function recherche(tableau, id) {
     return i
     }
   };
+};
+function homeMenu () {
+  console.log('pute')
+  for (var i=1; i<=10; i++) {
+    var liste = "liste"+i
+    $( "#"+liste ).click( function() {
+      var h3id = $(this)[0].id
+      var liens = document.getElementsByClassName(h3id)[0].getElementsByTagName("a")
+      for (var i = liens.length - 1; i >= 0; i--) {
+        console.log(liens[i].style.display == "none")
+        if (liens[i].style.display == "flex") {
+          liens[i].style.display = "none"  
+        } else {
+          liens[i].style.display = "flex"   
+        }
+      }
+         
+    });
+  }
 };
 
 });
