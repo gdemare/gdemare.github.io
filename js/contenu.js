@@ -11,8 +11,8 @@ donnee = [
     ['database', null, 'sql', 1, 0, 0, 0],
     ['database', null, 'talend', 1, 0, 0, 0],
     ['english', null, 'verbe', 1, 0, 0, 0],
-    //['environnement', null,'erosion-biodiversite',1,0,0,0],
-    //['environnement', null,'dictionnaire-ecologie',1,0,0,0],
+    ['environnement', null,'erosion-biodiversite',1,0,0,0],
+    ['environnement', null,'dictionnaire-ecologie',1,0,0,0],
     ['microsoft', null, 'batch', 1, 0, 0, 0],
     ['microsoft', null, 'excel', 1, 0, 0, 0],
     ['microsoft', null, 'outlook', 1, 0, 0, 0],
@@ -233,7 +233,7 @@ $('#couleurs').click(function() {
 $('#notes').click(function() {
   document.getElementById("contenu").innerHTML = "";
   document.getElementById("contenuHome").innerHTML = "";
-  loadContenu(url+"html/notes.html",0, "contenu");
+  loadContenu(url+"html/notes.md",1, "contenu");
 });
 
 //************fonction***************//
