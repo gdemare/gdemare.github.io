@@ -226,9 +226,13 @@ $('#home').click(function() {
   loadContenu(url+"html/accueil.html",0, "contenuHome");
 });
 $('#couleurs').click(function() {
+  document.getElementById("contenu").innerHTML = "";
+  document.getElementById("contenuHome").innerHTML = "";
   loadContenu(url+"html/couleurs.html",0, "contenu");
 });
 $('#notes').click(function() {
+  document.getElementById("contenu").innerHTML = "";
+  document.getElementById("contenuHome").innerHTML = "";
   loadContenu(url+"html/notes.html",0, "contenu");
 });
 
