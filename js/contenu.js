@@ -220,10 +220,16 @@ function bouton(selection) {
   };
 };
 
-loadContenu(url+"html/accueil.html",0, "contenuHome");
+loadContenu(url+"html/couleurs.html",0, "contenuHome");
 $('#home').click(function() {
   document.getElementById("contenu").innerHTML = "";
   loadContenu(url+"html/accueil.html",0, "contenuHome");
+});
+$('#couleurs').click(function() {
+  loadContenu(url+"html/couleurs.html",0, "contenu");
+});
+$('#notes').click(function() {
+  loadContenu(url+"html/notes.html",0, "contenu");
 });
 
 //************fonction***************//
