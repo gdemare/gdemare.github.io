@@ -73,33 +73,3 @@
     <div class="vide"></div>
     <div class="vide"></div>
 </article>
-<script type="text/javascript">
-$(document).ready(function() {
-
-for (var i=1; i<=10; i++) {
-    var liste = "liste"+i,
-        homeListe = document.getElementsByClassName(liste)[0],
-        homeA = homeListe.getElementsByTagName("a");
-    for (var j = homeA.length - 1; j >= 0; j--) {
-        if (i>3) {
-            homeA[j].style.display = "none"
-        } else {
-            homeA[j].style.display = "flex"
-        }
-    }
-    $( "#"+liste ).click( function() {
-        var h3id = $(this)[0].id
-        var liens = document.getElementsByClassName(h3id)[0].getElementsByTagName("a")
-        for (var i = liens.length - 1; i >= 0; i--) {
-          console.log(liens[i].style.display == "none")
-          if (liens[i].style.display == "flex") {
-            liens[i].style.display = "none"  
-          } else {
-            liens[i].style.display = "flex"   
-          }
-        }  
-    });
-}
-
-})
-</script>

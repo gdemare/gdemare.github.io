@@ -224,7 +224,6 @@ loadContenu(url+"html/accueil.html",0, "contenuHome");
 $('#home').click(function() {
   document.getElementById("contenu").innerHTML = "";
   loadContenu(url+"html/accueil.html",0, "contenuHome");
-  homeMenu();
 });
 
 //************fonction***************//
@@ -287,25 +286,6 @@ function recherche(tableau, id) {
     return i
     }
   };
-};
-function homeMenu () {
-  console.log('pute')
-  for (var i=1; i<=10; i++) {
-    var liste = "liste"+i
-    $( "#"+liste ).click( function() {
-      var h3id = $(this)[0].id
-      var liens = document.getElementsByClassName(h3id)[0].getElementsByTagName("a")
-      for (var i = liens.length - 1; i >= 0; i--) {
-        console.log(liens[i].style.display == "none")
-        if (liens[i].style.display == "flex") {
-          liens[i].style.display = "none"  
-        } else {
-          liens[i].style.display = "flex"   
-        }
-      }
-         
-    });
-  }
 };
 
 });
