@@ -20,7 +20,7 @@ Comparatif des écouteurs : [AudioBudjet](https://audiobudget.com/leaderboard/ie
 
 Logiciels Windows :
 * [Cryptomator](https://cryptomator.org/downloads/)
-* [Keepass](https://keepass.info/)
+* [Keeweb](https://keeweb.info/)
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
