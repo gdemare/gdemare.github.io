@@ -94,3 +94,9 @@
   display: inline-grid;
   width: 100%;
 }
+
+
+#contenu code {
+  overflow:auto;
+  display: inline-grid;
+}
