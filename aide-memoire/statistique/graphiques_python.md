@@ -54,4 +54,6 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### diagramme en barre et histogramme
 
-`pyplot.bar(abs, ord, width=, align='edge')`
+`pyplot.bar(libelle, valeur, width=, align='edge')`
+* libelle doit etre au format texte.
+
