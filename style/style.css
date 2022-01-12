@@ -156,8 +156,7 @@ article {
   }
 
   header {
-    top: 0px;
-    height: 2.5cm;
+    height: auto;
   }
 
   header a, header div {
@@ -203,8 +202,8 @@ article {
   }
 
   section {
-    margin-left: 2cm;
-    margin-right: 2cm;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   article {
@@ -229,6 +228,10 @@ article {
   }
   #contenu pre code {
     font-size: 150%;
+  }
+
+  .bouton i {
+    font-size: 2em;
   }
 }
 
