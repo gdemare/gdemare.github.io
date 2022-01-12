@@ -24,9 +24,14 @@ NB : fonctionne par incrementation
 
 * `pyplot.plot(abscisse, ordonnée, <type_point>)`
 Paramètre : faire une chaîne de caractères 
- * L1 couleur 'r' rouge 'y' jaune 'b'
- * L2 type de points o=gros points, .=petit point, ^triangle, s=carré, +=crois
- * L3 type de lignes  - ligne -- pointillé 
+ * L1 couleur `'r'` rouge `'y'` jaune `'b'` bleu
+ * L2 type de points 
+ 	* `o` gros points
+ 	* `.` petit points 
+ 	* `^` triangle
+ 	* `s` carré
+ 	* `+` croix
+ * L3 type de lignes  `-` ligne `--` pointillé 
 Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Paramètres des axes
@@ -49,4 +54,6 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### diagramme en barre et histogramme
 
-`pyplot.bar(abs, ord, width=, align='edge')`
+`pyplot.bar(libelle, valeur, width=, align='edge')`
+* libelle doit etre au format texte.
+

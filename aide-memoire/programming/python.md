@@ -56,14 +56,15 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 | `list(variable)` | convertir en liste |
 | `int()` | convertir en entier |
 | `float()` | convertir en float | 
+| `str()` | convertir en texte |
 
 * `texte.split('séparateur')` transformer un caractère en liste en fonction d'un séparateur.
 
 #### Vecteurs et listes
 `[] = vecteur` et `() = liste` Rmq : Les listes ne sont pas modifiables.
 
-*  `var[nbre]` extraire une valeur.
-*  `['valeur']*n` créer une liste à n élément
+* `var[nbre]` extraire une valeur.
+* `['valeur']*n` créer une liste à n élément
 * `vecteur.append('texte')` ajouter une valeur à un vecteur.
 * `vecteur.pop()` supprimer le dernier élément d'un vecteur.
 * `(a,b) = (1,3)` donner un nom aux élements de la liste pour pouvoir les appeller comme des variables.
