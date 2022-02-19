@@ -9,9 +9,9 @@ Le modèle est formé de plusieurs couches formées de plusieurs neurones. Les c
 | recoit les données brutes en entré | des couches intermédiaires | une couche qui génére la probabilité d'appartenance à la classe |
 
 Les connexions entre les neurones sont appelées synapses. Il en existe de deux types de synapses : 
-	* inhibiteur
-	* excitateur
-Si un neurone pré et post synaptique qui s'excitent ensemble alors ils renforceront leur lien càd le poid synaptique de la synapse qui les relient.
+* inhibiteur
+* excitateur
+Si un neurone pré et post synaptique qui s'excitent ensemble alors ils renforceront leur lien càd le poid synaptique de la synapse qui les relie.
 
 Chaque neurone applique une fonction à la donnée qu'il recoit en entrée. On utilise principalement trois types de fonctions principales :
 * Sigmoïde. f(x)=1/(1+e^{-x})
