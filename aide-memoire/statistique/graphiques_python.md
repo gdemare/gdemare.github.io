@@ -24,14 +24,14 @@ NB : fonctionne par incrementation
 
 * `pyplot.plot(abscisse, ordonnée, <type_point>)`
 Paramètre : faire une chaîne de caractères 
- * L1 couleur `'r'` rouge `'y'` jaune `'b'` bleu
- * L2 type de points 
- 	* `o` gros points
- 	* `.` petit points 
- 	* `^` triangle
- 	* `s` carré
- 	* `+` croix
- * L3 type de lignes  `-` ligne `--` pointillé 
+* L1 couleur `'r'` rouge `'y'` jaune `'b'` bleu
+* L2 type de points 
+	* `o` gros points
+	* `.` petit points 
+	* `^` triangle
+	* `s` carré
+	* `+` croix
+* L3 type de lignes  `-` ligne `--` pointillé 
 Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Paramètres des axes
