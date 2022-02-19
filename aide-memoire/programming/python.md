@@ -23,6 +23,18 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 ## Instructions de bases
 
+## Les matrices
+
+library : `NumPy`
+* `a = np.array([ [11,12,13], [21,22,23] ])` déclarer une matrice.
+* `np.shape(a)` dimension d'une matrice .
+
+| Opérateur | Définition |
+|--|--|
+| `a*b` | multiplication |
+| `.dot(a,b)` | produit matriciel (NxM et MxO)|
+| `a.T` | transposition |
+
 ### Importer des fonctions
 
 * `import package` charger un package complet. Les fonctions sont accessibles par `package.fonction
@@ -231,10 +243,6 @@ Coordonné et position des pixels (x, y) correspont à (largeur, hauteur).
 * `var_img.putpixel( (x,y), (r,g,b))` changer la couleur d'un pixel.
 * `afficher_image(image)` afficher l'image.
 * `Image.new(mode = 'RGB', size = (x,y))` créer une nouvelle image.
-
-## Les tableaux
-
-library : `NumPy`
 
 ## Sqlite 3
 
