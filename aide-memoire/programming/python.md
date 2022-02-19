@@ -32,7 +32,7 @@ library : `NumPy`
 | Opérateur | Définition |
 |--|--|
 | `a*b` | multiplication |
-| `.dot(a,b)` | produit matriciel (NxM et MxO)|
+| `np.dot(a,b)` | produit matriciel (NxM et MxO)|
 | `a.T` | transposition |
 
 ### Importer des fonctions
