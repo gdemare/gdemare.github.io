@@ -35,6 +35,8 @@ library : `NumPy`
 | `np.dot(a,b)` | produit matriciel (NxM et MxO)|
 | `a.T` | transposition |
 
+`np.random.randn(n)` générer n nombres aléatoire.
+
 ### Importer des fonctions
 
 * `import package` charger un package complet. Les fonctions sont accessibles par `package.fonction
