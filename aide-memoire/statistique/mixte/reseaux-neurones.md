@@ -13,7 +13,7 @@ Les connexions entre les neurones sont appelées synapses. Il en existe de deux 
 * excitateur
 Si un neurone pré et post synaptique qui s'excitent ensemble alors ils renforceront leur lien càd le poid synaptique de la synapse qui les relie.
 
-Chaque neurone applique une fonction à la donnée qu'il recoit en entrée. On utilise principalement trois types de fonctions principales :
+Chaque neurone applique une fonction à la donnée qu'il recoit en entrée. On utilise principalement trois fonctions :
 * Sigmoïde. f(x)=1/(1+e^{-x})
 * Unité de rectification linéaire douce. f(x)=ln(1+e^{x})
 _Rmq :_ Il existe aussi des fonctions discontinues mais elles posent des problèmes d'optimisation car elles ne sont pas dérivables, par exemple :
