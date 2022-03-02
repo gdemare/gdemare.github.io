@@ -423,3 +423,8 @@ url github : `https://github.com/geeks-r-us/anbox-playstore-installer/`
 * `wget https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh`
 * Autoriser les droits des settings > Apps > Google services
 
+### Youtube dl
+
+Si l'erreur apparait `/usr/bin/env: ‘python’: No such file or directory` Il faut installer `sudo apt-get install python-is-python3`
+
+`youtube-dl -x --audio-format mp3 url`
