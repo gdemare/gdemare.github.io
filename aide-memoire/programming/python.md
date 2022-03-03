@@ -92,6 +92,11 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 | `chr(nbre)` | convertie un nombre en sa lettre correspondante|
 | `len(texte)` | nombre de caractère de la chaine |
 
+#### Expression régulière
+
+`import re`
+
+
 ### Les dates
 Package : `datetime`
 
