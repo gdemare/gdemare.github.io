@@ -47,6 +47,7 @@ Outils en ligne pour PDF notamment Optical Character Recognition [PDF 24](https:
 
 ## Applciation Android
 
+* Droid-ify
 * Apk Android sur [mon drive](https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA)
 * [Youtube Vanced](https://vancedapp.com/)
 * [F-droid](https://f-droid.org/)
