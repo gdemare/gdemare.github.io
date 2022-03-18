@@ -29,34 +29,29 @@ Bureautique :
 ## Musique
 
 Convertisseurs :
-    [Stream Pocket](http://streampocket.net/)
-    [Youtube Converter Online](https://clouddownloader.net)
+    * [Stream Pocket](http://streampocket.net/)
+    * [Youtube Converter Online](https://clouddownloader.net)
 
 ## Téléchargement
 
-Yggtorrent :[Twitter yggtorrent](https://mamot.fr/@YggTorrent)
-
-Films :
-    [Zone téléchargement)[https://zone-telechargement.cam/]([Forum zone téléchargement](https://www.forumzt.com/).
-Musique
-
-[Deemix](https://www.reddit.com/r/deemix/)
-Livres en anglais [Libgen](http://libgen.rs/)
-Dictionnaires pour kobo [kobo ebook reader dict](https://github.com/BoboTiG/ebook-reader-dict)
-Outils en ligne pour PDF notamment Optical Character Recognition [PDF 24](https://tools.pdf24.org/fr/)
+* [Twitter yggtorrent](https://mamot.fr/@YggTorrent)
+* [Zone téléchargement](https://zone-telechargement.cam/) [Forum zone téléchargement](https://www.forumzt.com/).
+* [Deemix](https://www.reddit.com/r/deemix/) [Reddit Deemix](https://www.reddit.com/r/deemix/)
+* Livres en anglais [Libgen](http://libgen.rs/)
+* Dictionnaires pour kobo [kobo ebook reader dict](https://github.com/BoboTiG/ebook-reader-dict)
+* Outils en ligne pour PDF notamment Optical Character Recognition [PDF 24](https://tools.pdf24.org/fr/)
 
 ## Applciation Android
 
-* Droid-ify
+* [Droid-ify](https://f-droid.org/en/packages/com.looker.droidify/)
 * Apk Android sur [mon drive](https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA)
 * [Youtube Vanced](https://vancedapp.com/)
 * [F-droid](https://f-droid.org/)
-* [Reddit Deemix](https://www.reddit.com/r/deemix/)
 
 ### Sécurité
 
-Verifier les trackers d'une application : [Exodus privacy](https://reports.exodus-privacy.eu.org/fr/)
-Verifier la présence de virus dans un fichier : [virus total](https://www.virustotal.com/)
+* Verifier les trackers d'une application : [Exodus privacy](https://reports.exodus-privacy.eu.org/fr/)
+* Verifier la présence de virus dans un fichier : [virus total](https://www.virustotal.com/)
 
 ## Données personnelles
 
