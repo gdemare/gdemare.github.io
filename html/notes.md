@@ -29,8 +29,8 @@ Bureautique :
 ## Musique
 
 Convertisseurs :
-    * [Stream Pocket](http://streampocket.net/)
-    * [Youtube Converter Online](https://clouddownloader.net)
+* [Stream Pocket](http://streampocket.net/)
+* [Youtube Converter Online](https://clouddownloader.net)
 
 ## Téléchargement
 
@@ -47,6 +47,7 @@ Convertisseurs :
 * Apk Android sur [mon drive](https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA)
 * [Youtube Vanced](https://vancedapp.com/)
 * [F-droid](https://f-droid.org/)
+Anysoftkeyboard, bromite, NewPipe, retro music
 
 ### Sécurité
 
