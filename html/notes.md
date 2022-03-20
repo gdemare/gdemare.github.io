@@ -21,6 +21,7 @@ Comparatif des écouteurs : [AudioBudjet](https://audiobudget.com/leaderboard/ie
 Logiciels Windows :
 * [Cryptomator](https://cryptomator.org/downloads/)
 * [Keeweb](https://keeweb.info/)
+* * [fluent reader](https://github.com/yang991178/fluent-reader/releases)
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
