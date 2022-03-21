@@ -1,6 +1,12 @@
 NB les chemins s'écrivent avec le `/`.
 
 Environement de développement : Jupyter
+Changer la couleur de l'environnement jupiter 
+```
+pip install jupyterthemes
+pip install --upgrade jupyterthemes
+jt -t chesterish
+```
 
 ## Configurer Python sur Windows
 
