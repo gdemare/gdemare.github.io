@@ -21,7 +21,7 @@ Comparatif des écouteurs : [AudioBudjet](https://audiobudget.com/leaderboard/ie
 Logiciels Windows :
 * [Cryptomator](https://cryptomator.org/downloads/)
 * [Keeweb](https://keeweb.info/)
-* * [fluent reader](https://github.com/yang991178/fluent-reader/releases)
+* [fluent reader](https://github.com/yang991178/fluent-reader/releases)
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
@@ -49,6 +49,7 @@ Convertisseurs :
 * [Youtube Vanced](https://vancedapp.com/)
 * [F-droid](https://f-droid.org/)
 Anysoftkeyboard, bromite, NewPipe, retro music
+* Google TV : pour youtube sans pub [SmartTubeNext](https://github.com/yuliskov/SmartTubeNext#readme)
 
 ### Sécurité
 
