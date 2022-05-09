@@ -21,3 +21,7 @@ Copier le raccourci dans le dossier `C:\Users\Guigui\AppData\Roaming\Microsoft\W
 * `dir` lister les fichiers et les dossiers.
 * `set var=valeur` créer une variable.
 * variable de base `%cd%` chemin actuel.
+
+## Ubuntu
+
+`/mnt/c/Users/Guigui/Downloads`
