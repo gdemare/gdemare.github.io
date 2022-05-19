@@ -167,6 +167,7 @@ Positions :
 
 ### Simplifier les polygons
 
-Package : `MazamaSpatialUtils`
+Package : `rmapshaper`
 
-* `simplify(SpatialPolygonsDataFrame)` simplifier les polygones (les contours des zones géographiques).
+* `ms_simplify(SpatialPolygonsDataFrame)` simplifier les polygones (les contours des zones géographiques).
+ * `keep=compression` taux de compression, par défaut `0.05`.
