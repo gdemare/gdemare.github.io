@@ -68,6 +68,8 @@ weekday
 
 Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
 
+`pull(data, colonne)` transformer une sortie en vecteur.
+
 ## Filtrer
 
 * `filter( condition )` filtrer.
