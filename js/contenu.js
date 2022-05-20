@@ -221,7 +221,7 @@ function bouton(selection) {
 };
 
 loadContenu(url+"html/accueil.html",0, "contenuHome");
-$('#home').click(function() {
+$('#Bhome').click(function() {
   document.getElementById("contenu").innerHTML = "";
   loadContenu(url+"html/accueil.html",0, "contenuHome");
 });
@@ -230,7 +230,7 @@ $('#couleurs').click(function() {
   document.getElementById("contenuHome").innerHTML = "";
   loadContenu(url+"html/couleurs.html",0, "contenu");
 });
-$('#notes').click(function() {
+$('#Bnote').click(function() {
   document.getElementById("contenu").innerHTML = "";
   document.getElementById("contenuHome").innerHTML = "";
   loadContenu(url+"html/notes.md",1, "contenu");

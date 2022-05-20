@@ -18,13 +18,23 @@
 </head>
 <body>
     <header>
-        <div class="bouton" id="Bmenu"><i class="lni lni-menu"></i></div>
-        <div id="grand"></div>
-        <div id='bgeneral' class="bouton">Général</div>
-        <div id='bpython' class="bouton">Python</div>
-        <div id='bsas' class="bouton">SAS</div>
-        <div id='br' class="bouton">R</div>
-        <a class="bouton" target="_blank" id="edit"><i class="lni lni-pencil"></i></a>
+        <div class="type">
+        </div>
+        <div id="menu">
+            <div class="bouton" id="Bmenu"><i class="lni lni-menu"></i></div>
+            <div class="bouton" id="Bhome"><i class="lni lni-home"></i></div>
+            <div class="bouton" id="Bnote"><i class="lni lni-notepad"></i></div>
+            <div class="bouton" id="Bfav" style="display: none"><i class="lni lni-star"></i></div>
+        </div>
+        <div class="type">
+            <div id="context">
+                <a class="bouton" target="_blank" id="edit"><i class="lni lni-pencil"></i></a>
+                <div id='bgeneral' class="bouton">Général</div>
+                <div id='bpython' class="bouton">Python</div>
+                <div id='bsas' class="bouton">SAS</div>
+                <div id='br' class="bouton">R</div>
+            </div>
+        </div>
     </header>
     <div id="fantome"></div>
     <nav>
@@ -34,11 +44,15 @@
             <div><span class="r"></span>R</div>
             <div><span class="sas"></span>SAS</div>
       </div>
-      <div id="home">Home</div>
       <div id="couleurs">Couleurs</div>
       <div id="notes">Notes</div>
     </nav>
     <section>
+        <article id="fav" style="display: none">
+            <a target="_blank" href="https://www-1.mailo.com/">Mailo</a>
+            <a target="_blank" href="https://onedrive.live.com/">OneDrive</a>
+            <a target="_blank" href="https://youtube.com">Youtube</a>
+        </article>
         <article id="contenu">
         </article>
         <article id="contenuHome">

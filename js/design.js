@@ -14,6 +14,20 @@ $("#Bmenu").click( function(){
   largeur()
 } );
 
+$("#Bfav").click( function(){
+  var fav = document.getElementById('fav');
+  if( window.getComputedStyle(fav).getPropertyValue('display')=='none' ){
+    fav.style.setProperty("display", "grid");
+  }
+  else {
+    fav.style.setProperty("display", "none");
+  }
+} );
+
+var headerHaut = document.getElementsByTagName("header")[0].offsetHeight + 'px';
+document.getElementsByTagName("section")[0].style.setProperty("margin-top", headerHaut);
+
+
 // redimension de la fenetre
 window.onresize = menu
 function menu(evnt){largeur()};
@@ -29,7 +43,6 @@ function largeur() {
     navLarg = menu.offsetWidth + 'px';
   document.getElementsByTagName("section")[0].style.setProperty("margin-top", headerHaut);
   document.getElementById('fantome').style.setProperty("width", navLarg);
-  document.getElementsByTagName("nav")[0].style.setProperty("top", headerHaut);
   if( affiche=='none' ){
     fantome.style.setProperty("width", "0px");
   }

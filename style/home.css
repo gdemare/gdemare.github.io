@@ -5,7 +5,9 @@
   justify-content: center;
   border-radius: 0.3em;
   text-align: center;
-  margin-bottom: 0.2cm;
+  padding-top: 0.2cm;
+  margin-bottom: 0.2cm; 
+  width: auto;
 }
 
 .favori a {
