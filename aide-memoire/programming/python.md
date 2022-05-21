@@ -343,3 +343,8 @@ ajouter des options :
 	* `klass=classe` ajouter une classe.
 
 NB : Possibilite d'inclure des boucles et des conditions à l'interieur du doc.asis
+
+## Convertir Word en Pdf
+
+package `docx2pdf`
+* `convert("fichier.docx", destination)` convertir docx en pdf.
