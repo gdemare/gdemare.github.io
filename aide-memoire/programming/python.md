@@ -292,10 +292,11 @@ Package `os`
 | `getcwd()` | dossier actuel. |
 | `chdir(dossier)` | changer le dossier par défaut. |
 | `listdir()` | liste des dossiers et fichiers d'une répertoire. |
-| `mkdire(nom)` | créer un dossier |
+| `mkdir(nom)` | créer un dossier |
 | `rmdir(dossier)` | supprimer un dossier |
 | `name` | renvoie le nom de l'os actuel |
 | `path.exists(chemin)` | existence d'un répertoire ou dossier |
+| `path.basename(chemin/fichier)` | renvoie le nom du fichier sans le chemin |
 
 Package `glob`
 
