@@ -295,6 +295,7 @@ Package `os`
 | `mkdire(nom)` | créer un dossier |
 | `rmdir(dossier)` | supprimer un dossier |
 | `name` | renvoie le nom de l'os actuel |
+| `path.exists(chemin)` | existence d'un répertoire ou dossier |
 
 Package `glob`
 
