@@ -1,12 +1,12 @@
 ## A
 
-* **apprentissage profond (deep learning)** algorithme d’apprendre et de s’améliorer de manière autonome.
+* **Apprentissage profond (deep learning)** algorithme d’apprendre et de s’améliorer de manière autonome.
 * **Area Under the Curce (AUC)**
 
 ## B
 
-* **barycentre (ou centre de gravité)** moyenne arithmétique de plusieurs points.
-* **bootstrap-aggregating (bagging)** échantillon tirer aléatoirement parmi la population.
+* **Barycentre (ou centre de gravité)** moyenne arithmétique de plusieurs points.
+* **Bootstrap-aggregating (bagging)** échantillon tiré aléatoirement parmi la population.
 
 ## C
 
