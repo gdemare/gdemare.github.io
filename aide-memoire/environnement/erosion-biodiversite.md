@@ -1,7 +1,5 @@
 ## International Union for the Conservation of Nature IUCN
 
-11 au 19 juin Congré Mondial de la Nature à Marseille.
-
 Liste rouge des espèces éteintes
 
 ```   
@@ -27,7 +25,7 @@ Indicateur :
 
 ## World Wild Fund
 
-Publie un rapport sur la biodiversité tout les deux ans depuis 1998.
+La World Wild Fund publie un rapport sur la biodiversité tout les deux ans depuis 1998.
 
 4 005 espèces repartitent en 16 500 populations.
 
@@ -36,22 +34,22 @@ Diminuer de 60% (67%-50%).
 Estime les ressources produites par la nature à 125 000 milliards de dollars.
 
 Les menaces qui pesent sur les especes et les ecosystemes : 
-* Pertes et dégradation de l'habitat
-* Surexploitation
-* Changement climatique
-* Pollution
-* Espèce envahissante
+* La perte et la dégradation de l'habitat.
+* La surexploitation.
+* Le changement climatique.
+* La pollution.
+* Les espèces envahissantes.
 
 1/4 de la biodiversité se trouve dans le sol.
 
 ## Indicateurs
 
-* `Jour du depassement` jour ou l'humanite a consommer toutes les ressources produites par la Terre en une annee.
-* `Jour de dereglement` instant a partir duquel le bilan carbone du pays est superieur a sa capacite d'absorbtion.
+* `Jour du depassement` jour où l'humanité a consommée toutes les ressources produites par la Terre en une année.
+* `Jour de dereglement` instant à partir duquel le bilan carbone du pays est supérieur à sa capacité d'absorption.
 
-## les menaces qui pesent sur l'humanite
+## les menaces qui pesent sur l'humanité
 
-* rechauffement climatique
-* pollution
-* rarefaction des ressources
-* effondrement de la biodiversite
+* Réchauffement climatique
+* Pollution
+* Rarefaction des ressources
+* Effondrement de la biodiversite
