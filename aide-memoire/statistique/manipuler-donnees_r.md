@@ -1,4 +1,4 @@
-## manipuler les fichiers 
+## Manipuler les fichiers 
 
 * `setwd(dossier)` changer le dossier de travail.
 * `getwd()` chemin du dossier de tavail.
