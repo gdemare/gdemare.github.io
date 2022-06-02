@@ -1,11 +1,11 @@
-* `Alt + Entré` retour a la ligne dans une cellule.
-* `"symbole`carcètre d'échappement.
+* `Alt + Entré` retour à la ligne dans une cellule.
+* `"symbole`caractère d'échappement.
 
 ### Protéger les données
 
 * "Révision" > "Protéger la feuille" Une feuille.
 * "Révision" > "Protéger le classeur" Un classeur.
-* "Affichage" > "Figer..." Figer une ligne ou un colonne
+* "Affichage" > "Figer..." Figer une ligne ou un colonne.
 
 #### Une cellule
 
