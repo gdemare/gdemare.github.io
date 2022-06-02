@@ -1,4 +1,4 @@
-preparer avant un Styleguide UI :
+Préparer avant un Styleguide UI :
   * Pattern Lab
   * [Huge](https://hugeinc.github.io/styleguide)
 
@@ -30,7 +30,7 @@ Position :
 * `rgba(rouge, vert, bleu, transparence)` les trois couleurs primaires (transparence entre 0 et 1).
 * `linear-gradient(direction, couleur1, couleur2)` degradé.
 Direction :
-  * `to right` gauche a droite.
+  * `to right` gauche à droite.
 
 ## Background
 
@@ -39,8 +39,8 @@ Direction :
 
 ## Effets de transistion
 
-* `transition-duration: 4s;` duree de la transition.
-* `transition-delay: 2s;` temps avant le declenchement de la transition.
+* `transition-duration: 4s;` durée de la transition.
+* `transition-delay: 2s;` temps avant le déclenchement de la transition.
 
 ## Texte
 
@@ -51,14 +51,14 @@ Direction :
 ## Flexbox
 
 ### Contenaire
-* `display: flex;` activer la propriete flex.
+* `display: flex;` activer la propriéte flex.
 * `flex-direction: direction;` direction de l'alignement().
 direction :
   * `row`
   * `column`
   * `row-reverse`
   * `column-reverse`
-* `flex-wrap: comportement;` comportement des elements lorsqu'il n'y plus de place.
+* `flex-wrap: comportement;` comportement des élements lorsqu'il n'y plus de place.
 Comportement :
   * `nowrap` pas de retour à la ligne (par défaut).
   * `wrap` les éléments vont à la ligne lorsqu'il n'y a plus la place.
@@ -66,8 +66,8 @@ Comportement :
 * `justify-content: ;` alignement sur le premier axe.
   * `flex-start`, `flex-end` lignés au début/fin.
   * `center` centre.
-  * `space-between` espace entre les elements sans espace aux extremités.
-  * `space-around` espace entre les elements avec de l'espace aux extremités.
+  * `space-between` espace entre les éléments sans espace aux extremités.
+  * `space-around` espace entre les éléments avec de l'espace aux extremités.
 * `align-items: alignement;` alignement sur le deuxième axe.
   * `stretch` les éléments sont étirés sur tout l'axe (valeur par défaut)
   * `flex-start`, `flex-end` alignés au début/fin.

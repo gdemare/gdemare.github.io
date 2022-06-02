@@ -85,8 +85,8 @@ DATE(ANNEE(A2)+B2;MOIS(A2);JOUR(A2))
 
 ## Supprimer un tableau
 
-1. onglet creation tableau
-2. Creation
+1. Onglet "Création tableau"
+2. Création
 3. Convertir en plage
 
 ## Les heures
