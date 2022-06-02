@@ -3,7 +3,7 @@
 * Quelles sont les difficultés du poste ?
 * Quels sont les grands projets pour l'année à venir ?
 * Qu'est-ce qui va faire la différence dans le choix du candidat ?
-* Quelle part est associe a chaque type de mission ?
+* Quelle part est associée à chaque type de mission ?
 
 ## Présentez-vous
 
@@ -33,13 +33,12 @@ Gestion de projet
 * identifier et comprendre les besoins
 * choisir les outils en fonction des contraintes
 
-
 ### Presentation par chronologique
 
-* 1 - Qui je suis presentation.
+* 1 - Qui je suis : présentation.
 * 2 - D'ou je viens : presenter son parcours.
-* 3 - Ou j'en suis : la situation actuelle.
-* 4 - Ou je souhaite aller : son projet d'avenir.
+* 3 - Où j'en suis : la situation actuelle.
+* 4 - Où je souhaite aller : son projet d'avenir.
 
 ## Exemples de situtations à préparer
 
@@ -81,14 +80,15 @@ Gestion de projet
 
 # Le langage
 
-Le langage corporelle (visage, posture) doit faire passer l'emotion JOIE ($ possibles + peur, colere tristesse).
+Le langage corporel (visage, posture) doit faire passer l'emotion JOIE ($ possibles + peur, colère tristesse).
 
 # La lettre de motivation 
 
-L'objectif de la lettre de motiviation est de faire le lien entre les competences et le poste candidate.
+L'objectif de la lettre de motiviation est de faire le lien entre les compétences et le poste candidate.
 
 ## Compétences
+
 Une compétence est l'association de trois choses : 
 - savoir faire : application de la théorie à la pratique (correspond aux moyens). 
-- savoir être : attitudes a adopter pour obtenir un rendu de qualité. 
+- savoir être : attitudes à adopter pour obtenir un rendu de qualité. 
 - savoir : connaissance théorique du sujet.
