@@ -12,20 +12,6 @@
   --color-home: rgb(54,54,64);
 }
 
-body {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  background-color: var(--color-body);
-  display: flex;
-  color: var(--color-police);
-  flex-direction: row;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -42,99 +28,71 @@ body {
   cursor: pointer; 
 }
 
-/*****Liens <a>****/
-a, nav div:hover {
-  color: var(--color-police);
-  text-decoration: none;
-  font-weight: normal;
-}
-
-a:hover, .bouton:hover, nav div:hover, .favori a:hover {
-  background-color: var(--color-hover);
-  border: none;
-  cursor: pointer;
-  border-radius: 0.2cm;
-}
-
-.bouton:hover {
-  background-color: var(--color-body);
-}
-
-#fantome {
-  height: 10cm;
-}
-/*****structure globale******/
-nav {
-  z-index: 0;
-  display: none;/*a cachger*/
-  flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: var(--color-nav);
-  min-width: 18%;
-  padding-top: 1cm;
-  padding-bottom: 1cm;
-  position: fixed;
-  overflow-y: auto;
+body {
+  position: absolute;
   top: 0px;
   bottom: 0px;
-}
-
-section {
-  flex:1 ;
-  display: flex;
-  padding-bottom: 1cm;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 1cm;
-  margin-right: 1cm;
-}
-
-/***nav**/
-
-nav a, nav div {
-  display: flex;
+  right: 0px;
+  left: 0px;
   flex-direction: row;
-  padding: 0.5em;
-  padding-left: 0.8em;
-  padding-right:2em;
-  padding-bottom: 0.3em;
-  background-color: var(--color-nav);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: blue;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  background-color: var(--color-body);
+  color : var(--color-police);
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter; 
 }
 
 header {
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  text-align: center;
-  left: 0px;
-  right: 0px;
-  padding-top: 0.3cm;
-}
-
-#menu, .type {
+  position: absolute;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  padding-top: 0.2cm;
 }
 
-#menu, #context  {
-  background-color: var(--color-bouton);
-  border: 2px solid var(--color-body);
-  border-radius: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding: 0.5em;
+nav {
+  background-color: var(--color-nav);
+  overflow-y: scroll;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-#context {
+section {
+  margin: 0px;
+  flex: 1;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/**entête**/
+header div {
   display: flex;
   flex-direction: row;
-}
-
-.type {
   flex: 1 ;
-  justify-content: flex-end;
-  padding-right: 0.2cm;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+header div div {
+  flex-grow: 0;
+  border-radius: 0.5em;
+}
+
+#context, #homip {
+  background-color: var(--color-bouton);
+  border: 1px solid var(--color-body);
+  padding: 0.2cm;
+  align-content: flex-end;
 }
 
 .bouton {
@@ -143,117 +101,28 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0.2cm;
+  text-align: center;
+}
+
+.bouton i {
   min-width: 1cm;
 }
-.bouton:first-hild {
-  border-left: none;
-}
 
-#grand {
-  flex-grow:1;
-  min-width:1cm;
-}
 
-/**section**/
+/*section*/
+
 article {
   max-width: 25cm;
-  width: 100%;
+  padding-left: 2%; 
+  padding-right: 2%;
+  width: 96%;
 }
 
 #contenu {
-    line-height: 1.5;
-  }
-
-@media only screen and (max-device-width:734px) {
-  body {
-    flex-direction: column-reverse;
-    align-items: center;
-    font-size: 35px;
-    display: block;
-  }
-
-  header {
-    height: auto;
-  }
-
-  header a, header div {
-    flex-grow: 1;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .bouton {
-    flex-grow: 1;
-    padding: 0cm;
-  }
-
-  .bouton:first-child {
-    margin-right: 8px;
-  }
-
-  #grand {
-    display: none;
-  }
-
-  nav {
-    display: none;
-    left: 0px;
-    right: 0px;
-    width: auto;
-  }
-
-  nav a {
-    margin-left: 1em;
-    margin-right: 1em;
-
-  }
-
-  #fantome {
-    display: none;
-  }
-
-  article {
-    border-radius: 0.2em;
-    margin-top: 0.5cm;
-    padding: 0cm;
-  }
-
-  section {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  article {
-  }
-
-  #contenu {
-    margin-left: 8%;
-    margin-right: 8%;
-    font-size: 50%;
-  }
-  #contenu table {
-    width: 100%;
-    font-size: 200%;
-  }
-
-  #contenu code {
-    font-size: 120%;
-  }
-
-  #contenu table code {
-    font-size: 100%;
-  }
-  #contenu pre code {
-    font-size: 150%;
-  }
-
-  .bouton i {
-    font-size: 2em;
-  }
+  line-height: 1.5;
 }
 
-/**spécificité nav***/
-
+/*nav*/
 nav h2 {
   display: flex;
   color: rgb(99,99,102);
@@ -267,6 +136,26 @@ nav h2 {
 
 nav div {
   text-transform: capitalize;
+}
+
+
+nav div:last-child {
+  margin-bottom: 2em;
+}
+
+nav div div:last-child {
+  margin-bottom: 0;
+}
+
+
+nav a, nav div {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  padding-right:2em;
+  padding-bottom: 0.3em;
+  background-color: var(--color-nav);
 }
 
 #legende {
@@ -328,7 +217,6 @@ nav div {
 }
 
 .selection {
-  font-weight: bold;
   background-color: rgb(55,54,63);
   border-radius: 0.3em;
 }
@@ -355,4 +243,18 @@ nav div {
 #fav a:hover {
   border: solid 2px var(--color-body);
   background-color: var(--color-bouton);
+}
+
+/**lien*/
+a, nav div:hover {
+  color: var(--color-police);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover, .bouton:hover, nav div:hover, .favori a:hover {
+  background-color: var(--color-hover);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2cm;
 }

@@ -11,8 +11,7 @@ $("#Bmenu").click( function(){
   else {
     menu.style.display = "block";
   }
-  largeur()
-} );
+});
 
 $("#Bfav").click( function(){
   var fav = document.getElementById('fav');
@@ -24,32 +23,20 @@ $("#Bfav").click( function(){
   }
 } );
 
-var headerHaut = document.getElementsByTagName("header")[0].offsetHeight + 'px';
-document.getElementsByTagName("section")[0].style.setProperty("margin-top", headerHaut);
-
-
 // redimension de la fenetre
 window.onresize = menu
-function menu(evnt){largeur()};
+function menu(evnt){
+  hauteur()
+};
 
-largeur();
+hauteur();
 
-function largeur() {
-  var menu = document.getElementsByTagName('nav')[0],
-    fantome = document.getElementById('fantome'),
-    style = window.getComputedStyle(menu),
-    affiche = style.getPropertyValue('display'),
-    headerHaut = document.getElementsByTagName("header")[0].offsetHeight + 'px',
-    navLarg = menu.offsetWidth + 'px';
-  document.getElementsByTagName("section")[0].style.setProperty("margin-top", headerHaut);
-  document.getElementById('fantome').style.setProperty("width", navLarg);
-  if( affiche=='none' ){
-    fantome.style.setProperty("width", "0px");
-  }
-  else {
-    var largeur = menu.offsetWidth + 'px';
-    fantome.style.setProperty("width", largeur);
-  }
+function hauteur() {
+  var body = document.getElementsByTagName('body')[0],
+    style = window.getComputedStyle(body),
+    haut = style.getPropertyValue('height');
+  document.getElementsByTagName("nav")[0].style.setProperty("height", haut);
+  document.getElementsByTagName("section")[0].style.setProperty("height", haut);
 };
 
 })

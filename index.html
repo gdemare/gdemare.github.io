@@ -11,24 +11,25 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script type="text/javascript" src="js/design.js"></script>
     <script type="text/javascript" src="js/contenu.js"></script>
-    <script type="text/javascript" src="js/serviceworker.js"></script>
+    <script type="text/javascript" src="js/design.js"></script>
     <title>Starter</title>
 </head>
 <body>
     <header>
-        <div class="type">
+        <div style="flex:1;">
         </div>
-        <div id="menu">
-            <div class="bouton" id="Bmenu"><i class="lni lni-menu"></i></div>
-            <div class="bouton" id="Bhome"><i class="lni lni-home"></i></div>
-            <div class="bouton" id="Bnote"><i class="lni lni-notepad"></i></div>
-            <div class="bouton" id="Bfav" style="display: none"><i class="lni lni-star"></i></div>
+        <div style="flex:0;">
+            <div id="homip">
+                <div id="Bmenu" class="bouton"><i class="lni lni-menu"></i></div>
+                <div id="Bhome" class="bouton"><i class="lni lni-home"></i></div>
+                <div id="Bnote" class="bouton"><i class="lni lni-notepad"></i></div>
+                <div id="Bfav" class="bouton" style="display: none"><i class="lni lni-star"></i></div>
+            </div>
         </div>
-        <div class="type">
-            <div id="context">
-                <a class="bouton" target="_blank" id="edit"><i class="lni lni-pencil"></i></a>
+        <div style="justify-content: flex-end;  flex:1; margin-right: 1cm;">
+            <div id="context" style="justify-content: flex-start;">
+                <a id="edit" class="bouton"><i class="lni lni-pencil"></i></a>
                 <div id='bgeneral' class="bouton">Général</div>
                 <div id='bpython' class="bouton">Python</div>
                 <div id='bsas' class="bouton">SAS</div>
@@ -36,9 +37,8 @@
             </div>
         </div>
     </header>
-    <div id="fantome"></div>
-    <nav>
-        <h2>Tags</h2>
+    <nav style="display: none">
+        <h2 style="margin-top: 0.5cm;">Tags</h2>
         <div id="legende">
             <div><span class="python"></span>Python</div>
             <div><span class="r"></span>R</div>
@@ -52,9 +52,9 @@
             <a target="_blank" href="https://onedrive.live.com/">OneDrive</a>
             <a target="_blank" href="https://youtube.com">Youtube</a>
         </article>
-        <article id="contenu">
+        <article id="contenu" style="margin-top: 2cm;">
         </article>
-        <article id="contenuHome">
+        <article id="contenuHome" style="margin-bottom: 2cm;">
         </article>
     </section>
 </body>
