@@ -3,9 +3,6 @@
   --color-nav: rgb(29,27,38);
   --color-body: rgb(33,32,42);
   --color-police: rgb(236,238,240);
-  --color-indigo: rgb(94,92,230);
-  --color-orange: rgb(255,159,10);
-  --color-green: rgb(48, 209, 88);
   --color-bouton: rgb(40,40,80);
   --color-gray: rgb(142,142,147);
   --color-code: rgb(44,44,46);
@@ -38,7 +35,6 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: blue;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -155,7 +151,6 @@ nav a, nav div {
   padding-left: 0.8em;
   padding-right:2em;
   padding-bottom: 0.3em;
-  background-color: var(--color-nav);
 }
 
 #legende {
@@ -201,17 +196,6 @@ nav a, nav div {
 }
 
 /*spécificité articles*/
-#categorie {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#titre {
-  text-transform: capitalize;
-  font-size: 200%;
-  border-bottom: solid 1px var(--color-police);
-}
-
 #br, #bsas, #bpython, #bgeneral {
   display: none;
 }
