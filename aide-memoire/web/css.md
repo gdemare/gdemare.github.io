@@ -53,7 +53,7 @@ Direction :
 ### Contenaire
 * `display: flex;` activer la propriéte flex.
 * `flex-direction: direction;` direction de l'alignement().
-direction :
+Direction :
   * `row`
   * `column`
   * `row-reverse`

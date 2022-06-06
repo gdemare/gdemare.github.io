@@ -1,6 +1,6 @@
 ## A
 
-* `Aménité environementale` les aspectis de l'environnnement agréable à l'Homme.
+* `Aménité environementale` les aspects de l'environnnement agréable à l'Homme.
 
 ## B
 
