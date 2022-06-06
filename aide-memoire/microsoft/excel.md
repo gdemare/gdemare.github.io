@@ -9,10 +9,10 @@
 
 #### Une cellule
 
-1. sélectionner les cellules a garder déverrouiller
-2. clic droit, « Format de cellule » dans l’onglet « Protection »
-3. décocher « Verrouillé », puis « OK »
-4. aller dans « Révision » Protéger la feuille »
+1. Sélectionner les cellules a garder déverrouiller
+2. Clic droit, « Format de cellule » dans l’onglet « Protection »
+3. Décocher « Verrouillé », puis « OK »
+4. Aller dans « Révision » Protéger la feuille »
 
 ## Opérateurs logiques
 
