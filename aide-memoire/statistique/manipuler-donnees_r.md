@@ -94,6 +94,7 @@ Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
 ## Réorganiser les données
 package : tidyr
 * `pivot_wider(names_from = var_devien_colonne, values_from = valeur)` transforme une variable en plusieurs colonnes.
+
 ```
 # La variable treatment (avec les modalités A, B, C ...) est transformée en colonne (A, B, C D). La valeur est la somme des decrease. Chaque ligne correspond à une valeur de rowpos.
 OrchardSprays %>% 
