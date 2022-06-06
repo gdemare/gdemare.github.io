@@ -221,6 +221,7 @@ function bouton(selection) {
 };
 
 loadContenu(url+"html/accueil.html",0, "contenuHome");
+
 $('#Bhome').click(function() {
   document.getElementById("contenu").innerHTML = "";
   loadContenu(url+"html/accueil.html",0, "contenuHome");

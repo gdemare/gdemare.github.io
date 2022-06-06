@@ -1,9 +1,16 @@
-#contenu pre, #contenu code {
-   background-color: var(--color-code);
-   border-radius: 0.1cm;
-   padding: 0.1cm;
-   line-height: 1.5em;
-   overflow: auto;
+#contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+p, ul, pre, code {
+  display: inline-flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+#contenu ul  {
+  margin-top: 0px;
 }
 
 #contenu a {
@@ -29,11 +36,15 @@
 
 /*propiété du texte*/
 
+#contenu h2,#contenu h3 {
+  width: auto;
+}
+
 #contenu h2 {
   border-top: solid 1px var(--color-code);
   font-size: 1.4em;
-  width: 100%;
   font-weight: normal;
+  margin-bottom: 0px;
 }
 
 #contenu h2:first-child {
@@ -43,9 +54,32 @@
 #contenu h3 {
   font-size: 1.2em;
   margin: 0px;
-  min-width: 100%;
   font-weight: normal;
 }
+
+#contenu p {
+  margin-bottom: 0px;
+}
+
+#contenu pre, #contenu code {
+   background-color: var(--color-code);
+   border-radius: 0.1cm;
+   padding: 0.1cm;
+   line-height: 1.5em;
+   overflow: auto;
+}
+
+#contenu pre {
+  overflow:auto;
+  width: 95%;
+}
+
+#contenu code {
+  overflow:auto;
+}
+
+
+/**Tableau**/
 
 #contenu table {
   text-align: left;
@@ -85,18 +119,3 @@
   padding: 0.2cm;
 }
 
-#contenu ul {
-  display: block;
-}
-
-#contenu pre {
-  overflow:auto;
-  display: inline-grid;
-  width: 95%;
-}
-
-
-#contenu code {
-  overflow:auto;
-  display: inline-grid;
-}

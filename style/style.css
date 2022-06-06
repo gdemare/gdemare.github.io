@@ -41,7 +41,7 @@ body {
   background-color: var(--color-body);
   color : var(--color-police);
   font-family: 'Roboto', sans-serif;
-  font-weight: lighter; 
+  font-weight: lighter;
 }
 
 header {
@@ -101,9 +101,9 @@ header div div {
 }
 
 .bouton i {
-  min-width: 1cm;
+  display: flex;
+  flex-grow: 1;
 }
-
 
 /*section*/
 
@@ -112,10 +112,6 @@ article {
   padding-left: 2%; 
   padding-right: 2%;
   width: 96%;
-}
-
-#contenu {
-  line-height: 1.5;
 }
 
 /*nav*/
@@ -132,6 +128,7 @@ nav h2 {
 
 nav div {
   text-transform: capitalize;
+  align-items: center;
 }
 
 
@@ -155,6 +152,7 @@ nav a, nav div {
 
 #legende {
   flex-direction: column;
+    align-items: flex-start;
 }
 
 #legende:hover, #legende div:hover {
@@ -162,11 +160,10 @@ nav a, nav div {
 }
 
 #legende div {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+  display: inline-flex;
   padding-top: 0px;
   padding-bottom: 0px;
+  flex: 1;
 }
 
 .r, .sas, .python {
@@ -241,4 +238,33 @@ a:hover, .bouton:hover, nav div:hover, .favori a:hover {
   border: none;
   cursor: pointer;
   border-radius: 0.2cm;
+}
+
+@media (max-device-width:15cm) {
+  nav {
+    font-size: 200%;
+  }
+
+  .bouton {
+    font-size: 200%;
+    padding: 1em;
+  }
+
+    .favori a {
+    width: 100%;
+    margin: 0px;
+    border-radius: 0.3em;
+    border: 2px solid var(--color-body);
+    margin-bottom: 0.5em;
+  }
+
+  .colonne {
+    width: 100%;
+    margin: 0px;
+    margin-top: 1em;
+  }
+
+  #contenu {
+    font-size: 2em;
+  }
 }

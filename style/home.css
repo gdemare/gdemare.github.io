@@ -61,32 +61,8 @@
 
 .liste h3 {
   margin: 0px;
-  padding: 0.4em;
+  padding: 0.4em; 
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
-}
-
-@media only screen and (max-device-width:734px) {
-  :root{
-    --color-nav: rgb(19,17,28);
-  } 
-
-  section {
-    font-size: 1.2em;
-  }
-
-  .favori a {
-    width: 100%;
-    margin: 0px;
-    border-radius: 0.3em;
-    border: 2px solid var(--color-body);
-    margin-bottom: 0.5em;
-  }
-
-  .colonne {
-    width: 100%;
-    margin: 0px;
-    margin-top: 1em;
-  }
 }
