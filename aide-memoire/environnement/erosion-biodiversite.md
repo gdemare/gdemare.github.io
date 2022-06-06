@@ -25,7 +25,7 @@ Indicateur :
 
 ## World Wild Fund
 
-La World Wild Fund publie un rapport sur la biodiversité tout les deux ans depuis 1998.
+La World Wild Fund publie un rapport sur la biodiversité tous les deux ans depuis 1998.
 
 4 005 espèces repartitent en 16 500 populations.
 
@@ -45,11 +45,11 @@ Les menaces qui pesent sur les especes et les ecosystemes :
 ## Indicateurs
 
 * `Jour du depassement` jour où l'humanité a consommée toutes les ressources produites par la Terre en une année.
-* `Jour de dereglement` instant à partir duquel le bilan carbone du pays est supérieur à sa capacité d'absorption.
+* `Jour du déréglement` instant à partir duquel le bilan carbone d'un pays est supérieur à sa capacité d'absorption.
 
-## les menaces qui pesent sur l'humanité
+## Les menaces qui pesent sur l'Humanité
 
 * Réchauffement climatique
 * Pollution
-* Rarefaction des ressources
+* Raréfaction des ressources
 * Effondrement de la biodiversite
