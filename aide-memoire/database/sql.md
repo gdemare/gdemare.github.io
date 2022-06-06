@@ -1,4 +1,4 @@
-## Selectionner
+## Sélectionner
 
 ```
 SELECT * FROM tab
@@ -22,6 +22,7 @@ Options :
 * `OFFSET` saisir le numéro du 0 pour le LIMIT.
 
 ## Filter avec une fonction d'agrégation
+
 ```
 SELECT * FROM tab
 HAVING fct(col1)
@@ -35,6 +36,7 @@ GROUP BY col1, col2
 ```
 
 NB : il est possible d’utiliser le numéro de la colonne à la place de son nom.
+
 ## Tirer 
 
 ```
@@ -49,8 +51,8 @@ Paramétre (par défaut ASC) :
 
 ## Renommer les libellés
 
-`col AS nv_nom` renommer une colonne.
-`table AS nv_nom` renommer une table.
+* `col AS nv_nom` renommer une colonne.
+* `table AS nv_nom` renommer une table.
 
 ## Les comparateurs
 
