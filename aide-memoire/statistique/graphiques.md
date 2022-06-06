@@ -5,9 +5,9 @@ Les types de variables :
 | nominale | discrete |
 | ordinale | continue |
 
-## 1 variable
+## Un variable
 
-Ordonnee : Effectif/frequence
+Ordonnée : Effectif/fréquence
 
 | Variable | graphique | 
 |---|---|
@@ -16,18 +16,19 @@ Ordonnee : Effectif/frequence
 | discrete | diagramme en baton | 
 | continu | histogramme, courbe, densite cumulee, box plot |
  
-## Croisement a 2 variables
+## Croisement entre deux variables
 
-quantitative/qualitative
-
-quantitative
-histrogramme empilé
-histogramme
-deux variantes effectifs et frequence normalisé
-
-| absisse/ordonné | nominale | ordinale | discrete | continue |
+| Absisse/ordonné | nominale | ordinale | discrete | continue |
 |---|---|---|---|---|
 | nominale | histrogramme* | | Diagramme de Kiviat | Diagramme de Kiviat |
 | ordinale | histogramme* | | | |
 | discrete | courbes empilées |  |  | nuage de points; boxplot |
 | continue | box plot | box plot | | nuage de points |
+
+#### Deux quantitatives
+
+* histrogramme empilé
+* histogramme
+* deux variantes effectifs et fréquence normalisée
+
+
