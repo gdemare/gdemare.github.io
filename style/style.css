@@ -251,6 +251,19 @@ a:hover, .bouton:hover, nav div:hover, .favori a:hover {
     width: 50%;
   }
 
+  header {
+    bottom: 0px;
+    background-color: var(--color-bouton);
+  }
+
+  header div:first-child {
+    flex:0;
+  }
+
+  #context, #homip {
+    border: none;
+  }
+
   #contenu {
     padding-left: 5%;
     padding-right: 5%;
