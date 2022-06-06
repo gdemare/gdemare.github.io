@@ -1,4 +1,4 @@
-requis la bibliothèque `rsconnect`.
+requis la bibliothèque `rsconnect`
 
 1. Découper le projet en deux fichiers : sever.R et ui.R.
 2. Générer un jeton depuis le site [shinyapps](https://www.shinyapps.io) : Token. 
