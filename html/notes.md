@@ -42,7 +42,7 @@ Convertisseurs :
 * Dictionnaires pour kobo [kobo ebook reader dict](https://github.com/BoboTiG/ebook-reader-dict)
 * Outils en ligne pour PDF notamment Optical Character Recognition [PDF 24](https://tools.pdf24.org/fr/)
 
-## Applciation Android
+## Applications Android
 
 * [Droid-ify](https://f-droid.org/en/packages/com.looker.droidify/)
 * Apk Android sur [mon drive](https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA)
