@@ -5,11 +5,11 @@ $("#Bmenu").click( function(){
   var menu = document.getElementsByTagName('nav')[0],
     style = window.getComputedStyle(menu),
     affiche = style.getPropertyValue('display');
-  if( affiche=='block' ){
+  if( affiche=='flex' ){
     menu.style.display = "none";
   }
   else {
-    menu.style.display = "block";
+    menu.style.display = "flex";
   }
 });
 

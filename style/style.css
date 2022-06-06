@@ -41,7 +41,6 @@ body {
   background-color: var(--color-body);
   color : var(--color-police);
   font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
 }
 
 header {
@@ -58,6 +57,7 @@ nav {
   width: fit-content;
   padding-left: 15px;
   padding-right: 15px;
+  flex-direction: column;
 }
 
 section {
@@ -96,13 +96,16 @@ header div div {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0.2cm;
   text-align: center;
 }
 
 .bouton i {
-  display: flex;
+  display: inline-flex;
   flex-grow: 1;
+  margin: 0.2cm;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
 }
 
 /*section*/
@@ -168,7 +171,6 @@ nav a, nav div {
 
 .r, .sas, .python {
   display: block;
-  margin-top: 0.1cm;
   margin-left: 0.05cm;
   border-radius: 0.5cm;
   width: 0.7em;
@@ -240,31 +242,40 @@ a:hover, .bouton:hover, nav div:hover, .favori a:hover {
   border-radius: 0.2cm;
 }
 
-@media (max-device-width:15cm) {
+@media screen and (max-device-width:15cm) {
+  body {
+    font-size: 32px;
+  }
+
   nav {
-    font-size: 200%;
-  }
-
-  .bouton {
-    font-size: 200%;
-    padding: 1em;
-  }
-
-    .favori a {
-    width: 100%;
-    margin: 0px;
-    border-radius: 0.3em;
-    border: 2px solid var(--color-body);
-    margin-bottom: 0.5em;
-  }
-
-  .colonne {
-    width: 100%;
-    margin: 0px;
-    margin-top: 1em;
+    width: 50%;
   }
 
   #contenu {
-    font-size: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+  }
+
+  .favori a {
+    margin: 0.5em;
+    padding: 1em;
+  }
+
+  .bouton {
+    padding: 1em;
+  }
+
+  #contenuHome, #contenu {
+    padding-top: 5cm;
+    display: absolute;
+  }
+
+  #contenu table {
+    font-size: 1em;
+  }
+
+  p, li {
+    font-size: 0.5em;
   }
 }
