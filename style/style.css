@@ -91,6 +91,7 @@ header #langage {
 header li, header a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
 header div div {
@@ -109,22 +110,24 @@ header div li {
 } 
 
 header a {
-  border: var(--color-header) 2px solid;
+  border: var(--color-header) 1px solid;
   border-radius: 10em;
   padding: 0.5em;
   height: fit-content;
   background-color: var(--color-bouton);
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 header a:hover {
-  border: var(--color-bouton) 2px solid;
+  border: var(--color-bouton) 1px solid;
 }
 
 #langage {
   display: flex;
   border-radius: 10em;
   padding: 0.1cm;
-  border: solid rgb(97,97,97) 2px;
+  border: solid rgb(97,97,97) 1px;
   margin: auto;
   background-color: var(--color-bouton);
 }
@@ -263,13 +266,30 @@ a:hover, nav div:hover, .favori a:hover, header li:hover {
   header {
     flex-direction: column-reverse;
     bottom: 0px;
-    background-color: var(--color-bouton);
-    font-size: 1.2em;
   }
 
-  header div div {
+  header div {
+    align-items: center;
     flex: 1;
-    justify-content: center;
+  }  
+
+  header div:nth-child(2) div {
+    margin-top: 0.5cm;
+    margin-bottom: 0.2cm;
+  }
+
+  header div:nth-child(2) div li {
+    font-size: 1.5em;
+    width: 2cm;
+    height: 2cm;
+  }
+
+  header div a {
+    display: none;
+  }
+
+  #langage li {
+    padding: 1em;
   }
 
   .bouton:hover {
