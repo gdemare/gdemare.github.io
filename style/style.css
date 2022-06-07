@@ -98,7 +98,7 @@ header div div {
   flex: 0;
   padding: 0.2cm;
   border-radius: 0.3em;
-  border: var(--color-header) 2px solid;
+  border: var(--color-header) 1px solid;
 }
 
 header div li {
