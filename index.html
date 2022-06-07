@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <link id='pagestyle' href="style/text.css" rel="stylesheet">
@@ -19,23 +18,22 @@
 </head>
 <body>
     <header>
-        <div>
-        </div>
-        <div style="flex:0;">
-            <div id="homip">
-                <div id="Bmenu" class="bouton"><i class="lni lni-menu"></i></div>
-                <div id="Bhome" class="bouton"><i class="lni lni-home"></i></div>
-                <div id="Bnote" class="bouton"><i class="lni lni-notepad"></i></div>
+        <div style="justify-content: flex-end; padding-left: 5%; padding-right: 0.1em;"></div>
+            <div>
+                <div style="background-color: var(--color-bouton);">
+                    <li id="Bmenu"><i class="lni lni-menu"></i></li>
+                    <li id="Bhome"><i class="lni lni-home"></i></li>
+                    <li id="Bnote"><i class="lni lni-notepad"></i></li>
+                </div>
             </div>
-        </div>
-        <div style="justify-content: flex-end;  flex:1; margin-right: 1cm;">
-            <div id="context" style="justify-content: flex-start;">
-                <div id='bgeneral' class="bouton">Général</div>
-                <div id='bpython' class="bouton">Python</div>
-                <div id='bsas' class="bouton">SAS</div>
-                <div id='br' class="bouton">R</div>
-                <a id="edit" class="bouton"><i class="lni lni-pencil"></i></a>
+        <div style="justify-content: flex-end; padding-right: 5%;padding-left: 0.1em;">
+            <div  id="langage">
+                <li id='bgeneral'>Général</li>
+                <li id='bpython'>Python</li>
+                <li id='bsas'>SAS</li>
+                <li id='br'>R</li>
             </div>
+            <a id="edit"><i class="lni lni-pencil"></i></a>
         </div>
     </header>
     <nav style="display: none">
@@ -48,10 +46,12 @@
       <div id="couleurs">Couleurs</div>
     </nav>
     <section>
-        <article id="contenu" style="margin-top: 2cm;">
+        <article style="padding-top: 2cm;"></article>
+        <article id="contenu">
         </article>
-        <article id="contenuHome" style="margin-bottom: 2cm;">
+        <article id="contenuHome">
         </article>
+        <article style="padding-bottom: 2cm;"></article>
     </section>
 </body>
 

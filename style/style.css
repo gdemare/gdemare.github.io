@@ -7,6 +7,7 @@
   --color-gray: rgb(142,142,147);
   --color-code: rgb(44,44,46);
   --color-home: rgb(54,54,64);
+  --color-header: rgb(77,77,77);
 }
 
 ::-webkit-scrollbar {
@@ -49,6 +50,10 @@ header {
   flex-direction: row;
   width: 100%;
   padding-top: 0.2cm;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
 }
 
 nav {
@@ -73,39 +78,64 @@ section {
 header div {
   display: flex;
   flex-direction: row;
-  flex: 1 ;
-  justify-content: center;
-  align-content: center;
   text-align: center;
+  justify-content: center;
+  flex: 1;
+}
+
+header #langage {
+  flex-grow: 0;
+  background-image: var(--color-bouton);
+}
+
+header li, header a {
+  display: inline-flex;
+  align-items: center;
 }
 
 header div div {
-  flex-grow: 0;
-  border-radius: 0.5em;
-}
-
-#context, #homip {
-  background-color: var(--color-bouton);
-  border: 1px solid var(--color-body);
+  flex: 0;
   padding: 0.2cm;
-  align-content: flex-end;
+  border-radius: 0.3em;
+  border: var(--color-header) 2px solid;
 }
 
-.bouton {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+header div li {
   text-align: center;
+  padding: 0.2cm;
+  padding-left: 0.4cm;
+  padding-right: 0.4cm;
+  border-radius: 0.3em;
+} 
+
+header a {
+  border: var(--color-header) 2px solid;
+  border-radius: 10em;
+  padding: 0.5em;
+  height: fit-content;
+  background-color: var(--color-bouton);
 }
 
-.bouton i {
-  display: inline-flex;
-  flex-grow: 1;
-  margin: 0.2cm;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+header a:hover {
+  border: var(--color-bouton) 2px solid;
+}
 
+#langage {
+  display: flex;
+  border-radius: 10em;
+  padding: 0.1cm;
+  border: solid rgb(97,97,97) 2px;
+  margin: auto;
+  background-color: var(--color-bouton);
+}
+
+#langage li {
+  font-size: 1em;
+  padding: 0.1em;
+  padding-left: 0.4cm; 
+  padding-right: 0.4cm; 
+  border-radius: 10em;
+  border-radius: 10em;
 }
 
 /*section*/
@@ -115,6 +145,10 @@ article {
   padding-left: 2%; 
   padding-right: 2%;
   width: 96%;
+}
+
+#contenu {
+  flex: 0;  
 }
 
 /*nav*/
@@ -132,6 +166,7 @@ nav h2 {
 nav div {
   text-transform: capitalize;
   align-items: center;
+  border-radius: 0.3em;
 }
 
 
@@ -204,30 +239,6 @@ nav a, nav div {
   border-radius: 0.3em;
 }
 
-#fav {
-  position: fixed;
-  background-color: var(--color-bouton);
-  width: auto;
-  grid-template-columns: auto auto auto auto;
-  border-radius: 0.2cm;
-  padding: 0.2cm;
-  margin-bottom: 0.3cm;
-}
-
-#fav a {
-  text-align: center;
-  border: solid 2px var(--color-body);
-  background-color: var(--color-body);
-  margin: 0.05cm;
-  padding: 0.2cm;
-  border-radius: 0.2cm;
-}
-
-#fav a:hover {
-  border: solid 2px var(--color-body);
-  background-color: var(--color-bouton);
-}
-
 /**lien*/
 a, nav div:hover {
   color: var(--color-police);
@@ -235,11 +246,9 @@ a, nav div:hover {
   font-weight: normal;
 }
 
-a:hover, .bouton:hover, nav div:hover, .favori a:hover {
+a:hover, nav div:hover, .favori a:hover, header li:hover {
   background-color: var(--color-hover);
-  border: none;
   cursor: pointer;
-  border-radius: 0.2cm;
 }
 
 @media screen and (max-device-width:15cm) {
@@ -252,16 +261,19 @@ a:hover, .bouton:hover, nav div:hover, .favori a:hover {
   }
 
   header {
+    flex-direction: column-reverse;
     bottom: 0px;
     background-color: var(--color-bouton);
+    font-size: 1.2em;
   }
 
-  header div:first-child {
-    flex:0;
+  header div div {
+    flex: 1;
+    justify-content: center;
   }
 
-  #context, #homip {
-    border: none;
+  .bouton:hover {
+    border-radius: 10em;
   }
 
   #contenu {
@@ -273,6 +285,12 @@ a:hover, .bouton:hover, nav div:hover, .favori a:hover {
   .favori a {
     margin: 0.5em;
     padding: 1em;
+    border-radius: 2em;
+    min-width: 3cm;
+  }
+
+  .favori a:hover {
+    border-radius: 2em;
   }
 
   .bouton {
@@ -280,7 +298,7 @@ a:hover, .bouton:hover, nav div:hover, .favori a:hover {
   }
 
   #contenuHome, #contenu {
-    padding-top: 5cm;
+    padding-bottom: 2cm;
     display: absolute;
   }
 
@@ -291,4 +309,9 @@ a:hover, .bouton:hover, nav div:hover, .favori a:hover {
   p, li {
     font-size: 0.5em;
   }
+
+  #contenu li {
+    margin-top: 1.1em;
+  }
 }
+

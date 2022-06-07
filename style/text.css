@@ -19,7 +19,7 @@ pre, ol, ul {
 }
 
 #contenu li {
-  margin-top: 1.1em;
+  margin-top: 0.1cm;
 }
 
 #contenu a {
@@ -99,7 +99,7 @@ pre, ol, ul {
 
 #contenu th {
   border-bottom: solid 1px var(--color-code);
-  font-weight: normal;
+  font-weight: bolder;
 }
 
 #contenu th:last-child {

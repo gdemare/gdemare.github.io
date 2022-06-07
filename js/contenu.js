@@ -1,8 +1,7 @@
 $(document).ready(function() {
-
 // dossier ; sous dossier; fichier; general; r; sas; python
 donnee = [
-    //['company',null,'animateur',1,0,0,0],
+    ['company',null,'animateur',1,0,0,0],
     ['company', null, 'job-interview', 1, 0, 0, 0],
     ['company', null, 'MOA-MOE', 1, 0, 0, 0],
     ['database', null, 'business-object', 1, 0, 0, 0],
@@ -75,6 +74,7 @@ donnee = [
     ['web', null, 'java-script', 1, 0, 0, 0],
     ['web', null, 'php', 1, 0, 0, 0]
 ];
+
 
 //******************************
 // instruction par début
