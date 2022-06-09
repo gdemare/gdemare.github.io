@@ -8,9 +8,9 @@
 
 #### Étude de documents (méthode)
 
-1.	Technique utilisée en précisant s’il s’agit :
+1.	Technique utilisée en précisant s'il s'agit :
  *	d’une approche macro ou microscopique
- *	de conditions expérimentales in vivo ou in vitro. Attention il faut nuancer les résultats car il peut exister d’importantes différences entre ces deux conditions.
+ *	de conditions expérimentales in vivo ou in vitro. Attention il faut nuancer les résultats car il peut exister d'importantes différences entre ces deux conditions.
  *	Déterminer le témoin.
 
 2.	Objectif (à mettre sous forme de question) Quel est l’objectif de l’expérience ? À quelle question les chercheurs souhaitent répondre ? À formuler sous forme d’une question.
