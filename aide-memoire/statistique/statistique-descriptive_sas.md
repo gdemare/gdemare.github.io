@@ -10,11 +10,11 @@ RUN;
 ```
 
 Option :
-* `MISSING` Créer une modalité valeur manquante.
+* `MISSING` créer une modalité valeur manquante.
 * `var='libellé'` changer le libellé dans le tableau.
 * `FORMAT variable format.` formater une variable.
 
-Principale statistiques disponibles dans la PROC TABULATE.
+Principales statistiques disponibles dans la PROC TABULATE.
 
 | Fonction | Définition |
 |---|---|
@@ -84,7 +84,7 @@ RUN;
 Option :
 
 * `NOPROB` masquer la p-value.
-* `NOCORR` masquer le coeeficient de corrélation.
+* `NOCORR` masquer le coefficient de corrélation.
 
 ## Afficher
 
