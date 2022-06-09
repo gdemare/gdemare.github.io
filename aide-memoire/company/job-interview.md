@@ -65,9 +65,10 @@ Gestion de projet
 | curieux (rechercher de la connaissance) | perfectionniste (attacher de l'importance à des détails) |
 | flexible | pessimiste (juger contatement et mélioratifement) |
 | ambitieux | multitâche (faire plusieurs choses en même temps) |
-| mobile | passif |
-||rancunier|
-||impatient|
+| proactif | passif |
+| capacité de remise en question |rancunier|
+| mobile | impatient|
+| autonome | |
 
 ## Salaire
 
@@ -76,7 +77,6 @@ Gestion de projet
 | 23 616 | 19 200 | 1600 | 0 |
 | 26 568‬ | 21 600 | 1800 | 0 |
 | 29 520‬ | 2400 | 2000 | 0 |
-
 
 # Le langage
 
