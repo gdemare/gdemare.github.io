@@ -5,6 +5,7 @@ donnee = [
     ['company',null,'animateur',1,0,0,0],
     ['company', null, 'job-interview', 1, 0, 0, 0],
     ['company', null, 'MOA-MOE', 1, 0, 0, 0],
+    ['communication', null, 'rhetorique', 1, 0, 0, 0],
     ['database', null, 'business-object', 1, 0, 0, 0],
     ['database', null, 'data-warehouse', 1, 0, 0, 0],
     ['database', null, 'json', 1, 0, 0, 0],

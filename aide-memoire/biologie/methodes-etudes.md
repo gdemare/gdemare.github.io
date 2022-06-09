@@ -68,3 +68,21 @@ westernblot
 
 * PCR (amplification en chaine polymérase)
 * 
+<<<<<<< Updated upstream
+=======
+
+électrophorèse
+
+* SDS-PAGE
+*
+
+Chromatographie
+
+*
+*
+*
+
+Spectrométrie de masse
+
+quantification et détection
+>>>>>>> Stashed changes
