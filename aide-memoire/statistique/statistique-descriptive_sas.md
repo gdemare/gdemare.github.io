@@ -10,7 +10,7 @@ RUN;
 ```
 
 Option :
-* `MISSING` créer une modalité valeur manquante.
+* `MISSING` créer une modalité "valeur manquante".
 * `var='libellé'` changer le libellé dans le tableau.
 * `FORMAT variable format.` formater une variable.
 
