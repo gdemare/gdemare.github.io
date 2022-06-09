@@ -1,5 +1,7 @@
 // dossier ; sous dossier; fichier; general; r; sas; python
 donnee = [
+    ['biologie',null,'methodes-etudes',1,0,0,0],
+    ['biologie', null, 'methodes-observation', 1, 0, 0, 0],
     ['company',null,'animateur',1,0,0,0],
     ['company', null, 'job-interview', 1, 0, 0, 0],
     ['company', null, 'MOA-MOE', 1, 0, 0, 0],
