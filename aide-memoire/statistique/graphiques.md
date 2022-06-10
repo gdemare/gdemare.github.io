@@ -1,15 +1,15 @@
 Les types de variables :
 
-|qualitative | quantitative |
+| Qualitative | Quantitative |
 |---|---|
-| nominale | discrete |
+| nominale | discrète |
 | ordinale | continue |
 
 ## Un variable
 
 Ordonnée : Effectif/fréquence
 
-| Variable | graphique | 
+| Variable | Graphique |
 |---|---|
 | nominale | diagramme en barre, diagramme circulaire | descroissant ordonnee par eff/freq
 | ordinale | diagramme en barre | classee par la var|
@@ -18,7 +18,7 @@ Ordonnée : Effectif/fréquence
  
 ## Croisement entre deux variables
 
-| Absisse/ordonné | nominale | ordinale | discrete | continue |
+| Abscisse/ordonné | Nominale | Ordinale | Discrète | Continue |
 |---|---|---|---|---|
 | nominale | histrogramme* | | Diagramme de Kiviat | Diagramme de Kiviat |
 | ordinale | histogramme* | | | |
@@ -29,6 +29,4 @@ Ordonnée : Effectif/fréquence
 
 * histrogramme empilé
 * histogramme
-* deux variantes effectifs et fréquence normalisée
-
-
+* deux variantes effectifs ou fréquences normalisées.
