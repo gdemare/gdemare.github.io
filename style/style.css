@@ -98,7 +98,7 @@ header div div {
   flex: 0;
   padding: 0.2cm;
   border-radius: 0.3em;
-  border: var(--color-header) 1px solid;
+  border: var(--color-body) 1px solid;
 }
 
 header div li {
@@ -110,7 +110,7 @@ header div li {
 } 
 
 header a {
-  border: var(--color-header) 1px solid;
+  border: var(--color-body) 1px solid;
   border-radius: 10em;
   padding: 0.5em;
   height: fit-content;
@@ -119,15 +119,10 @@ header a {
   margin-left: 1em;
 }
 
-header a:hover {
-  border: var(--color-bouton) 1px solid;
-}
-
 #langage {
   display: flex;
   border-radius: 10em;
   padding: 0.1cm;
-  border: solid rgb(97,97,97) 1px;
   margin: auto;
   background-color: var(--color-bouton);
 }
