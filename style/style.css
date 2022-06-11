@@ -3,7 +3,7 @@
   --color-nav: rgb(29,27,38);
   --color-body: rgb(33,32,42);
   --color-police: rgb(236,238,240);
-  --color-bouton: rgb(40,40,80);
+  --color-bouton: rgb(142,142,147);/*rgb(40,40,80);*/
   --color-gray: rgb(142,142,147);
   --color-code: rgb(44,44,46);
   --color-home: rgb(54,54,64);
@@ -54,6 +54,7 @@ header {
   flex-wrap: wrap;
   flex: 1;
   align-items: center;
+  color: rgb(20, 20, 20);
 }
 
 nav {
@@ -85,7 +86,7 @@ header div {
 
 header #langage {
   flex-grow: 0;
-  background-image: var(--color-bouton);
+  background: var(--color-bouton);
 }
 
 header li, header a {
@@ -98,7 +99,6 @@ header div div {
   flex: 0;
   padding: 0.2cm;
   border-radius: 0.3em;
-  border: var(--color-body) 1px solid;
 }
 
 header div li {
@@ -110,11 +110,11 @@ header div li {
 } 
 
 header a {
-  border: var(--color-body) 1px solid;
   border-radius: 10em;
   padding: 0.5em;
   height: fit-content;
   background-color: var(--color-bouton);
+  color: rgb(20,20,20);
   margin-right: 1em;
   margin-left: 1em;
 }
@@ -247,6 +247,11 @@ a, nav div:hover {
 a:hover, nav div:hover, .favori a:hover, header li:hover {
   background-color: var(--color-hover);
   cursor: pointer;
+  color: var(--color-police);
+}
+
+#contenuHome a:hover {
+	border-radius: 0.3em;
 }
 
 @media screen and (max-device-width:15cm) {
@@ -287,10 +292,6 @@ a:hover, nav div:hover, .favori a:hover, header li:hover {
     padding: 1em;
   }
 
-  .bouton:hover {
-    border-radius: 10em;
-  }
-
   #contenu {
     padding-left: 5%;
     padding-right: 5%;
@@ -300,12 +301,7 @@ a:hover, nav div:hover, .favori a:hover, header li:hover {
   .favori a {
     margin: 0.5em;
     padding: 1em;
-    border-radius: 2em;
     min-width: 3cm;
-  }
-
-  .favori a:hover {
-    border-radius: 2em;
   }
 
   .bouton {

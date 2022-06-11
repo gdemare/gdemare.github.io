@@ -13,12 +13,12 @@
 .favori a {
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 0.3cm;
   padding: 0.5em;
   background-color: var(--color-home);
+  color: ;
   border-radius: 0.3em;
   min-width: 10%;
-  margin-bottom: 0.3em;
-  margin-bottom: 0.3cm;
 }
 
 .liste {
