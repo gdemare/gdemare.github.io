@@ -95,15 +95,19 @@ header li, header a {
   justify-content: center;
 }
 
+header {
+  font-size: 1.2em;
+}
+
 header div div {
   flex: 0;
-  padding: 0.2cm;
+  padding: 0.2em;
   border-radius: 0.3em;
 }
 
 header div li {
   text-align: center;
-  padding: 0.2cm;
+  padding: 0.2em;
   padding-left: 0.4cm;
   padding-right: 0.4cm;
   border-radius: 0.3em;
