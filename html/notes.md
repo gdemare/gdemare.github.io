@@ -70,6 +70,7 @@ Récupérer les données stockées sur Google [Google takeout](takeout.google.co
 Icones et font :
 * [Font awesome](https://fontawesome.com/) - `<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">`
 * [Line icons](https://lineicons.com/icons/?type=free) - `<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">`
+* [Boxicons](https://boxicons.com/) - `<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>`
 
 Images gratuites : [Pexels](https://www.pexels.com/)
 
