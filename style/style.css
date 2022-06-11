@@ -247,7 +247,6 @@ a, nav div:hover {
 a:hover, nav div:hover, .favori a:hover, header li:hover {
   background-color: var(--color-hover);
   cursor: pointer;
-  color: var(--color-police);
 }
 
 #contenuHome a:hover {
