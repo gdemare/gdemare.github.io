@@ -297,14 +297,19 @@ a:hover, nav div:hover, .favori a:hover, header li:hover {
     width: 90%;
   }
 
+  .favori {
+    margin-top: 50%;
+    margin-bottom: 2cm;
+  }
+
   .favori a {
-    margin: 0.5em;
     padding: 1em;
     min-width: 3cm;
   }
 
-  .bouton {
-    padding: 1em;
+  .colonne a {
+    justify-content: center; 
+    padding-left: 0px;
   }
 
   #contenuHome, #contenu {

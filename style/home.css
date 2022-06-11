@@ -15,10 +15,9 @@
   margin-right: 5px;
   margin-bottom: 0.3cm;
   padding: 0.5em;
-  background-color: var(--color-home);
-  color: ;
   border-radius: 0.3em;
   min-width: 10%;
+  background-color : var(--color-home);
 }
 
 .liste {
