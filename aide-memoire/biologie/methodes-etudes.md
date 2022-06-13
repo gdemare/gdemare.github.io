@@ -86,4 +86,12 @@ Chromatographie
 Spectrométrie de masse
 
 quantification et détection
->>>>>>> Stashed changes
+
+
+Méthodes d’étude du rôle d’un type cellulaire
+Pour déterminer le rôle d’un type cellulaire, on détruit le type cellulaire étudié. Il existe deux méthodes, l’utilisation :
+•	D’animaux dont l’expression des gènes qui fabriquent le type cellulaire étudié est bloqué.
+•	La filtration par l’utilisation d’antigènes qui ciblent des récepteurs membranaires spécifiques de la cellule étudiée. Cette méthode peut être réalisé soit.
+À l’intérieur de l’organisme. La fixation des anticorps qui conduit à la mort cellulaire.	À l’extérieur de l’organisme. Les cellules sont filtrées par exemple par l’ajout d’aimant aux anticorps.
+PFU méthode pour mesurer la quantité de molécules virales. Lors d’expériences, les quantités virales utilisées sont définies autour de celles qui conduit à un taux de mortalité de 50%. 
+
