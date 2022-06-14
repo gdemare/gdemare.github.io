@@ -35,10 +35,10 @@ Convertisseurs :
 
 ## Téléchargement
 
-* [Twitter yggtorrent](https://mamot.fr/@YggTorrent)
-* [Zone téléchargement](https://zone-telechargement.cam/) [Forum zone téléchargement](https://www.forumzt.com/).
-* [Deemix](https://www.reddit.com/r/deemix/) [Reddit Deemix](https://www.reddit.com/r/deemix/)
-* Livres en anglais [Libgen](http://libgen.rs/)
+* Yggtorrent [Mastodonde](https://mamot.fr/@YggTorrent) - [Forum](https://yggland.fr/)
+* [Zone téléchargement](https://zone-telechargement.cam/) - [Forum zone téléchargement](https://www.forumzt.com/).
+* [Deemix](https://www.reddit.com/r/deemix/) - [Reddit Deemix](https://www.reddit.com/r/deemix/)
+* Livres en anglais : [Libgen](http://libgen.rs/)
 * Dictionnaires pour kobo [kobo ebook reader dict](https://github.com/BoboTiG/ebook-reader-dict)
 * Outils en ligne pour PDF notamment Optical Character Recognition [PDF 24](https://tools.pdf24.org/fr/)
 
