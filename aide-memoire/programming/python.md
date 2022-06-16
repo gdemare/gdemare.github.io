@@ -143,7 +143,7 @@ for i in séquence:
 ```
 Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela parcourt les lettres).
 
-#### Boucle tant que (jusqu'a que ce soit vrai)
+#### Boucle tant que (jusqu'a que ce soit fausse)
 ```
 while condition:
 	instruction
