@@ -31,7 +31,9 @@ Paramètre : faire une chaîne de caractères
 	* `^` triangle
 	* `s` carré
 	* `+` croix
-* L3 type de lignes  `-` ligne `--` pointillé 
+* L3 type de lignes :
+	* `-` ligne.
+	* `--` pointillé.
 Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Paramètres des axes
