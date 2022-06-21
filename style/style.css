@@ -304,17 +304,41 @@ a:hover, nav div:hover, .favori a:hover, header li:hover {
 
   .favori {
     margin-top: 50%;
-    margin-bottom: 2cm;
   }
 
   .favori a {
-    padding: 1em;
-    min-width: 3cm;
+    font-size: 1.2em;
+    padding: 0.8em;
+    border: 0.1em solid var(--color-bouton);
+    margin:0px;
+    margin-top: 0.5em; 
+    margin-right: 0.5em;
+  }
+
+  .colonne {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: rgba(0,0,0,0);
+    align-items: stretch;
+  }
+
+  .colonne h3 {
+    width: 100%;
+    text-align: left;
   }
 
   .colonne a {
     justify-content: center; 
     padding-left: 0px;
+    padding: 0.8em;
+    font-size: 1.2em;
+    border: none;
+    background-color: var(--color-home);
+    border-radius: 0.3em;
+    margin-top: 0.5em; 
+    margin-right: 0.5em;
   }
 
   #contenuHome, #contenu {
