@@ -4,7 +4,7 @@ Ordre de grandeurs des cellules
 | Végétale | 100 |
 | Animale | 10 |
 | Bactérie | 1 |
-|Virus | 0,25 |
+| Virus | 0,25 |
 
 ### Les colorations
 
