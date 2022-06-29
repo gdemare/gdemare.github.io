@@ -22,6 +22,7 @@ Logiciels Windows :
 * [Cryptomator](https://cryptomator.org/downloads/)
 * [Keeweb](https://keeweb.info/)
 * [fluent reader](https://github.com/yang991178/fluent-reader/releases)
+* [Mail spring](https://github.com/Foundry376/Mailspring)
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
