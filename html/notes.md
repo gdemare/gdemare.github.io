@@ -83,8 +83,8 @@ Streaming :
 Cartes IGN :
 
 * Faire des itinéraires[Strava](https://www.strava.com/)
-* Cartes IGN gratuites [Geoportail](https://www.geoportail.gouv.fr/carte) 
-* Parcours et cartes[Viso rando](https://www.visorando.com/)
+* Cartes IGN gratuites [Geoportail](https://www.geoportail.gouv.fr/carte) et [IGN Rando](https://ignrando.fr/fr/parcours) 
+* Parcours et cartes [Viso rando](https://www.visorando.com/)
 * Sentiers de légende [Hikamp](http://www.hikamp.com/)
 
 ## Achat
