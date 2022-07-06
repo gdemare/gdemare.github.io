@@ -28,14 +28,15 @@ Position :
 ## Color
 
 * `rgba(rouge, vert, bleu, transparence)` les trois couleurs primaires (transparence entre 0 et 1).
-* `linear-gradient(direction, couleur1, couleur2)` degradé.
-Direction :
-  * `to right` gauche à droite.
 
 ## Background
 
 * `background-color: couelur;` couleur.
 * `background-image: url('liens');` ajouter une image en arrire plan.
+
+* `linear-gradient(direction, couleur1, couleur2)` degradé. (exemple :  `background-image: linear-gradient(to bottom right, red, yellow)` )
+Direction :
+  * `to right` gauche à droite.
 
 ## Effets de transistion
 
