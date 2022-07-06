@@ -50,7 +50,7 @@ for (var i = 0; i <= content[0].length - 1; i++) {
     menuHtml = menuHtml + '<h2>' + classe.replace(/-/g, ' ') + "</h2>";
   };
   if (condition2) {
-    menuHtml = menuHtml + '<div id="' + content[1][i] + '" >' + content[1][i].replace(/-/g, ' ') + '<i class="lni lni-chevron-right"></i></div>';
+    menuHtml = menuHtml + '<div id="' + content[1][i] + '" >' + content[1][i].replace(/-/g, ' ') + '<i class="bx bx-chevron-right"></i></div>';
   };
 
   var langage = "";
@@ -76,13 +76,13 @@ for (var i = 0; i <= menuSub.length - 1; i++) {
   $("#" + menuSub[i]).click(function() {
     menuSub = $(this)[0].id;
     angle = $("#" + menuSub + " i");
-    if (angle[0].className == 'lni lni-chevron-down') {
-      angle.removeClass('lni-chevron-down');
-      angle.addClass('lni-chevron-right');
+    if (angle[0].className == 'bx bx-chevron-down') {
+      angle.removeClass('bx-chevron-down');
+      angle.addClass('bx-chevron-right');
       valeur = 'none';
     } else {
-      angle.removeClass('lni-chevron-right');
-      angle.addClass('lni-chevron-down');
+      angle.removeClass('bx-chevron-right');
+      angle.addClass('bx-chevron-down');
       valeur = 'flex';
     };
     var elems = document.getElementsByClassName(menuSub);
