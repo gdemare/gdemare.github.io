@@ -39,7 +39,7 @@ body {
   padding: 0px;
   margin: 0px;
   overflow: hidden;
-  background-color: var(--color-body);
+  background: var(--color-body);
   color : var(--color-police);
   font-family: 'Roboto', sans-serif;
 }
@@ -73,6 +73,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient( to top, rgb(17,17,25), rgb(27,27,30) );
 }
 
 /**entête**/
