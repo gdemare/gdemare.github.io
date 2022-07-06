@@ -20,9 +20,9 @@ NB : fonctionne par incrementation
 
 ## Graphique avec pyplot
 
-`from matplotlib import pyplot`
+`from matplotlib import pyplot as pl`
 
-* `pyplot.plot(abscisse, ordonnée, <type_point>)`
+* `plot(abscisse, ordonnée, <type_point>)`
 Paramètre : faire une chaîne de caractères 
 * L1 couleur `'r'` rouge `'y'` jaune `'b'` bleu
 * L2 type de points 
@@ -50,12 +50,16 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 * `title(titre)` ajouter un titre
 * `text(x, y, texte)` placer du texte n'importe ou dans la fenetre.
 
-### camembert 
+### Camembert 
 
 `pyplot.pie(valeur, labels=, radius=)`
 
-### diagramme en barre et histogramme
+### Diagramme en barre et histogramme
 
 `pyplot.bar(libelle, valeur, width=, align='edge')`
 * libelle doit etre au format texte.
 
+### Ajouter plusieurs graphiques à une seule image
+
+`subplot(nb_lignes, nb_col, i+1)` 
+* `i+1` position commence à 1.
