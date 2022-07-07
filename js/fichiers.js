@@ -51,6 +51,7 @@ donnee = [
     ['statistique', 'classification', 'serie-temporelle-simple', 0, 1, 0, 0],
     ['statistique', 'classification', 'serie-temporelle', 1, 0, 0, 0],
     ['statistique', 'mixte', 'reseaux-neurones', 1, 1, 0, 0],
+    ['statistique', 'mixte', 'reseaux-neurones-convulsifs', 1, 0, 0, 1],
     ['statistique', null, 'cluestering-sans-cible', 1, 0, 0, 0],
     ['statistique', null, 'automatiser', 0, 1, 1, 0],
     ['statistique', null, 'carte', 1, 1, 0, 0],
