@@ -45,7 +45,7 @@ library : `NumPy`
 
 ### Importer des fonctions
 
-* `import package` charger un package complet. Les fonctions sont accessibles par `package.fonction
+* `import package` charger un package complet. Les fonctions sont accessibles par `package.fonction`
 * `from package import module` charger un module.
 * `module.fonction()` utiliser une fonction d'un module.
 * `help(module)`afficher les informations sur un module.
@@ -101,7 +101,6 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 #### Expression régulière
 
 `import re`
-
 
 ### Les dates
 Package : `datetime`
@@ -195,7 +194,8 @@ library : `random`
 | fonction | défintion |
 |---|---|
 | `randint(nb1,nb2)` | nbre entier au hasard entre nb1 et nb2 |
-| `random()` | nbre aleatoire entre [0;1] |
+| `random()` | nbre aléatoire entre [0;1] |
+| `randrange(nbre)` | nbre entier aléatoire entre 0 et nbre|
 
 #### Fonction mathématique
 
@@ -261,7 +261,7 @@ Coordonné et position des pixels (x, y) correspont à (largeur, hauteur).
 
 package : `sqlite3`
 
-### connection a la database
+### connexion à la database
 
 ```
 conn = sqlite3.connect('base de donnees.db')
@@ -270,7 +270,7 @@ c = conn.cursor()
 
 `conn.close()` deconnection de la dbb.
 
-### Soumettre une requete
+### Soumettre une requête
 
 * `c.execute('''requete''')`
 * `c.executemany('''requete''', liste)`
@@ -302,6 +302,10 @@ Package `os`
 Package `glob`
 
 * `glob('*.extension')` lister les fichiers.
+
+Package `shutil`
+
+`` copier des fichiers.
 
 ### Enregistrer le fichier
 

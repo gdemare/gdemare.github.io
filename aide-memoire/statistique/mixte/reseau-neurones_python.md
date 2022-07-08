@@ -1,21 +1,5 @@
 Library `tensorflow`
 
-## Importation d'un dossier d'images
-
-`from tensorflow.keras.preprocessing import image_dataset_from_directory`
-
-```
-ds_train_ = image_dataset_from_directory(
-    'pizza/training',
-    labels='inferred',
-    label_mode='binary',
-    image_size=[128, 128],
-    interpolation='nearest',
-    batch_size=64,
-    shuffle=True,
-)
-```
-
 ## Créer un modèle
 
 1. Créer le modèle avec les couches.
@@ -32,16 +16,18 @@ model = keras.Sequential([ layer1, layer2])
 ```
 
 Les couches 
-* `layers.Flatten()` 
+* `layers.Flatten()`
+    * `input_shape=(28,28)` ou `[1]`  taille des données en entrés. 
 * `layers.MaxPool2D`
-* `layers.Dense( units, activation= fonction)` définir une couche.
+* `layers.Dense( units, activation= fonction)` couche la plus simple.  une couche. units correspond aux nombres de sorties.
 	Fonctions d'activation :
 	* `relu`
-	* `sigmoid`
-	* `softmax`
+	* `sigmoid` utile notamment pour renvoyer une probabilité pour les classificateurs binaires.
+    * `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
 * `layers.Conv2D(filters=64, kernel_size=3, activation="relu", padding='same')`
 * `layers.Dropout`
 
+_Rmq :_ il est possible d'appler les fonctions d'activation par `tf.nn.fonction`.
 
 `model.summary()` récapitulatif des couches du modèle.
 
@@ -54,39 +40,48 @@ model.compile(
     metrics=['binary_accuracy']
 )
 ```
-optimizer :
-* `tf.keras.optimizers.Adam(epsilon=0.01)`
+Optimizer, le type de correction appliqué au modèle :
+* `tf.keras.optimizers.Adam()`
+    * `epsilon=0.01` valeur de la correction des poids.
 * `'adam'`
-loss : 
-* sparse_categorical_crossentropy
-* binary_crossentropy
-metrics :
-* accuracy
-* binary_accuracy
+* `'sgd'` 
+* `'rmsprop'`
+
+Loss, l'indicateur a prendre en compte améliorer le modèle : 
+* `sparse_categorical_crossentropy` plusieurs classes.
+* `binary_crossentropy` deux classes.
+* `mean_squared_error` minimise l'erreur au carré.
+
+Metrics :
+* `accuracy` AUC pour cela il faut un jeu de données de validation (fit avec `validation_data`).
+* `binary_accuracy`
+
+
+## Apprendre, évaluer et prédire
 
 ### Entrainer le modèle
 
-```
-history = model.fit(
-    ds_train,
-    validation_data=ds_valid,
-    epochs=2,
-    verbose=0,
-)
-```
+`model.fit( ds_train, epochs=2 )`
 * `epochs=nbre` nbre de fois que l'on effectue l'optimisation sur les données d'entrainement pour ajuster les poids.
+* `verbose=0/1` afficher les informations.
+* `validation_data=donnée` 
 
 ### Evaluer le modèle 
 
-`model.evaluate(donnée)` évaluer le modèle.
+`model.evaluate(données, valeurs)` évaluer le modèle.
 
 `history.params` renvoie les paramètres.
 `history.history` renvoie l'évolution des indicateurs.
 
+
+### Prédiction ou prévision
+
+`model.predict([])`
+
 ## Sauvegarder et importer un modèle
 
-* `model.save(chemin)` exporter un modèle.
-* `keras.models.load_model('path/to/location')` importer un modèle.
+* `model.save(dossier_model)` exporter un modèle.
+* `keras.models.load_model('path/to/location/dossier_model')` importer un modèle.
 
 
 ### Lire les images 
@@ -131,4 +126,78 @@ relu_fn = tf.nn.relu
 image_detect = relu_fn(image_filter)
 ```
 
-### BatchDataset
+# Les données en entré
+
+## Sans BatchDataSet  
+
+`np.array(, type=float)`
+
+## BatchDataset
+
+batch = lot
+
+Pour accéder aux données d'un batchdataset il faut `.unbatch`
+
+`donnee.class_names` donne le nom des classes.
+### Image batch
+
+BatchData
+
+`donnee.take(nb)` créer un échantillon de nbx32 images.
+
+Générer un jeu de données d'apprentissage à partir d'un dosssier. Les images créées par des transforamtions sont ajoutés aux jeux de données (training, validation) tels que :
+* Rotations
+* Cisaillement
+* Changements d'échelle
+* Rotation de l'image
+* Zoom
+
+``` 
+from keras.preprocessing.image import ImageDataGenerator
+# apprentissage
+training_datagen = ImageDataGenerator(rescale=1./255) # normalisation
+train_generator = training_datagen.flow_from_directory(
+    dossier,
+    target_size = (150,150),
+    class_mode = 'categorical' ou binary)
+# validation
+
+
+```
+
+## Importation d'un dossier d'images
+
+Les classes sont celles du nom des dossiers.
+
+`from tensorflow.keras.preprocessing import image_dataset_from_directory`
+
+```
+donnee = image_dataset_from_directory(
+    dossier,
+)
+``` 
+
+* `labels='inferred'`
+* `label_mode='binary'`
+* `image_size=[128, 128]` prétraitement qui re.
+* `interpolation='nearest'`
+* `batch_size=64`
+* `shuffle=True`
+* `color_mode="rgb" ou "grayscale" ou "rgba"` reformater en entrée.
+ds_train.
+
+```
+import matplotlib.pyplot as plt
+
+for images, labels in donnee.take(1):
+    for i in range(10):
+        plt.imshow(images[i].numpy().astype("uint8"))
+        plt.axis('off')
+```
+
+## AUCUNE IDEE
+
+```
+AUTOTUNE = tf.data.AUTOTUNE
+donnee = donnee.prefetch(buffer_size=AUTOTUNE)
+```

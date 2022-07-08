@@ -21,6 +21,8 @@ NB : fonctionne par incrémentation
 ## Graphique avec pyplot
 
 `from matplotlib import pyplot as pl`
+à la fin, on peut forcer l'affichage avec `plt.show()`
+
 
 * `plot(abscisse, ordonnée, <type_point>)`
 Paramètre : faire une chaîne de caractères 
