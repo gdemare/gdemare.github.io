@@ -4,6 +4,7 @@ Library `tensorflow`
 
 `from tensorflow.keras.preprocessing import image_dataset_from_directory`
 
+```
 ds_train_ = image_dataset_from_directory(
     'pizza/training',
     labels='inferred',
@@ -13,7 +14,7 @@ ds_train_ = image_dataset_from_directory(
     batch_size=64,
     shuffle=True,
 )
-
+```
 
 ## Créer un modèle
 
@@ -27,19 +28,20 @@ ds_train_ = image_dataset_from_directory(
 from tensorflow import keras
 from tensorflow.keras import layers
 
-model = keras.Sequential([
-    pretrained_base,
-    layers.Flatten(),
-    layers.Dense(6, activation='relu'),
-    layers.Dense(1, activation='sigmoid'),
-])
+model = keras.Sequential([ layer1, layer2])
 ```
 
-`layers.Dense( units, fonction d'activation)` définir une couche.
-Fonctions d'activation :
-* `relu`
-* `sigmoid`
-* `softmax`
+Les couches 
+* `layers.Flatten()` 
+* `layers.MaxPool2D`
+* `layers.Dense( units, activation= fonction)` définir une couche.
+	Fonctions d'activation :
+	* `relu`
+	* `sigmoid`
+	* `softmax`
+* `layers.Conv2D(filters=64, kernel_size=3, activation="relu", padding='same')`
+* `layers.Dropout`
+
 
 `model.summary()` récapitulatif des couches du modèle.
 
@@ -47,11 +49,20 @@ Fonctions d'activation :
 
 ```
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(epsilon=0.01),
+    optimizer=,
     loss='binary_crossentropy',
     metrics=['binary_accuracy']
 )
 ```
+optimizer :
+* `tf.keras.optimizers.Adam(epsilon=0.01)`
+* `'adam'`
+loss : 
+* sparse_categorical_crossentropy
+* binary_crossentropy
+metrics :
+* accuracy
+* binary_accuracy
 
 ### Entrainer le modèle
 
@@ -77,36 +88,6 @@ history = model.fit(
 * `model.save(chemin)` exporter un modèle.
 * `keras.models.load_model('path/to/location')` importer un modèle.
 
-## Initialiser les poids
-
-`pretrained_base.trainable = False` garder les poids initialisés. Généralement, le choix des poids de départ ont déjà été optimisés.
-
-
-## Définir les noyaux
-
-( étape non obligatoire) Les noyaux sont sont les extracteurs de caractéristiques.
-
-### Créer un noyau
-
-```
-import learntools.computer_vision.visiontools as visiontools
-from learntools.computer_vision.visiontools import edge, bottom_sobel, emboss, sharpen
-```
-
-| fonction | détection |
-|---|---|
-| `edge` | bord |
-| `bottom_sobel` | |
-| `emboss` | | 
-| `sharpen` | |
-
-`tf.constant(matrice)` définir un noyau (généralement matrice carrée impaire).
-
-```
-# Reformater pour rendre le noyau applicable.
-kernel = tf.reshape(kernel, [*kernel.shape, 1, 1])
-kernel = tf.cast(kernel, dtype=tf.float32)
-```
 
 ### Lire les images 
 
@@ -129,6 +110,8 @@ image = tf.expand_dims(image, axis=0)
 
 #### Afficher l'image avec plotly
 
+`import matplotlib.pyplot as plt`
+
 ```
 plt.figure(figsize=(6, 6))
 plt.imshow(img, cmap='gray')
@@ -147,3 +130,5 @@ conv_fn(
 relu_fn = tf.nn.relu
 image_detect = relu_fn(image_filter)
 ```
+
+### BatchDataset

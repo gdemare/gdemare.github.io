@@ -11,7 +11,7 @@ ch = chartify.Chart(blank_labels=True, x_axis_type='datetime')
 
 `ch.show('png')` afficher le graphique.
 
-NB : fonctionne par incrementation
+NB : fonctionne par incrémentation
 
 ### Libellés
 
@@ -48,7 +48,7 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 * `pyplot.xlabel(texte)` 
 * `pyplot.ylabel(texte)`
 * `title(titre)` ajouter un titre
-* `text(x, y, texte)` placer du texte n'importe ou dans la fenetre.
+* `text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
 
 ### Camembert 
 

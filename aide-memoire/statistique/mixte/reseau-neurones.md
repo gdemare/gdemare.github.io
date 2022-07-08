@@ -18,7 +18,7 @@ Chaque neurone applique une fonction à la donnée qu'il recoit en entrée. On u
 * Unité de rectification linéaire douce. f(x)=ln(1+e^{x})
 _Rmq :_ Il existe aussi des fonctions discontinues mais elles posent des problèmes d'optimisation car elles ne sont pas dérivables, par exemple :
 * Marche ou heaviside, x<0 alors f(x)=0 et x>=0 alors f(x)=1.
-* Unité de rectification linéaire f(x)=0 si x<0 et f(x)=x si x>=0.
+* Unité de rectification linéaire f(x)=0 si x<0 et f(x)=x si x>=0 (appelé relu).
 
 #### Rétropropagation et modification des coefficients
 
@@ -39,3 +39,10 @@ Pour limiter le surapprentissage : autant d'individus de chaque classe pour la p
 ## Agrégation de réseaux de neurones
 
 L'agrégation de réseaux de neurones (boosting ou bagging) n'apporte pas un gain significatif de pouvoir prédicteur. La manière même d'élaborer des réseaux de neurones conduit souvent à des poids et des réseaux quasi identique.
+
+
+## le réseau de neurones
+
+Un réseau de neurones est un empilement de couches qui peuvent avoir des propriétés différentes :
+* réseau convulsif inspiré de la vision chez les mammifères.
+
