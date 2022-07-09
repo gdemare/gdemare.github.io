@@ -6,8 +6,8 @@ package `charitify`
 ch = chartify.Chart(blank_labels=True, x_axis_type='datetime')
 ```
 `x_axis_type` ou `y_axis_type` peuvent avoir :
-	* `categorical`
-	* `datetime`
+* `categorical`
+* `datetime`
 
 `ch.show('png')` afficher le graphique.
 
