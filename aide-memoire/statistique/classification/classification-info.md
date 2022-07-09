@@ -80,3 +80,41 @@ Elle représente :
 _Area Under the Curve (AUC)_ aire sous la courbe de ROC.
 
 ### Courbe de Lift (courbe de gain)
+
+
+## Indicateur de qualité du modèle 
+
+| Indicateur | Définition |
+|---|---|
+| `KLD` | Kullback-Leibler divergence loss between y_true and y_pred. |
+| `MAE` | the mean absolute error between labels and predictions. |
+| `MAPE` | the mean absolute percentage error between y_true and y_pred. |
+| `MSE` | the mean squared error between labels and predictions. |
+| `MSLE` | the mean squared logarithmic error between y_true and y_pred.
+| `binary_accuracy` | Calculates how often predictions match binary labels. |
+| `binary_crossentropy` | the binary crossentropy loss. |
+| `binary_focal_crossentropy` | the binary focal crossentropy loss.
+| `categorical_accuracy` | Calculates how often predictions match one-hot labels. |
+| `categorical_crossentropy` | the categorical crossentropy loss. |
+| `deserialize` | Deserializes a serialized metric class/function instance. |
+| `get` | Retrieves a Keras metric as a function/Metric class instance. |
+| `hinge` | the hinge loss between y_true and y_pred. |
+| `kl_divergence` | Kullback-Leibler divergence loss between y_true and y_pred. |
+| `kld` | Kullback-Leibler divergence loss between y_true and y_pred. |
+| `kullback_leibler_divergence` | Kullback-Leibler divergence loss between y_true and y_pred.
+| `logcosh` | Logarithm of the hyperbolic cosine of the prediction error. |
+| `mae` | the mean absolute error between labels and predictions. |
+| `mape` | the mean absolute percentage error between y_true and y_pred. |
+| `mean_absolute_error` | the mean absolute error between labels and predictions. |
+| `mean_absolute_percentage_error` | the mean absolute percentage error between y_true and y_pred. |
+| `mean_squared_error` | the mean squared error between labels and predictions. |
+| `mean_squared_logarithmic_error` | the mean squared logarithmic error between y_true and y_pred. |
+| `mse` | the mean squared error between labels and predictions. |
+| `msle` | the mean squared logarithmic error between y_true and y_pred. |
+| `poisson` | the Poisson loss between y_true and y_pred. |
+| `serialize` | Serializes metric function or Metric instance. |
+| `sparse_categorical_accuracy` | Calculates how often predictions match integer labels. |
+| `sparse_categorical_crossentropy` | the sparse categorical crossentropy loss. |
+| `sparse_top_k_categorical_accuracy` | how often integer targets are in the top K predictions. |
+| `squared_hinge` | the squared hinge loss between y_true and y_pred. |
+| `top_k_categorical_accuracy` | how often targets are in the top K predictions |

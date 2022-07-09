@@ -40,12 +40,8 @@ model.compile(
     metrics=['binary_accuracy']
 )
 ```
-Optimizer, le type de correction appliqué au modèle :
-* `tf.keras.optimizers.Adam()`
-    * `epsilon=0.01` valeur de la correction des poids.
-* `'adam'`
-* `'sgd'` 
-* `'rmsprop'`
+Optimizer, le type de correction appliqué au modèle soit `'optimisateur'` ou, par exemple, `tf.keras.optimizers.Adam()`. Les algorythmes d'optimisation possibles sont :  `Adadelta`, `Adagrad`, `Adam`, `Adamax`, `Ftrl`, `Nadam`, `RMSprop`, `SGD`.
+On peut spécifier la valeur de la correction des poids grâce à `epsilon=0.01`.
 
 Loss, l'indicateur a prendre en compte améliorer le modèle : 
 * `sparse_categorical_crossentropy` plusieurs classes.
@@ -56,7 +52,6 @@ Metrics :
 * `accuracy` AUC pour cela il faut un jeu de données de validation (fit avec `validation_data`).
 * `binary_accuracy`
 
-
 ## Apprendre, évaluer et prédire
 
 ### Entrainer le modèle
@@ -64,7 +59,7 @@ Metrics :
 `model.fit( ds_train, epochs=2 )`
 * `epochs=nbre` nbre de fois que l'on effectue l'optimisation sur les données d'entrainement pour ajuster les poids.
 * `verbose=0/1` afficher les informations.
-* `validation_data=donnée` 
+* `validation_data=donnée` ajouter des données de validations pour suivre la performance du modèle.
 
 ### Evaluer le modèle 
 
@@ -80,9 +75,8 @@ Metrics :
 
 ## Sauvegarder et importer un modèle
 
-* `model.save(dossier_model)` exporter un modèle.
+* `model.save(dossier_model)` exporter un modèle. L'extension `dossier_model.h5` permet de sauver le modèle dans un unique fichier.
 * `keras.models.load_model('path/to/location/dossier_model')` importer un modèle.
-
 
 ### Lire les images 
 
@@ -132,18 +126,38 @@ image_detect = relu_fn(image_filter)
 
 `np.array(, type=float)`
 
-## BatchDataset
+## tf.data.Dataset
+
+Library : `keras.utils`
 
 batch = lot
 
-Pour accéder aux données d'un batchdataset il faut `.unbatch`
+* `donnee = image_dataset_from_directory(dossier)` un dossier avec des images.
 
-`donnee.class_names` donne le nom des classes.
-### Image batch
+* Les étiquettes de données :
+    * `labels='inferred'`
+    * `label_mode='binary'`
+* Création d'une 
+    * `shuffle=True` par défaut les fichiers sont ajoutés aléatoirement.
+    * `seed=1337` fixer la génération de l'aléatoire pour le mélange des données.
+Autres :    
+* `batch_size=64` fixer la taille de chaque élément ?. 
 
-BatchData
+* `subset=training/validation` type de sous ensembles. Il faut créer un training et un validation.
 
-`donnee.take(nb)` créer un échantillon de nbx32 images.
+
+* `donnee.class_names` donne le nom des classes.
+
+
+* `donnee.take(nb)` créer un échantillon de nbx32 élements.
+* `donnee.range(nb)` sélectionner un élément. Il peut être utile d'utiliser de fixer le seed pour obtenir le même élément à chaque fois.
+
+`train, valid = tf.keras.utils.split_dataset( dataset, left_size=None, right_size=None, shuffle=False, seed=None )` séparer les données en deux jeux . !! fonction en cours de développement, il faut l'ajouter séparément!!.
+
+### Les images
+ 
+
+#### Images : Augmenter le nombre de données et la polyvalence du modèle
 
 Générer un jeu de données d'apprentissage à partir d'un dosssier. Les images créées par des transforamtions sont ajoutés aux jeux de données (training, validation) tels que :
 * Rotations
@@ -161,38 +175,27 @@ train_generator = training_datagen.flow_from_directory(
     target_size = (150,150),
     class_mode = 'categorical' ou binary)
 # validation
-
-
 ```
 
 ## Importation d'un dossier d'images
 
-Les classes sont celles du nom des dossiers.
 
-`from tensorflow.keras.preprocessing import image_dataset_from_directory`
-
-```
-donnee = image_dataset_from_directory(
-    dossier,
-)
-``` 
-
-* `labels='inferred'`
-* `label_mode='binary'`
 * `image_size=[128, 128]` prétraitement qui re.
 * `interpolation='nearest'`
-* `batch_size=64`
-* `shuffle=True`
 * `color_mode="rgb" ou "grayscale" ou "rgba"` reformater en entrée.
 ds_train.
 
-```
-import matplotlib.pyplot as plt
+Afficher 9 images d'exemples avec les labels.
 
-for images, labels in donnee.take(1):
-    for i in range(10):
+```
+class_names = train_ds.class_names
+plt.figure(figsize=(10, 10))
+for images, labels in train_ds.take(1):
+    for i in range(9):
+        ax = plt.subplot(3, 3, i + 1)
         plt.imshow(images[i].numpy().astype("uint8"))
-        plt.axis('off')
+        plt.title(class_names[labels[i]])
+        plt.axis("off")
 ```
 
 ## AUCUNE IDEE
@@ -201,3 +204,5 @@ for images, labels in donnee.take(1):
 AUTOTUNE = tf.data.AUTOTUNE
 donnee = donnee.prefetch(buffer_size=AUTOTUNE)
 ```
+
+

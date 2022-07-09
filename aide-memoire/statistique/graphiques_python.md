@@ -1,24 +1,8 @@
-## Graphique avec charitify
+## Avec panda
 
-package `charitify`
+`df.plot( x=, y= )`
 
-```
-ch = chartify.Chart(blank_labels=True, x_axis_type='datetime')
-```
-`x_axis_type` ou `y_axis_type` peuvent avoir :
-	* `categorical`
-	* `datetime`
-
-`ch.show('png')` afficher le graphique.
-
-NB : fonctionne par incrémentation
-
-### Libellés
-
-`ch.set_title("titre")` ajouter un titre.
-`ch.set_subtitle("Osoustitre")` ajouter un sous-titre.
-
-## Graphique avec pyplot
+## Avec pyplot
 
 `from matplotlib import pyplot as pl`
 à la fin, on peut forcer l'affichage avec `plt.show()`
