@@ -298,6 +298,7 @@ Package `os`
 | `path.exists(chemin)` | existence d'un répertoire ou dossier |
 | `path.basename(chemin/fichier)` | renvoie le nom du fichier sans le chemin |
 | `path.isfile(fichier)` | vérifier l'existence d'un fichier |
+| `shutil.copy(fichier,dossier ou fichier)` | library : `shutil` | 
 
 Package `glob`
 
