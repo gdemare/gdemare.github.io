@@ -30,6 +30,7 @@ Les couches
 _Rmq :_ il est possible d'appler les fonctions d'activation par `tf.nn.fonction`.
 
 `model.summary()` récapitulatif des couches du modèle.
+`keras.utils.plot_model(model, show_shapes = True,expand_nested = True,dpi = 80)` graphique qui reprend la structure du modèle.
 
 ### Compiler
 
@@ -60,6 +61,7 @@ Metrics :
 * `epochs=nbre` nbre de fois que l'on effectue l'optimisation sur les données d'entrainement pour ajuster les poids.
 * `verbose=0/1` afficher les informations.
 * `validation_data=donnée` ajouter des données de validations pour suivre la performance du modèle.
+* `validation_split=0.8` marche pas.
 
 ### Evaluer le modèle 
 
@@ -130,7 +132,13 @@ image_detect = relu_fn(image_filter)
 
 Library : `keras.utils`
 
-batch = lot
+La méthode batch (lot) est le modèle de données le plus performant pour traiter ses données. Il fonctionne en lot de 32 fichiers réunis dans des liste.
+```
+
+```
+
+`donnee.take(1)` permet de sélectionner aléatoirement un lot.
+`donnee.shuffle(9)`
 
 * `donnee = image_dataset_from_directory(dossier)` un dossier avec des images.
 
@@ -141,8 +149,8 @@ batch = lot
     * `shuffle=True` par défaut les fichiers sont ajoutés aléatoirement.
     * `seed=1337` fixer la génération de l'aléatoire pour le mélange des données.
 Autres :    
-* `batch_size=64` fixer la taille de chaque élément ?. 
-
+* `batch_size=32` nombre de fichier par lot. Par défaut 32. 
+* `shuffle` 
 * `subset=training/validation` type de sous ensembles. Il faut créer un training et un validation.
 
 
@@ -150,12 +158,13 @@ Autres :
 
 
 * `donnee.take(nb)` créer un échantillon de nbx32 élements.
-* `donnee.range(nb)` sélectionner un élément. Il peut être utile d'utiliser de fixer le seed pour obtenir le même élément à chaque fois.
+* `donnee.range(nb)` sélectionner un élément. Il peut être utile de fixer le seed pour obtenir le même élément à chaque fois.
 
 `train, valid = tf.keras.utils.split_dataset( dataset, left_size=None, right_size=None, shuffle=False, seed=None )` séparer les données en deux jeux . !! fonction en cours de développement, il faut l'ajouter séparément!!.
 
 ### Les images
- 
+
+* `color_mode='rgb/grayscale/rgba'`
 
 #### Images : Augmenter le nombre de données et la polyvalence du modèle
 
@@ -188,6 +197,7 @@ ds_train.
 Afficher 9 images d'exemples avec les labels.
 
 ```
+from matplotlib import pyplot as plt
 class_names = train_ds.class_names
 plt.figure(figsize=(10, 10))
 for images, labels in train_ds.take(1):

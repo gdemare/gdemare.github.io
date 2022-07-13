@@ -50,7 +50,7 @@ donnee = [
     ['statistique', 'classification', 'regression-logistique', 1, 1, 1, 0],
     ['statistique', 'classification', 'serie-temporelle-simple', 0, 1, 0, 0],
     ['statistique', 'classification', 'serie-temporelle', 1, 0, 0, 0],
-    ['statistique', 'mixte', 'reseau-neurones', 1, 1, 0, 0],
+    ['statistique', 'mixte', 'reseau-neurones', 1, 1, 0, 1],
     ['statistique', 'mixte', 'couche-convulsive', 1, 0, 0, 1],
     ['statistique', null, 'cluestering-sans-cible', 1, 0, 0, 0],
     ['statistique', null, 'automatiser', 0, 1, 1, 0],
