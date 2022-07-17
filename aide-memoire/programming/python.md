@@ -217,6 +217,8 @@ Paramètre :
 * `texte[1:4]` extraire des caracètres d'une chaîne.
 * `texte1 + texte2` concaténer du texte
 
+* `print( f"texte {variable}" )` afficher un message en interprétant une variable.
+
 | Caractère | Définition |
 |---|---|
 | `\'` | Apostrophe |

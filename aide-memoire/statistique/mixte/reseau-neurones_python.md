@@ -1,4 +1,11 @@
-Library `tensorflow`
+Il existe principalement deux bibliothéques pour faire de l'apprentissage profond.
+
+| Library | Développer |
+|---|---|
+| `torch` pytorch | Méta |
+| `tensorflow` | Google |
+
+# Tensorflow
 
 ## Créer un modèle
 
@@ -128,6 +135,10 @@ image_detect = relu_fn(image_filter)
 
 `np.array(, type=float)`
 
+Appliquer une tranformation au jeu de données
+
+V
+
 ## tf.data.Dataset
 
 Library : `keras.utils`
@@ -151,6 +162,8 @@ La méthode batch (lot) est le modèle de données le plus performant pour trait
 Autres :    
 * `batch_size=32` nombre de fichier par lot. Par défaut 32. 
 * `shuffle` 
+_pas compris a quoi ca sert__
+* `validation_split=0.8`
 * `subset=training/validation` type de sous ensembles. Il faut créer un training et un validation.
 
 

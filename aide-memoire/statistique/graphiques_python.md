@@ -22,7 +22,6 @@ NB : fonctionne par incrémentation
 `ch.set_subtitle("Osoustitre")` ajouter un sous-titre.
 
 ## Graphique avec pyplot
->>>>>>> bb50caf37f93cfabbd6355cb5a41dba6a8c6c9e4
 
 `from matplotlib import pyplot as pl`
 à la fin, on peut forcer l'affichage avec `plt.show()`
@@ -67,5 +66,5 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Ajouter plusieurs graphiques à une seule image
 
-`subplot(nb_lignes, nb_col, i+1)` 
-* `i+1` position commence à 1.
+`plt.figure('train', (largeur, hauteur))` créer une image subdiviser.
+`subplot(nb_lignes, nb_col, i+1)` pour ajouter un graphique à l'image. Les  positions sont numéroté à partir de 1.
