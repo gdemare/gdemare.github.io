@@ -4,7 +4,7 @@
 |---|---|---|
 | Pandas | Numpy | Pytorch ou Tensor |
 
-`map( fonction, list )` appliquer une fonction aux élements d'un vecteur. Renvoie un objet de type map qu'il faut généralement convertir en liste.
+`map( fonction, list )` appliquer une fonction aux élements d'un vecteur. Renvoie un objet de type map qu'il faut généralement le convertir en liste.
 
 ### Les types de variables
 
