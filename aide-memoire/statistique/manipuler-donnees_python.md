@@ -69,6 +69,34 @@ Les tenseurs sont un type particulier de `numpy`. GPU beaucoup plus rapides. par
 
 Les tenserus sont des tableaux mutlidimentionnelles avec des opérations particulieres.
 
+### Déclarer un tenseur à partir de données 
+
+Il faut créer une classe avec les caractérisques :
+
+```
+class donnee(torch.utils.data.Dataset):
+    
+    def __init__(self):
+     	# déclarer les données en séparant données explicative et la variable à prédire.
+        self.x = lot.get(clés[1])
+        self.y = lot.get(clés[1])
+        
+    def __getitem__(self, index):
+    	# renvoie les variables explicatives et celle expliqué
+        return self.x[index], self.y[index] 
+    
+    def __len__(self):
+    	# renvoie la dimension
+        return len( self.x )
+
+torch.utils.data.DataLoader(dataset = donnee(), batch_size = 100, shuffle = True)`
+```
+Paramètres de DataLoader :
+* `batch_size=nbre` taille des lots.
+* `shuffle=True` aléatoire
+
+### Créer un tenser
+
 Créer un tenseur :
 * `torch.tensor(data)` convertie un numpy en tenseur.
 * `data.numpy()` convertie un tenseur en numpy.
@@ -84,12 +112,16 @@ Paramètre :
 |---|---| 
 | `torch.float` | |
 
-`cuda.is_available()` Vérifier si le GPU peut être utilisé pour les calculs. Dans le cas de oui il faut `tensor.to('cuda')`
-
 [:, 0] premier colonne 
 [...,-1] dernière colonne
 
 `cat( [data1, data2], dim)` fusionner deux data en ligne.
+
+### Optimisation des opérations sur les tenseurs
+
+L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissance des cartes graphiques.
+
+`cuda.is_available()` Vérifier si le GPU peut être utilisé pour les calculs. Dans le cas de oui il faut `tensor.to('cuda')`
 
 ## Les images
 
