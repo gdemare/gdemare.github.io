@@ -1,7 +1,7 @@
 Il existe principalement deux bibliothéques pour faire de l'apprentissage profond.
 
 | Library | Développer | avantages |
-|---|---|
+|---|---|---|
 | `torch` pytorch | Méta | beaucoup plus flexible et personalisable |
 | `tensorflow` | Google  | plus simple |
 
