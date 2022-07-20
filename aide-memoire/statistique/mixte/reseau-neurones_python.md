@@ -1,17 +1,18 @@
 Il existe principalement deux bibliothéques pour faire de l'apprentissage profond.
 
-| Library | Développer |
+| Library | Développer | avantages |
 |---|---|
-| `torch` pytorch | Méta |
-| `tensorflow` | Google |
+| `torch` pytorch | Méta | beaucoup plus flexible et personalisable |
+| `tensorflow` | Google  | plus simple |
 
-# Tensorflow
 
 ## Créer un modèle
 
 1. Créer le modèle avec les couches.
 2. Compiler le modèle et définir les indicateurs à minimiser.
 3. Entrainer le modèle.
+
+# Tensorflow
 
 ### Couche
 
@@ -74,8 +75,8 @@ Metrics :
 
 `model.evaluate(données, valeurs)` évaluer le modèle.
 
-`history.params` renvoie les paramètres.
-`history.history` renvoie l'évolution des indicateurs.
+* `history.params` renvoie les paramètres.
+* `history.history` renvoie l'évolution des indicateurs.
 
 
 ### Prédiction ou prévision
@@ -106,17 +107,6 @@ image = tf.expand_dims(image, axis=0)
 
 `tf.squeeze(image_filter)` reformater une image pour la rendre affichable.
 
-#### Afficher l'image avec plotly
-
-`import matplotlib.pyplot as plt`
-
-```
-plt.figure(figsize=(6, 6))
-plt.imshow(img, cmap='gray')
-plt.axis('off')
-plt.show();
-```
-
 ```
 conv_fn = tf.nn.conv2d
 conv_fn(
@@ -137,20 +127,15 @@ image_detect = relu_fn(image_filter)
 
 Appliquer une tranformation au jeu de données
 
-V
 
 ## tf.data.Dataset
 
 Library : `keras.utils`
 
 La méthode batch (lot) est le modèle de données le plus performant pour traiter ses données. Il fonctionne en lot de 32 fichiers réunis dans des liste.
-```
 
-```
-
-`donnee.take(1)` permet de sélectionner aléatoirement un lot.
-`donnee.shuffle(9)`
-
+* `donnee.take(1)` permet de sélectionner aléatoirement un lot.
+* `donnee.shuffle(9)`
 * `donnee = image_dataset_from_directory(dossier)` un dossier avec des images.
 
 * Les étiquettes de données :
@@ -165,7 +150,6 @@ Autres :
 _pas compris a quoi ca sert__
 * `validation_split=0.8`
 * `subset=training/validation` type de sous ensembles. Il faut créer un training et un validation.
-
 
 * `donnee.class_names` donne le nom des classes.
 
@@ -201,7 +185,6 @@ train_generator = training_datagen.flow_from_directory(
 
 ## Importation d'un dossier d'images
 
-
 * `image_size=[128, 128]` prétraitement qui re.
 * `interpolation='nearest'`
 * `color_mode="rgb" ou "grayscale" ou "rgba"` reformater en entrée.
@@ -221,11 +204,47 @@ for images, labels in train_ds.take(1):
         plt.axis("off")
 ```
 
-## AUCUNE IDEE
+# Pytorch
+
+Les modèles sont a déclarer dans des classes.
+```
+class reseauNeurones(torch.nn.Module)
+    
+    def __ini__(self):
+        couches
+
+    def forward(self, x):
+        fonction calculs( couches )
 
 ```
-AUTOTUNE = tf.data.AUTOTUNE
-donnee = donnee.prefetch(buffer_size=AUTOTUNE)
-```
+
+### Réseau de neurones
+
+Library : `torch.nn`
+
+`Conv2d(channel entrée, channel sortie, dimension fenetre entrée)` 
+channel :
+* 1 = image en black and white
+`Linear(input, output)` régression linéaire.
 
 
+### Fonctions d'activation
+
+Library `torch.nn.functional`
+
+| Python | Fonction |
+|---|---|
+| `relu()` | relu |
+| `max_pool2d()` | |
+| | sigmoide |
+
+### Fonctions d'optimisation
+
+`torch.optim`
+
+* `MSELoss()`
+* `SGD(model.parameters(), learning_rate)`
+
+### Les images
+
+library `torchvision`   

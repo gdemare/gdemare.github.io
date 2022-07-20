@@ -1,25 +1,8 @@
-## Avec panda
+## Avec pandas
 
-`df.plot( x=, y= )`
+Les dataframe pandas intégrent directement des représentations graphiques.
 
-<<<<<<< HEAD
-## Avec pyplot
-=======
-```
-ch = chartify.Chart(blank_labels=True, x_axis_type='datetime')
-```
-`x_axis_type` ou `y_axis_type` peuvent avoir :
-* `categorical`
-* `datetime`
-
-`ch.show('png')` afficher le graphique.
-
-NB : fonctionne par incrémentation
-
-### Libellés
-
-`ch.set_title("titre")` ajouter un titre.
-`ch.set_subtitle("Osoustitre")` ajouter un sous-titre.
+`data.plot( x=, y= )`
 
 ## Graphique avec pyplot
 
@@ -61,10 +44,9 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Diagramme en barre et histogramme
 
-`pyplot.bar(libelle, valeur, width=, align='edge')`
-* libelle doit etre au format texte.
+`pyplot.bar(libelle, valeur, width=, align='edge')` Les libellés doivent être au format texte.
 
 ### Ajouter plusieurs graphiques à une seule image
 
-`plt.figure('train', (largeur, hauteur))` créer une image subdiviser.
-`subplot(nb_lignes, nb_col, i+1)` pour ajouter un graphique à l'image. Les  positions sont numéroté à partir de 1.
+* `plt.figure('train', (largeur, hauteur))` créer une image subdiviser.
+* `subplot(nb_lignes, nb_col, i+1)` pour ajouter un graphique à l'image. Les  positions sont numéroté à partir de 1.
