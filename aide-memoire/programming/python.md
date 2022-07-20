@@ -90,6 +90,20 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 * `(a,b) = (1,3)` donner un nom aux élements de la liste pour pouvoir les appeller comme des variables.
 * `liste1 + liste2` concaténer deux listes 
 * `len(liste)` taille de la liste.
+* `liste = [ val1, val2]` déclarer une liste.
+* `liste[]` afficher un élément.
+* `del liste[numéro]` supprimer une valeur.
+* `liste.append(valeur)`ajouter une valeur.
+
+
+#### Les dictionnaires
+
+Les dictionnaires sont un objet particulier. L'accés aux valeurs fait par l'id.
+* `.get(id)` renvoie la colonne si l'id existe. 
+* `.values()` renvoie les valeurs sous forme de liste.
+* `.items()` renvoie (id, valeur).
+
+`dict = { 'id' : [val1, val2, val3] }` 
 
 ### Texte
 
@@ -143,17 +157,11 @@ for i in séquence:
 Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela parcourt les lettres).
 
 #### Boucle tant que (jusqu'a que ce soit fausse)
+
 ```
 while condition:
 	instruction
 ```
-
-### Les listes
-
-* `liste = [ val1, val2]` déclarer une liste.
-* `liste[]` afficher un élément.
-* `del liste[numéro]` supprimer une valeur.
-* `liste.append(valeur)`ajouter une valeur.
 
 ### Fonction 
 
@@ -214,6 +222,7 @@ Bibliothèque `math`
 Paramètre :
 	* `sep = séparateur` ajouter un séparateur. 
 	* `end = text_fin` bloquer le retour à la ligne.
+	* `f'texte {variable} texte {var2}'` f rend interprétable la chaine de caractère (remplacement des variables).
 * `texte[1:4]` extraire des caracètres d'une chaîne.
 * `texte1 + texte2` concaténer du texte
 
