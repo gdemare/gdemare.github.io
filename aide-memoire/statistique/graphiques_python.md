@@ -27,7 +27,8 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 ### Paramètres des axes
 
 * `pyplot.show()` afficher le graphique
-* `pyplot.axis([xmin, xmax, ymin, ymax])`
+* `pyplot.axis([xmin, xmax, ymin, ymax])` changer l'affichage des axes. 
+	* `"off"` ne pas afficher d'axe. 	
 
 * `pyplot.grid(True)` afficher une grille.
 
