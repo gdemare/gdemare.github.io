@@ -40,15 +40,22 @@ Argument `aggfunc` :
 
 ### Ajouter une colonne
 
-* `data["nouvelle"] = valeur` ajout directement.
+* `data["nouvelle"] = valeur` ajouter directement.
 * `tableau.assign( nomCol = valeur )` 
 Pour appliquer des fonctions, il faut utiliser la library numpy.
 * `df.insert(position, 'col_name', [value1, value2, value3, ...])`
 
-## Numpy (matrice)
+## Numpy (matrice et vecteur)
 
 * `np.asarray(matrice)` créer un array.
 * `np.empty([lignes,colonnes])` créer un array vide de taille suviantes.
+
+
+`.shape` dimension (ligne, colonne,...)
+
+
+`np.reshape( donnee, (dimension) )`
+* `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
 
 ### Opération sur les valeurs
 
