@@ -20,7 +20,11 @@ Il existe principalement deux bibliothéques pour faire de l'apprentissage profo
 from tensorflow import keras
 from tensorflow.keras import layers
 
-model = keras.Sequential([ layer1, layer2])
+model = keras.Sequential([
+	tf.keras.Input(shape=(16,)),
+	layer1,
+	layer2,
+	])
 ```
 
 Les couches 
