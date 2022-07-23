@@ -36,7 +36,7 @@ Fonctions d'activation :
 	* `relu`
 	* `sigmoid` utile notamment pour renvoyer une probabilité pour les classificateurs binaires.
 	* `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
-* `Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3))` couche convulsive.
+* `Conv2D(filters=64, kernel_size=3, activation="relu", padding='same')` couche convulsive.
 * `layers.Dropout` remplace aléatoirement des valeurs par des zéros dans la matrice.
 
 _Rmq :_ il est possible d'appler les fonctions d'activation par `tf.nn.fonction`.
