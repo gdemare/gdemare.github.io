@@ -26,14 +26,14 @@ model = keras.Sequential([ layer1, layer2])
 Les couches 
 * `layers.Flatten()` transforme une matrice en vecteur.
     * `input_shape=(28,28)` ou `[1]`  taille des données en entrés. 
-* `layers.MaxPool2D` pooling
+* `layers.MaxPool2D` pooling.
 * `layers.Dense( units, activation= fonction)` couche la plus simple.  une couche. units correspond aux nombres de sorties.
 	Fonctions d'activation :
 	* `relu`
 	* `sigmoid` utile notamment pour renvoyer une probabilité pour les classificateurs binaires.
-    * `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
+    	* `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
 * `Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3))` couche convulsive.
-* `layers.Dropout`
+* `layers.Dropout` remplace aléatoirement des valeurs par des zéros dans la matrice.
 
 _Rmq :_ il est possible d'appler les fonctions d'activation par `tf.nn.fonction`.
 
@@ -187,7 +187,6 @@ train_generator = training_datagen.flow_from_directory(
 * `image_size=[128, 128]` prétraitement qui re.
 * `interpolation='nearest'`
 * `color_mode="rgb" ou "grayscale" ou "rgba"` reformater en entrée.
-ds_train.
 
 Afficher 9 images d'exemples avec les labels.
 
@@ -223,11 +222,11 @@ class ConvNet(torch.nn.Module)
 
 Library : `torch.nn`
 
-`Conv2d(channel entrée, channel sortie, noyau)` 
+* `Conv2d(channel entrée, channel sortie, noyau)` 
 channel  correspond au type de matrice en entrée 1= une couleur, 2 deux et 3 trois.
 channel output correspond au nombre de filtres appliqués.
-`Linear(input, output)` régression linéaire et neurones simples. Pour créer un réseaur de neurones en utilisant un fonction d'activation.
-`Dropout(probabilité)` remplace aléatoirement des valeurs par des zéros dans la matrice.
+* `Linear(input, output)` régression linéaire et neurones simples. Pour créer un réseaur de neurones en utilisant un fonction d'activation.
+* `Dropout(probabilité)` remplace aléatoirement des valeurs par des zéros dans la matrice.
 
 #### Pooling 
 
