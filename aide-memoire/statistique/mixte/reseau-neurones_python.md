@@ -28,10 +28,10 @@ Les couches
     * `input_shape=(28,28)` ou `[1]`  taille des données en entrés. 
 * `layers.MaxPool2D` pooling.
 * `layers.Dense( units, activation= fonction)` couche la plus simple.  une couche. units correspond aux nombres de sorties.
-	Fonctions d'activation :
+Fonctions d'activation :
 	* `relu`
 	* `sigmoid` utile notamment pour renvoyer une probabilité pour les classificateurs binaires.
-    	* `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
+	* `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
 * `Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3))` couche convulsive.
 * `layers.Dropout` remplace aléatoirement des valeurs par des zéros dans la matrice.
 
