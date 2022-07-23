@@ -32,7 +32,7 @@ Les couches
 	* `relu`
 	* `sigmoid` utile notamment pour renvoyer une probabilité pour les classificateurs binaires.
     * `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
-* ` `
+* `Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3))` couche convulsive.
 * `layers.Dropout`
 
 _Rmq :_ il est possible d'appler les fonctions d'activation par `tf.nn.fonction`.
