@@ -215,12 +215,12 @@ class ConvNet(torch.nn.Module)
     
     def __init__(self):
         super( ConvNet, self).__init__()
-        couches
+        fct = couche()
 
     def forward(self, x):
-        fonction calculs( couches )
+        x = self.fct()
+	x = ....
         return x
-
 ```
 
 ### Réseau de neurones
