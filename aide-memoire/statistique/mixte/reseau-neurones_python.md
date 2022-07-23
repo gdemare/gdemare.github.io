@@ -262,6 +262,8 @@ Library `torch.nn.functional`
 library `torchvision`   
 
 ```
+model = ConvNet()
+
 crit = nn.CrossEntropyLoss()
 optimize = optim.Adam(model.parameters(), lr=0.001)
 
