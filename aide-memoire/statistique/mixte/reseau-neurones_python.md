@@ -54,6 +54,7 @@ On peut spécifier la valeur de la correction des poids grâce à `epsilon=0.01`
 
 Loss, l'indicateur a prendre en compte améliorer le modèle : 
 * `sparse_categorical_crossentropy` plusieurs classes.
+* `categorical_crossentropy`
 * `binary_crossentropy` deux classes.
 * `mean_squared_error` minimise l'erreur au carré.
 
