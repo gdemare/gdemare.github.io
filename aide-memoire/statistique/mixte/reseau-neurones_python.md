@@ -258,6 +258,10 @@ Library `torch.nn.functional`
 * `MSELoss()`
 * `SGD(model.parameters(), learning_rate)`
 
+### Critére
+
+`nn.CrossEntropyLoss()`
+
 ### Les images
 
 library `torchvision`   
