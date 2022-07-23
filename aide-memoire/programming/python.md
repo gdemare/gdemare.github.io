@@ -81,7 +81,7 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 * `texte.split('séparateur')` transformer un caractère en liste en fonction d'un séparateur.
 
 #### Vecteurs et listes
-`[] = vecteur` et `() = liste` Rmq : Les listes ne sont pas modifiables.
+`[] = vecteur` et `() = liste` (appelé tupple) Rmq : Les listes ne sont pas modifiables.
 
 * `var[nbre]` extraire une valeur.
 * `['valeur']*n` créer une liste à n élément
