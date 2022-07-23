@@ -46,7 +46,12 @@ L'agrégation de réseaux de neurones (boosting ou bagging) n'apporte pas un gai
 Un réseau de neurones est un empilement de couches. Ils en existent plusieurs notamment les couches :
 * base.
 * convulsives inspirées de la vision chez les mammifères.
-* Pooling qui compresse l'information. Elle est utile notamment après l'utilisation d'une couches convulsives pour ne garder que l'information pertinente. Il en existe deux types Max et Moyenne.
+* Pooling qui compresse l'information. Elle est utile notamment après l'utilisation d'une couches convulsives pour ne garder que l'information pertinente. Il en existe deux types : max et moyenne.
 * récurrentes adaptées au traitement textuel. Elle garde en mémoire l'ordre notamment celui des mots. 
 * Normalisation
 * Régularisation complexifie le modèle en créant un bruit aléatoire (Dropout qui met des 0). Contribue a rendre le modèle plus performant et moins sensible au bruit.
+
+
+### Entrainement du réseau de neurones
+
+Créer des lots de fichiers (batch) qui seront soumis plusieurs fois au modèle.	

@@ -124,6 +124,12 @@ Paramètre :
 
 `cat( [data1, data2], dim)` fusionner deux data en ligne.
 
+### 
+`torch.utils`
+
+train, test = data.random_split(dataset, [20000, 5000])
+
+
 ### Optimisation des opérations sur les tenseurs
 
 L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissance des cartes graphiques.

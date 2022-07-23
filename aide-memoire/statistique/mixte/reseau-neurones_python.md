@@ -24,15 +24,15 @@ model = keras.Sequential([ layer1, layer2])
 ```
 
 Les couches 
-* `layers.Flatten()`
+* `layers.Flatten()` transforme une matrice en vecteur.
     * `input_shape=(28,28)` ou `[1]`  taille des données en entrés. 
-* `layers.MaxPool2D`
+* `layers.MaxPool2D` pooling
 * `layers.Dense( units, activation= fonction)` couche la plus simple.  une couche. units correspond aux nombres de sorties.
 	Fonctions d'activation :
 	* `relu`
 	* `sigmoid` utile notamment pour renvoyer une probabilité pour les classificateurs binaires.
     * `softmax` renvoie la valeur la plus élevée (notamment pour les classificateurs avec plus de deux classes).
-* `layers.Conv2D(filters=64, kernel_size=3, activation="relu", padding='same')`
+* ` `
 * `layers.Dropout`
 
 _Rmq :_ il est possible d'appler les fonctions d'activation par `tf.nn.fonction`.
@@ -77,7 +77,6 @@ Metrics :
 
 * `history.params` renvoie les paramètres.
 * `history.history` renvoie l'évolution des indicateurs.
-
 
 ### Prédiction ou prévision
 
@@ -206,15 +205,17 @@ for images, labels in train_ds.take(1):
 
 # Pytorch
 
-Les modèles sont a déclarer dans des classes.
+Les modèles sont à déclarer dans des classes.
 ```
-class reseauNeurones(torch.nn.Module)
+class ConvNet(torch.nn.Module)
     
-    def __ini__(self):
+    def __init__(self):
+        super( ConvNet, self).__init__()
         couches
 
     def forward(self, x):
         fonction calculs( couches )
+        return x
 
 ```
 
@@ -222,11 +223,15 @@ class reseauNeurones(torch.nn.Module)
 
 Library : `torch.nn`
 
-`Conv2d(channel entrée, channel sortie, dimension fenetre entrée)` 
-channel :
-* 1 = image en black and white
-`Linear(input, output)` régression linéaire.
+`Conv2d(channel entrée, channel sortie, noyau)` 
+channel  correspond au type de matrice en entrée 1= une couleur, 2 deux et 3 trois.
+channel output correspond au nombre de filtres appliqués.
+`Linear(input, output)` régression linéaire et neurones simples. Pour créer un réseaur de neurones en utilisant un fonction d'activation.
+`Dropout(probabilité)` remplace aléatoirement des valeurs par des zéros dans la matrice.
 
+#### Pooling 
+
+`MaxPool1d(noyau)` pooling
 
 ### Fonctions d'activation
 
@@ -236,7 +241,10 @@ Library `torch.nn.functional`
 |---|---|
 | `relu()` | relu |
 | `max_pool2d()` | |
-| | sigmoide |
+| `??` | sigmoïde |
+
+`torch.flatten()` transforme une matrice en vecteur.
+`pool(x)`
 
 ### Fonctions d'optimisation
 
@@ -248,3 +256,19 @@ Library `torch.nn.functional`
 ### Les images
 
 library `torchvision`   
+
+```
+crit = nn.CrossEntropyLoss()
+optimize = optim.Adam(model.parameters(), lr=0.001)
+
+for epoch in range(epochs):
+    for id, (data, targets) in enumerate(dataloader):
+
+        scores = model(data)
+        loss =  crit(scores, targets)
+
+        optimize.zero_grad()
+        loss.backward()
+
+        optimizer.step() #mettre à jour les poids
+```
