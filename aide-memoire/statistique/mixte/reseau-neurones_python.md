@@ -254,6 +254,7 @@ Library `torch.nn.functional`
 
 `torch.optim`
 
+* `Adam()` 
 * `MSELoss()`
 * `SGD(model.parameters(), learning_rate)`
 
