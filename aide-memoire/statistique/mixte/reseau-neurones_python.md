@@ -65,7 +65,7 @@ Metrics :
 
 ### Entrainer le modèle
 
-`model.fit( ds_train, epochs=2 )`
+`model.fit( ds_train, epochs=2 )` entrainer le modèle.
 * `epochs=nbre` nbre de fois que l'on effectue l'optimisation sur les données d'entrainement pour ajuster les poids.
 * `verbose=0/1` afficher les informations.
 * `validation_data=donnée` ajouter des données de validations pour suivre la performance du modèle.
