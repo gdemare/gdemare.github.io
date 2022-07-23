@@ -1,4 +1,4 @@
-	## Concept
+## Concept
 
 Inspiré du système visuel chez les Animaux. 
 Aggrégation de données.
