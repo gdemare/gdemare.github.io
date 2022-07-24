@@ -28,3 +28,15 @@ Covariance est l'espérance du produit de X-E(X)*Y-E(Y)
 5. Prédire
 6. Evaluer
 7. Exporter le modèle.
+
+## utilisé des méthodes
+
+### supervisé
+
+Prédiction (classification et régression)
+
+### non supervisé
+
+* Cluestering regrouper les données pour trouver des stuctures de données.
+* Découvrir des strucutres de données, résumé les données, détecter des individus atypiques.
+* réduction de dimension, estimation de la densité
