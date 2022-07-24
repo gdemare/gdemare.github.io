@@ -245,7 +245,7 @@ Library `torch.nn.functional`
 |---|---|
 | `relu()` | relu |
 | `max_pool2d()` | |
-| `??` | sigmoïde |
+| `sigmoid()` | sigmoïde |
 
 `torch.flatten()` transforme une matrice en vecteur.
 `pool(x)`
