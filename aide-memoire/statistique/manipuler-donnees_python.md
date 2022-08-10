@@ -125,16 +125,18 @@ Paramètre :
 `cat( [data1, data2], dim)` fusionner deux data en ligne.
 
 ### 
+
 `torch.utils`
 
-train, test = data.random_split(dataset, [20000, 5000])
+`train, test = data.random_split(dataset, [20000, 5000])`
 
 
 ### Optimisation des opérations sur les tenseurs
 
 L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissance des cartes graphiques.
 
-`cuda.is_available()` Vérifier si le GPU peut être utilisé pour les calculs. Dans le cas de oui il faut `tensor.to('cuda')`
+`cuda.is_available()` Vérifier si le GPU peut être utilisé pour les calculs. Dans le cas de oui il faut
+`tensor.to('cuda')`
 
 ## Les images
 

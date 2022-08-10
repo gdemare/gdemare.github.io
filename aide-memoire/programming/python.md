@@ -287,12 +287,12 @@ c = conn.cursor()
 * `c.execute('''requete''')`
 * `c.executemany('''requete''', liste)`
 
-Les variables a utiliser dans la requetes doivent etre declarees par un `?`.
-Si il y en a plusieurs, il faut les organiser sous une liste.
+Les variables a utiliser dans la requêtes doivent etre declarées par un `?`.
+S'l y en a plusieurs, il faut les organiser sous une liste.
 
-NB : Pensez a convertir le resultat en liste.
+NB : Penser à convertir le resultat en liste.
 
-* `conn.commit()` ecrire ou modifier la bdd en executant la requete.
+* `conn.commit()` écrire ou modifier la bdd en exécutant la requête.
 
 ## Manipuler les fichiers
 
