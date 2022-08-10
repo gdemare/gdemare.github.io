@@ -219,9 +219,10 @@ class ConvNet(torch.nn.Module)
 
     def forward(self, x):
         x = self.fct()
-	x = ....
+	x = self.linear2(x)
         return x
 ```
+ou de façon séquentiel : `nn.Sequential(couche1, couche2)`
 
 ### Réseau de neurones
 
@@ -230,7 +231,7 @@ Library : `torch.nn`
 * `Conv2d(channel entrée, channel sortie, noyau)` 
 channel  correspond au type de matrice en entrée 1= une couleur, 2 deux et 3 trois.
 channel output correspond au nombre de filtres appliqués.
-* `Linear(input, output)` régression linéaire et neurones simples. Pour créer un réseaur de neurones en utilisant un fonction d'activation.
+* `Linear(input, output)` régression linéaire et neurones simples. Pour créer un réseau de neurones en utilisant un fonction d'activation.
 * `Dropout(probabilité)` remplace aléatoirement des valeurs par des zéros dans la matrice.
 
 #### Pooling 
@@ -243,9 +244,10 @@ Library `torch.nn.functional`
 
 | Python | Fonction |
 |---|---|
-| `relu()` | relu |
-| `max_pool2d()` | |
-| `sigmoid()` | sigmoïde |
+| `relu(x)` | relu |
+| `max_pool2d(x)` | |
+| `sigmoid(x)` | sigmoïde |
+| `torch.nn.Softmax(x)` | softmax |
 
 `torch.flatten()` transforme une matrice en vecteur.
 `pool(x)`
