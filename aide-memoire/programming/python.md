@@ -95,7 +95,6 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 * `del liste[numéro]` supprimer une valeur.
 * `liste.append(valeur)`ajouter une valeur.
 
-
 #### Les dictionnaires
 
 Les dictionnaires sont un objet particulier. L'accés aux valeurs fait par l'id.
@@ -117,6 +116,20 @@ Les dictionnaires sont un objet particulier. L'accés aux valeurs fait par l'id.
 
 Library `re`
 
+`re.search( a_rechercher, texte )` rechercher une expression regex ou un mot.
+
+Variable de sortie : 
+* `.group(0)` pour accéder aux résultat de la recherche.
+
+| Symbole | Définition  | 
+|---|---|
+| `\s` | espace |
+
+|  | Défintion | Exemple | 
+|---|---|---|
+| `[^\s]` | Négation  | pas d'espace |
+| `[2-6]` | Séquence  | de 1 à 6 |
+
 ### Les dates
 Package : `datetime`
 
@@ -124,7 +137,6 @@ Package : `datetime`
 |---|---|
 | `today()` | aujourd'hui |
 | `weekday()` | numéro du jour de la semaine  |
-
 
 * `datetime.strptime(texte, '%d.%m.%Y')` convertir en date et time.
 * `variable.strftime('%Y-%m-%d')` avec un affichage particulier.
