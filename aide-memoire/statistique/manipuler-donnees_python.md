@@ -145,8 +145,12 @@ L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissanc
 `import matplotlib.pyplot as plt`
 
 ```
-plt.figure(figsize=(6, 6))
-plt.imshow(img, cmap='gray')
+plt.imshow(img)
 plt.axis('off')
 plt.show();
 ```
+
+* `imshow(numpy)`
+Paramètre : 
+`cmap='gray'` en valeur de gris
+
