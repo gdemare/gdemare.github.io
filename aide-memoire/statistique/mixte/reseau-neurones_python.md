@@ -245,7 +245,7 @@ Library `torch.nn.functional`
 |---|---|
 | `relu()` | relu |
 | `max_pool2d()` | |
-| `??` | sigmoïde |
+| `sigmoid()` | sigmoïde |
 
 `torch.flatten()` transforme une matrice en vecteur.
 `pool(x)`
@@ -258,9 +258,10 @@ Library `torch.nn.functional`
 * `MSELoss()`
 * `SGD(model.parameters(), learning_rate)`
 
-### Critére
+### Critère
 
-`nn.CrossEntropyLoss()`
+* `nn.CrossEntropyLoss()`
+* `nn.BCELoss()`
 
 ### Les images
 

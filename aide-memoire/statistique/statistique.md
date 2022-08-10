@@ -17,3 +17,26 @@ Indicateurs :
 * Construire des groupes d'individus similaire en fonction d'une variable d'intérêt non triviale
 
 Covariance est l'espérance du produit de X-E(X)*Y-E(Y)
+
+
+### Etape d'un projet d'apprentissage autonatique
+
+1. Pré traitement des données
+2. Constituion d'un jeu d'apprentissage et de test
+3. Choix de l'algorithme
+4. Adapter les paramètres de l'algorithme aux données
+5. Prédire
+6. Evaluer
+7. Exporter le modèle.
+
+## utilisé des méthodes
+
+### supervisé
+
+Prédiction (classification et régression)
+
+### non supervisé
+
+* Cluestering regrouper les données pour trouver des stuctures de données.
+* Découvrir des strucutres de données, résumé les données, détecter des individus atypiques.
+* réduction de dimension, estimation de la densité

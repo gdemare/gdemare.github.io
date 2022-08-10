@@ -113,9 +113,9 @@ Les dictionnaires sont un objet particulier. L'accés aux valeurs fait par l'id.
 | `chr(nbre)` | convertie un nombre en sa lettre correspondante|
 | `len(texte)` | nombre de caractère de la chaine |
 
-#### Expression régulière
+#### Expression régulière (regex)
 
-`import re`
+Library `re`
 
 ### Les dates
 Package : `datetime`
@@ -124,6 +124,10 @@ Package : `datetime`
 |---|---|
 | `today()` | aujourd'hui |
 | `weekday()` | numéro du jour de la semaine  |
+
+
+* `datetime.strptime(texte, '%d.%m.%Y')` convertir en date et time.
+* `variable.strftime('%Y-%m-%d')` avec un affichage particulier.
 
 ### Condition 
 
