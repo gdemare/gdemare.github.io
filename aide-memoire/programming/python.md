@@ -1,7 +1,7 @@
-NB les chemins s'écrivent avec le `/`.
+NB : les chemins s'écrivent avec le `/`.
 
 Environement de développement : Jupyter
-Changer la couleur de l'environnement jupiter 
+Changer la couleur de l'environnement jupyter.
 ```
 pip install jupyterthemes
 pip install --upgrade jupyterthemes
@@ -26,6 +26,12 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 * `python -m pip install package` windows
 * `pip install package` ubuntu.
+
+Cloner un dossier github : 
+```
+git clone https://github.com/jkbr/httpie.git
+sudo python setup.py install
+```
 
 ## Instructions de bases
 
