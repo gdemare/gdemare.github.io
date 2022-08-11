@@ -293,74 +293,75 @@ Library `python-doctr`
 
 ## notes à revoir
 
-linear fonction deux couches (input et output). Pour avoir un réseau mutlocouche il faut ajouter plusieurs linéares.
-tanh fonction ressemble à a sigmoi en plus typé et sur un intervalle de -1 à 1. 
+`linear( input, output)` fonction deux couches (input et output). Pour avoir un réseau multiocouche il faut ajouter plusieurs linéares.
+tanh fonction ressemble à a sigmoid en plus typée et sur un intervalle de -1 à 1. 
 
-nn.functional.Softmax() renvoie une somme égale à 1 (probabilité). Pour déterminer la colonne avec la plus grande probabilité il faut appliqué la fonction max.
-valeur, position = torch.max(matrice, dim=1) renvoie la valeur et la positon la plus élevée.
+`nn.functional.Softmax()` renvoie une somme égale à 1 (probabilité). Pour déterminer la colonne avec la plus grande probabilité il faut appliqué la fonction max.
+`valeur, position = torch.max(matrice, dim=1)` renvoie la valeur et la positon la plus élevée.
 
-créer des couches de neurones de façon récursive nn.ModuleList()
+créer des couches de neurones de façon récursive `nn.ModuleList()`
 
 probabilité de mettre un zéro a à  un neurone.
 
 Je ne sais pas à quoi ca correspond.
 model.
-.eval()
-.train()
-.state_dict() renvoie la valeur des poids.
+`.eval()`
+`.train()`
+`.state_dict()` renvoie la valeur des poids.
 
-loss.data pour accéder à la valeur.
+`loss.data` pour accéder à la valeur.
 
 
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
 
-l'initialisation des poids peut avoir des répercussion s importenas sur le modèle Xavier He
+L'initialisation des poids peut avoir des répercussion s importenas sur le modèle Xavier He
 
-mommentum des poids d'apprentissage permet d'éviter certains minimums locaux trop petit.
+Mommentum des poids d'apprentissage permet d'éviter certains minimums locaux trop petit.
 
 batch normalisation
 
 mois la moyenne diviser par l'écart type.
 
-nn.BactchNorm1d(input)
+`nn.BactchNorm1d(input)`
 
 Ensemble de méthodes qui permettent aux poids de converger plus rapidement vers les optimum.
 
-
-Les réseaux convulsifs utilisent des positions reltives ce qui permet d'identifier des cas de translation et de rotation comme des situations identiques.
+Les réseaux convulsifs utilisent des positions relatives ce qui permet d'identifier des cas de translation et de rotation comme des situations identiques.
 
 poids du noyau son multiplié avec les valeurs de la matrice.
 carte d'activation
 
 taille de l'activation map :   même chose pour la hauteur 
-stride taille du déplacement (par défaut 1)
+`stride` taille du déplacement (par défaut 1)
 
-[largeur de l'image - noyau + 1]/stride
+`[largeur de l'image - noyau + 1]/stride`
 
-padding= ajout de colonne et ligne pour agrandir la matrice padding=1 correspond à l'ajout de deux colonnes et de deux linges au début et à la fin.
+`padding=` ajout de colonne et ligne pour agrandir la matrice padding=1 correspond à l'ajout de deux colonnes et de deux linges au début et à la fin.
 
-max pooling réduit l'activation max. conserve la valeur maximum sur les régions.
+`max pooling` réduit l'activation max. conserve la valeur maximum sur les régions.
 Cela permet de réduire l'impact de petits changements qui pourraient se produire dans l'image. réduit la taille de l'activation map.
 
 cnn puis activation puis pooling
 
-x.view() (comme reshape) redimensionner notre matrice. .size, -) pour linéariser.
+`x.view()` (comme reshape) redimensionner notre matrice. .size, -) pour linéariser.
 
-rmq pour la classification en classe il faut en sortie un vecteur (pensez a utiliser la fonction view).
+Rmq : pour la classification en classe il faut en sortie un vecteur (pensez a utiliser la fonction view).
 
 certains modèles ont été implémentés :
-resnet18^(pretrained=T) classification dimage (torchvision.models)  
+`resnet18(pretrained=T)` classification dimage (torchvision.models)  
 
 transforms.Compose([transformation1, transformation2])
 
 transforms.
 
-Resize() redimensionner
-ToTensor() transforme en tenseur.
-Normalize(moyenne,écart type)
+`Resize()` redimensionner
+`ToTensor()` transforme en tenseur.
+`Normalize(moyenne,écart type)`
 
+```
 for param in model.parameters():
     param.requires_grad()= False
 model.fc = nn.Linear(entré,output)
+```
