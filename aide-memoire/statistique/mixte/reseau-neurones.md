@@ -13,12 +13,22 @@ Les connexions entre les neurones sont appelées synapses. Il en existe de deux 
 * excitateur
 Si un neurone pré et post synaptique qui s'excitent ensemble alors ils renforceront leur lien càd le poid synaptique de la synapse qui les relie.
 
-Chaque neurone applique une fonction à la donnée qu'il recoit en entrée. On utilise principalement trois fonctions :
+Chaque neurone applique une fonction à la donnée qu'il recoit en entrée. 
+On utilise principalement trois fonctions :
 * Sigmoïde. f(x)=1/(1+e^{-x})
 * Unité de rectification linéaire douce. f(x)=ln(1+e^{x})
 _Rmq :_ Il existe aussi des fonctions discontinues mais elles posent des problèmes d'optimisation car elles ne sont pas dérivables, par exemple :
 * Marche ou heaviside, x<0 alors f(x)=0 et x>=0 alors f(x)=1.
 * Unité de rectification linéaire f(x)=0 si x<0 et f(x)=x si x>=0 (appelé relu).
+* tanh fonction qui ressemble à la sigmoid en plus "typée" sur un intervalle de -1 à 1. 
+
+Rmq : on a aussi la fonction softmax qui renvoie la classe avec la plus grande valeur. Elle sert notamment à renvoyer avec plus grande valeur dans le cas d'une classifciation avec plus de deux classes.
+
+Pour faciliter les opérations, les données sont manipulés et transformées dans un objet mathématique appelé matrice.
+En général, cnn puis activation puis pooling.
+
+La fonction max pooling réduit la dimension de la matrice d'activation (activation map) en conservant la valeur maximum sur les régions.
+Cela permet de réduire l'impact de petits changements qui pourraient se produire dans l'image.
 
 #### Rétropropagation et modification des coefficients
 
@@ -50,10 +60,27 @@ Un réseau de neurones est un empilement de couches. Ils en existent plusieurs n
 * Normalisation
 * Régularisation complexifie le modèle en créant un bruit aléatoire (Dropout qui met des 0). Contribue a rendre le modèle plus performant et moins sensible au bruit.
 
+### convergeance des poids vers les valeurs optimum 
+
+
+L'initialisation des poids peut avoir des répercussions importante sur le modèle.
+Batch normalisation Soustrait par la moyenne et divise par l'écart type.
+
+Ensemble de méthodes qui permettent aux poids de converger plus rapidement vers les optimum.
+
+Mommentum des poids d'apprentissage permet d'éviter certains minimums locaux trop petit.
+
+
+
 ### Entrainement du réseau de neurones
 
 Créer des lots de fichiers (batch) qui seront soumis plusieurs fois au modèle.
 
-### Fonction d'activation 
+## Les images : Augmenter le nombre de données et la polyvalence du modèle
 
-* softmax classication avec plusieurs classes. Renvoie la classe avec la plus grande valeur. Softmax peut servir à renvoyer la classe qui est la plus proche d'un groupe.
+Générer un jeu de données d'apprentissage à partir d'un dosssier. Les images créées par des transforamtions sont ajoutés aux jeux de données (training, validation) tels que :
+* Rotations
+* Cisaillement
+* Changements d'échelle
+* Rotation de l'image
+* Zoom
