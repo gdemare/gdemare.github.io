@@ -167,15 +167,6 @@ _pas compris a quoi ca sert__
 
 * `color_mode='rgb/grayscale/rgba'`
 
-#### Images : Augmenter le nombre de données et la polyvalence du modèle
-
-Générer un jeu de données d'apprentissage à partir d'un dosssier. Les images créées par des transforamtions sont ajoutés aux jeux de données (training, validation) tels que :
-* Rotations
-* Cisaillement
-* Changements d'échelle
-* Rotation de l'image
-* Zoom
-
 ``` 
 from keras.preprocessing.image import ImageDataGenerator
 # apprentissage
@@ -229,14 +220,17 @@ ou de façon séquentiel : `nn.Sequential(couche1, couche2)`
 Library : `torch.nn`
 
 * `Conv2d(channel entrée, channel sortie, noyau)` 
-channel  correspond au type de matrice en entrée 1= une couleur, 2 deux et 3 trois.
-channel output correspond au nombre de filtres appliqués.
-* `Linear(input, output)` régression linéaire et neurones simples. Pour créer un réseau de neurones en utilisant un fonction d'activation.
-* `Dropout(probabilité)` remplace aléatoirement des valeurs par des zéros dans la matrice.
+ * channel input : type de matrice en entrée 1= une couleur, 2 deux et 3 trois.
+ * channel output : nombre de filtres appliqués.
+* `Linear(input, output)` régression linéaire et neurones simples. Pour créer un réseau de neurones en utilisant un fonction d'activation. Pour avoir un réseau multicouche il faut ajouter plusieurs linéares.
+* `Dropout(probabilité)` remplacer aléatoirement des valeurs par des zéros dans la matrice.
 
 #### Pooling 
 
-`MaxPool1d(noyau)` pooling
+* `nn.BactchNorm1d(input)` normalise les données.
+* `MaxPool1d(noyau)` pooling.
+* `nn.functional.Softmax()` renvoie une somme égale à 1 (probabilité). Pour déterminer la colonne avec la plus grande probabilité il faut appliqué la fonction max.
+* `valeur, position = torch.max(matrice, dim=1)` renvoie la valeur et la positon la plus élevée.
 
 ### Fonctions d'activation
 
@@ -245,9 +239,13 @@ Library `torch.nn.functional`
 | Python | Fonction |
 |---|---|
 | `relu(x)` | relu |
-| `max_pool2d(x)` | |
+| `max_pool2d(x)` | pooling |
 | `sigmoid(x)` | sigmoïde |
 | `torch.nn.Softmax(x)` | softmax |
+
+`x.view()` (comme reshape) redimensionner notre matrice. Exemple `x.view(x.size, -)` pour linéariser.
+
+Rmq : pour la classification en classe il faut en sortie un vecteur (pensez a utiliser la fonction view).
 
 `torch.flatten()` transforme une matrice en vecteur.
 `pool(x)`
@@ -264,6 +262,25 @@ Library `torch.nn.functional`
 
 * `nn.CrossEntropyLoss()`
 * `nn.BCELoss()`
+
+### Les paramètres du model
+
+```
+for param in model.parameters():
+    param.requires_grad()= False
+model.fc = nn.Linear(entré,output)
+```
+
+### Transformer les données
+
+`transforms.Compose([transformation1, transformation2])` transformation séquentiel de données.
+`transforms.` library pytorch.transforms ?
+
+| fonction | transformation |
+|---|---|
+| `Resize()` | redimensionner |
+| `ToTensor()` | transforme en tenseur. |
+| `Normalize(moyenne,écart type)` | normaliser les données |
 
 ### Les images
 
@@ -287,17 +304,16 @@ for epoch in range(epochs):
         optimizer.step() #mettre à jour les poids
 ```
 
+## torch vision 
+
+Certains modèles ont été implémentés :
+`resnet18(pretrained=T)` classification dimage (torchvision.models)  
+
 ## OCTR reconnaissance de caractères et de texte
 
 Library `python-doctr`
 
 ## notes à revoir
-
-`linear( input, output)` fonction deux couches (input et output). Pour avoir un réseau multiocouche il faut ajouter plusieurs linéares.
-tanh fonction ressemble à a sigmoid en plus typée et sur un intervalle de -1 à 1. 
-
-`nn.functional.Softmax()` renvoie une somme égale à 1 (probabilité). Pour déterminer la colonne avec la plus grande probabilité il faut appliqué la fonction max.
-`valeur, position = torch.max(matrice, dim=1)` renvoie la valeur et la positon la plus élevée.
 
 créer des couches de neurones de façon récursive `nn.ModuleList()`
 
@@ -311,57 +327,8 @@ model.
 
 `loss.data` pour accéder à la valeur.
 
-
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-
-L'initialisation des poids peut avoir des répercussion s importenas sur le modèle Xavier He
-
-Mommentum des poids d'apprentissage permet d'éviter certains minimums locaux trop petit.
-
-batch normalisation
-
-mois la moyenne diviser par l'écart type.
-
-`nn.BactchNorm1d(input)`
-
-Ensemble de méthodes qui permettent aux poids de converger plus rapidement vers les optimum.
-
-Les réseaux convulsifs utilisent des positions relatives ce qui permet d'identifier des cas de translation et de rotation comme des situations identiques.
-
-poids du noyau son multiplié avec les valeurs de la matrice.
-carte d'activation
-
-taille de l'activation map :   même chose pour la hauteur 
-`stride` taille du déplacement (par défaut 1)
-
-`[largeur de l'image - noyau + 1]/stride`
-
-`padding=` ajout de colonne et ligne pour agrandir la matrice padding=1 correspond à l'ajout de deux colonnes et de deux linges au début et à la fin.
-
-`max pooling` réduit l'activation max. conserve la valeur maximum sur les régions.
-Cela permet de réduire l'impact de petits changements qui pourraient se produire dans l'image. réduit la taille de l'activation map.
-
-cnn puis activation puis pooling
-
-`x.view()` (comme reshape) redimensionner notre matrice. .size, -) pour linéariser.
-
-Rmq : pour la classification en classe il faut en sortie un vecteur (pensez a utiliser la fonction view).
-
-certains modèles ont été implémentés :
-`resnet18(pretrained=T)` classification dimage (torchvision.models)  
-
-transforms.Compose([transformation1, transformation2])
-
-transforms.
-
-`Resize()` redimensionner
-`ToTensor()` transforme en tenseur.
-`Normalize(moyenne,écart type)`
-
 ```
-for param in model.parameters():
-    param.requires_grad()= False
-model.fc = nn.Linear(entré,output)
+optimizer.zero_grad()
+loss.backward()
+optimizer.step()
 ```
