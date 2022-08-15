@@ -20,6 +20,6 @@ Dissociation
 * Exemplifier faire d’une cas particulier l’illustration d’une généralité
 
 L’argument par l’exemple dépend :
-* Le poids accorder aux arguments
+* Le poids accordé aux arguments.
 * La probabilité d’une événement, du risque.
 * L'accord global sur les valeurs.
