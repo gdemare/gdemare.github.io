@@ -23,6 +23,7 @@ Logiciels Windows :
 * [Keeweb](https://keeweb.info/)
 * [fluent reader](https://github.com/yang991178/fluent-reader/releases)
 * [Mail spring](https://github.com/Foundry376/Mailspring)
+* Harmonoid Music
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
@@ -37,7 +38,7 @@ Convertisseurs :
 ## Téléchargement
 
 * Yggtorrent [Mastodonde](https://mamot.fr/@YggTorrent) - [Forum](https://yggland.fr/)
-* [Zone téléchargement](https://zone-telechargement.cam/) - [Forum zone téléchargement](https://www.forumzt.com/).
+* [Zone téléchargement](https://zone-telechargement.cam/) - [Forum zone téléchargement](https://www.forumzt.com/)
 * [Deemix](https://www.reddit.com/r/deemix/) - [Reddit Deemix](https://www.reddit.com/r/deemix/)
 * Livres en anglais : [Libgen](http://libgen.rs/)
 * Dictionnaires pour kobo [kobo ebook reader dict](https://github.com/BoboTiG/ebook-reader-dict)
@@ -47,7 +48,7 @@ Convertisseurs :
 
 * [Droid-ify](https://f-droid.org/en/packages/com.looker.droidify/)
 * Apk Android sur [mon drive](https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA)
-* [Youtube Vanced](https://vancedapp.com/)
+* LibreTube, Blackhole, Musicolet, courrier K-9 Mail, Notic (pour bloquer certaines notifications), Read you
 * [F-droid](https://f-droid.org/)
 Anysoftkeyboard, Bromite, NewPipe, Auxio, Retro music, Geometric weather
 * Google TV : pour youtube sans pub [SmartTubeNext](https://github.com/yuliskov/SmartTubeNext#readme)
