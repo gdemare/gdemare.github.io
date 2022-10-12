@@ -390,3 +390,15 @@ NB : Possibilite d'inclure des boucles et des conditions à l'interieur du doc.a
 
 package `docx2pdf`
 * `convert("fichier.docx", destination)` convertir docx en pdf.
+
+# Choisir un dossier par une fenetre
+
+Library : `from tkinter import Tk, filedialog`
+
+```
+root = Tk()
+root.withdraw()
+root.attributes('-topmost', True) 
+open_file = filedialog.askdirectory()
+print(open_file)
+```
