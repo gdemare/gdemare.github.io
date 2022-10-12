@@ -402,3 +402,16 @@ root.attributes('-topmost', True)
 open_file = filedialog.askdirectory()
 print(open_file)
 ```
+
+## Manipuler des fichiers Excel en python
+
+Library `import openpyxl`
+
+* `fichier = openpyxl.load_workbook('fichier.xlsx')` charger un fichier excel.
+* `mywb = openpyxl.Workbook()` créer un workbook.
+* `mywb.get_sheet_names()` afficher les noms des feuilles.
+* `mywb.save('NewExcelFile.xlsx')` enregistrer le fichier.
+* `wb.create_sheet(index=0, title='1st Sheet')` créer une feuille.
+
+* `mysheet = mywb.get_sheet_by_name('feuill')` sélectionner une feuille.
+* `mysheet['F6'] = 'Writing new Value!'` écrire une valeur dans une feuille donnée.
