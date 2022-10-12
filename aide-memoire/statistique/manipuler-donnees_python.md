@@ -29,6 +29,8 @@ Paramètres :
 
 * `tableau.columns` recuperer le nom des variables.
 * `tableau.loc['colonne']`  selectionner un index dans un tableau.
+* `read_excel()` lire un fichier excel.
+
 
 ### tableau croisé et modification de variables
 
@@ -129,7 +131,6 @@ Paramètre :
 `torch.utils`
 
 `train, test = data.random_split(dataset, [20000, 5000])`
-
 
 ### Optimisation des opérations sur les tenseurs
 
