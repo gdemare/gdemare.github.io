@@ -139,10 +139,10 @@ Variable de sortie :
 ### Les dates
 Package : `datetime`
 
-| Fonciton | définition |
+| Fonction | définition |
 |---|---|
-| `today()` | aujourd'hui |
-| `weekday()` | numéro du jour de la semaine  |
+| `date.today()` | aujourd'hui |
+| `date.weekday()` | numéro du jour de la semaine  |
 
 * `datetime.strptime(texte, '%d.%m.%Y')` convertir en date et time.
 * `variable.strftime('%Y-%m-%d')` avec un affichage particulier.
