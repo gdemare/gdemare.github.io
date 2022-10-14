@@ -27,12 +27,12 @@ Paramètres :
 `{ "col1" : valeurs, 'col2' : valeurs}`
 
 
-* `tableau.columns` recuperer le nom des variables.
-* `tableau.loc['colonne']`  selectionner un index dans un tableau.
+* `tableau.columns` récupérer le nom des variables.
+* `tableau.loc['colonne']`  sélectionner un index dans un tableau.
 * `read_excel()` lire un fichier excel.
 
 
-### tableau croisé et modification de variables
+### Tableau croisé et modification de variables
 
 * `pivot_table(data, columns='country', values='quantity', index='fruit', aggfunc='sum')` faire un tableau croisé.
 Argument `aggfunc` : 
@@ -45,7 +45,14 @@ Argument `aggfunc` :
 * `data["nouvelle"] = valeur` ajouter directement.
 * `tableau.assign( nomCol = valeur )` 
 Pour appliquer des fonctions, il faut utiliser la library numpy.
-* `df.insert(position, 'col_name', [value1, value2, value3, ...])`
+* `df.insert(position, 'col_name', [value1, value2, value3, ...])` insérer une colonne à une position.
+
+### Jointure 
+
+* `pd.merge(gauche, droite, type_jointure)` joindre deux tables.
+Paramètres : 
+	* `type_jointure = inner/left/right/outer/cross` 
+
 
 ## Numpy (matrice et vecteur)
 
