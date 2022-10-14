@@ -26,11 +26,9 @@ Paramètres :
 
 `{ "col1" : valeurs, 'col2' : valeurs}`
 
-
 * `tableau.columns` récupérer le nom des variables.
 * `tableau.loc['colonne']`  sélectionner un index dans un tableau.
 * `read_excel()` lire un fichier excel.
-
 
 ### Tableau croisé et modification de variables
 
@@ -51,8 +49,13 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 
 * `pd.merge(gauche, droite, type_jointure)` joindre deux tables.
 Paramètres : 
-	* `type_jointure = inner/left/right/outer/cross` 
+	* `type_jointure = inner/left/right/outer/cross`  outer	est union (ou) et inner est intersection (et).
 * `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure.
+
+### Filtrer
+
+* `.drop_duplicates(keep='last')` supprimer les doublons.
+* `.sort_values(colonne, ascending=T)`
 
 ## Numpy (matrice et vecteur)
 
