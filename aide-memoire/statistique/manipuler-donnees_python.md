@@ -52,7 +52,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 * `pd.merge(gauche, droite, type_jointure)` joindre deux tables.
 Paramètres : 
 	* `type_jointure = inner/left/right/outer/cross` 
-
+* `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure.
 
 ## Numpy (matrice et vecteur)
 
