@@ -19,7 +19,7 @@
 ## Pandas (data frame)
 Package `import pandas as pd`
 
-`pd.DataFrame()` créer un data frame. Vide lorsqu'il n'y a pas d'argumentss.
+`pd.DataFrame()` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.
 Paramètres :
 * `index= nom_lignes` 
 * `column= nom_colonnes`
@@ -50,7 +50,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 * `pd.merge(gauche, droite, type_jointure)` joindre deux tables.
 Paramètres : 
 	* `type_jointure = inner/left/right/outer/cross`  outer	est union (ou) et inner est intersection (et).
-* `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure.
+* `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure. Attention les dataframes sont a déclarer sans "".
 
 ### Filtrer
 
