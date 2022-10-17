@@ -55,7 +55,8 @@ Paramètres :
 ### Filtrer
 
 * `.drop_duplicates(keep='last')` supprimer les doublons.
-* `.sort_values(colonne, ascending=T)`
+* `.sort_values(colonne, ascending=T)` classer les données.
+* `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition.
 
 ## Numpy (matrice et vecteur)
 
