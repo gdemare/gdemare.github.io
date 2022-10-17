@@ -54,6 +54,7 @@ Paramètres :
 
 ### Filtrer
 
+* `.drop(colonnes,axis = 1 )` supprimer une colonne.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
 * `.sort_values(colonne, ascending=T)` classer les données.
 * `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition.
