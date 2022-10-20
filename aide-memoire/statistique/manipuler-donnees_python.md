@@ -19,6 +19,8 @@
 ## Pandas (data frame)
 Package `import pandas as pd`
 
+* `donnee.dtypes` renvoie le type de données de chaque colonne.
+
 `pd.DataFrame()` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.
 Paramètres :
 * `index= nom_lignes` 
@@ -44,6 +46,15 @@ Argument `aggfunc` :
 * `tableau.assign( nomCol = valeur )` 
 Pour appliquer des fonctions, il faut utiliser la library numpy.
 * `df.insert(position, 'col_name', [value1, value2, value3, ...])` insérer une colonne à une position.
+
+### Grouper les données
+
+`.group_by("colonne")` grouper par.
+
+| Fonction | Définition |
+|---|---|
+| `.mean()` | moyenne |
+| `count()` | nombre |
 
 ### Jointure 
 
