@@ -49,7 +49,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 
 ### Grouper les données
 
-`.group_by("colonne")` grouper par.
+`.groupby(["colonne"])` grouper par.
 
 | Fonction | Définition |
 |---|---|
