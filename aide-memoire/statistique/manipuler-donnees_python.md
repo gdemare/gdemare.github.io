@@ -54,7 +54,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 | Fonction | Définition |
 |---|---|
 | `.mean()` | moyenne |
-| `count()` | nombre |
+| `size()` | nombre de lignes |
 
 ### Jointure 
 
