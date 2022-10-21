@@ -250,6 +250,8 @@ Paramètre :
 	* `f'texte {variable} texte {var2}'` f rend interprétable la chaine de caractère (remplacement des variables).
 * `texte[1:4]` extraire des caracètres d'une chaîne.
 * `texte1 + texte2` concaténer du texte
+* `'séparateur'.join([text1,text2]) concaténer du texte.
+* `texte.strip()` supprimer les espaces au début et à la fin.
 
 * `print( f"texte {variable}" )` afficher un message en interprétant une variable.
 
