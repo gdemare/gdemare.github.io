@@ -60,9 +60,9 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 
 ### Jointure 
 
-* `pd.merge(gauche, droite, type_jointure)` joindre deux tables.
+* `pd.merge(gauche, droite, how = type_jointure, on = clé)` joindre deux tables.
 Paramètres : 
-	* `type_jointure = inner/left/right/outer/cross`  outer	est union (ou) et inner est intersection (et).
+	* `how = inner/left/right/outer/cross`  outer	est union (ou) et inner est intersection (et).
 * `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure. Attention les dataframes sont a déclarer sans "".
 
 ### Filtrer
