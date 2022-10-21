@@ -37,8 +37,8 @@ Paramètres :
 * `pivot_table(data, columns='country', values='quantity', index='fruit', aggfunc='sum')` faire un tableau croisé.
 Argument `aggfunc` : 
   * `sum` somme de l'indicateur values.
-* `melt(data, id_vars='fruit', value_vars=colonnes)` transformer plusieurs variables en une seule.
 * `tableau_croise.reset_index()` Transformer un tableau croisé en tableau.
+* `melt(data, id_vars='fruit', value_vars=colonnes)` transformer plusieurs variables en une seule.
 
 ### Ajouter une colonne
 
@@ -54,7 +54,9 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 | Fonction | Définition |
 |---|---|
 | `.mean()` | moyenne |
-| `size()` | nombre de lignes |
+| `.size()` | nombre de lignes |
+
+`.reset_index(name='obs')` nommer la colonne nouvellement créée.
 
 ### Jointure 
 
@@ -75,9 +77,7 @@ Paramètres :
 * `np.asarray(matrice)` créer un array.
 * `np.empty([lignes,colonnes])` créer un array vide de taille suviantes.
 
-
 `.shape` dimension (ligne, colonne,...)
-
 
 `np.reshape( donnee, (dimension) )`
 * `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
@@ -140,7 +140,7 @@ Créer un tenseur :
 Paramètre :
 	* `dtype=type` préciser le type de variable.
 
-| type | définition  |
+| Type | Définition  |
 |---|---| 
 | `torch.float` | |
 
