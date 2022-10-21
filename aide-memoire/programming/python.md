@@ -179,6 +179,8 @@ for i in séquence:
 ```
 Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela parcourt les lettres).
 
+* `output_list = [print(a, b) for a, b in list( comparaison.columns )]` appliquer une fonction à une liste.
+
 #### Boucle tant que (jusqu'a que ce soit fausse)
 
 ```
