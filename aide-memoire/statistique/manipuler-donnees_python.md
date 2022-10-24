@@ -21,6 +21,8 @@
 Package `import pandas as pd`
 
 * `donnee.dtypes` renvoie le type de données de chaque colonne.
+* `donnee.index` nom des lignes.
+* `donnee.columns` nom des colones.
 
 `pd.DataFrame()` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.
 Paramètres :
@@ -58,8 +60,6 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 | `.mean()` | moyenne |
 | `.size()` | nombre de lignes |
 
-`.reset_index(name='obs')` nommer la colonne nouvellement créée.
-
 ### Jointure 
 
 * `pd.merge(gauche, droite, how = type_jointure, on = clé)` joindre deux tables.
@@ -73,6 +73,8 @@ Paramètres :
 * `.drop_duplicates(keep='last')` supprimer les doublons.
 * `.sort_values(colonne, ascending=T)` classer les données.
 * `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition.
+* `.reset_index()` changer l'ordre naturel des lignes.
+* `
 
 ## Numpy (matrice et vecteur)
 
