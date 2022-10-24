@@ -88,6 +88,7 @@ Paramètres :
 ### Opération sur les valeurs
 
 * `multiply(tableau, nbre, out=nouv_tableau)` multiplier les valeurs d'un tableau.
+* `matmul(mat1, mat2)`produit matriciel.
 * `add(5)` ajouter 5 à toutes les valeurs.
 
 ### Insérer
