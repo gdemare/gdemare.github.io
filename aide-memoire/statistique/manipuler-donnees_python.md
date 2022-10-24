@@ -8,7 +8,8 @@
 
 ### Les types de variables
 
-`type(objet)` renvoie le type d'objet. Pour l'utiliser dans des conditions, on utilise généralement  `is type` . 
+* `type(objet)` renvoie le type d'objet. Pour l'utiliser dans des conditions, on utilise généralement  `is type` . 
+* `veteur.astype(type)` changer le type d'un vecteur ou d'un tableau (type : `int`).
 
 | Fonction  | Définition |
 |---|---|
@@ -77,6 +78,7 @@ Paramètres :
 
 * `np.asarray(matrice)` créer un array.
 * `np.empty([lignes,colonnes])` créer un array vide de taille suviantes.
+* `np.transpose(matrice)` transposer. 
 
 `.shape` dimension (ligne, colonne,...)
 
