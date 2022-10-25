@@ -74,7 +74,7 @@ Paramètres :
 * `.sort_values(colonne, ascending=T)` classer les données.
 * `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition.
 * `.reset_index()` changer l'ordre naturel des lignes.
-* `
+* `.unique()` liste des valeurs pour une colonne.
 
 ## Numpy (matrice et vecteur)
 
