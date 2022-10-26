@@ -419,3 +419,32 @@ Library `import openpyxl`
 
 * `mysheet = mywb.get_sheet_by_name('feuill')` sélectionner une feuille.
 * `mysheet['F6'] = 'Writing new Value!'` écrire une valeur dans une feuille donnée.
+
+## Créer un fichier Word
+
+Library : `from docx import Document`
+
+* `.add_heading('Titre 1', level=1)`
+* `.add_paragraph('blabla...')`
+	* `style='List Bullet` liste en puce.
+	* `style='List Number'` liste numérotée.
+* `.add_picture('monty-truth.png')` ajouter une image.
+	`width=Inches(1.25)` taille de l'image
+* `.add_page_break()` saut de page.
+* `paragraphe.add_run(text) = True`
+    * `.italic`, `.bold` italique, gras.
+* `.save('word.docx')` enregistrer le document.
+
+### Ajouter un tableau
+
+```
+table = document.add_table(rows=1, cols=2)
+hdr_cells = table.rows[0].cells
+hdr_cells[0].text = 'quantité'
+hdr_cells[1].text = 'Id'
+
+for qty in records.itertuples():
+    row_cells = table.add_row().cells
+    for j in range(1, len(qty)) :
+        row_cells[j-1].text = str( qty[j] )
+```
