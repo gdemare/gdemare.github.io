@@ -15,7 +15,7 @@ Les types de shell les plus répandus :
 * `chmod +x script` donner les droits d'éxcution.
 * `./script` exécuter un script.
 * `bash -x sccript` afficher les détails de l'exécution.
-5/ appeler un script depuis n'importe ou : déplacer le script dans un dossier "PATH". Pour afficher la liste de ces dossiers : echo $PATH
+5/ appeler un script depuis n'importe ou : déplacer le script dans un dossier "PATH". Pour afficher la liste de ces dossiers : `echo $PATH`
 
 ## Variable type texte
 	  
@@ -24,10 +24,10 @@ Les types de shell les plus répandus :
 * `variable='texte'` déclarer une variable de type texte.
 * `echo $variable` afficher ou appeler une variable, renvoie les paramètres qu'elle reçoit.
 Paramètres:	
-* `e` activer les retours à la ligne `\n`.
-* `n nombre` coupe le message au bout d'un nombre de lettres.
-* `t nombre` limiter le temps de la saisie (en seconde).
-* `s` ne pas afficher le texte saisi. 
+ * `e` activer les retours à la ligne `\n`.
+ * `n nombre` coupe le message au bout d'un nombre de lettres.
+ * `t nombre` limiter le temps de la saisie (en seconde).
+ * `s` ne pas afficher le texte saisi. 
 
 Types de quotes:
 
