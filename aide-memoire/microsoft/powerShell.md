@@ -1,3 +1,5 @@
+Extension `fichier.ps1`
+
 ## Opérateur 
 
 `instruction1 | instruction2 ` rediriger la sortie de l'instruction 1 vers la 2.
