@@ -23,7 +23,6 @@ foreach ($i in liste) {
 ### Si
 
 ``` 
-
 If (condition1) { 
 
 } elseif (condition2) { 
