@@ -52,7 +52,7 @@ Paramétres:
 | b | retounre en arrière d'un écran |
 | y | retourne en arrière d'une ligne |
 | u | retourne en arrière de onze lignes |
-| q | arrrête la lecture de fichier |
+| q | arrête la lecture de fichier |
 
 * `head fichier` afficher le début du fichier.
 Paramètres :	
@@ -110,14 +110,14 @@ Paramètres :
 	* Méthode absolue : attribuer les droits en 3 chiffres via l'addition.
 	* Méthode relative : attribuer les droits avec 9 lettres. 	
 
-| action | lettre | chiffre |	
+| Action | Lettre | Chiffre |	
 |---|---|---|
 |read | r | 4 |
 | write | w | 2 |
 | execute | x | 1 |
 
 Paramètres :
-	* `R` affecter résursivement.
+* `R` affecter résursivement.
 
 * `su utilisateur` changer d'utilisateur.
 	
