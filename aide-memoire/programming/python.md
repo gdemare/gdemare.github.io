@@ -22,7 +22,7 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 `python` démarrer une session python.
 
-### installer un module
+### Installer un module
 
 * `python -m pip install package` windows
 * `pip install package` ubuntu.
@@ -70,8 +70,9 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 
 ### Les variables 
 
-`a = valeur` créer et affecter une valeur à une variable.
-`a, b = val1, val2` affecter plusieurs variables en même temps.
+* `a = valeur` créer et affecter une valeur à une variable.
+* `a, b = val1, val2` affecter plusieurs variables en même temps.
+* `input("afficher")` saisie utilisateur (convertir en nombre la saisie `int(...)`). 
 
 #### Format de données
 
@@ -157,7 +158,7 @@ elif condition:
 else:
 	instruction
 ```
-#### Les operateurs logiques (booléens)
+#### Les opérateurs logiques (booléens)
 
 | Symbole | Opération |
 |---|---|
@@ -299,7 +300,7 @@ Coordonné et position des pixels (x, y) correspont à (largeur, hauteur).
 
 package : `sqlite3`
 
-### connexion à la database
+### Connexion à la database
 
 ```
 conn = sqlite3.connect('base de donnees.db')
