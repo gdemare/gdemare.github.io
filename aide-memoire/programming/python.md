@@ -337,14 +337,11 @@ Package `os`
 | `path.basename(chemin/fichier)` | renvoie le nom du fichier sans le chemin |
 | `path.isfile(fichier)` | vérifier l'existence d'un fichier |
 | `shutil.copy(fichier,dossier ou fichier)` | library : `shutil` | 
+| `rename( ancien, nouveau)` | renommer un fichier | 
 
 Package `glob`
 
 * `glob('*.extension')` lister les fichiers.
-
-Package `shutil`
-
-`` copier des fichiers.
 
 ### Enregistrer le fichier
 
