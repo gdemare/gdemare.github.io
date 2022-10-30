@@ -27,3 +27,9 @@ Copier le raccourci dans le dossier :
 ## Ubuntu
 
 `/mnt/c/Users/Guigui/Downloads`
+
+## Thunderbird
+
+Exporter ses emails dans un fichier : 
+* sélectionner le dossier (ou l'email)
+* outils > exporter
