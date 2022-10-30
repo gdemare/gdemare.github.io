@@ -81,7 +81,7 @@ Comportement :
 
 ## Bord
 
-*`border-top-right-radius: radius;` changer l'angle des bordures.
+* `border-top-right-radius: radius;` changer l'angle des bordures.
 
 ## adapter les proprietes en fonction de la taille de l'ecran
 
