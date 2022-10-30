@@ -63,6 +63,9 @@ Boléen true/false;
 | >= | supérieur ou égal à |
 | < | inférieur à | 
 | <= | inférieur ou égal à |
+| `||` | ou |
+| `&&` | et |
+
 
 | type de variable | defintion |
 |---|---|
