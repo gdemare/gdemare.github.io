@@ -14,26 +14,26 @@
  ## Les variables et les opérateurs
 
 ```
-type variable ;
+type variable
 ``` 
 
 `variable = valeur<type>`  
 `type variable=valeur <, var2=val2>`
-déclarer un variable.
+déclarer une variable.
 
 Type de variables :
 
-| Type | définition | Type |
+| Type | Définition | Type |
 |---|---|---|
-| byte | entiers entre -128 et +127 | |
-| short | entiers entre -32768 et +32767 | |
-| int | entiers entre -2*10^9 et 2*10^9 | |
-| long | entiers entre -9*10^18 et 9*10^18 | L |
-| float |  nombres décimaux | f |
-| double | nombres décimaux plus grand que float | d |
-| char | caractère `'chaine'` | |
-| boolean | boléen `true` ou `false` | |
-| String | chaîne de caractère |
+| `byte` | entiers entre -128 et +127 | |
+| `short` | entiers entre -32768 et +32767 | |
+| `int` | entiers entre -2*10^9 et 2*10^9 | |
+| `long` | entiers entre -9*10^18 et 9*10^18 | L |
+| `float` |  nombres décimaux | f |
+| `double` | nombres décimaux plus grand que float | d |
+| `char` | caractère `'chaine'` | |
+| `boolean` | boléen `true` ou `false` | |
+| `String` | chaîne de caractère |
 
 ## Opérateurs
 
@@ -140,3 +140,7 @@ void «variable» «nom»(«variable1» «nom1»,«variable2» «nom2»){
 «instructions»
 }
 ```
+
+## Expression régulière
+
+
