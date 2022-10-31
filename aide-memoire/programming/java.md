@@ -147,6 +147,6 @@ for (var i = 0; i < 9; i++) {
 
 ```
 function nom(param1 <, param2>) {
-
+	<return valeur>
 }
 ```
