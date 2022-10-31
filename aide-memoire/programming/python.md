@@ -24,8 +24,8 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 ### Installer un module
 
-* `python -m pip install package` windows
-* `pip install package` ubuntu.
+* `pip install package` installer une bibliothèque. Paramètre
+ * `-r package1, package2` installer plusieurs librarys en une seule fois. 
 
 Cloner un dossier github : 
 ```
