@@ -13,13 +13,7 @@
  
  ## Les variables et les opérateurs
 
-```
-type variable
-``` 
-
-`variable = valeur<type>`  
-`type variable=valeur <, var2=val2>`
-déclarer une variable.
+`variable = valeur` déclarer une variable. 
 
 Type de variables :
 
@@ -45,7 +39,7 @@ Type de variables :
 | `/` | division |
 | `%` | modulo |
 
-* `type variable = nv_type variable` convertir de variable dans un autre type. 
+* `type variable = nv_type variable` convertir une variable dans un autre type. 
 						
 ## Lire les entrées clavier 
 
@@ -143,4 +137,10 @@ void «variable» «nom»(«variable1» «nom1»,«variable2» «nom2»){
 
 ## Expression régulière
 
+`.length` taille d'un élément.
 
+```
+for (var i = 0; i < 9; i++) {
+   console.log(i);
+}
+```
