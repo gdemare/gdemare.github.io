@@ -144,3 +144,9 @@ for (var i = 0; i < 9; i++) {
    console.log(i);
 }
 ```
+
+```
+function nom(param1 <, param2>) {
+
+}
+```
