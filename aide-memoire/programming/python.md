@@ -25,7 +25,9 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 ### Installer un module
 
 * `pip install package` installer une bibliothèque. Paramètre
- * `-r package1, package2` installer plusieurs librarys en une seule fois. 
+ * `-r package1, package2` installer plusieurs librarys en une seule fois.
+
+NB : il est possible de stocker le nom des library à utiliser dans un fichier.
 
 Cloner un dossier github : 
 ```
