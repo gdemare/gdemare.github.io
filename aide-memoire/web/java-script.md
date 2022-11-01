@@ -65,13 +65,9 @@ Boléen true/false;
 | <= | inférieur ou égal à |
 | `||` | ou |
 | `&&` | et |
+| `null` | nulle |
 
-
-| type de variable | defintion |
-|---|---|
-| `XMLHttpRequest();` | varibable fichier html | 
-
-### les conditions
+### Les conditions
 
 ```
 if (conditon) {
@@ -84,7 +80,7 @@ if (conditon) {
 ```
 
 * `confirm('message')` boite d'interaction ave cl'utilisateur OK et annuler.
-* `number++;` incrémenter.
+* `number++` incrémenter.
 
 ### Les boucles
 
@@ -104,7 +100,7 @@ function fonction(parametre1, parametre2){
 
 ### Fonction utiles
 
-| fonction | defintion |
+| Fonction | défintion |
 |---|---|
 | `.getElementsByTagName("type")` | obtenir l'id de l'element d'un certain type de balise Html |
 | `.getElementsByClassName("classe")` | obtenir l'id de l'element avec le nom valeur |
@@ -132,7 +128,7 @@ Ajouter la librairie au code html [Google Api](https://developers.google.com/spe
 | `.addClass += "classe"`  | ajouter une nouvelle classe |
 | `.append("ajout")` | Ajouter du contenu a la fin d'une div |
 
-### Creer une variable en CSS
+### Créer une variable en CSS
 
 `element.style.setProperty("--ma-variable",valeur);`
 
@@ -189,14 +185,6 @@ ligne = colonne.
 * `tableau.indexOf("Apple");` recherche d'une valeur.
 * `tableau.push(valeur);` ajouter une ligne a la fin.
 * `tableau = [ [1a,b1], [2a, 2b] ]` tableau multidimesionnel.
-
-## Opérateur logique
-| Opérateur | Définition |
-|---|---|
-| `&&` | et | 
-| `|` | ou |
-
-`null` en java script
 
 | Fonction | Definition|
 |---|---|
