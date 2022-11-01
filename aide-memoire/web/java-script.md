@@ -98,7 +98,7 @@ function fonction(parametre1, parametre2){
 }
 ```
 
-### Fonction utiles
+### Fonctions utiles
 
 | Fonction | défintion |
 |---|---|
@@ -173,6 +173,7 @@ var aPromise = fetch(url);
 ```
 
 ## Fonction
+
 ```
 function focntion(parametre1) {
   instruction
@@ -228,8 +229,11 @@ $("#fermer").click( function() {
 })
 ```
 
-* `$(this).` acceder directement a l'element.
+* `$(this).` acceder directement a l'élément.
 
-# modifier la propriete d'une classe,...
+# Modifier la propriete d'une classe,...
 
 `changeRule('balise', 'css;')`
+
+
+``${fichiers.dossier[i]}`` référence variable.
