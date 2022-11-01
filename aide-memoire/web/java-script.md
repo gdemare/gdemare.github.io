@@ -237,3 +237,7 @@ $("#fermer").click( function() {
 
 
 ``${fichiers.dossier[i]}`` référence variable.
+
+`Boolean(valeur)` convertir en boolen.
+
+`createElement('div')`
