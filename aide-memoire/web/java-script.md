@@ -1,4 +1,4 @@
-Boite a asutces
+Boite à astuces
 * Sublime Text snippet HTML/CSS/JS Prettify.
 * Pas sensible au espace.
 * L'indentater structurer le code pour le rendre plus lisible.
@@ -7,7 +7,7 @@ Boite a asutces
 ## Exécuter un programme Node.js
 `node script.js` exécuter un programme node.js
 
-## Inserer du code dans un fichier Html
+## Insérer du code dans un fichier Html
 
 ```
 <script paramètre >
@@ -19,7 +19,10 @@ Boite a asutces
  * `src="fichier.js"` appeler un fichier.
  * `type=` préciser le langage pour html.
  
-## Les commentaires
+ 
+## Les bases
+
+### Les commentaires
 
 * `// commentaire` et `/ *commentraire*/` commenter le code.
 * isoler le code jS pour éviter d'être interpréter en html.
@@ -29,7 +32,7 @@ instruction
 //-->
 ```
 
-## Les variables
+### Les variables
 
 * `var myVariable <, myVaraible2>;` déclarer une variable.
 * `myVariable = valeur;` attribuer une valeur à la variable.
@@ -38,7 +41,20 @@ instruction
 * `\'` caractère d'échappement pour les apportphe.s
 * `var tableau = ['val1', 'val2']` creer un tableau.
 
-Boléen true/false;
+#### Les tableaux
+
+ligne = colonne.
+* `tableau.indexOf("Apple");` recherche d'une valeur.
+* `tableau.push(valeur);` ajouter une ligne a la fin.
+* `tableau = [ [1a,b1], [2a, 2b] ]` tableau multidimesionnel.
+
+| Fonction | Définition|
+|---|---|
+| `length` | taille de la chaine de caractère |
+| `indexOf("texte")` | renvoie la position de la 1er chaine de caracère sinon -1 |
+| `search("texte")` | renvoie les positons de la chaine de caractère |
+
+### Les opérateurs
 
 | Opérateur | Signe |
 |---|---|
@@ -55,14 +71,14 @@ Boléen true/false;
 
 | Opérateur | Signification |
 |---|---|
-| == | égal à |
-| != | différent de |
-| === | contenu et type égal à |
-| !== | contenu ou type différent de |
-| > | supérieur à |
-| >= | supérieur ou égal à |
-| < | inférieur à | 
-| <= | inférieur ou égal à |
+| `==` | égal à |
+| `!=` | différent de |
+| `===` | contenu et type égal à |
+| `!==` | contenu ou type différent de |
+| `>` | supérieur à |
+| `>=` | supérieur ou égal à |
+| `<` | inférieur à | 
+| `<=` | inférieur ou égal à |
 | `||` | ou |
 | `&&` | et |
 | `null` | nulle |
@@ -98,7 +114,9 @@ function fonction(parametre1, parametre2){
 }
 ```
 
-### Fonctions utiles
+## Fonctions html
+
+### Récupérer les propriétés d'un objet html
 
 | Fonction | défintion |
 |---|---|
@@ -108,7 +126,7 @@ function fonction(parametre1, parametre2){
 
 Conseil : utiliser une boucle for pour parcourrir les items.
 
-###  et Ajax
+###  Library : Ajax
 
 Ajouter la librairie au code html [Google Api](https://developers.google.com/speed/libraries/).
 
@@ -180,22 +198,9 @@ function focntion(parametre1) {
 }
 ```
 
-### Les tableaux
+## Extraire une chaine de caractères
 
-ligne = colonne.
-* `tableau.indexOf("Apple");` recherche d'une valeur.
-* `tableau.push(valeur);` ajouter une ligne a la fin.
-* `tableau = [ [1a,b1], [2a, 2b] ]` tableau multidimesionnel.
-
-| Fonction | Definition|
-|---|---|
-| `length` | taille de la chaine de caractère |
-| `indexOf("texte")` | renvoie la position de la 1er chaine de caracère sinon -1 |
-| `search("texte")` | renvoie les positons de la chaine de caractère |
-
-## Extraire une chaine de caractère
-
-| fonction | définition |
+| Fonction | Définition |
 |---|---|
 | `slice(start, end)` | extraire une chaine de caractère |
 | `substring(start, <end>)` | extraire une chaine de caractère jusqu'a la fin |
@@ -211,7 +216,7 @@ var element = document.getElementById('image_1'),
 
 ### Requête json
 
-#### Réquête synchrone
+#### Requête synchrone
 
 ```
 const fs = require('fs');
