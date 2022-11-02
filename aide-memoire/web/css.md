@@ -2,7 +2,7 @@ Préparer avant un Styleguide UI :
   * Pattern Lab
   * [Huge](https://hugeinc.github.io/styleguide)
 
-### variable CSS
+### Les variables en CSS
 
 ```
 :root {
@@ -11,9 +11,9 @@ Préparer avant un Styleguide UI :
 ```
 `var(--main-bg-color)` appeler la variable dans le code.
 
-### selection un element en fonction de sa position
+### Sélection un élément en fonction de sa position
 
-`eleement:position` appliquer des proprietes a un element particulier.
+`element:position` appliquer des propriétés à un element particulier.
 Position : 
 * `first-child` premier.
 * `last-child` dernier.
@@ -32,7 +32,7 @@ Position :
 ## Background
 
 * `background-color: couelur;` couleur.
-* `background-image: url('liens');` ajouter une image en arrire plan.
+* `background-image: url('liens');` ajouter une image en arrière plan.
 
 * `linear-gradient(direction, couleur1, couleur2)` degradé. (exemple :  `background-image: linear-gradient(to bottom right, red, yellow)` )
 Direction :
@@ -74,16 +74,16 @@ Comportement :
   * `flex-start`, `flex-end` alignés au début/fin.
   * `center` alignés au centre.
 
-### contenus
+### Contenus
 
 * `flex: valeur;` mesure il peut grossir par rapport aux autres.
-* `order: numero` position de l'element.
+* `order: numero` position de l'élément.
 
-## Bord
+## Les bords
 
 * `border-top-right-radius: radius;` changer l'angle des bordures.
 
-## adapter les proprietes en fonction de la taille de l'ecran
+## Modifier les propriétes en fonction de la taille de l'ecran
 
 ```
 @media only screen and (max-device-width:480px) {
@@ -106,3 +106,7 @@ Type :
 ### Propriete des tableaux
 
 `border-collapse: collapse/separate;` bord separes ou colles.
+
+## Barre de dépacement pour scroll
+
+`overflow-y: scroll;` ajouter une scroll barre verticale.
