@@ -145,6 +145,7 @@ Ajouter la librairie au code html [Google Api](https://developers.google.com/spe
 | `write('text')` | ecrire du texte non interprété.|
 | `.addClass += "classe"`  | ajouter une nouvelle classe |
 | `.append("ajout")` | Ajouter du contenu a la fin d'une div |
+| `.getPropertyValue('height')` | Récupérer la valeur de la propriété css |
 
 ### Créer une variable en CSS
 
