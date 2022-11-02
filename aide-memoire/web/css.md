@@ -110,3 +110,7 @@ Type :
 ## Barre de dépacement pour scroll
 
 `overflow-y: scroll;` ajouter une scroll barre verticale.
+
+## Police de caractères
+
+`text-transform: uppercase/capitalize` transofrme le type de lettre (tout en majuscule/seulement la première lettre).
