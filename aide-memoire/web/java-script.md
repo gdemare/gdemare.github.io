@@ -249,3 +249,14 @@ $("#fermer").click( function() {
 `createElement('div')`
 
 `texte.split('separateur')` séparer un texte en fonction d'un caractère.
+
+## Filtrer des données
+
+```
+data = [
+{col1: val01, col2: val02 },
+{col1: val02, col2: val02}]
+
+data.filter(data => fichiers['col1']==val02))
+```
+Renvoie la ligne 2 : `{col1: val02, col2: val02}`.
