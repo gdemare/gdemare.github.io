@@ -16,9 +16,9 @@ Type :
 
 Argument (ajouter / avant):
 
-* `DISCRETE` évite les regroupement des modalités.
+* `DISCRETE` éviter les regroupements des modalités.
 * `LEVELS= n` nombre de classes.
-* `MISSING` les valeurs manquantes constitue une modalité.
+* `MISSING` les valeurs manquantes constitues une modalité.
 * `SUBGROUPS = variable` ajouter une variable.
 * `EXPLODE = modalité` séparer une modalité d’un diagramme circulaire.
 
@@ -34,7 +34,7 @@ RUN;
 ### Paramétres
 
 * `INSERT MEAN/MIN/MAX/NMIN/NMAX/NOBS/STDDEV;` encadrer avec les stat générales.
-* `INSETGROUP (voir au dessus);` encadré avec les stat par groupes.
+* `INSETGROUP (voir au dessus);` encadrer avec les stat par groupes.
 
 ## Graphique quantitatif univarié
 ```
@@ -45,11 +45,11 @@ RUN;
 ```
 
 Option 
-* `UNIFORM` garder les même échelles d’axe.
+* `UNIFORM` garder les mêmes échelles d’axe.
 
 Paramètre : 
 
-* `BY variable` un graphique ppar modalité de la variable.
+* `BY variable` un graphique par modalité de la variable.
 
 ### Type :
 * `PLOT` nuage de points
@@ -73,12 +73,12 @@ Options :
 * `UNIFORM` 
 
 Type : 
-* `BAND X=var UPPER=var LOWER=var` Deux courbes avec l'entre deux rempli.
+* `BAND X=var UPPER=var LOWER=var` deux courbes avec l'entre deux remplis.
 * `SCATTER X=var Y=var` nuage de points.
 * `SERIES X=var Y=var` courbes.
 * `STEP X=var Y=var` courbe en escalier.
 * `NEEDLE X=var Y=var` diagramme en barre.
-* `REG X=var Y=var` courbe des moindres au carrées.
+* `REG X=var Y=var` courbe des moindres aux carrées.
 * `LOESS  X=var Y=var` lissage par moyenne mobiles.
 * `HBAR/VBAR variable` diagramme en barre.
  
@@ -86,7 +86,7 @@ Type :
  
 * `GROUP=var` par groupe de variables.
 
-## Résumer statistique pour un jeu de données
+## Résumé statistique pour un jeu de données
 
 ``` 
 PROC UNIVARIATE <option>;
