@@ -247,3 +247,5 @@ $("#fermer").click( function() {
 `Boolean(valeur)` convertir en boolen.
 
 `createElement('div')`
+
+`texte.split('separateur')` séparer un texte en fonction d'un caractère.
