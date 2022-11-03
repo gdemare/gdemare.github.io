@@ -1,18 +1,19 @@
 * `Alt + Entré` retour à la ligne dans une cellule.
 * `"symbole`caractère d'échappement.
 
-### Protéger les données
+## Protéger les données de modifications possibles
 
-* "Révision" > "Protéger la feuille" Une feuille.
-* "Révision" > "Protéger le classeur" Un classeur.
-* "Affichage" > "Figer..." Figer une ligne ou un colonne.
+* `Révision" > "Protéger la feuille` protéger une feuille.
+* `Révision" > "Protéger le classeur` protéger un classeur.
+* `Affichage" > "Figer...` figer une ligne ou un colonne.
 
-#### Une cellule
+### Protéger des cellules
 
-1. Sélectionner les cellules a garder déverrouiller
-2. Clic droit, « Format de cellule » dans l’onglet « Protection »
-3. Décocher « Verrouillé », puis « OK »
-4. Aller dans « Révision » Protéger la feuille »
+1. Sélectionner les cellules à protéger.
+2. Clic droit, `Format de cellule`
+3. Onglet `Protection`
+4. Décocher `Verrouillé`, puis `OK`
+5. Aller dans `Révision > Protéger la feuille`
 
 ## Opérateurs logiques
 
@@ -51,7 +52,7 @@ Type :
  
  * `TEXTE(date;code)` afficher le nom du mois ou du jour.
 
-| code | definition |
+| Code | Définition |
 |---|---|
 | `"jjj"` | jour |
 | `"mmm"` | mois |
