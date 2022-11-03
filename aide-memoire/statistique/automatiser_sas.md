@@ -1,15 +1,16 @@
 ## Les macro-variables
-`%PUT &var. ;` afficher une macro variable.
-`%LET nomVariable = valeur ;` déclarer une macro-variable.
+
+* `%PUT &var. ;` afficher une macro variable.
+* `%LET nomVariable = valeur ;` déclarer une macro-variable.
 
 Pour les opérations sur les nombres utiliser la fonction `%EVAL(formule)`.
 
-Stocker plusieurs variables
+Stocker plusieurs variables :
 
 * `%LET semaine = lundi - mardi - mercredi - jeudi - vendredi - samedi - dimanche;`
 * `%LET jour2 = %SCAN(&semaine,2,’-’) ;`
 
-Resultat
+Résultat :
 
 * `INTO :variable <option>` mettre les résultat dans une macro dans une PROC SQL).
   * `SEPARATED 'symbole'` stocker plusieurs valeurs.
@@ -42,7 +43,7 @@ val2 )
  %END;
 ```
 
-## macro-fonction
+## Les macro-fonctions
 
 * `%EVAL(calcul)` calculer une variable numérique.
-* `%SYSFUNC(fonction)` utiliser une fonction dans les macro variables
+* `%SYSFUNC(fonction)` utiliser une fonction dans les macro variables.
