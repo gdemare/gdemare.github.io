@@ -15,4 +15,4 @@
 ### Accentuation des majuscules
 
 1. `Fichier > options > vérification`
-2. cocher `majuscules accentuée en francais`
+2. Cocher `majuscules accentuée en francais`
