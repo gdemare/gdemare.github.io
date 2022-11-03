@@ -60,11 +60,11 @@ library : `NumPy`
 * `from module import partieModule` importer uniquement un sous module.
 `*` importer toutes les fonctions.
 
-### les instructions
+### Les instructions
 
 Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 
-### commenter le code
+### Commenter le code
 
 * `# commentaire` commentaire sur une seule ligne.
 * `"""commentaire"""` commentaire sur plusieurs lignes.
@@ -174,7 +174,7 @@ Condition : `==`, `>=`, `>`, `!=`
 
 ### Les boucles
 
-#### Boucle for
+#### La boucle for
 
 ```
 for i in séquence:
@@ -184,14 +184,16 @@ Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela 
 
 * `output_list = [print(a, b) for a, b in list( comparaison.columns )]` appliquer une fonction à une liste.
 
-#### Boucle tant que (jusqu'a que ce soit fausse)
+#### La boucle tant que
+
+Les instructions sont répétées jusqu'a que ce soit la condition devienne fausse.
 
 ```
 while condition:
 	instruction
 ```
 
-### Fonction 
+### Déclarer une fonction 
 
 ```
 def fonction (param1, param2=10):
@@ -280,14 +282,11 @@ Paramètre :
 
 ### Bibilothèque `skimage` (scikit-image)
 
-`from skimage import io`
+Package `from skimage import io`
 
 * `io.imread("chemin")` importer une image.
-* afficher l'image
-```
-io.imshow(monImage)
-io.show 
-```
+* `io.imshow(monImage); io.show ` afficher l'image.
+
 ### Bibilothèque `pillow`
 Coordonné et position des pixels (x, y) correspont à (largeur, hauteur).
 * `Image.open('fichier.jpg')` ouvrir une image.
@@ -300,7 +299,7 @@ Coordonné et position des pixels (x, y) correspont à (largeur, hauteur).
 
 ## Sqlite 3
 
-package : `sqlite3`
+Package `sqlite3`
 
 ### Connexion à la database
 
@@ -316,14 +315,16 @@ c = conn.cursor()
 * `c.execute('''requete''')`
 * `c.executemany('''requete''', liste)`
 
-Les variables a utiliser dans la requêtes doivent etre declarées par un `?`.
-S'l y en a plusieurs, il faut les organiser sous une liste.
+Les variables à utiliser dans la requête doivent etre declarées par un `?`.
+S'il y en a plusieurs, il faut les organiser sous la forme d'une liste.
 
-NB : Penser à convertir le resultat en liste.
+NB : Penser à convertir le résultat en liste.
 
 * `conn.commit()` écrire ou modifier la bdd en exécutant la requête.
 
-## Manipuler les fichiers
+## Les fichiers
+
+### Manipuler les fichiers
 
 Package `os` 
 
@@ -346,7 +347,7 @@ Package `glob`
 
 * `glob('*.extension')` lister les fichiers.
 
-### Enregistrer le fichier
+### Enregistrer un fichier
 
 ```
 open('national geographic/index.html', 'w').close()
@@ -368,7 +369,7 @@ Paramètre :
 
 lire le fichier en une seule ligne.
 
-## Ecrire une page html
+### Ecrire une page html
 
 `from yattag import Doc`
 ```
@@ -390,24 +391,12 @@ ajouter des options :
 
 NB : Possibilite d'inclure des boucles et des conditions à l'interieur du doc.asis
 
-## Convertir Word en Pdf
+### Convertir un fichier Word en Pdf
 
 package `docx2pdf`
 * `convert("fichier.docx", destination)` convertir docx en pdf.
 
-# Choisir un dossier par une fenetre
-
-Library : `from tkinter import Tk, filedialog`
-
-```
-root = Tk()
-root.withdraw()
-root.attributes('-topmost', True) 
-open_file = filedialog.askdirectory()
-print(open_file)
-```
-
-## Manipuler des fichiers Excel en python
+### Excel en python
 
 Library `import openpyxl`
 
@@ -420,7 +409,7 @@ Library `import openpyxl`
 * `mysheet = mywb.get_sheet_by_name('feuill')` sélectionner une feuille.
 * `mysheet['F6'] = 'Writing new Value!'` écrire une valeur dans une feuille donnée.
 
-## Créer un fichier Word
+### Créer un fichier Word
 
 Library : `from docx import Document`
 
@@ -435,7 +424,7 @@ Library : `from docx import Document`
     * `.italic`, `.bold` italique, gras.
 * `.save('word.docx')` enregistrer le document.
 
-### Ajouter un tableau
+#### Ajouter un tableau
 
 ```
 table = document.add_table(rows=1, cols=2)
@@ -447,4 +436,18 @@ for qty in records.itertuples():
     row_cells = table.add_row().cells
     for j in range(1, len(qty)) :
         row_cells[j-1].text = str( qty[j] )
+```
+
+## Interface graphique
+
+### Choisir un dossier par une fenetre
+
+Library : `from tkinter import Tk, filedialog`
+
+```
+root = Tk()
+root.withdraw()
+root.attributes('-topmost', True) 
+open_file = filedialog.askdirectory()
+print(open_file)
 ```
