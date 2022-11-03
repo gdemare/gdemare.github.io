@@ -9,19 +9,19 @@ RUN;
 ```
 
 * `VALUE`tranformer le format.
-* `INVALUE` transfomer l'informat.
+* `INVALUE` transformer l'information.
 
 Option : 
-* `LIBRARY=bibliotheque` stoker le format dans une bibliothèque.
+* `LIBRARY=bibliotheque` stocker le format dans une bibliothèque.
 
 * `$ variable` d'origine est en caractère.
 * `valeur1 - valeur2 = 'libelle'` construire des intervalles (`LOW` : mini `HIGH`: max ¡ pour exclure la valeur).
 * `<` permet d'exclure la valeur d'une borne.
-* NB : utile pour les variables ordinales et les création d'intervalles.
+* NB : utile pour les variables ordinales et la création d'intervalles.
 * `modalité1, modalité2` plusieurs éléments pour une modalité proc format.
 
 * `""` valeur manquante caractère. 
-* `.`valeur manquante numérique.
+* `.` valeur manquante numérique.
 
 # Date et heure
 
@@ -49,7 +49,7 @@ Option :
 | yy-mm-dd | `YYMMDDx8.` | 170331 |
 
 
-x délimiteur entre les informations. Liste des valeurs possibles :
+`x` délimiteur entre les informations. Liste des valeurs possibles :
 * `d` tiret du 6 (2017-03-31).
 * `s` slash (2017/03/31).
 
