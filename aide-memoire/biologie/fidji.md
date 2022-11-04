@@ -23,8 +23,10 @@ La foncion Stack permet de traiter les images en lot `Image > Stacks > Image to 
 * Séparer les canaux de couleurs `Image > Color > Spit image`
 * Transformer une image en niveau de gris `Image > Type > 8bit`
 * Inverser les couleurs `Edit > Inverse`
-* Ajouter une échelle : `Analyze > Set scale`
-* Etaler la plage de couleurs sur tout le specte (augmente le contraste) `Process > Enhance Contrat`
+* Ajouter une échelle `Analyze > Set scale`
+* Le contraste :
+ * Normaliser le contraste (étaler la couleur sur toute la plage du specte). Cela revien à augmenter le contraste `Process > Enhance Contrat`
+ * Ajuster le contraste `Image > Ajust > Brightness / Constrast`
 
 ## Les prétraitements de l'image : les filtres
 
@@ -63,8 +65,9 @@ Les plus utilisés :
 
 ## Analyse des objets sur l'image
 
+ Il faut de préférence binairanizer l'image avant d'appliquer des filtres sur les objets en blanc et fond en noir.
 * `Analyse > Analyze Particles` analyser les objets par taille et par forme.
-* `Process > Binary > Watershed` séparer des objets accolés. Attention s'applique sur les objets en blanc et fond en noir.
+* `Process > Binary > Watershed` séparer des objets accolés.
 * `Analyze > Set measurements` ?????????
 
 ## Transformation de Fourrier
@@ -72,3 +75,25 @@ Les plus utilisés :
 Transformation de Fourier : `Process > FTT > FTT`
 La transformation de Fourrier sert à :
 * La détection de d'orientation spécifique notamment de l'astigmatisme. L'astigmatisme est une déformation de l'image par l'objectif.
+
+## Filtre morphologiques
+Les filtres morphologiques servent notamment à :
+* Extraire des caractéristiques.
+* Supprimer le bruit.
+
+Les filtres morphologiques sont des extracteurs de caractéristiques (voisinage - neighbordhood) :
+* connexity 8 = carré
+* connexity 4 = croix
+* horizontal = ligne
+* vertical = colonne
+
+L'image :
+* Erosion ???
+* Dilation ??
+* Opening ??
+* Closure ???
+
+### Apprentissage machine
+
+Télécharger et ajouter le plugin `Plugins > Segmentation > Weka segmentation`
+Lancer Weka `Plugins > Segmentation > Weka segmentation`
