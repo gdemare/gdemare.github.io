@@ -35,6 +35,9 @@ Paramètres :
 * `tableau.loc['colonne']`  sélectionner un index dans un tableau.
 * `read_excel()` lire un fichier excel.
 
+* `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
+* `data.loc[len(data)] = ["test1", "test2", 'test3']` ajouter une ligne de données.
+
 ### Tableau croisé et modification de variables
 
 * `pivot_table(data, columns='country', values='quantity', index='fruit', aggfunc='sum')` faire un tableau croisé.
@@ -76,6 +79,11 @@ Paramètres :
 * `.reset_index()` changer l'ordre naturel des lignes.
 * `.unique()` liste des valeurs pour une colonne.
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
+
+### Parcourir le jeu de données
+
+* `for i in data.index:.` parcourir un dataframe grâce au index.
+* `for index, row in df.iterrows():` parcourir un dataframe en récupérant directement les valeurs.
 
 ## Numpy (matrice et vecteur)
 
