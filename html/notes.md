@@ -21,9 +21,9 @@ Comparatif des écouteurs : [AudioBudjet](https://audiobudget.com/leaderboard/ie
 Logiciels Windows :
 * [Cryptomator](https://cryptomator.org/downloads/)
 * [Keeweb](https://keeweb.info/)
-* [Fluent Reader](https://github.com/yang991178/fluent-reader/releases)
+* [fluent reader](https://github.com/yang991178/fluent-reader/releases)
 * [Mail spring](https://github.com/Foundry376/Mailspring)
-* [Harmonoid Music](https://github.com/harmonoid/harmonoid)
+* Harmonoid Music
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
@@ -46,9 +46,11 @@ Convertisseurs :
 
 ## Applications Android
 
-* [Droid-ify](https://f-droid.org/en/packages/com.looker.droidify/) sinon [F-droid](https://f-droid.org/)
-* Média : LibreTube, Blackhole, Musicolet
-* Utiles : Courrier K-9 Mail, Notic (pour bloquer certaines notifications), Read you, OpenBoard, Bromite (navigateur internet), NewPipe, Auxio, Retro music, Geometric weather
+* [Droid-ify](https://f-droid.org/en/packages/com.looker.droidify/)
+* Apk Android sur [mon drive](https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA)
+* LibreTube, Blackhole, Musicolet, courrier K-9 Mail, Notic (pour bloquer certaines notifications), Read you
+* [F-droid](https://f-droid.org/)
+Anysoftkeyboard, Bromite, NewPipe, Auxio, Retro music, Geometric weather
 * Google TV : pour youtube sans pub [SmartTubeNext](https://github.com/yuliskov/SmartTubeNext#readme)
 
 ### Sécurité
@@ -81,7 +83,7 @@ Streaming :
 
 Cartes IGN :
 
-* Faire des itinéraires [Strava](https://www.strava.com/)
+* Faire des itinéraires[Strava](https://www.strava.com/)
 * Cartes IGN gratuites [Geoportail](https://www.geoportail.gouv.fr/carte) et [IGN Rando](https://ignrando.fr/fr/parcours) 
 * Parcours et cartes [Viso rando](https://www.visorando.com/)
 * Sentiers de légende [Hikamp](http://www.hikamp.com/)

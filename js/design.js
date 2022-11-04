@@ -1,17 +1,5 @@
 $(document).ready(function() {
 
-// bouton menu
-$("#Bmenu").click( function(){
-  var menu = document.getElementsByTagName('nav')[0],
-    style = window.getComputedStyle(menu),
-    affiche = style.getPropertyValue('display');
-  if( affiche=='flex' ){
-    menu.style.display = "none";
-  }
-  else {
-    menu.style.display = "flex";
-  }
-});
 
 $("#Bfav").click( function(){
   var fav = document.getElementById('fav');

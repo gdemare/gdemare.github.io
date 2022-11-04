@@ -13,10 +13,8 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script type="text/javascript" src="js/fichiers.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="js/contenu.js"></script>
-    <script type="text/javascript" src="js/design.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <link rel="icon" href="icon/icon.png">
     <title>Starter</title>
 </head>
@@ -30,24 +28,20 @@
                     <li id="Bnote"><i class='bx bxs-book-open'></i></li>
                 </div>
             </div>
-        <div>
-            <div  id="langage">
-                <li id='bgeneral'>Général</li>
-                <li id='bpython'>Python</li>
-                <li id='bsas'>SAS</li>
-                <li id='br'>R</li>
-            </div>
-            <a id="edit"><i class='bx bxs-pencil'></i></a>
+        <div style="justify-content: flex-end;">
+            <a id="edit" target="_blank"><i class='bx bxs-pencil'></i></a>
         </div>
     </header>
-    <nav style="display: none">
-        <h2 style="margin-top: 0.5cm;">Tags</h2>
-        <div id="legende">
-            <div><span class="python"></span>Python</div>
-            <div><span class="r"></span>R</div>
-            <div><span class="sas"></span>SAS</div>
+    <nav style="display: none;">
+        <h2>Modes</h2>
+        <div id="mode" style="margin-bottom: 0.1cm;">
+            <li id='btn-general' class="mode">Général</li>
+            <li id='btn-py'>Python</li>
+            <li id='btn-r'>R</li>
+            <li id='btn-sas'>SAS</li>
         </div>
-        <div id="couleurs">Couleurs</div>
+        <div id="menu" style="padding-bottom: 15px;">
+        </div>
     </nav>
     <section>
         <article style="padding-top: 2cm;"></article>
