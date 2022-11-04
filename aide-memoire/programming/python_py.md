@@ -451,3 +451,10 @@ root.attributes('-topmost', True)
 open_file = filedialog.askdirectory()
 print(open_file)
 ```
+## Autres
+
+### Télécharger des vidéos depuis Youtube
+
+Library `yt-dlp`
+
+* `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
