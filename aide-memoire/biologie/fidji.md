@@ -4,6 +4,10 @@ Objectifs du traitement d'images :
 * Identifier et classer les objets en fonction de leurs caractéristiques.
 * Augmenter la visibilité des objets.
 
+## Utiles
+
+* `Help > Update... > Manage update sites` installer un pugins.
+
 ## L'image 
 
 Le nombre de bit détermine le nombre de niveau de couleur (exemple : 8bits = 2^8 = 255).
@@ -76,7 +80,9 @@ Transformation de Fourier : `Process > FTT > FTT`
 La transformation de Fourrier sert à :
 * La détection de d'orientation spécifique notamment de l'astigmatisme. L'astigmatisme est une déformation de l'image par l'objectif.
 
-## Filtre morphologiques
+## Filtres morphologiques
+
+Plugin `MorphoLibJ`
 
 `Process > Morphology > Gray morphology`
 Les filtres morphologiques servent notamment à :
