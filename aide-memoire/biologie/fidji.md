@@ -82,7 +82,7 @@ La transformation de Fourrier sert à :
 
 ## Filtres morphologiques
 
-Plugin `MorphoLibJ`
+Plugin `morphology`
 
 `Process > Morphology > Gray morphology`
 Les filtres morphologiques servent notamment à :
