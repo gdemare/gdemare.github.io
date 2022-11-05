@@ -18,7 +18,7 @@ Argument (ajouter / avant):
 
 * `DISCRETE` éviter les regroupements des modalités.
 * `LEVELS= n` nombre de classes.
-* `MISSING` les valeurs manquantes constitues une modalité.
+* `MISSING` les valeurs manquantes constituent une modalité.
 * `SUBGROUPS = variable` ajouter une variable.
 * `EXPLODE = modalité` séparer une modalité d’un diagramme circulaire.
 
@@ -59,7 +59,7 @@ Option :
 * `HREF/VREF=valeur` tracer une barre horizontale/verticale.
 * `OVERLAY` superposer plusieurs graphiques.
 
-## Graphique quantitatif bivariré
+## Graphique quantitatif bivarié
 
 ```
 PROC SGPLOT <option>;
