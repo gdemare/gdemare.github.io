@@ -77,6 +77,8 @@ La transformation de Fourrier sert à :
 * La détection de d'orientation spécifique notamment de l'astigmatisme. L'astigmatisme est une déformation de l'image par l'objectif.
 
 ## Filtre morphologiques
+
+`Process > Morphology > Gray morphology`
 Les filtres morphologiques servent notamment à :
 * Extraire des caractéristiques.
 * Supprimer le bruit.
