@@ -15,6 +15,6 @@
 | tmp | dossier temporaire utilisé par les programmes pour stocker des fichiers. |
 | usr | c'est un des plus gros dossiers, dans lequel vont s'installer la plupart des programmes demandés par l'utilisateur. |
 | var | ce dossier contient des données « variables », souvent des logs (traces écrites de ce qui s'est passé récemment sur l'ordinateur). |
-# 
-`/usr/share/applications/` lanceur d applications.
-`/usr/share/icons` dossier des icones.
+ 
+* `/usr/share/applications/` lanceur d applications.
+* `/usr/share/icons` dossier des icones.
