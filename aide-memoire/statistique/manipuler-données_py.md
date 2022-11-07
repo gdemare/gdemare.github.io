@@ -186,7 +186,7 @@ L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissanc
 ```
 plt.imshow(img)
 plt.axis('off')
-plt.show();
+plt.show()
 ```
 
 * `imshow(numpy)`
