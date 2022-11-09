@@ -205,10 +205,15 @@ article {
   flex-direction: column;
 }
 
+#contenuHome { 
+  align-items: center;
+}
+
 @media only screen and (max-device-width:480px) {
-  article {
-    padding-left: 0%;
-    padding-right: 0%;
+  #contenuHome {
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .favori {
