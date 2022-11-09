@@ -204,3 +204,31 @@ article {
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (max-device-width:480px) {
+  
+  .favori {
+    margin-top: 5cm;
+    flex-direction: column;
+  }  
+
+  .favori a {
+    flex: 1;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-top: 2px solid var(--color-body);
+  }
+
+  .favori a:first-child {
+    border-top-left-radius:  0.3em;
+    border-top-right-radius:  0.3em;
+    border-top: none;
+  }
+  .favori a:last-child {
+    border-bottom-left-radius:  0.3em;
+    border-bottom-right-radius:  0.3em;
+  }
+  article {
+    width: 100%;
+  }
+}
