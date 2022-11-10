@@ -89,7 +89,8 @@ Paramètres :
 
 * `np.asarray(matrice)` créer un array.
 * `np.empty([lignes,colonnes])` créer un array vide de taille suviantes.
-* `np.transpose(matrice)` transposer. 
+* `np.transpose(matrice)` transposer.
+* * `np.maxtrix(vec1, vec2)` matrice ligne1=vec1, ligne 2=vec2. 
 
 `.shape` dimension (ligne, colonne,...)
 
