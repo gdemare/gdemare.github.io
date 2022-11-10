@@ -234,6 +234,7 @@ library : `random`
 | `randint(nb1,nb2)` | nbre entier au hasard entre nb1 et nb2 |
 | `random()` | nbre aléatoire entre [0;1] |
 | `randrange(nbre)` | nbre entier aléatoire entre 0 et nbre|
+| `gauss(mu, sigma)` | nbre aléatoire par la loi normale | 
 
 #### Fonction mathématique
 
