@@ -24,6 +24,7 @@ Logiciels Windows :
 * [fluent reader](https://github.com/yang991178/fluent-reader/releases)
 * [Mail spring](https://github.com/Foundry376/Mailspring)
 * Harmonoid Music
+* [Fluent search](https://www.fluentsearch.net/) dispo dans le store.
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
