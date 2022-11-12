@@ -67,3 +67,5 @@ Paramètre :
 * `select fichier` 
 Paramètre :
    - ` -Property` récupérer les propriétés d'un fichier. Lorsqu'il y en a plusieurs, il faut les séparer par un `,` (`fullName`, ` LastWriteTime`).
+* `Remove-Item chemin` supprimer des fichiers.
+ * `dossier -Recurse` supprime les fichiers et les dossiers.	 
