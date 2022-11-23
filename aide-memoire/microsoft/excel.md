@@ -95,3 +95,7 @@ DATE(ANNEE(A2)+B2;MOIS(A2);JOUR(A2))
 `TEMPS(heure;minute;seconde)` déclarer une heure.
 Les opérateurs fonctionnent directement. 
 Calculer un nombre d'heures. Il faut formater la case en `[h]:mm;@` sinon le total ne peut pas dépasser 24 heures.
+
+## Graphique 
+
+Echelle logarithmique `Cliquer sur l'axe. > Option axe > Echelle logarithmique`
