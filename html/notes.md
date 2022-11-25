@@ -25,6 +25,7 @@ Logiciels Windows :
 * [Mail spring](https://github.com/Foundry376/Mailspring)
 * Harmonoid Music
 * [Fluent search](https://www.fluentsearch.net/) dispo dans le store.
+* Zotero, références bibliographiques.
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
