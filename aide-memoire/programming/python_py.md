@@ -8,15 +8,19 @@ pip install --upgrade jupyterthemes
 jt -t chesterish
 ```
 
+## Extension
+
+`.pyw` fichier python exécutable.
+
 ## Configurer Python sur Windows
 
 * Copier le chemin de la licence et des programmes python.
-* Panneau de configuration\Système et sécurité\Système > Paramètre système avancé > Variable d'environnement
+* `Panneau de configuration\Système et sécurité\Système > Paramètre système avancé > Variable d'environnement`
 * Ajouter une variable système 
-	* nom : PYTHON_HOME
-	* valeur : chemin copié
-* Modifier la variable Path
-* Ajouter %PYTHON_HOME% 
+	* nom : `PYTHON_HOME`
+	* valeur : `chemin copié`
+* Modifier la variable `Path`
+* Ajouter `%PYTHON_HOME%` 
 
 Répéter l'opération pour le sous dossier library/bin et scripts
 
@@ -193,6 +197,8 @@ while condition:
 	instruction
 ```
 
+## Fonction et classe
+
 ### Déclarer une fonction 
 
 ```
@@ -202,6 +208,16 @@ def fonction (param1, param2=10):
 ```
 
 `=10` valeur par défaut de la variable.
+
+### Déclarer une classe
+
+```
+class classe:	
+	def __init__ (self):
+		self.var1
+	def fonction1 (self):
+declarer = classe() # invoquer la classe.
+```
 
 ## Les opérateurs
 
@@ -486,3 +502,17 @@ driver.get(url)
 | `NAME` | nom de la balise |
 | `TAG_NAME` | balise |
 | `XPATH` | xpath |
+
+## Convertir un python en application
+
+Library `pyinstaller`
+
+`pyinstaller script.py`
+`--noconsole` --w
+`--onefile`
+
+## Importer un script python
+
+Library `subprocess`
+
+* `subprocess.call([sys.executable, 'C:\\temp\\hello2.py'], shell=True)` importer un script.
