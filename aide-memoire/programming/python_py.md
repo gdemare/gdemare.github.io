@@ -459,3 +459,30 @@ print(open_file)
 Library `yt-dlp`
 
 * `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
+
+## Selenium
+
+library `selenium`
+
+Chromedriver à télécharger `https://chromedriver.chromium.org/downloads`
+
+driver = webdriver.Chrome("chemin\chromedriver.exe")
+driver.get(url)
+
+* `.send_keys(valeur)` remplir les valeurs.
+* `.click` cliquer sur la sélection.
+
+`driver.find_element('balise', 'valeur')`
+
+`from selenium.webdriver.common.by import By` 
+
+| Référence | Définition |
+|---|---|
+| `CLASS_NAME` | nom de la classe |
+| `CSS_SELECTOR` | css selector |
+| `ID` | identifiant de la balise |
+| `LINK_TEXT` | texte |
+| `PARTIAL_LINK_TEXT` | morceau de texte |
+| `NAME` | nom de la balise |
+| `TAG_NAME` | balise |
+| `XPATH` | xpath |
