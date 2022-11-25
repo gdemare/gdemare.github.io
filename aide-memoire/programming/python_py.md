@@ -478,17 +478,25 @@ Library `yt-dlp`
 
 ## Selenium
 
-library `selenium`
+Library `selenium`
 
 Chromedriver à télécharger `https://chromedriver.chromium.org/downloads`
 
-driver = webdriver.Chrome("chemin\chromedriver.exe")
-driver.get(url)
+```
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+import time
 
-* `.send_keys(valeur)` remplir les valeurs.
-* `.click` cliquer sur la sélection.
+options = Options()
+options.binary_location = "C:\\Program Files (x86)\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+s = Service('C:\\Users\\Guigui\\Downloads\\chromedriver.exe')
+driver = webdriver.Chrome(chrome_options=options, service=s) #ouvrir le navigateur
+```
 
-`driver.find_element('balise', 'valeur')`
+* `driver.get(url)` charger une page web.
+* `driver.find_element('balise', 'valeur')` sélectionner un élément sur la page.
 
 `from selenium.webdriver.common.by import By` 
 
@@ -502,6 +510,10 @@ driver.get(url)
 | `NAME` | nom de la balise |
 | `TAG_NAME` | balise |
 | `XPATH` | xpath |
+
+Action sur l'élément sélectionner :
+* `.send_keys(valeur)` remplir les valeurs.
+* `.click` cliquer sur la sélection.
 
 ## Convertir un python en application
 
