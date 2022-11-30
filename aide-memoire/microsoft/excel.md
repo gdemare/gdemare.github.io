@@ -98,9 +98,12 @@ Calculer un nombre d'heures. Il faut formater la case en `[h]:mm;@` sinon le tot
 
 ## Graphique 
 
-Echelle logarithmique `Cliquer sur l'axe. > Option axe > Echelle logarithmique`
+* Echelle logarithmique `Cliquer sur l'axe. > Option axe > Echelle logarithmique`
+* Barre d'erreurs `Barre d'erreurs > Histogramme > Personnaliser`
+
 
 ### Histogramme variable continue
 
-Superposition 100%
-Largeur de l'intervalle 0%
+Il faut calculer la taille des classes (abscisses).
+* Superposition 100%
+* Largeur de l'intervalle 0%
