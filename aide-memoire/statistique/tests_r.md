@@ -8,7 +8,7 @@
 
 | h0 | Test | R |
 |---|---|---|
-| Normalité | Shapiro-Wilk | shapiro.test(x) |
+| Normalité | Shapiro-Wilk | `shapiro.test(x)` |
 | Pas de valeurs extrêmes | Dixon | |
 | Pas de valeurs extrêmes | Grubbs | |
 
@@ -30,14 +30,14 @@
 | ____________________ | n | | Kruskal-Wallis | |
 | Egalité des proportions | k | 4 | Khi2 | |
 | Egalité des variances | 2 | | Fisher | |
-| _____________________ | k | 4 | Bartlett | bartlett.test() |
+| _____________________ | k | 4 | Bartlett | `bartlett.test()` |
 | _____________________ | k | | Test de Levene | |
 
 ## Deux distributions
 
 | h0 | Condition | Test | R |
 |---|---|---|---|
-| même distributions | | Kolmogorov-Smirnov | |
+| Même distribution | | Kolmogorov-Smirnov | |
 | __________________ | 1,2,3 ou 4 | Test t | 
 | __________________ | | Mann-Whitney |
 | Egalités des positions (séries binaires) | | Q de Cochran |
@@ -50,7 +50,7 @@ h0 : indépendance des deux variables
 |---|---|---|---|---|
 | Linéaire | 2 var quant | | Pearson | |
 | Rang | 2 var quant | 3,4 | Spearman | |
-| | 2 var quali | 1,5 | d’association du Khi2 | chisq.test(table(x,y)) |
+| | 2 var quali | 1,5 | d’association du Khi2 | `chisq.test(table(x,y))` |
 | | 2 var quali |  | exact de Fisher | |
 | | 2 var quali |  | Méthode de Monte Carlo | |
 | | 1 var quali et 1 var quanti | | ANOVA | |
