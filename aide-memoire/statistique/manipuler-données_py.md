@@ -62,6 +62,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 |---|---|
 | `.mean()` | moyenne |
 | `.size()` | nombre de lignes |
+| `.count()` | nombre de lignes |
 
 ### Jointure 
 
