@@ -24,17 +24,17 @@ Package `import pandas as pd`
 * `donnee.index` nom des lignes.
 * `donnee.columns` nom des colones.
 
-`pd.DataFrame()` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.
-Paramètres :
-* `index= nom_lignes` 
-* `column= nom_colonnes`
+### Déclarer un tableau Pandas
 
-`{ "col1" : valeurs, 'col2' : valeurs}`
+* `pd.DataFrame({ "col1" : valeurs, 'col2' : valeurs})` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.
+Paramètres :
+ * `index= nom_lignes` 
+ * `column= nom_colonnes`
 
 * `tableau.columns` récupérer le nom des variables.
 * `tableau.loc['colonne']`  sélectionner un index dans un tableau.
+* `read_csv(fichier, sep=";")` lire un fichier csv.
 * `read_excel()` lire un fichier excel.
-
 * `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
 * `data.loc[len(data)] = ["test1", "test2", 'test3']` ajouter une ligne de données.
 
