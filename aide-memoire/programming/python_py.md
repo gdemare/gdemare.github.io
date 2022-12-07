@@ -80,6 +80,9 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 * `a, b = val1, val2` affecter plusieurs variables en même temps.
 * `input("afficher")` saisie utilisateur (convertir en nombre la saisie `int(...)`). 
 
+Liste des variables par défaut :
+* `%pwd` dossier par défaut.
+
 #### Format de données
 
 * `type(variable)` renvoie le type de variable.
@@ -124,6 +127,8 @@ Les dictionnaires sont un objet particulier. L'accés aux valeurs fait par l'id.
 |---|---|
 | `chr(nbre)` | convertie un nombre en sa lettre correspondante|
 | `len(texte)` | nombre de caractère de la chaine |
+| `.lower()` | mettre un texte en minuscule |
+| `.upper()` | mettre un texte en majuscule |
 
 #### Expression régulière (regex)
 
