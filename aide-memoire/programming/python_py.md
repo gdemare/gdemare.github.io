@@ -113,13 +113,16 @@ Liste des variables par défaut :
 
 #### Les dictionnaires
 
-Les dictionnaires sont un objet particulier. L'accés aux valeurs fait par l'id.
+* `dict = { 'id' : [val1, val2, val3] }` Déclarer un dictionnaire.
+* `dict['id']` + `.seq` pour connaitre une information.
+
+Le dictionnaire est un objet particulier. L'accés aux valeurs fait par l'id.
 * `.get(id)` renvoie la colonne si l'id existe. 
 * `.values()` renvoie les valeurs sous forme de liste.
 * `.items()` renvoie (id, valeur).
 * `.keys()` renvoie la liste des id.
-
-`dict = { 'id' : [val1, val2, val3] }` 
+* `record_dict["sp"] = record_dict.pop("id")` modifier la clé d'une entrée.
+* `.update(reference)` ajouter une nouvelle valeur.
 
 ### Texte
 
@@ -250,7 +253,7 @@ declarer = classe() # invoquer la classe.
 
 library : `random`
 
-| fonction | défintion |
+| Fonction | Défintion |
 |---|---|
 | `randint(nb1,nb2)` | nbre entier au hasard entre nb1 et nb2 |
 | `random()` | nbre aléatoire entre [0;1] |
