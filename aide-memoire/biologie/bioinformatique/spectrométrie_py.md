@@ -4,8 +4,12 @@
 [Expasy](https://www.expasy.org/) bdd Swiss Bioinformatics Ressource Portal :
 	* [UniProt](https://www.uniprot.org/)
 
-Library `Bio` mython 
-
-Alignement de séquences 
-* Le module `AlignIO` de la library `Bio`. 
 * [Peptide SAR](https://github.com/Merck/PepSeA)
+
+## Library Bio
+
+### Alignement de séquences
+
+Le module `AlignIO` de la library `Bio`.
+`SeqIO.parse(open(input_file),'fasta')` importer un fichier fasta.
+` ` convertir un fasta en dictionnaire.
