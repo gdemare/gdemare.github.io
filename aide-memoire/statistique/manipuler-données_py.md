@@ -80,6 +80,7 @@ Paramètres :
 * `.reset_index()` changer l'ordre naturel des lignes.
 * `.unique()` liste des valeurs pour une colonne.
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
+* `colonne.str.contains("mot")` contient le mot.
 
 ### Parcourir le jeu de données
 
