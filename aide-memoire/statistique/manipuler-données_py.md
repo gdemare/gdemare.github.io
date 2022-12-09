@@ -33,10 +33,17 @@ Paramètres :
 
 * `tableau.columns` récupérer le nom des variables.
 * `tableau.loc['colonne']`  sélectionner un index dans un tableau.
-* `read_csv(fichier, sep=";")` lire un fichier csv.
-* `read_excel()` lire un fichier excel.
 * `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
 * `data.loc[len(data)] = ["test1", "test2", 'test3']` ajouter une ligne de données.
+
+### Importer 
+
+* `pd.read_csv(fichier, sep=";")` lire un fichier csv.
+* `pd.read_excel()` lire un fichier excel.
+
+### Exporter 
+
+* `tableau.to_csv('fichier.csv', sep='separateur', index=False,header=True)` exporter un data en csv.
 
 ### Tableau croisé et modification de variables
 
