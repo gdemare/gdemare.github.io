@@ -9,7 +9,7 @@
 ### Les types de variables
 
 * `type(objet)` renvoie le type d'objet. Pour l'utiliser dans des conditions, on utilise généralement  `is type` . 
-* `veteur.astype(type)` changer le type d'un vecteur ou d'un tableau (type : `int`).
+* `veteur.astype(type)` changer le type d'un vecteur ou d'un tableau (type : `int`, `str`).
 
 | Fonction  | Définition |
 |---|---|
