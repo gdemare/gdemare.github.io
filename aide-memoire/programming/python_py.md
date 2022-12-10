@@ -485,6 +485,8 @@ Sou bibliothèque à importer `from tkinter import ttk`
 
 Liste des éléments :
 * `ttk.Button(root, text='Unice', command=fonction)` bouton.
+* `ttk.Label(root, text="texte")` ajouter du texte.
+* `ttk.Entry(root)` zone de saisie.
 
 Paramètres : 
 * `width = 30` largeur.
