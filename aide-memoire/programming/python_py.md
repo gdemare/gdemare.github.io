@@ -465,17 +465,44 @@ for qty in records.itertuples():
 
 ## Interface graphique
 
+### Déclarer une fenêtre 
+
+```
+root = tk.Tk()
+## éléments de la fenêtre 
+root.mainloop()
+```
+
+* `root.title('Lanceur web')` ajouter un titre.
+* `root.geometry("200x500")` préciser les dimensions de la fenêtre.
+
+### Element de la fenêtre
+
+Sou bibliothèque à importer `from tkinter import ttk`
+
+1 - Déclarer l'élément `bouton = ...`
+2 - Afficher l'élément `bouton.pack()`
+
+Liste des éléments :
+* `ttk.Button(root, text='Unice', command=fonction)` bouton.
+
+Paramètres : 
+* `width = 30` largeur.
+
 ### Choisir un dossier par une fenetre
 
 Library : `from tkinter import Tk, filedialog`
 
+Fonctionne hors interface tKinter
+
 ```
 root = Tk()
 root.withdraw()
-root.attributes('-topmost', True) 
+root.attributes('-topmost', True)
 open_file = filedialog.askdirectory()
 print(open_file)
 ```
+
 ## Autres
 
 ### Télécharger des vidéos depuis Youtube
