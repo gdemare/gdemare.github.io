@@ -13,5 +13,9 @@ from Bio import pairwise2
 
 Libary `pymsaviz`
 
-* `MsaViz( fichier, wrap_length=60, show_count=True)`
-* `msa.savefig("api_example01.png")` sauvegarder l'image dans un fichier.
+* `mv = MsaViz( fichier, wrap_length=60, show_count=True)`
+* `mv.savefig("api_example01.png")` sauvegarder et afficher l'image dans un fichier.
+
+Ajouter des fichiers :
+* `mv.add_markers([30, (40, 50), 55], color="green", marker="+")` ajouter des repères.
+* `mv.add_text_annotation((23, 39), "Libellé", text_color="red", range_color="red")` ajouter un région.
