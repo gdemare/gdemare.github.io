@@ -4,18 +4,30 @@ from Bio import SeqIO
 from Bio import pairwise2
 ```
 
-## Alignement des séquences
+## Déclaer des séquences 
 
 * `SeqIO.parse('alignement.fasta', "fasta")` alignement du fichier fasta.
-* `SeqIO.write(align(ali), output, "fasta")` ecrire l'alignement dans un fichier fasta.
-Paramètre :
-* `show_consensus=True` créer un consensus.
+* `SeqIO.Seq("sequence")` déclarer une séquence
+* `SeqIO.write(align(ali), output, "fasta")` exporter l'alignement dans un fichier fasta.
+
+## Alignement des séquences
+
+Bibliothèque `Pairwise` permet d'aligner des séquences deux à deux.
+
+* `AlignIO.read(output_file, "fasta")` importer des fastas d'alignement.
+* `pairwise2.align` aligner des séquences. Les éléments sont accessibles en classe (ex : `.id`). L'alignement utilise comme algo :
+ * `.globalms(seq1, seq2, 2, -1, -5, -2)` algo globalms.
+ * `.globalxx(seq1, seq2)` algo ?
+* `AlignIO.write(alignment, "fichier.fasta", "fasta")` exporter l'alignement en fasta.
+
 
 ### Visualiser les séquences
 
 Libary `pymsaviz`
 
 * `mv = MsaViz( fichier, wrap_length=60, show_count=True)`
+Paramètre :
+* `show_consensus=True` créer un consensus.
 * `mv.savefig("api_example01.png")` sauvegarder et afficher l'image dans un fichier.
 
 Ajouter des fichiers :
