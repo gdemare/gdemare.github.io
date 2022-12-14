@@ -564,4 +564,5 @@ Library `pyinstaller`
 
 Library `subprocess`
 
-* `subprocess.call([sys.executable, 'C:\\temp\\hello2.py'], shell=True)` importer un script.
+* `call([sys.executable, 'C:\\temp\\hello2.py'], shell=True)` importer un script python.
+* `['java', '-jar', 'temp.jar' param1, param2]` exécuter un script java.
