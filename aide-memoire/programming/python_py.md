@@ -504,6 +504,9 @@ root.attributes('-topmost', True)
 open_file = filedialog.askdirectory()
 print(open_file)
 ```
+ou `.askopenfilename()`
+* `fichier = re.search(r'((?!(/|\\)).)*$' , open_file).group(0)` le fichier.
+* `dossier = open_file.replace(fichier, "")` le dossier.
 
 ## Autres
 
