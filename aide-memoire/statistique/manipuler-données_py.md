@@ -41,12 +41,14 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 #### Colonne
 
 * `tableau.columns` récupérer le nom des variables.
+* `tableau['colonne']` sélectionner une colonne.
 
 #### Ligne
 
 * `denovo[1:2]` sélectionner une ligne.
 * `denovo.iloc[2]` selectionner une ligne.
-* `for index, row in denovo[5:10].iterrows():` parcourrir un dataframe.
+* `for i in data.index:.` parcourir un dataframe grâce au index.
+* `for index, row in df.iterrows():` parcourir un dataframe en récupérant directement les valeurs.
 
 ### Ajouter des données
 
@@ -104,11 +106,6 @@ Paramètres :
 * `.unique()` liste des valeurs pour une colonne.
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
 * `colonne.str.contains("mot")` contient le mot.
-
-### Parcourir le jeu de données
-
-* `for i in data.index:.` parcourir un dataframe grâce au index.
-* `for index, row in df.iterrows():` parcourir un dataframe en récupérant directement les valeurs.
 
 ## Numpy (matrice et vecteur)
 
