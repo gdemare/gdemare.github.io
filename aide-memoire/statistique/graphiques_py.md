@@ -50,3 +50,7 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 * `plt.figure('train', (largeur, hauteur))` créer une image subdiviser.
 * `subplot(nb_lignes, nb_col, i+1)` ajouter un graphique à l'image. Les  positions sont numérotées à partir de 1.
+
+### Boxplot
+
+`plt.boxplot(vecteur)` affichier un boxplot.
