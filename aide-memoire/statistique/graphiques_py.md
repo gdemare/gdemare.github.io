@@ -54,3 +54,9 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 ### Boxplot
 
 `plt.boxplot(vecteur)` affichier un boxplot.
+
+## Seaborn
+
+### Graphique de distribution
+
+* `sns.displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
