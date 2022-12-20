@@ -9,7 +9,6 @@ Les dataframe pandas intégrent directement des représentations graphiques.
 `from matplotlib import pyplot as pl`
 à la fin, on peut forcer l'affichage avec `plt.show()`
 
-
 * `plot(abscisse, ordonnée, <type_point>)`
 Paramètre : faire une chaîne de caractères 
 * L1 couleur `'r'` rouge `'y'` jaune `'b'` bleu
@@ -26,7 +25,7 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Paramètres des axes
 
-* `pyplot.show()` afficher le graphique
+* `pyplot.show()` afficher le graphique.
 * `pyplot.axis([xmin, xmax, ymin, ymax])` changer l'affichage des axes. 
 	* `"off"` ne pas afficher d'axe. 	
 
@@ -34,9 +33,9 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Etiquettes et libellés
 
-* `pyplot.xlabel(texte)` 
-* `pyplot.ylabel(texte)`
-* `title(titre)` ajouter un titre
+* `pyplot.xlabel(texte)` libellé axe des abcisses.
+* `pyplot.ylabel(texte)` libellé axe des ordonnées.
+* `title(titre)` ajouter un titre.
 * `text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
 
 ### Camembert 
@@ -45,9 +44,9 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Diagramme en barre et histogramme
 
-`pyplot.bar(libelle, valeur, width=, align='edge')` Les libellés doivent être au format texte.
+`pyplot.bar(libelle, valeur, width=, align='edge')` les libellés doivent être au format texte.
 
 ### Ajouter plusieurs graphiques à une seule image
 
 * `plt.figure('train', (largeur, hauteur))` créer une image subdiviser.
-* `subplot(nb_lignes, nb_col, i+1)` pour ajouter un graphique à l'image. Les  positions sont numéroté à partir de 1.
+* `subplot(nb_lignes, nb_col, i+1)` ajouter un graphique à l'image. Les  positions sont numérotées à partir de 1.
