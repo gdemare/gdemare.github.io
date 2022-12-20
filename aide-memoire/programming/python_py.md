@@ -176,8 +176,8 @@ else:
 
 | Symbole | Opération |
 |---|---|
-| `and` | et |
-| `or` | ou |
+| `and` ou `&` | et |
+| `or` ou `|` | ou |
 | `not condition` | negation |
 | `is None` | null |
 | `in` | vérifier la présence d'un caractère (appartient). |
