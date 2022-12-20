@@ -101,7 +101,7 @@ Paramètres :
 * `.drop(colonnes,axis = 1 )` supprimer une colonne.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
 * `.sort_values(colonne, ascending=T)` classer les données.
-* `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition.
+* `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition. S'il y a plusieurs conditions il faut les mettre entre parenthèse.
 * `.reset_index()` changer l'ordre naturel des lignes.
 * `.unique()` liste des valeurs pour une colonne.
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
