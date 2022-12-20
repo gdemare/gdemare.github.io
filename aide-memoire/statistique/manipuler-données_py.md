@@ -26,14 +26,30 @@ Package `import pandas as pd`
 
 ### Déclarer un tableau Pandas
 
-* `pd.DataFrame({ "col1" : valeurs, 'col2' : valeurs})` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.
-Paramètres :
+* `pd.DataFrame({ "col1" : valeurs, 'col2' : valeurs})` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.Paramètres :
  * `index= nom_lignes` 
  * `column= nom_colonnes`
+* `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
+
+### Sélectionner des données
+
+* `tableau.iloc[nb_row <, nb_col>]` sélectionner en fonction du numéro des lignes et du numéro des colonnes.
+* `tableau.loc[nb_row <, nom_col>]` sélectionner en fonction du numéro des lignes et du nom des colonnes.
+
+_RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2:` = 2 et après).
+
+#### Colonne
 
 * `tableau.columns` récupérer le nom des variables.
-* `tableau.loc['colonne']`  sélectionner un index dans un tableau.
-* `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
+
+#### Ligne
+
+* `denovo[1:2]` sélectionner une ligne.
+* `denovo.iloc[2]` selectionner une ligne.
+* `for index, row in denovo[5:10].iterrows():` parcourrir un dataframe.
+
+### Ajouter des données
+
 * `data.loc[len(data)] = ["test1", "test2", 'test3']` ajouter une ligne de données.
 
 ### Importer 
