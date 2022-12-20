@@ -107,6 +107,12 @@ Paramètres :
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
 * `colonne.str.contains("mot")` contient le mot.
 
+### Graphiques 
+
+Library `import matplotlib.pyplot as plt`
+
+* `tableau.plot( x='col1', y='col2')` afficher un graphique.
+
 ## Numpy (matrice et vecteur)
 
 * `np.asarray(matrice)` créer un array.
