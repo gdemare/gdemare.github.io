@@ -181,6 +181,7 @@ else:
 | `not condition` | negation |
 | `is None` | null |
 | `in` | vérifier la présence d'un caractère (appartient). |
+| `.endswith("fin")` | se termine par | 
 
 Condition : `==`, `>=`, `>`, `!=`
 
