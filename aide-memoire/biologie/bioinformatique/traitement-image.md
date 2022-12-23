@@ -10,6 +10,8 @@ post-traitement pour améliorer la visualisation
 
 ## Morphologie mathématique
 
+La morphologie en traitement d'images sert à filtrer,  segmenter et quantifier.
+
 Filtre médian 
 
 Une fenêtre glissante avec l'application d'une fonction.
