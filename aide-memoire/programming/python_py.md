@@ -489,6 +489,8 @@ Liste des éléments :
 * `ttk.Label(root, text="texte")` ajouter du texte.
 * `ttk.Entry(root)` zone de saisie.
 
+* `.grid(row=, column=)` position de l'élément.
+
 Paramètres : 
 * `width = 30` largeur.
 
