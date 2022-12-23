@@ -5,7 +5,7 @@ Les types de variables :
 | nominale | discrète |
 | ordinale | continue |
 
-## Un variable
+## Une variable
 
 Ordonnée : Effectif/fréquence
 
