@@ -195,5 +195,8 @@ $('#Bnote').click(function() {
   loadContenu(url+"html/notes.md",1, "contenu");
 });
 
+$('#Bipmc').click(function() {
+  loadContenu(url+"html/ipmc.md",1, "contenu");
+});
 
 });

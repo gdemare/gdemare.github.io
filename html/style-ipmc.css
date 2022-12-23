@@ -1,0 +1,112 @@
+:root{
+  --color-hover: rgb(0,122,255);
+  --color-nav: rgb(29,27,38);
+  --color-body: rgb(33,32,42);
+  --color-police: rgb(236,238,240);
+  --color-bouton: rgb(142,142,147);/*rgb(40,40,80);*/
+  --color-gray: rgb(142,142,147);
+  --color-code: rgb(44,44,46);
+  --color-home: rgb(54,54,64);
+  --color-header: rgb(77,77,77);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5em;
+  background: var(--color-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #409cff;
+  cursor: pointer; 
+}
+
+body {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center; 
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  flex-direction: row;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  color : var(--color-police);
+  background: var(--color-body);
+  font-family: 'Roboto', sans-serif;
+}
+
+/**lien*/
+a {
+  color: var(--color-police);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover, .favori a:hover, header li:hover {
+  background-color: var(--color-hover);
+  cursor: pointer;
+}
+
+.liste {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3cm;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: fit-content;
+}
+
+.vide, .colonne {
+  flex-grow: 1;
+  padding: 0;
+  width: 10em;
+  min-width: 23%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-home);
+  height: fit-content;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.colonne:last-child, .vide:last-child {
+  margin-right: 0px;
+}
+
+.liste a {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-write);
+  border-top: 2px solid var(--color-body);
+  padding: 0.4em;
+  padding-left: 1em;
+  padding-right: 0em;
+}
+
+.colonne a:last-child {
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+
+.liste h3 {
+  margin: 0px;
+  padding: 0.4em; 
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
