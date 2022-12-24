@@ -386,7 +386,7 @@ fichier.close()
 ## Alternative
 
 ```
-with open(dossier + '/data.js', 'w') as file:
+with open(dossier + '/data.js', 'w', encoding='UTF8) as file:
 	file.write(i)
 ```
 `\n` est le séparateur entre les lignes.
