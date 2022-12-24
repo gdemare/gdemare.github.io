@@ -1,5 +1,6 @@
 // dossier ; sous dossier; chemin; general; r; sas; python
-fichiers = [{ chemin: 'biologie/fidji', general: 1, r: 0, sas:0, py:0},
+fichiers = [
+	{ chemin: 'biologie/fidji', general: 1, r: 0, sas:0, py:0},
 { chemin: 'biologie/bioinformatique/sequencage', general: 0, r: 0, sas:0, py:1},
 { chemin: 'biologie/bioinformatique/spectrométrie', general: 0, r: 0, sas:0, py:1},
 { chemin: 'biologie/bioinformatique/traitement-image', general: 1, r: 0, sas:0, py:1},
@@ -73,4 +74,5 @@ fichiers = [{ chemin: 'biologie/fidji', general: 1, r: 0, sas:0, py:0},
 { chemin: 'statistique/réduction-dimensions/ACP', general: 0, r: 1, sas:1, py:0},
 { chemin: 'statistique/réduction-dimensions/AFC', general: 1, r: 1, sas:1, py:0},
 { chemin: 'statistique/réduction-dimensions/analyse-discriminante', general: 1, r: 1, sas:1, py:0},
-{ chemin: 'statistique/réduction-dimensions/reduction-dimension-info', general: 1, r: 0, sas:0, py:0}];
+{ chemin: 'statistique/réduction-dimensions/reduction-dimension-info', general: 1, r: 0, sas:0, py:0}
+];
