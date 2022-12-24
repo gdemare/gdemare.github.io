@@ -281,10 +281,11 @@ Paramètre :
 	* `f'texte {variable} texte {var2}'` f rend interprétable la chaine de caractère (remplacement des variables).
 * `texte[1:4]` extraire des caracètres d'une chaîne.
 * `texte1 + texte2` concaténer du texte
-* `'séparateur'.join([text1,text2]) concaténer du texte.
+* `'séparateur'.join([text1,text2])` concaténer du texte.
 * `texte.strip()` supprimer les espaces au début et à la fin.
 * `texte.replace('ancien', 'nouveau')` remplacer un caractère.
 * `print( f"texte {variable}" )` afficher un message en interprétant une variable.
+* `re.split(text, `\n`)` séparer une chaîne de caractères en fonction d'un motif.
 
 | Caractère | Définition |
 |---|---|
@@ -381,6 +382,14 @@ fichier = open('journal Le Monde/index.html', "a")
 fichier.write(index)
 fichier.close()
 ```
+
+## Alternative
+
+```
+with open(dossier + '/data.js', 'w') as file:
+	file.write(i)
+```
+`\n` est le séparateur entre les lignes.
 
 ### Importer un fichier 
 
