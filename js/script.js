@@ -12,6 +12,8 @@ $(document).ready(function() {
 //---------------
 const url = 'https://raw.githubusercontent.com/gdemare/gdemare.github.io/master/'
 
+console.log(fichiers)
+
 // ajout des variables dossier, dossierSous, fichier
 for (var i = 0; i <= fichiers.length - 1; i++) {
   dosFic = fichiers[i].chemin.split('/')
@@ -41,6 +43,7 @@ function menu (data) {
   texte = ""
   for (var i = 0; i <= data.length - 1; i++) {
     ligne = data[i]
+    console.log(ligne)
     if (i == 0 || (ligne.dossier != data[i-1].dossier) ) {
       texte = titre2(texte, ligne.dossier)
     }
