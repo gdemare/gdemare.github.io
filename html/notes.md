@@ -19,29 +19,33 @@ Comparatif des écouteurs : [AudioBudjet](https://audiobudget.com/leaderboard/ie
 * [Science relationnelle](https://raw.githack.com/gdemare/science/master/index.html)
 
 Logiciels Windows :
+* [Adguard](https://adguard.com/en/download.html)
+* [Anki](https://apps.ankiweb.net/)
+* [Brave](https://brave.com/fr/)
+* [Calibre](https://calibre-ebook.com/download)
 * [Cryptomator](https://cryptomator.org/downloads/)
+* [Deemix](https://deemix.app/gui) - [Reddit Deemix](https://www.reddit.com/r/deemix/)
+* [Dropbox](https://www.dropbox.com/)
+* [Fluent reader](https://github.com/yang991178/fluent-reader/releases)
+* [Fluent search](https://www.fluentsearch.net/)
+* [FreeFileSync](https://freefilesync.org/download.php)
+* [Harmonoid Music](https://harmonoid.com/)
+* [Google drive](https://www.google.com/drive/download/)
 * [Keeweb](https://keeweb.info/)
-* [fluent reader](https://github.com/yang991178/fluent-reader/releases)
+* [pCloud](https://www.pcloud.com/fr/download-free-online-cloud-file-storage.html)
 * [Mail spring](https://github.com/Foundry376/Mailspring)
-* Harmonoid Music
-* [Fluent search](https://www.fluentsearch.net/) dispo dans le store.
+* [Visual studio studio](https://apps.microsoft.com/store/detail/XP9KHM4BK9FZ7Q)
+* [VlC](https://www.videolan.org/index.fr.html)
 * Zotero, références bibliographiques.
 
 Bureautique :
 * [Prezzi](https://prezi.com/fr/)
 * [ShareLatex](https://fr.sharelatex.com)
 
-## Musique
-
-Convertisseurs :
-* [Stream Pocket](http://streampocket.net/)
-* [Youtube Converter Online](https://clouddownloader.net)
-
 ## Téléchargement
 
 * Yggtorrent [Mastodonde](https://mamot.fr/@YggTorrent) - [Forum](https://yggland.fr/)
 * [Zone téléchargement](https://zone-telechargement.cam/) - [Forum zone téléchargement](https://www.forumzt.com/)
-* [Deemix](https://www.reddit.com/r/deemix/) - [Reddit Deemix](https://www.reddit.com/r/deemix/)
 * Livres en anglais : [Libgen](http://libgen.rs/)
 * Dictionnaires pour kobo [kobo ebook reader dict](https://github.com/BoboTiG/ebook-reader-dict)
 * Outils en ligne pour PDF notamment Optical Character Recognition [PDF 24](https://tools.pdf24.org/fr/)
@@ -50,7 +54,7 @@ Convertisseurs :
 
 * [Droid-ify](https://f-droid.org/en/packages/com.looker.droidify/)
 * Apk Android sur [mon drive](https://onedrive.live.com/?id=C0433D28E5866ECA%216326&cid=C0433D28E5866ECA)
-* LibreTube, Blackhole, Musicolet, courrier K-9 Mail, Notic (pour bloquer certaines notifications), Read you
+* LibreTube, Musicolet, courrier K-9 Mail, Notic (pour bloquer certaines notifications), Ankidroid, Lawnchair laucher , Read you
 * [F-droid](https://f-droid.org/)
 Anysoftkeyboard, Bromite, NewPipe, Auxio, Retro music, Geometric weather
 * Google TV : pour youtube sans pub [SmartTubeNext](https://github.com/yuliskov/SmartTubeNext#readme)
@@ -78,20 +82,9 @@ Icones et font :
 
 Images gratuites : [Pexels](https://www.pexels.com/)
 
-Streaming :
-
-* [Channel stream](http://channelstream.club/)
-* [Stream sport](https://www.streamonsport.info/)
-
 Cartes IGN :
 
 * Faire des itinéraires[Strava](https://www.strava.com/)
 * Cartes IGN gratuites [Geoportail](https://www.geoportail.gouv.fr/carte) et [IGN Rando](https://ignrando.fr/fr/parcours) 
 * Parcours et cartes [Viso rando](https://www.visorando.com/)
 * Sentiers de légende [Hikamp](http://www.hikamp.com/)
-
-## Achat
-
-Articles pas cher sur Amazon pour avoir la livraison gratuite
-* La Princesse de Montpensier à 1,55 euros
-* Lucrèce Borgia à 1,55 euros
