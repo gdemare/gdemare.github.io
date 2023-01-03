@@ -107,3 +107,12 @@ Calculer un nombre d'heures. Il faut formater la case en `[h]:mm;@` sinon le tot
 Il faut calculer la taille des classes (abscisses).
 * Superposition 100%
 * Largeur de l'intervalle 0%
+
+## Indicateurs statistiques
+
+|---|---|
+| `MEDIANE()` | médiane |
+| `QUARTILE(;1 ou 3)` | quartile |
+| `VAR.P.N()` | variance de l'échantillon|
+| `VARA()` | variance de la population  |
+| `NB()` | nombre de cellules non vides | 
