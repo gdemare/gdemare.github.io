@@ -57,7 +57,7 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 ### Importer 
 
 * `pd.read_csv(fichier, sep=";")` lire un fichier csv.
-* `pd.read_excel()` lire un fichier excel.
+* `pd.read_excel(, sheet_name=1/feuille, header=True, )` lire un fichier excel.
 
 ### Exporter 
 
