@@ -71,7 +71,7 @@ fichiers = [
 { chemin: 'statistique/mixte/couche-convulsive', general: 1, r: 0, sas:0, py:1},
 { chemin: 'statistique/mixte/réseau-neurones', general: 1, r: 1, sas:0, py:1},
 { chemin: 'statistique/réduction-dimensions/ACM', general: 1, r: 1, sas:1, py:0},
-{ chemin: 'statistique/réduction-dimensions/ACP', general: 0, r: 1, sas:1, py:0},
+{ chemin: 'statistique/réduction-dimensions/ACP', general: 0, r: 1, sas:1, py:1},
 { chemin: 'statistique/réduction-dimensions/AFC', general: 1, r: 1, sas:1, py:0},
 { chemin: 'statistique/réduction-dimensions/analyse-discriminante', general: 1, r: 1, sas:1, py:0},
 { chemin: 'statistique/réduction-dimensions/reduction-dimension-info', general: 1, r: 0, sas:0, py:0}
