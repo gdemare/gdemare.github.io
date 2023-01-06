@@ -9,7 +9,7 @@ Les dataframe pandas intégrent directement des représentations graphiques.
 `from matplotlib import pyplot as pl`
 à la fin, on peut forcer l'affichage avec `plt.show()`
 
-* `plot(abscisse, ordonnée, <type_point>)`
+* `plot(abscisse, ordonnée, type_point)` Le type de points est obligatoire.
 Paramètre : faire une chaîne de caractères 
 * L1 couleur `'r'` rouge `'y'` jaune `'b'` bleu
 * L2 type de points 
@@ -22,6 +22,10 @@ Paramètre : faire une chaîne de caractères
 	* `-` ligne.
 	* `--` pointillé.
 Exemple : `ro--` points rouges reliés par des traits en pointillé.
+
+#### Nuage de points
+
+`scatter(x,y)` nuage de points.
 
 ### Paramètres des axes
 
