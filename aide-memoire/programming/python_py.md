@@ -524,9 +524,8 @@ ou `.askopenfilename()`
 
 ### Télécharger des vidéos depuis Youtube
 
-Library `yt-dlp`
-
-* `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
+Library `yt-dlp` avec `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
+* `--recode-video mkv` convertir le fichier en mkv. Cela nécessite de télécharger ffmpeg et de déclarer la variable environnement /bin.
 
 ## Selenium
 
