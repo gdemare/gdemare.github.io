@@ -84,3 +84,19 @@ Générer un jeu de données d'apprentissage à partir d'un dosssier. Les images
 * Changements d'échelle
 * Rotation de l'image
 * Zoom
+
+## Bibliothèques
+
+Il existe principalement deux bibliothéques pour faire de l'apprentissage profond.
+
+| Library | Développer | avantages |
+|---|---|---|
+| `torch` pytorch | Méta | beaucoup plus flexible et personalisable |
+| `tensorflow` | Google  | plus simple |
+
+
+## Créer un modèle
+
+1. Créer le modèle avec les couches.
+2. Compiler le modèle et définir les indicateurs à minimiser.
+3. Entrainer le modèle.
