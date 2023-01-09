@@ -202,7 +202,6 @@ for images, labels in train_ds.take(1):
 Les modèles sont à déclarer dans des classes.
 ```
 class ConvNet(torch.nn.Module):
-    
     def __init__(self):
         super( ConvNet, self).__init__()
         fct = couche()
