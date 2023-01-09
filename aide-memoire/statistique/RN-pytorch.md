@@ -1,6 +1,3 @@
-# Pytorch
-
-Les modèles sont à déclarer dans des classes.
 ```
 class ConvNet(torch.nn.Module):
     def __init__(self):
@@ -9,10 +6,22 @@ class ConvNet(torch.nn.Module):
 
     def forward(self, x):
         x = self.fct()
-    x = self.linear2(x)
+        x = self.linear2(x)
         return x
 ```
-ou de façon séquentiel : `nn.Sequential(couche1, couche2)`
+
+### Installer pytorch
+
+https://www.anaconda.com/products/distribution/start-coding-immediately
+
+1 - Installer Conda, la dernière version de python prise en charge est intégrer à l'installateur.
+2 - Sur le site pyTorch, installer via la commande en Administrateur.
+
+`conda install package`
+
+Ajouter le dossier au variable environnement `C:\ProgramData\Anaconda3\Library\bin`
+
+NB : pour installer tensor flow `conda create -n tf tensorflow` puis `conda activate tf`
 
 ### Réseau de neurones
 
