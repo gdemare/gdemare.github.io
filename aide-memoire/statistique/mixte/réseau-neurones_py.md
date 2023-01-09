@@ -244,7 +244,7 @@ Library `torch.nn.functional`
 
 `x.view()` (comme reshape) redimensionner notre matrice. Exemple `x.view(x.size, -)` pour linéariser.
 
-Rmq : pour la classification en classe il faut en sortie un vecteur (pensez à utiliser la fonction view).
+_Rmq :_ pour la classification en classe il faut en sortie un vecteur (pensez à utiliser la fonction view).
 
 `torch.flatten()` transforme une matrice en vecteur.
 `pool(x)`
@@ -306,7 +306,7 @@ for epoch in range(epochs):
 ## Torch vision 
 
 Certains modèles ont été implémentés :
-`resnet18(pretrained=T)` classification dimage (torchvision.models)  
+`resnet18(pretrained=T)` classification d'images (torchvision.models)  
 
 ## OCTR reconnaissance de caractères et de texte
 
