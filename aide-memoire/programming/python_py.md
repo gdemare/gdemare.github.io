@@ -503,7 +503,7 @@ Liste des éléments :
 Paramètres : 
 * `width = 30` largeur.
 
-### Choisir un dossier par une fenetre
+### Choisir un dossier par une fenêtre
 
 Library : `from tkinter import Tk, filedialog`
 
@@ -524,9 +524,8 @@ ou `.askopenfilename()`
 
 ### Télécharger des vidéos depuis Youtube
 
-Library `yt-dlp`
-
-* `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
+Library `yt-dlp` avec `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
+* `--merge-output-format mkv --remux mkv` convertir le fichier en mkv. Cela nécessite de télécharger ffmpeg et de déclarer la variable environnement /bin.
 
 ## Selenium
 

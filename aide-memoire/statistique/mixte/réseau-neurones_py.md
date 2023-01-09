@@ -157,7 +157,6 @@ _pas compris a quoi ca sert__
 
 * `donnee.class_names` donne le nom des classes.
 
-
 * `donnee.take(nb)` créer un échantillon de nbx32 élements.
 * `donnee.range(nb)` sélectionner un élément. Il peut être utile de fixer le seed pour obtenir le même élément à chaque fois.
 
@@ -202,8 +201,7 @@ for images, labels in train_ds.take(1):
 
 Les modèles sont à déclarer dans des classes.
 ```
-class ConvNet(torch.nn.Module)
-    
+class ConvNet(torch.nn.Module):
     def __init__(self):
         super( ConvNet, self).__init__()
         fct = couche()
@@ -240,12 +238,12 @@ Library `torch.nn.functional`
 |---|---|
 | `relu(x)` | relu |
 | `max_pool2d(x)` | pooling |
-| `sigmoid(x)` | sigmoïde |
+| `torch.sigmoid(x)` | sigmoïde |
 | `torch.nn.Softmax(x)` | softmax |
 
 `x.view()` (comme reshape) redimensionner notre matrice. Exemple `x.view(x.size, -)` pour linéariser.
 
-Rmq : pour la classification en classe il faut en sortie un vecteur (pensez a utiliser la fonction view).
+_Rmq :_ pour la classification en classe il faut en sortie un vecteur (pensez à utiliser la fonction view).
 
 `torch.flatten()` transforme une matrice en vecteur.
 `pool(x)`
@@ -263,7 +261,7 @@ Rmq : pour la classification en classe il faut en sortie un vecteur (pensez a ut
 * `nn.CrossEntropyLoss()`
 * `nn.BCELoss()`
 
-### Les paramètres du model
+### Les paramètres du modèle
 
 ```
 for param in model.parameters():
@@ -276,7 +274,7 @@ model.fc = nn.Linear(entré,output)
 `transforms.Compose([transformation1, transformation2])` transformation séquentiel de données.
 `transforms.` library pytorch.transforms ?
 
-| fonction | transformation |
+| Fonction | Transformation |
 |---|---|
 | `Resize()` | redimensionner |
 | `ToTensor()` | transforme en tenseur. |
@@ -304,20 +302,20 @@ for epoch in range(epochs):
         optimizer.step() #mettre à jour les poids
 ```
 
-## torch vision 
+## Torch vision 
 
 Certains modèles ont été implémentés :
-`resnet18(pretrained=T)` classification dimage (torchvision.models)  
+`resnet18(pretrained=T)` classification d'images (torchvision.models)  
 
 ## OCTR reconnaissance de caractères et de texte
 
 Library `python-doctr`
 
-## notes à revoir
+## Notes à revoir
 
-créer des couches de neurones de façon récursive `nn.ModuleList()`
+Créer des couches de neurones de façon récursive `nn.ModuleList()`
 
-probabilité de mettre un zéro a à  un neurone.
+probabilité de mettre un zéro à  un neurone.
 
 Je ne sais pas à quoi ca correspond.
 model.
