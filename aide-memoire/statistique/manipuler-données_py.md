@@ -182,7 +182,7 @@ Créer un tenseur :
 * `rand( dimension )` exemple dimension = (2,3,) `ones()` avec des 1 avec des `zeros()` avec des 0.
 
 Paramètre :
-	* `dtype=type` préciser le type de variable.
+* `dtype=type` préciser le type de variable.
 
 | Type | Définition  |
 |---|---| 
