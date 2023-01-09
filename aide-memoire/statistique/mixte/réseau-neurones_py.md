@@ -157,7 +157,6 @@ _pas compris a quoi ca sert__
 
 * `donnee.class_names` donne le nom des classes.
 
-
 * `donnee.take(nb)` créer un échantillon de nbx32 élements.
 * `donnee.range(nb)` sélectionner un élément. Il peut être utile de fixer le seed pour obtenir le même élément à chaque fois.
 
