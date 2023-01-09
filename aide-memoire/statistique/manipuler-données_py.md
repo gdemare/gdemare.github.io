@@ -29,6 +29,7 @@ Package `import pandas as pd`
 * `pd.DataFrame({ "col1" : valeurs, 'col2' : valeurs})` créer un data frame. Vide lorsqu'il n'y a pas d'arguments.Paramètres :
  * `index= nom_lignes` 
  * `column= nom_colonnes`
+* `dataframe.astype({'Survived': 'float'})` déclarer (à vérif) ou changer le type de variable d'un data frame.
 * `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
 
 ### Sélectionner des données
