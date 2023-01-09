@@ -238,7 +238,7 @@ Library `torch.nn.functional`
 |---|---|
 | `relu(x)` | relu |
 | `max_pool2d(x)` | pooling |
-| `sigmoid(x)` | sigmoïde |
+| `torch.sigmoid(x)` | sigmoïde |
 | `torch.nn.Softmax(x)` | softmax |
 
 `x.view()` (comme reshape) redimensionner notre matrice. Exemple `x.view(x.size, -)` pour linéariser.
