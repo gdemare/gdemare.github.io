@@ -42,14 +42,24 @@ Library : `torch.nn`
 
 ### Fonctions d'activation
 
-Library `torch.nn.functional`
+Library `torch`
 
 | Python | Fonction |
 |---|---|
 | `relu(x)` | relu |
 | `max_pool2d(x)` | pooling |
-| `torch.sigmoid(x)` | sigmoïde |
-| `torch.nn.Softmax(x)` | softmax |
+| `sigmoid(x)` | sigmoïde |
+
+### Fonction qui 
+
+Library `torch.nn.functional`
+
+| Python | Fonction |
+|---|---|
+| `Relu(x)` | relu |
+| `max_pool2d(x)` | pooling |
+| `Sigmoid(x)` | sigmoïde |
+| `Softmax(x)` | softmax |
 
 `x.view()` (comme reshape) redimensionner notre matrice. Exemple `x.view(x.size, -)` pour linéariser.
 
