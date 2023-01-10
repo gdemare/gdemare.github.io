@@ -60,11 +60,15 @@ _Rmq :_ pour la classification en classe il faut en sortie un vecteur (pensez à
 
 ### Fonctions d'optimisation
 
-`torch.optim`
+Les fonctions d'optimisation sont dans `torch.optim`
 
-* `Adam()` 
-* `MSELoss()`
-* `SGD(model.parameters(), learning_rate)`
+Fonction : `fonction( model.parameters(), learning_rate )`
+
+| Fonction | |
+|---|---|
+| `Adam()` | |
+| `MSELoss()` | |
+| `SGD()` | |
 
 ### Critère
 
