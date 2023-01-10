@@ -108,7 +108,7 @@ Paramètres :
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
 * `colonne.str.contains("mot")` contient le mot.
 
-### Graphiques 
+### Graphiques directement depuis pandas
 
 Library `import matplotlib.pyplot as plt`
 
@@ -143,8 +143,14 @@ library : `torch`
 
 Les tenseurs sont un type de tableau spécialisé pour la modélisation qui sont optimisés pour les GPU.
 Les tenseurs sont un type particulier de `numpy`. GPU beaucoup plus rapides. parallèle contre séquentiel bcp plus de coeurs.
+Les tenseurs sont des tableaux mutlidimentionnels avec des opérations particulières.
 
-Les tenserus sont des tableaux mutlidimentionnelles avec des opérations particulieres.
+#### Optimisation des opérations sur les tenseurs
+
+L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissance des cartes graphiques.
+
+`cuda.is_available()` Vérifier si le GPU peut être utilisé pour les calculs. Dans le cas de oui il faut
+`tensor.to('cuda')`
 
 ### Déclarer un tenseur à partir de données 
 
@@ -165,17 +171,19 @@ class donnee(torch.utils.data.Dataset):
     def __len__(self):
     	# renvoie la dimension
         return len( self.x )
-
-torch.utils.data.DataLoader(dataset = donnee(), batch_size = 100, shuffle = True)`
 ```
+
+* `train, test = torch.utils.data.random_split(dataset, [20000, 5000])` créer un jeu de données de test et d'entrainement.
+* `torch.utils.data.DataLoader(dataset = donnee(), batch_size = 100, shuffle = True)`
 Paramètres de DataLoader :
-* `batch_size=nbre` taille des lots.
-* `shuffle=True` aléatoire
+ * `batch_size=nbre` taille des lots.
+ * `shuffle=True` aléatoire
 
-### Créer un tenser
+### Convertir en tenseur
 
-Créer un tenseur :
-* `torch.tensor(data)` convertie un numpy en tenseur.
+Library : `torch`
+
+* `tensor(data)` convertie un numpy en tenseur.
 * `data.numpy()` convertie un tenseur en numpy.
 * `from_numpy()` convertie en tenseur.
 * `ones_like( tenseur )` créer un tenseur de meme dimension.
@@ -187,25 +195,10 @@ Paramètre :
 
 | Type | Définition  |
 |---|---| 
-| `torch.float` | |
+| `torch.float` | décimaux |
+| `torch.int32` | entiers | 
 
-[:, 0] premier colonne 
-[...,-1] dernière colonne
-
-`cat( [data1, data2], dim)` fusionner deux data en ligne.
-
-### 
-
-`torch.utils`
-
-`train, test = data.random_split(dataset, [20000, 5000])`
-
-### Optimisation des opérations sur les tenseurs
-
-L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissance des cartes graphiques.
-
-`cuda.is_available()` Vérifier si le GPU peut être utilisé pour les calculs. Dans le cas de oui il faut
-`tensor.to('cuda')`
+* `tenseur.dtype` affiche le type de data de chaque champs du tenseur.
 
 ## Les images
 
@@ -222,4 +215,3 @@ plt.show()
 * `imshow(numpy)`
 Paramètre : 
 `cmap='gray'` en valeur de gris
-
