@@ -1,13 +1,70 @@
 ```
+#test = pd.read_csv("test.csv", sep=",")
+train = pd.read_csv("train.csv", sep=",")
+survie = pd.read_csv("gender_submission.csv", sep=",")
+
+x_val = train.loc[:, ["Survived", "Fare", 'Age']]
+y_val = x_val.iloc[:,0]
+x_val = x_val.drop('Survived', axis=1)
+x_val.fillna(0, inplace=True)
+
+class MyDataset(Dataset):
+ 
+  def __init__(self,x_var, y_var):
+ 
+    x=x_var.values
+    y=y_var.values
+ 
+    self.x_train=torch.tensor(x,dtype=torch.float32)
+    self.y_train=torch.tensor(y,dtype=torch.float32)
+ 
+  def __len__(self):
+    return len(self.y_train)
+   
+  def __getitem__(self,idx):
+    return self.x_train[idx],self.y_train[idx]
+
+tenseur = MyDataset(x_val, y_val)
+
 class ConvNet(torch.nn.Module):
+    
     def __init__(self):
         super( ConvNet, self).__init__()
-        fct = couche()
+        self.fc1 = torch.nn.Linear(2, 1)
 
     def forward(self, x):
-        x = self.fct()
-        x = self.linear2(x)
+        x = self.fc1(x)
         return x
+
+
+model = ConvNet()
+print(model)
+criterion = torch.nn.BCEWithLogitsLoss() # probabilité de la classe remplace le sigmoide. BCELoss
+optimizer = torch.optim.Adam(model.parameters(), lr=0.1)
+
+epochs = 100
+
+train_losses = []
+for a in range(epochs):
+
+    y = tenseur.y_train.view(tenseur.y_train.shape[0], 1)
+    output = model(tenseur.x_train)
+    #
+    optimizer.zero_grad()
+    loss = criterion( output, y) # différence entre la valeur obtenue et la valeur prédite
+    train_losses.append(loss.item()) # la valeur de l'indicateur.
+    loss.backward()
+    optimizer.step() # màj des poids
+
+    # information sur le modèle tous les 10
+    if a%10 == 0:
+      sc = output.round()
+      acc = sc.eq(y).sum() / float(y.shape[0])
+      print( "loss :", loss.item(), "Accuracy :", acc )
+
+# évolution du critère
+graph_losses = range(1, len(train_losses)+1)
+pl.plot(graph_losses, train_losses, ".-" )
 ```
 
 ### Installer pytorch
