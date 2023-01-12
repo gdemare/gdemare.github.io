@@ -2,7 +2,7 @@
 
 Mathématiquement, cette méthode permet d'apporcher n'importe quelle fonction.
 
-Le modèle est formé de plusieurs couches formées de plusieurs neurones. Les couches sont disposées de tels sorte que les données sont transmises vers celle en avale. On distingue les couches :
+Le modèle est constitué de plusieurs couches formées de plusieurs neurones. Les couches sont disposées de tels sorte que les données sont transmises vers celle en avale. On distingue les couches :
 
 | une observable | une ou plusieurs cachées | une couche de sortie |
 |---|---|---|
@@ -22,7 +22,7 @@ _Rmq :_ Il existe aussi des fonctions discontinues mais elles posent des problè
 * Unité de rectification linéaire f(x)=0 si x<0 et f(x)=x si x>=0 (appelé relu).
 * tanh fonction qui ressemble à la sigmoid en plus "typée" sur un intervalle de -1 à 1. 
 
-Rmq : on a aussi la fonction softmax qui renvoie la classe avec la plus grande valeur. Elle sert notamment à renvoyer avec plus grande valeur dans le cas d'une classifciation avec plus de deux classes.
+_Rmq :_ on a aussi la fonction softmax qui renvoie la classe avec la plus grande valeur. Elle sert notamment à renvoyer avec plus grande valeur dans le cas d'une classifciation avec plus de deux classes.
 
 Pour faciliter les opérations, les données sont manipulés et transformées dans un objet mathématique appelé matrice.
 En général, cnn puis activation puis pooling.
@@ -70,15 +70,13 @@ Ensemble de méthodes qui permettent aux poids de converger plus rapidement vers
 
 Mommentum des poids d'apprentissage permet d'éviter certains minimums locaux trop petit.
 
-
-
 ### Entrainement du réseau de neurones
 
 Créer des lots de fichiers (batch) qui seront soumis plusieurs fois au modèle.
 
 ## Les images : Augmenter le nombre de données et la polyvalence du modèle
 
-Générer un jeu de données d'apprentissage à partir d'un dosssier. Les images créées par des transforamtions sont ajoutés aux jeux de données (training, validation) tels que :
+Générer un jeu de données d'apprentissage à partir d'un dosssier. Les images créées par des transformations sont ajoutés aux jeux de données (training, validation) tels que :
 * Rotations
 * Cisaillement
 * Changements d'échelle
