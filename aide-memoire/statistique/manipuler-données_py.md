@@ -173,11 +173,13 @@ class donnee(torch.utils.data.Dataset):
         return len( self.x )
 ```
 
-* `train, test = torch.utils.data.random_split(dataset, [20000, 5000])` créer un jeu de données de test et d'entrainement.
-* `torch.utils.data.DataLoader(dataset = donnee(), batch_size = 100, shuffle = True)`
+Library `torch.utils.data.`
+
+* `train, test = random_split(dataset, [20000, 5000])` créer un jeu de test et d'apprentissage à partir d'un tenseur.
+* `torch.utils.data.DataLoader(dataset = donnee())` transformer un data en tensor.
 Paramètres de DataLoader :
- * `batch_size=nbre` taille des lots.
- * `shuffle=True` aléatoire
+	* `batch_size=nbre` taille des lots.
+	* `shuffle=True` répartir aléatoirement les individus.
 
 ### Convertir en tenseur
 
