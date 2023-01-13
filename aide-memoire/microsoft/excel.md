@@ -122,7 +122,7 @@ Il faut calculer la taille des classes (abscisses).
 
 `Anova` activer dans Compléments > Analysis ToolPak. Onglet Données
 `T.TEST(col1 ; col2 ; 1 ou 2 ; )` test de student.
-•	1 par paires
-•	2 sur deux échantillons de variance égale (homoscédastique)
-•	3 sur deux échantillons de variances différentes (hétéroscédastique)
+*	1 par paires
+*	2 sur deux échantillons de variance égale (homoscédastique)
+*	3 sur deux échantillons de variances différentes (hétéroscédastique)
 
