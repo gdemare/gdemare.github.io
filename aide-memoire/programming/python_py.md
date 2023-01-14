@@ -182,6 +182,7 @@ else:
 | `is None` | null |
 | `in` | vérifier la présence d'un caractère (appartient). |
 | `.endswith("fin")` | se termine par | 
+| `pd.isna` ou `np.isnan` | valeur manquante | 
 
 Condition : `==`, `>=`, `>`, `!=`
 
