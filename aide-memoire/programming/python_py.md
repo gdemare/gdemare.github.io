@@ -280,12 +280,12 @@ Paramètre :
 	* `sep = séparateur` ajouter un séparateur. 
 	* `end = text_fin` bloquer le retour à la ligne.
 	* `f'texte {variable} texte {var2}'` f rend interprétable la chaine de caractère (remplacement des variables).
+* `print( f"texte {variable}" )` afficher un message en interprétant une variable.
 * `texte[1:4]` extraire des caracètres d'une chaîne.
 * `texte1 + texte2` concaténer du texte
 * `'séparateur'.join([text1,text2])` concaténer du texte.
 * `texte.strip()` supprimer les espaces au début et à la fin.
 * `texte.replace('ancien', 'nouveau')` remplacer un caractère.
-* `print( f"texte {variable}" )` afficher un message en interprétant une variable.
 * `re.split(text, `\n`)` séparer une chaîne de caractères en fonction d'un motif.
 
 | Caractère | Définition |
