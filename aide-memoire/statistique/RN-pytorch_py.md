@@ -131,11 +131,12 @@ Les fonctions d'optimisation sont dans `torch.optim`
 
 Fonction : `fonction( model.parameters(), learning_rate )`
 
-| Fonction | |
+| Fonction | Descritpion |
 |---|---|
-| `Adam()` | |
-| `MSELoss()` | |
-| `SGD()` | |
+| `Adam()` | Adam algorithme |
+| `MSELoss()` |  |
+| `SGD()` | Stochastic gradient descent |
+| BCE | Binary Cross Entropy |
 
 ### Critère
 
