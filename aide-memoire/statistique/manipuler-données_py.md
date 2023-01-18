@@ -89,8 +89,10 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 | Fonction | Définition |
 |---|---|
 | `.mean()` | moyenne |
+| `.median()` | médiane |
 | `.size()` | nombre de lignes |
 | `.count()` | nombre de lignes |
+| `.value_counts()` | tableau effecitf par modalité |
 
 ### Jointure 
 
