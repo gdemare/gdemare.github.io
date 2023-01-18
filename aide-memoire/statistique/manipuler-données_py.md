@@ -116,6 +116,11 @@ Library `import matplotlib.pyplot as plt`
 
 * `tableau.plot( x='col1', y='col2')` afficher un graphique.
 
+### Statistique
+
+* `data.corr()` matrice de corrélation.
+* `data.cov()` matrice de covariance.
+
 ## Numpy (matrice et vecteur)
 
 * `np.asarray(matrice)` créer un array.
@@ -138,6 +143,10 @@ Library `import matplotlib.pyplot as plt`
 
 * `np.append(data, vecteur)` ajouter un dernière colonne. 
 * `np.insert( data, position, vecteur)`  ajouter une colonne à une position particulière.
+
+### Statistique
+
+`np.corrcoef( x, y)` coefficient de corrélation de Pearson.
 
 ## Les tenseurs
 
