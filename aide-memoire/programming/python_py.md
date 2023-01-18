@@ -178,7 +178,7 @@ else:
 |---|---|
 | `and` ou `&` | et |
 | `or` ou `|` | ou |
-| `not condition` | negation |
+| `not condition` ou `~` | negation |
 | `is None` | null |
 | `in` | vérifier la présence d'un caractère (appartient). |
 | `.endswith("fin")` | se termine par | 
