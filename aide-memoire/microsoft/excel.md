@@ -114,8 +114,10 @@ Il faut calculer la taille des classes (abscisses).
 |---|---|
 | `MEDIANE()` | médiane |
 | `QUARTILE(;1 ou 3)` | quartile |
-| `VAR.P.N()` | variance de l'échantillon|
-| `VARA()` | variance de la population  |
+| `VAR.P` | variance |
+| `VAR.S` | variance corrigé  |
+| `ECARTYPE.P` | écart type |
+| `ECARTYPE` | écart type corrigé | 
 | `NB()` | nombre de cellules non vides | 
 
 ## Les tests statistiques
