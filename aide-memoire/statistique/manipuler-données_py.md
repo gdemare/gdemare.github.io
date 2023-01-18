@@ -97,18 +97,18 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 * `pd.merge(gauche, droite, how = type_jointure, on = clé)` joindre deux tables.
 Paramètres : 
 	* `how = inner/left/right/outer/cross`  outer	est union (ou) et inner est intersection (et).
-* `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure. Attention les dataframes sont a déclarer sans "".
+* `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure. Attention les dataframes sont à déclarer sans "".
 
 ### Filtrer
 
 * `.drop(colonnes,axis = 1 )` supprimer une colonne.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
 * `.sort_values(colonne, ascending=T)` classer les données.
-* `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition. S'il y a plusieurs conditions il faut les mettre entre parenthèse.
 * `.reset_index()` changer l'ordre naturel des lignes.
 * `.unique()` liste des valeurs pour une colonne.
-* `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
 * `colonne.str.contains("mot")` contient le mot.
+* `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition. S'il y a plusieurs conditions, il faut les mettre entre parenthèses.
+* `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
 
 ### Graphiques directement depuis pandas
 
