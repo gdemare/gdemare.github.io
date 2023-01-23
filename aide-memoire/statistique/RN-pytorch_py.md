@@ -69,9 +69,7 @@ pl.plot(graph_losses, train_losses, ".-" )
 
 ### Installer pytorch
 
-https://www.anaconda.com/products/distribution/start-coding-immediately
-
-1 - Installer Conda, la dernière version de python prise en charge est intégrer à l'installateur.
+1 - Installer [Anaconda](https://www.anaconda.com/products/distribution), la dernière version de python prise en charge est intégrer à l'installateur.
 2 - Sur le site pyTorch, installer via la commande en Administrateur.
 
 `conda install package`
