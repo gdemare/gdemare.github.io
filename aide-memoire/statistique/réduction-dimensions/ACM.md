@@ -1,10 +1,12 @@
 ## Concept
 
-Les variables corrélées sont transformées en nouvelles variables décorrélées les unes des autres. On change de repére en maximisant l'information sur le premier axe puis on sélectionne des axes orthogonaux qui maximisent l'information. 
+Les variables corrélées sont transformées en nouvelles variables décorrélées les unes des autres. On change de repére en maximisant l'information sur le premier axe puis on sélectionne des axes orthogonaux qui maximisent l'information.
+
+C'est une généralisation de l'AFC.
 
 ## Type de variables
 
-* quantitatives
+* Qualitative
 
 ## Utilité
 
