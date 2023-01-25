@@ -71,6 +71,7 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 * `pivot_table(data, columns='country', values='quantity', index='fruit', aggfunc='sum')` faire un tableau croisé.
 Argument `aggfunc` : 
   * `sum` somme de l'indicateur values.
+  * `count` nombre de lignes.
 * `tableau_croise.reset_index()` Transformer un tableau croisé en tableau.
 * `melt(data, id_vars='fruit', value_vars=colonnes)` transformer plusieurs variables en une seule.
 
