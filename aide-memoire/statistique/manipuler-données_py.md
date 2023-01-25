@@ -126,12 +126,15 @@ Library `import matplotlib.pyplot as plt`
 
 ## Numpy (matrice et vecteur)
 
+* `.shape` dimension (ligne, colonne,...)
+
 * `np.asarray(matrice)` créer un array.
 * `np.empty([lignes,colonnes])` créer un array vide de taille suviantes.
 * `np.transpose(matrice)` transposer.
 * `np.maxtrix(vec1, vec2)` matrice ligne1=vec1, ligne 2=vec2. 
-
-`.shape` dimension (ligne, colonne,...)
+* `np.zeros(shape=(5,5))` matrice de zéro.
+* `np.ones()` matrice de 1.
+* `np.diag(vecteur, position )` diagonaliser un vecteur en matrice la position indique la colonne où commencer la diagonalisation.
 
 `np.reshape( donnee, (dimension) )`
 * `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
