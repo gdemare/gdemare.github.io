@@ -34,26 +34,23 @@ Package `import pandas as pd`
 * `dataframe.astype({'Survived': 'float'})` déclarer (à vérif) ou changer le type de variable d'un data frame.
 * `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
 
-### Sélectionner des données
+### Sélectionner et extraire des données
 
+* `tableau['colonne']` sélectionner une colonne.
+* `tableau[num_ligne]` sélectionner une ligne (fonctionne avec `debut:fin`).
 * `tableau.iloc[nb_row <, nb_col>]` sélectionner en fonction du numéro des lignes et du numéro des colonnes.
 * `tableau.loc[nb_row <, nom_col>]` sélectionner en fonction du numéro des lignes et du nom des colonnes.
-
-_RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2:` = 2 et après).
-
-#### Colonne
-
-* `tableau.columns` récupérer le nom des variables.
-* `tableau['colonne']` sélectionner une colonne.
-
-#### Ligne
-
-* `denovo[1:2]` sélectionner une ligne.
-* `denovo.iloc[2]` selectionner une ligne.
 * `for i in data.index:.` parcourir un dataframe grâce au index.
 * `for index, row in df.iterrows():` parcourir un dataframe en récupérant directement les valeurs.
 
-### Ajouter des données
+_RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2:` est équivalent à 2 et après).
+
+### Opération sur les données
+
+* `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable.
+* `df.fillna(0,inplace=True)` remplacer les valeurs manquantes.
+
+### Ajouter des individus
 
 * `data.loc[len(data)] = ["test1", "test2", 'test3']` ajouter une ligne de données.
 
@@ -75,14 +72,13 @@ Argument `aggfunc` :
 * `tableau_croise.reset_index()` Transformer un tableau croisé en tableau.
 * `melt(data, id_vars='fruit', value_vars=colonnes)` transformer plusieurs variables en une seule.
 
-### Ajouter une colonne
+### Ajouter une variable
 
 * `data["nouvelle"] = valeur` ajouter directement.
 * `tableau.assign( nomCol = valeur )` 
 Pour appliquer des fonctions, il faut utiliser la library numpy.
 * `df.insert(position, 'col_name', [value1, value2, value3, ...])` insérer une colonne à une position.
-* `df.fillna(0,inplace=True)` remplacer les valeurs manquantes.
-
+* 
 ### Grouper les données
 
 `.groupby(["colonne"])` grouper par.
