@@ -2,7 +2,15 @@
 
 Les dataframe pandas intégrent directement des représentations graphiques.
 
-`data.plot( x=, y= )`
+`data.plot( <x=>, <y=< )`
+Type de graphique :
+* area
+* line
+* pie
+* bar
+* barh
+* scatter
+* hist
 
 ## Graphique avec pyplot
 
