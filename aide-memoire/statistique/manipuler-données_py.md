@@ -78,7 +78,7 @@ Argument `aggfunc` :
 * `tableau.assign( nomCol = valeur )` 
 Pour appliquer des fonctions, il faut utiliser la library numpy.
 * `df.insert(position, 'col_name', [value1, value2, value3, ...])` insérer une colonne à une position.
-* 
+
 ### Grouper les données
 
 `.groupby(["colonne"])` grouper par.
