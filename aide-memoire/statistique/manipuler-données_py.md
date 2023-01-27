@@ -123,7 +123,6 @@ Library `import matplotlib.pyplot as plt`
 ## Numpy (matrice et vecteur)
 
 * `.shape` dimension (ligne, colonne,...)
-
 * `np.asarray(matrice)` créer un array.
 * `np.empty([lignes,colonnes])` créer un array vide de taille suviantes.
 * `np.transpose(matrice)` transposer.
@@ -133,9 +132,8 @@ Library `import matplotlib.pyplot as plt`
 * `np.diag(vecteur ou matrice, position )` deux fonctions :
  * diagonaliser un vecteur en matrice la position indique la colonne où commencer la diagonalisation.
  * renvoie la diagonale.
-
-`np.reshape( donnee, (dimension) )`
-* `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
+* `np.reshape( donnee, (dimension) )`
+ * `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
 
 ### Opération sur les valeurs
 
