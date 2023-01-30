@@ -130,8 +130,8 @@ Library `import matplotlib.pyplot as plt`
 * `np.zeros(shape=(5,5))` matrice de zéro.
 * `np.ones()` matrice de 1.
 * `np.diag(vecteur ou matrice, position )` deux fonctions :
- * diagonaliser un vecteur en matrice la position indique la colonne où commencer la diagonalisation.
- * renvoie la diagonale.
+	* diagonaliser un vecteur en matrice la position indique la colonne où commencer la diagonalisation.
+	* renvoie la diagonale.
 * `np.reshape( donnee, (dimension) )`
  * `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
 
@@ -152,7 +152,7 @@ Library `import matplotlib.pyplot as plt`
 
 ## Les tenseurs
 
-library : `torch`
+Library : `torch`
 
 Les tenseurs sont un type de tableau spécialisé pour la modélisation qui sont optimisés pour les GPU.
 Les tenseurs sont un type particulier de `numpy`. GPU beaucoup plus rapides. parallèle contre séquentiel bcp plus de coeurs.
