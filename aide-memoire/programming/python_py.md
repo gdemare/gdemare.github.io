@@ -39,6 +39,11 @@ git clone https://github.com/jkbr/httpie.git
 sudo python setup.py install
 ```
 
+#### MàJ des packages
+
+* `pip list --outdated` liste des packages avec des màj disponibles.
+* `pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}` maj en passant par le PowerShell.
+
 ## Instructions de bases
 
 ## Les matrices
