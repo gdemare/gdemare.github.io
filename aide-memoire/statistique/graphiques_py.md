@@ -15,6 +15,18 @@ Type de graphique :
 * `scatter()`
 * `hist()`
 
+Paramètres : 
+*  `legend=False` enlever la légende
+*  `ax=` déterminer la position du graphique avec les fenetres subdivisées.
+
+#### Ajouter plusieurs graphiques sur une image
+
+```
+fig, axes = plt.subplots(nrows = 2, ncols=1 )
+graph_sans = pd.crosstab( data['ligne'], data['colonne'], normalize='index').plot.bar(stacked=True, ax= axes[0])
+graph_avec = pd.crosstab( data['ligne'], data['colonne'], normalize='index').plot.bar(stacked=True, ax= axes[1])
+```
+
 ## Graphique avec pyplot
 
 `from matplotlib import pyplot as pl`
@@ -76,9 +88,6 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 Library `import seaborn as sns`
 
 * `sns.heatmap(protfreq, annot=True)` matrice de température.
-
-### Graphique de distribution
-
 * `sns.displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
 
 ## Enregister un graphique 
