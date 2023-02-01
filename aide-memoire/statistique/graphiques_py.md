@@ -74,3 +74,13 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 ### Graphique de distribution
 
 * `sns.displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
+
+## Enregister un graphique 
+
+`graphique.get_figure().savefig('fichier.png')` enregistrer un graphique.
+
+Si les libellés sont tronqués.
+```
+from matplotlib import rcParams
+rcParams.update({'figure.autolayout': True})
+```
