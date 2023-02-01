@@ -73,6 +73,10 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ## Seaborn
 
+Library `import seaborn as sns`
+
+* `sns.heatmap(protfreq, annot=True)` matrice de température.
+
 ### Graphique de distribution
 
 * `sns.displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
