@@ -10,6 +10,8 @@ Type de graphique :
 * `pie()`
 * `bar()`
 * `barh()`
+	* Paramètres :
+		* `stacked=True` empilé.
 * `scatter()`
 * `hist()`
 
