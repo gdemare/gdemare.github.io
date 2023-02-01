@@ -57,11 +57,12 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 ### Importer 
 
 * `pd.read_csv(fichier, sep=";")` lire un fichier csv.
-* `pd.read_excel(, sheet_name=1/feuille, header=True, )` lire un fichier excel.
+* `pd.read_excel(fichier, sheet_name=1/feuille, header=True)` lire un fichier excel.
 
 ### Exporter 
 
 * `tableau.to_csv('fichier.csv', sep='separateur', index=False,header=True)` exporter un data en csv.
+* `tableau.to_excel('fichier.csv', sheet_name="feuill, sep='separateur', index=False,header=True)` exporter un data en csv.
 
 ### Tableau croisé et modification de variables
 
@@ -167,7 +168,7 @@ L'apprentissage sur les tenseurs peut être accélérer en utilisant la puissanc
 
 ### Déclarer un tenseur à partir de données 
 
-Il faut créer une classe avec les caractérisques :
+Il faut créer une classe avec les caractéristiques :
 
 ```
 class donnee(torch.utils.data.Dataset):
