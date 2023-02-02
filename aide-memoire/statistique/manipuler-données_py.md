@@ -26,6 +26,8 @@ Package `import pandas as pd`
 * `donnee.head()` renvoie les premières lignes du pandaframe.
 * `donnee.describe()` tableau récapitulatif des données (moyenne, médiane, écart type,...).
 
+* `stack(niveau)` modifier les niveaux de données.
+
 ### Déclarer un tableau Pandas
 
 * `pd.DataFrame({ "col1" : valeurs, 'col2' : valeurs})` créer un data frame. Vide lorsqu'il n'y a pas d'arguments. Paramètres :
