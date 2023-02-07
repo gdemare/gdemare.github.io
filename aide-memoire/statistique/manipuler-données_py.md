@@ -97,6 +97,12 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 | `.count()` | nombre de lignes |
 | `.value_counts()` | tableau effecitf par modalité |
 
+#### Fonction pandas
+
+`.str.rsplit(séparateur)` sépare une chaine de caractères.
+Paramètres :
+	* `expand=True` créer une variable pour chaque séparation.
+
 ### Jointure 
 
 * `pd.merge(gauche, droite, how = type_jointure, on = clé)` joindre deux tables.
