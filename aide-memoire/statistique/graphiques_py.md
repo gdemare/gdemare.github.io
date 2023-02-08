@@ -87,8 +87,14 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 Library `import seaborn as sns`
 
-* `sns.heatmap(protfreq, annot=True)` matrice de température.
-* `sns.displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
+Paramètres :
+* `hue = 'prot_diff'` mettre une couleur pour chaque groupe.
+
+Graphiques :
+* `heatmap(protfreq, annot=True)` matrice de température.
+* `displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
+* `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
+   *  `complementary=True` inverser le cumule.
 
 ## Enregister un graphique 
 
