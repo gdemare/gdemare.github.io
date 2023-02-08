@@ -5,4 +5,4 @@ logreg.score(X, Y)
 ```
 
 * `logreg.coef_[0]` coefficient pour chaque variable.
-* `logreg.intercept_)` ordonnée à l'origine.
+* `logreg.intercept_` ordonnée à l'origine.
