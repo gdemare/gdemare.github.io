@@ -91,7 +91,9 @@ Paramètres :
 * `hue = 'prot_diff'` mettre une couleur pour chaque groupe.
 
 Graphiques :
-* `heatmap(protfreq, annot=True)` matrice de température.
+* `heatmap(protfreq, annot=True)` matrice de température. Paramètres :
+	* `annot_kws={"fontsize":8}` taille des annotations.
+	* `fmt='.0f'` changer le format des nombres (0 indique le nbre de décimals).
 * `displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
