@@ -70,7 +70,8 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 
 * `pd.crosstab( ligne, colonne)` faire un tableau croisé avec deux variables avec la possibilité de calculer la proportion.
 	* `normalize='index'` calcul les fréquences.	
-* `pivot(data, columns='country', values='quantity', index='fruit')` faire un tableau crois sans fonction d'aggrégation. Il faut s'assurer que la transformation ne permet d'obtenir d'une ligne par index.
+* `pivot(data, columns='country', values='quantity', index='fruit')` faire un tableau crois sans fonction d'aggrégation. Il faut s'assurer que la transformation ne permet d'obtenir d'une ligne par index. Paramètres :
+	* ` margins = True, margins_name='Total'`ajouter une ligne totale.
 * `pivot_table(data, columns='country', values='quantity', index='fruit', aggfunc='sum')` faire un tableau croisé avec fonction d'aggrégation.
 Argument `aggfunc` : 
   * `sum` somme de l'indicateur values.
