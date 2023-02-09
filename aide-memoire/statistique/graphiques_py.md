@@ -88,8 +88,9 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 Library `import seaborn as sns`
 
 Paramètres :
+* `data=data` jeu de données.
 * `hue = 'prot_diff'` mettre une couleur pour chaque groupe.
-
+ 
 Graphiques :
 * `heatmap(protfreq, annot=True)` matrice de température. Paramètres :
 	* `annot_kws={"fontsize":8}` taille des annotations.
@@ -97,6 +98,7 @@ Graphiques :
 * `displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
+* `barplot()` diagramme en barre
 
 ## Enregister un graphique 
 
