@@ -1,3 +1,5 @@
+* `fig = plt.figure(figsize=(25,20))`  Changer la taille du graphique.
+
 ## Avec pandas
 
 Les dataframe pandas intégrent directement des représentations graphiques.
