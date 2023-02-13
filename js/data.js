@@ -1,6 +1,7 @@
 // dossier ; sous dossier; chemin; general; r; sas; python
 fichiers = [
 { chemin: 'biologie/fidji', general: 1, r: 0, sas:0, py:0},
+{ chemin: 'biologie/bioinformatique/MS-proteomique', general: 1, r: 0, sas:0, py:0},
 { chemin: 'biologie/bioinformatique/sequencage', general: 0, r: 0, sas:0, py:1},
 { chemin: 'biologie/bioinformatique/spectrométrie', general: 0, r: 0, sas:0, py:1},
 { chemin: 'biologie/bioinformatique/traitement-image', general: 1, r: 0, sas:0, py:1},
@@ -63,8 +64,7 @@ fichiers = [
 { chemin: 'statistique/classification/perceptron', general: 1, r: 0, sas:0, py:0},
 { chemin: 'statistique/classification/prédire-evaluer', general: 0, r: 1, sas:0, py:0},
 { chemin: 'statistique/classification/régression-lineaire', general: 1, r: 0, sas:1, py:0},
-{ chemin: 'statistique/classification/régression-logistique', general: 1, r: 1, sas:1, py:0},
-{ chemin: 'statistique/classification/régression_logistique', general: 0, r: 0, sas:0, py:1},
+{ chemin: 'statistique/classification/régression-logistique', general: 1, r: 1, sas:1, py:1},
 { chemin: 'statistique/classification/SVM', general: 1, r: 1, sas:0, py:0},
 { chemin: 'statistique/classification/série-temporelle-simple', general: 0, r: 1, sas:0, py:0},
 { chemin: 'statistique/classification/série-temporelle', general: 1, r: 0, sas:0, py:0},
