@@ -64,7 +64,15 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 ### Exporter 
 
 * `tableau.to_csv('fichier.csv', sep='separateur', index=False,header=True)` exporter un data en csv.
-* `tableau.to_excel('fichier.csv', sheet_name="feuill, sep='separateur', index=False,header=True)` exporter un data en csv.
+* `tableau.to_excel('fichier.xlsx', sheet_name="feuill", sep='separateur', index=False,header=True)` exporter un data en csv.
+
+Pour exporter dans plusieurs feuilles, il faut installer  `pip install xlsxwriter`.
+```
+writer = pd.ExcelWriter(fichier, engine = 'xlsxwriter')
+input.to_excel(writer, sheet_name="feuille1", index=False, header=True)
+input.to_excel(writer, sheet_name="feuille2", index=False, header=True)
+writer.close()
+```
 
 ### Tableau croisé et modification de variables
 
