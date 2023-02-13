@@ -140,7 +140,7 @@ Le dictionnaire est un objet particulier. L'accés aux valeurs fait par l'id.
 
 #### Expression régulière (regex)
 
-Library `re`
+Library `re`. Une expression régulière est déclarée comme `r"expr"`.
 
 `re.search( a_rechercher, texte )` rechercher une expression regex ou un mot.
 
