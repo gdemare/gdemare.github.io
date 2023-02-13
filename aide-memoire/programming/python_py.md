@@ -150,6 +150,11 @@ Variable de sortie :
 | Symbole | Définition  | 
 |---|---|
 | `\s` | espace |
+| `\` | caractère d'échappement |
+| `*` | n'importe quel symbole plusieurs fois |
+| `[]` | ecrite l'expression à l'intérieur |
+| `^` | position du début |
+| `$` | en fin de chaîne |
 
 |  | Défintion | Exemple | 
 |---|---|---|
