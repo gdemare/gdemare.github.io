@@ -5,6 +5,7 @@
 | Pandas | Numpy | Pytorch ou Tensor |
 
 `map( fonction, list )` appliquer une fonction aux élements d'un vecteur. Renvoie un objet de type map qu'il faut généralement le convertir en liste.
+Exemple : `map( ma_fonction, liste )` la fonction est sans parenthèse.
 
 ### Les types de variables
 
