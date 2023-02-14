@@ -92,6 +92,7 @@ Library `import seaborn as sns`
 Paramètres :
 * `data=data` jeu de données.
 * `hue = 'prot_diff'` mettre une couleur pour chaque groupe.
+* `color = ` couleur
  
 Graphiques :
 * `heatmap(protfreq, annot=True)` matrice de température. Paramètres :
@@ -101,6 +102,12 @@ Graphiques :
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre
+
+#### Ajouter un élément au graphique
+
+* `fig.axvline(1.25)`/`fig.axhline(1.25)` ajouter une ligne verticale/horizontale.
+Paramètres : 
+* `linestyle=':'` type de lignes (`:` pointillé, `--` tiré ).
 
 ## Enregister un graphique 
 
