@@ -1,7 +1,7 @@
 // dossier ; sous dossier; chemin; general; r; sas; python
 fichiers = [
 { chemin: 'biologie/fidji', general: 1, r: 0, sas:0, py:0},
-{ chemin: 'biologie/bioinformatique/MS-proteomique', general: 1, r: 0, sas:0, py:0},
+{ chemin: 'biologie/bioinformatique/MS-proteomique', general: 0, r: 0, sas:0, py:1},
 { chemin: 'biologie/bioinformatique/sequencage', general: 0, r: 0, sas:0, py:1},
 { chemin: 'biologie/bioinformatique/spectrométrie', general: 0, r: 0, sas:0, py:1},
 { chemin: 'biologie/bioinformatique/traitement-image', general: 1, r: 0, sas:0, py:1},
