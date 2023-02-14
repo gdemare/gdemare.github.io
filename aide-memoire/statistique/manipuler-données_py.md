@@ -70,8 +70,8 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 Pour exporter dans plusieurs feuilles, il faut installer  `pip install xlsxwriter`.
 ```
 writer = pd.ExcelWriter(fichier, engine = 'xlsxwriter')
-input.to_excel(writer, sheet_name="feuille1", index=False, header=True)
-input.to_excel(writer, sheet_name="feuille2", index=False, header=True)
+	input.to_excel(writer, sheet_name="feuille1", index=False, header=True)
+	input.to_excel(writer, sheet_name="feuille2", index=False, header=True)
 writer.close()
 ```
 
