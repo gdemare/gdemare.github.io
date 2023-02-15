@@ -50,8 +50,12 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 
 ### Opération sur les données
 
+Paramètres :
+* `inplace=True` pour remplacer les données.
+Fonctions :
 * `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable.
-* `df.fillna(0,inplace=True)` remplacer les valeurs manquantes.
+* `.fillna(0)` remplacer les valeurs manquantes.
+* `.drop_duplicates(keep='last')` supprimer les doublons.
 
 ### Ajouter des individus
 
@@ -122,7 +126,6 @@ Paramètres :
 ### Filtrer
 
 * `.drop(colonnes,axis = 1 )` supprimer une colonne.
-* `.drop_duplicates(keep='last')` supprimer les doublons.
 * `.sort_values(colonne, ascending=T)` classer les données.
 * `.reset_index()` changer l'ordre naturel des lignes.
 * `.unique()` liste des valeurs pour une colonne.
