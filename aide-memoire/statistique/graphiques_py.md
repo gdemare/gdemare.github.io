@@ -118,3 +118,10 @@ Si les libellés sont tronqués.
 from matplotlib import rcParams
 rcParams.update({'figure.autolayout': True})
 ```
+
+## Diagramme de Venn
+
+`from matplotlib_venn import venn2, venn3`
+
+* `venn2(subsets = (10, 5, 2), set_labels = ('Group A', 'Group B'))`
+* `venn3(subsets = (10, 8, 22, 6,9,4,2))` 
