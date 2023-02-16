@@ -68,8 +68,12 @@ Fonctions :
 
 ### Exporter 
 
-* `tableau.to_csv('fichier.csv', sep='separateur', index=False,header=True)` exporter un data en csv.
-* `tableau.to_excel('fichier.xlsx', sheet_name="feuill",header=True)` exporter un data en csv.
+* `tableau.to_csv('fichier.csv', sep='separateur')` exporter un data en csv.
+* `tableau.to_excel('fichier.xlsx', sheet_name="feuill")` exporter un data en csv.
+
+Paramètres :
+* `index=False` les index.
+* `header=True` nom des colonnes.
 
 Pour exporter dans plusieurs feuilles, il faut installer  `pip install xlsxwriter`.
 ```
