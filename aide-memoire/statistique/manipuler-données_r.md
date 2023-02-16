@@ -1,9 +1,3 @@
-## Manipuler les fichiers 
-
-* `setwd(dossier)` changer le dossier de travail.
-* `getwd()` chemin du dossier de tavail.
-* `source(fichier)` exécuter un script
-
 ## Importer les données
 
 * `read_sas(fichier)` lire des tables SAS (package : haven).
