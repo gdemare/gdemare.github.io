@@ -19,6 +19,7 @@ fichiers = [
 { chemin: 'microsoft/word', general: 1, r: 0, sas:0, py:0},
 { chemin: 'programming/java', general: 1, r: 0, sas:0, py:0},
 { chemin: 'programming/python', general: 0, r: 0, sas:0, py:1},
+{ chemin: 'programming/r', general: 0, r: 1, sas:0, py:0},
 { chemin: 'programming/unix/bash', general: 1, r: 0, sas:0, py:0},
 { chemin: 'programming/unix/folders-linux', general: 1, r: 0, sas:0, py:0},
 { chemin: 'programming/unix/shell', general: 1, r: 0, sas:0, py:0},
