@@ -15,7 +15,7 @@ En fonction du seuil fixé, il n'est pas possible d'accepter H0 car le risque b�
 ## Une distribution
 
 | h0 | Test |
-|---|---|---|
+|---|---|
 | Normalité | Shapiro-Wilk |
 | Pas de valeurs extrêmes | Dixon |
 | Pas de valeurs extrêmes | Grubbs |
@@ -23,26 +23,25 @@ En fonction du seuil fixé, il n'est pas possible d'accepter H0 car le risque b�
 ## Un échantillon et une valeur théorique
 
 | h0 | Condition | Test |
-|---|---|---|---|
-| Moyenne | 4 | T | |
-| Proportion | Khi2 | |
-| Variance | Khi2 | |
+|---|---|---|
+| Moyenne | 4 | student (appelé aussi test t) |
+| Proportion | Khi2 |
+| Variance | Khi2 |
 
 ## Paramètre de plusieurs échantillons
 
 | h0 | Taille | Condition | Test |
-|---|---|---|---|---|
+|---|---|---|---|
 | Egalité des moyennes | 2 | 1,2,3 | Test t |
 | ____________________ | 2 | | Mann-Whitney |
 | ____________________ | n | 1,2,4 ou 3 | ANOVA |
 | ____________________ | n | | Kruskal-Wallis |
 | Egalité des proportions | k | 4 | Khi2 |
-| Egalité des variances | 2 | | Fisher | |
+| Egalité des variances | 2 | | Fisher |
 | _____________________ | k | 4 | Bartlett |
 | _____________________ | k | | Test de Levene |
 
 ## Deux distributions
-
 
 | h0 | Condition | Test |
 |---|---|---|---|
@@ -56,7 +55,7 @@ En fonction du seuil fixé, il n'est pas possible d'accepter H0 car le risque b�
 h0 : indépendance des deux variables
 
 | Type | var | Condition | Test |
-|---|---|---|---|---|
+|---|---|---|---|
 | Linéaire | 2 var quant | | Pearson |
 | Rang | 2 var quant | 3,4 | Spearman |
 | | 2 var quali | 1,5 | d’association du Khi2 |
