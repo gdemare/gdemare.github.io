@@ -44,9 +44,9 @@ En fonction du seuil fixé, il n'est pas possible d'accepter H0 car le risque b�
 ## Deux distributions
 
 | h0 | Condition | Test |
-|---|---|---|---|
-| Même distribution entre une loi et un échantillon | Kolmogorov-Smirnov |
-| __________________ | 1,2,3 ou 4 | Test t | 
+|---|---|---|
+| Même distribution entre une loi et un échantillon | | Kolmogorov-Smirnov |
+| __________________ | 1,2,3 ou 4 | Test t |
 | __________________ entre deux échantillons | | Wilcoxon-Mann-Whitney |
 | Egalités des positions (séries binaires) | | Q de Cochran |
 
