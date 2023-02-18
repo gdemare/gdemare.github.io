@@ -7,7 +7,7 @@ CLASS var_quali;
 RUN;
 ```
 
-### Paramétre
+### Paramètres
 
 * `BY`
 * `WHERE condition` filtrer le jeu de données avant les tests.
