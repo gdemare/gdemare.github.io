@@ -47,7 +47,7 @@ fichiers = [
 { chemin: 'statistique/réseau-neurones', general: 1, r: 1, sas:0, py:0},
 { chemin: 'statistique/statistique', general: 1, r: 0, sas:1, py:0},
 { chemin: 'statistique/tableau-de-bord', general: 0, r: 1, sas:0, py:0},
-{ chemin: 'statistique/tests', general: 0, r: 1, sas:1, py:0},
+{ chemin: 'statistique/tests', general: 1, r: 1, sas:1, py:1},
 { chemin: 'statistique/text-mining', general: 1, r: 0, sas:0, py:0},
 { chemin: 'statistique/web-scraping', general: 0, r: 0, sas:0, py:1},
 { chemin: 'statistique/classification/ANOVA', general: 1, r: 1, sas:1, py:0},
