@@ -1,4 +1,7 @@
-# gdemare.github.io
+Accéder par :
+* [github](https://gdemare.github.io/)
+* [githack](https://raw.githack.com/gdemare/gdemare.github.io/master/index.html)
 
-* https://raw.github.com/gdemare/aide-memoire/master/FILE
-* https://raw.githubusercontent.com/gdemare/aide-memoire/master/
+### Utiles 
+
+Accéder au fichier : https://raw.githubusercontent.com/gdemare/aide-memoire/master/.....
