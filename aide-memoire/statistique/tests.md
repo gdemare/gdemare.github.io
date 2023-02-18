@@ -6,6 +6,8 @@ En fonction du seuil fixé, il n'est pas possible d'accepter H0 car le risque b�
 * On ne peut pas rejeté H0.
 * On rejette H0.
 
+On parle de tests paramétriques lorsque les observations suivent une loi statistique et non paramètrique lorsque la loi de répartition n'est pas connue.
+
 * **(1)** indépendance.
 * **(2)** égalité des variances.
 * **(3)** n>20.
