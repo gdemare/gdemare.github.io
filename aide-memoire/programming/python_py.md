@@ -114,7 +114,6 @@ Liste des variables par défaut :
 * `liste = [ val1, val2]` déclarer une liste.
 * `liste[]` afficher un élément.
 * `del liste[numéro]` supprimer une valeur.
-* `liste.append(valeur)`ajouter une valeur.
 
 #### Les dictionnaires
 
