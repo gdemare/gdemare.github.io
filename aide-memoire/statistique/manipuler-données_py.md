@@ -50,12 +50,15 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 
 ### Opération sur les données
 
-Paramètres :
-* `inplace=True` pour remplacer les données.
+
 Fonctions :
 * `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable.
 * `.fillna(0)` remplacer les valeurs manquantes.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
+* `.apply(fonction, axis=1)` appliquer une fonction sur les données. Rmq pour ajouter la colonne il faut passer par `tableau["colonne"] = `.
+
+Paramètres :
+* `inplace=True` pour remplacer les données.
 
 ### Ajouter des individus
 
