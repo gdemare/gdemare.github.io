@@ -1,4 +1,9 @@
-* `fig = plt.figure(figsize=(25,20))`  Changer la taille du graphique.
+* `fig = plt.figure(figsize=(25,20))`  changer la taille du graphique.
+
+```
+fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15,5))
+```
+Attention dans ce cas indiquer l'argument : `ax = axes[i]` lorsqu'il n'y a qu'une ligne.
 
 ## Avec pandas
 
@@ -101,7 +106,8 @@ Graphiques :
 * `displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
-* `barplot()` diagramme en barre
+* `barplot()` diagramme en barre.
+* 
 
 #### Ajouter un élément au graphique
 
