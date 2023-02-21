@@ -1,6 +1,6 @@
 ## Normaliser les données
 
-`from sklean.preprocessing import StandardScaler`
+`from sklearn.preprocessing import StandardScaler`
 
 ```
 sc = StandardScaler() # créer la fonction de normalisation
