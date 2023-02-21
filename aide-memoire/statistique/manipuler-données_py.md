@@ -43,7 +43,7 @@ Package `import pandas as pd`
 * `tableau[num_ligne]` sélectionner une ligne (fonctionne avec `debut:fin`).
 * `tableau.iloc[nb_row <, nb_col>]` sélectionner en fonction du numéro des lignes et du numéro des colonnes.
 * `tableau.loc[nb_row <, nom_col>]` sélectionner en fonction du numéro des lignes et du nom des colonnes.
-* `for i in data.index:.` parcourir un dataframe grâce au index.
+* `for i in data.index:` parcourir un dataframe grâce au index.
 * `for index, row in df.iterrows():` parcourir un dataframe en récupérant directement les valeurs.
 
 _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2:` est équivalent à 2 et après).
@@ -55,10 +55,21 @@ Fonctions :
 * `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable.
 * `.fillna(0)` remplacer les valeurs manquantes.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
-* `.apply(fonction, axis=1)` appliquer une fonction sur les données. Rmq pour ajouter la colonne il faut passer par `tableau["colonne"] = `.
 
 Paramètres :
 * `inplace=True` pour remplacer les données.
+
+Autres fonctions :
+* `.apply(fonction, axis=1)` appliquer une fonction sur les données. Rmq pour ajouter la colonne il faut passer par `tableau["colonne"] = `.
+Exemple de fonction apply :
+```
+def present_fct(row):
+    if row>7:
+        value = 1
+    else :
+        value =0
+    return value
+```
 
 ### Ajouter des individus
 
