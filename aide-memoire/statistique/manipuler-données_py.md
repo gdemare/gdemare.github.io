@@ -193,6 +193,13 @@ Library `import matplotlib.pyplot as plt`
 
 `np.corrcoef( x, y)` coefficient de corrélation de Pearson.
 
+### Fonctions mathématiques 
+
+| Fonction | Définition |
+|---|---|
+| `np.log(x, base)` | logarithme |
+| ` ` | exponentielle |
+
 ## Les tenseurs
 
 Library : `torch`
