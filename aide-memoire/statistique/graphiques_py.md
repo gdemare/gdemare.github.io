@@ -85,7 +85,7 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 * `plt.figure('train', (largeur, hauteur))` créer une image subdiviser.
 * `subplot(nb_lignes, nb_col, i+1)` ajouter un graphique à l'image. Les  positions sont numérotées à partir de 1.
 
-### autres
+### Autres
 
 * `plt.boxplot(vecteur)` boxplot.
 * `pl.matshow(mat_cor)` matrice de corrélation.
@@ -117,6 +117,7 @@ Paramètres :
 ### transformation des axes
 
 `graph.set_xscale('symlog')` changer le type d'axes.
+`graph.get_xticklabels()` récupérer la valeur des axes.
 
 ### Modifier la présentation graphique
 
