@@ -107,13 +107,22 @@ Graphiques :
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
-* 
 
 #### Ajouter un élément au graphique
 
 * `fig.axvline(1.25)`/`fig.axhline(1.25)` ajouter une ligne verticale/horizontale.
 Paramètres : 
 * `linestyle=':'` type de lignes (`:` pointillé, `--` tiré ).
+
+### transformation des axes
+
+`graph.set_xscale('symlog')` changer le type d'axes.
+
+### Modifier la présentation graphique
+
+* `graph.set_xlabel("Colors")` changer le libellé de l'axe (`set_ylabel` pour y).
+* `graph.set(xlabel='x-axis label', ylabel='y-axis label')` titre des deux axes.
+* `graph.set_title("Colors vs Values")` ajouter un titre. 
 
 ## Enregister un graphique 
 
