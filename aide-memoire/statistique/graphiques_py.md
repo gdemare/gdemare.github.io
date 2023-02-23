@@ -116,7 +116,7 @@ Paramètres :
 
 ### transformation des axes
 
-`graph.set_xscale('symlog')` changer le type d'axes.
+`graph.set_xscale()` changer le type d'axes (type : `log`, `symlog`, ...).
 `graph.get_xticklabels()` récupérer la valeur des axes.
 
 ### Modifier la présentation graphique
