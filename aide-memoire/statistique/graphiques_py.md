@@ -64,6 +64,7 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 	* `"off"` ne pas afficher d'axe. 	
 
 * `pyplot.grid(True)` afficher une grille.
+* `plt.xticks(rotation=45)` changer la rotation des étiquettes de données.
 
 ### Etiquettes et libellés
 
