@@ -1,14 +1,14 @@
 ## Importer les données
 
-* `read_sas(fichier)` lire des tables SAS (package : haven).
+* `read_sas(fichier)` lire des tables SAS (package `haven`).
 * `read.csv()` lire une table CSV.
-* `read_excel(fichier, sheet = "Feuil1" )` importer un fichier xls (package : readxl).
+* `read_excel(fichier, sheet = "Feuil1"/nb )` importer un fichier xls (package `readxl`).
 * `write.table(tableau, file = "clipboard", sep = "\t")` copier dans le presse papier.
 
 ## Exporter un data
  
 * `write.csv(donnée, file = "fichier.csv" )` enregistrer au format csv.
- * `sep = separateur` séparateur., 
+ * `sep = separateur` séparateur.
  * `row.names = T` nom des lignes.
  * `col.names = T` nom des colonnes.
 * `write.xlsl(as.dataframe(donnee), file = "fichier.xlsx", sheetName = "feuille")` enregistrer au format excel (package `xlsx`).
@@ -18,11 +18,11 @@
 * `nchar()` compter le nbre de caractères.
 * `substr(text,debut, fin)` extraire une chaine charactère.
 * `gsub(schèma, remplacement, variable) ` remplacer un schèma par une nouvelle chaine de caractères.
-* `str_count(text, motif)` compter le nombre d'occurence. (stringr)
+* `str_count(text, motif)` compter le nombre d'occurence (`stringr`)
 * `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
 * `strsplit(variable, symbole)` séparer une variable en fonction d'un symbole.
-* `trim(texte)` Supprimer les espaces (package : `gdata`).
-* `str_to_title(texte)` Mettre les premiers caractères en majuscule (package : `stringr`).
+* `trim(texte)` Supprimer les espaces (package `gdata`).
+* `str_to_title(texte)` Mettre les premiers caractères en majuscule (package `stringr`).
 * `toupper(texte)` mettre les caractères en majuscule.
 
 ## Manipuler les dates
@@ -60,7 +60,7 @@ day
 weekday
 ## Manipuler les données
 
-Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
+Package : `dplyr`, `tidyr`. `résultat1 %>% résultat2` : rediriger le résultat
 
 `pull(data, colonne)` transformer une sortie en vecteur.
 
@@ -68,9 +68,9 @@ Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
 
 * `filter( condition )` filtrer.
 * `slice( numligne )` garder les lignes.
-* `sample_frac(iris,0.5,replace = TRUE)` Sélectionne aléatoirement une fraction d'observations
-* `sample_n( nligne,replace = TRUE)` Sélectionne aléatoirement n observations
-* `slice(10:15)` Sélectionne les lignes selon leur position
+* `sample_frac(iris,0.5,replace = TRUE)` sélectionne aléatoirement une fraction d'observations.
+* `sample_n( nligne,replace = TRUE)` sélectionne aléatoirement n observations.
+* `slice(10:15)` Sélectionne les lignes selon leur position.
 * `top_n(nlignes, variable)` Sélectionne et ordonne les n premières observations (ou groupes si les données sont groupées) ( desc() ).
  = decroissant
 ## Selectionner
@@ -86,7 +86,8 @@ Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
 | `contains(chaine)` | contenant la chaine. |
 
 ## Réorganiser les données
-package : tidyr
+
+Package `tidyr`
 * `pivot_wider(names_from = var_devien_colonne, values_from = valeur)` transforme une variable en plusieurs colonnes.
 
 ```
