@@ -164,9 +164,9 @@ A %>% jointure(B, <by=c( "var1" = "var2")> )
 * `right_join(data)` B (+ A et B)
 * `semi_join(data)` A et pas B.
 * `anti_join(data)` B et pas A.
-* `full_jon(data)` A ou B.
+* `full_join(data)` A ou B.
 Option :
-* `by = c("col1"="col2")` préciser la jointure.
+ * `by = c("col1"="col2")` préciser la jointure.
 
 ## Fusions lignes et colonnes
 
