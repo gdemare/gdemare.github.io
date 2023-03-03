@@ -295,7 +295,7 @@ Paramètre :
 * `'séparateur'.join([text1,text2])` concaténer du texte.
 * `texte.strip()` supprimer les espaces au début et à la fin.
 * `texte.replace('ancien', 'nouveau')` remplacer un caractère.
-* `re.split(text, `\n`)` séparer une chaîne de caractères en fonction d'un motif.
+* `re.split(`\n`, texte )` séparer une chaîne de caractères en fonction d'un motif.
 
 | Caractère | Définition |
 |---|---|
