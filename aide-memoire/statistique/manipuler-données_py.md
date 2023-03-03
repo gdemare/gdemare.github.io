@@ -25,7 +25,7 @@ Package `import pandas as pd`
 * `donnee.index` nom des lignes.
 * `donnee.columns` nom des colones.
 * `donnee.head()` renvoie les premières lignes du pandaframe.
-* `donnee.describe()` tableau récapitulatif des données (moyenne, médiane, écart type,...).
+* `donnee.describe()` tableau récapitulatif des données (moyenne, médiane, écart type,...). Les valeurs manquantes ne sont pas prises en compte.
 
 * `stack(niveau)` modifier les niveaux de données.
 
