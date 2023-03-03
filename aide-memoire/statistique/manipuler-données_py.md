@@ -77,7 +77,7 @@ def present_fct(row):
 
 ### Importer 
 
-* `pd.read_csv(fichier, sep=";", header=True)` lire un fichier csv.
+* `pd.read_csv(fichier, sep="\t")` lire un fichier csv.
 * `pd.read_excel(fichier, sheet_name=1/feuille)` lire un fichier excel.
 
 ### Exporter 
