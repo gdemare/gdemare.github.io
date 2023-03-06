@@ -162,6 +162,7 @@ Variable de sortie :
 |---|---|---|
 | `[^\s]` | Négation  | pas d'espace |
 | `[2-6]` | Séquence  | de 1 à 6 |
+| `[0-9]{4}` | Nbre de fois qu'apparait un chiffre | |
 
 ### Les dates
 Package : `datetime`
