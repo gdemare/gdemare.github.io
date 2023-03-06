@@ -145,6 +145,9 @@ Library `re`. Une expression régulière est déclarée comme `r"expr"`.
 
 Variable de sortie : 
 * `.group(0)` pour accéder aux résultat de la recherche.
+* `.span()` la position.
+* `.start()` la première position.
+* `.end()` . 
 
 | Symbole | Définition  | 
 |---|---|
