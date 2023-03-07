@@ -34,7 +34,7 @@
 * `table(x)` tableau d'effectifs.
 * `unique(x)` valeurs uniques
 * `c(vec1, vec2)` concaténer deux vecteurs.
-* `paste(vec1, vec2)` fusionner deux chaines.
+* `paste(vec1, vec2, sep=" ")` fusionner deux chaines.
 
 ## Fonction
 ```
