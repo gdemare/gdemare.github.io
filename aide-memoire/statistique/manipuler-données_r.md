@@ -177,7 +177,7 @@ Option :
 ## Fusions lignes et colonnes
 
 * `bind_rows(ligne)` Ajouter à y comme nouvelles lignes
-* `bind_cols(colonne)` Ajoutez à y comme nouvelles colonnes.
+* `bind_cols(nom = valeur)` Ajoutez à y comme nouvelles colonnes.
 
 ## Opérateurs ensemblistes
 
