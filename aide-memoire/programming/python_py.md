@@ -149,20 +149,17 @@ Variable de sortie :
 * `.start()` la première position.
 * `.end()` . 
 
-| Symbole | Définition  | 
+| Symbole | Définition (négation) | 
 |---|---|
-| `\s` | espace |
+| `\s` (`\S`) | espace |
+| `\d` | chiffre | 
 | `\` | caractère d'échappement |
-| `*` | n'importe quel symbole plusieurs fois |
+| `*` | n'importe quel symbole plusieurs fois `[2-6]` séq de 2 à 6 |
 | `[]` | ecrite l'expression à l'intérieur |
 | `^` | position du début |
 | `$` | en fin de chaîne |
-
-|  | Défintion | Exemple | 
-|---|---|---|
-| `[^\s]` | Négation  | pas d'espace |
-| `[2-6]` | Séquence  | de 1 à 6 |
-| `[0-9]{4}` | Nbre de fois qu'apparait un chiffre | |
+| `[0-9]{4}` | Nbre de fois qu'apparait un chiffre |
+| `\w` | équivalent à [a-zA-Z0-9_] |
 
 ### Les dates
 Package : `datetime`
@@ -504,8 +501,8 @@ root.mainloop()
 
 Sou bibliothèque à importer `from tkinter import ttk`
 
-1 - Déclarer l'élément `bouton = ...`
-2 - Afficher l'élément `bouton.pack()`
+1. Déclarer l'élément `bouton = ...`
+2. Afficher l'élément `bouton.pack()`
 
 Liste des éléments :
 * `ttk.Button(root, text='Unice', command=fonction)` bouton.
