@@ -15,7 +15,7 @@ package `readxl`
  
 * `write.csv(donnée, file = "fichier.csv" )` enregistrer au format csv.
  * `sep = separateur` séparateur.
- * `row.names = T` nom des lignes.
+ * * `row.names = T` nom des lignes.
  * `col.names = T` nom des colonnes.
 * `write.xlsl(as.dataframe(donnee), file = "fichier.xlsx", sheetName = "feuille")` enregistrer au format excel (package `xlsx`).
 
