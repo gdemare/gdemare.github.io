@@ -33,6 +33,8 @@
 * `rev(x)` renver l'ordre.
 * `table(x)` tableau d'effectifs.
 * `unique(x)` valeurs uniques
+* `c(vec1, vec2)` concaténer deux vecteurs.
+* `paste(vec1, vec2)` fusionner deux chaines.
 
 ## Fonction
 ```
