@@ -66,3 +66,7 @@ for(i in 1:nrow(g)){
 ```
 
 ### While - tant que c'est vrai
+
+## Expressions régulières
+
+* `str_view_all(vecteur, exp_re)` rechercher une expression régulière.
