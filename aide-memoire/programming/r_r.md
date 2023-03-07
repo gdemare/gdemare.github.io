@@ -1,7 +1,7 @@
 ### Les packages
 
-* `install.packages("package")`
-* `library(dplyr)` 
+* `install.packages("package")` installer un package.
+* `library(dplyr)` importer un package. 
 
 ### Manipuler les fichiers
 
