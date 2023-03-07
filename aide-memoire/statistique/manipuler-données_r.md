@@ -19,6 +19,10 @@ package `readxl`
  * `col.names = T` nom des colonnes.
 * `write.xlsl(as.dataframe(donnee), file = "fichier.xlsx", sheetName = "feuille")` enregistrer au format excel (package `xlsx`).
 
+### Information dataframe
+
+* `colnames(data)` renvoie le nom des colonnes.
+
 ## Manipuler le texte
 
 * `nchar()` compter le nbre de caractères.
