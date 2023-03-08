@@ -19,60 +19,20 @@ package `readxl`
  * `col.names = T` nom des colonnes.
 * `write.xlsl(as.dataframe(donnee), file = "fichier.xlsx", sheetName = "feuille")` enregistrer au format excel (package `xlsx`).
 
-### Information dataframe
+### Information dataframe et nom des lignes eet des colonnes
 
-* `colnames(data)` renvoie le nom des colonnes.
+* `colnames(data)` nom des colonnes.
+* `rownames(data)` nom des colonnes.
+* `column_to_rownames(var = "Accession")` mettre une colonne en nom de lignes et supprime la colonne.
+* `nrow(data)` renvoie le nbre de lignes.
+* `ncol(data)` renvoie le nbre de colonnes.
+* `dim(data)` renvoie la taille du data.
 
-## Manipuler le texte
-
-* `nchar()` compter le nbre de caractères.
-* `substr(text,debut, fin)` extraire une chaine charactère.
-* `gsub(schèma, remplacement, variable) ` remplacer un schèma par une nouvelle chaine de caractères.
-* `str_count(text, motif)` compter le nombre d'occurence (`stringr`)
-* `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
-* `strsplit(variable, symbole)` séparer une variable en fonction d'un symbole.
-* `trim(texte)` Supprimer les espaces (package `gdata`).
-* `str_to_title(texte)` Mettre les premiers caractères en majuscule (package `stringr`).
-* `toupper(texte)` mettre les caractères en majuscule.
-
-## Manipuler les dates
-
-Package : lubridate.
-
-* `as.Date( '2017-10-12', format= )` convertir en date.
-* `as_datetime()` convertir en date time.
-
-| Définition | R | Exemple |
-|---|---|---|
-| Année | `%Y` | 2001 |
-| Année | `%y` | 01 |
-| Mois | `%m` | 09 |
-| Jour | `%d` | 11 |
-| Heure | `%H` | 12 |
-| Minute | `%M` | 15 |
-| seconde | `%S` | 06 |
-
-* `time_length( interval(date1, date2), type )` calculer un âge.
-date + ajout calculer une date
-* `years(nbre)` année.
-* `months(nbre)` mois.
-* `days(3)` jour.
-* `weekdays(nbre)` jour de la semaine.
-* `hours(heure)` heure.
-
-format d'affichage d'une date et de l'heure
-`format( datetime, format = '')` 
-
-Extraire une information d'une date 
-year
-month
-day
-weekday
 ## Manipuler les données
 
 Package : `dplyr`, `tidyr`. `résultat1 %>% résultat2` : rediriger le résultat
 
-`pull(data, colonne)` transformer une sortie en vecteur.
+* `pull(data, colonne)` transformer une sortie en vecteur.
 
 ## Filtrer
 
@@ -80,9 +40,10 @@ Package : `dplyr`, `tidyr`. `résultat1 %>% résultat2` : rediriger le résultat
 * `slice( numligne )` garder les lignes.
 * `sample_frac(iris,0.5,replace = TRUE)` sélectionne aléatoirement une fraction d'observations.
 * `sample_n( nligne,replace = TRUE)` sélectionne aléatoirement n observations.
-* `slice(10:15)` Sélectionne les lignes selon leur position.
-* `top_n(nlignes, variable)` Sélectionne et ordonne les n premières observations (ou groupes si les données sont groupées) ( desc() ).
- = decroissant
+* `slice(10:15)` sélectionne les lignes selon leur position.
+* `top_n(nlignes, variable)` sélectionne et ordonne les n premières observations (ou groupes si les données sont groupées) ( `desc()` = decroissant ).
+* `is.na(data)` renvoie les lignes avec des valeurs manquantes (`myDataframe[is.na(myDataframe)] = 0` pour les remplacer).
+
 ## Selectionner
 
 * `select( colonne1, colonne2 )` selecionner des colonnes (`-one of(col)` pour enlever une colonne).
@@ -98,7 +59,9 @@ Package : `dplyr`, `tidyr`. `résultat1 %>% résultat2` : rediriger le résultat
 ## Réorganiser les données
 
 Package `tidyr`
-* `pivot_wider(names_from = var_devien_colonne, values_from = valeur)` transforme une variable en plusieurs colonnes.
+
+* `pivot_longer( cols, names_to = "name", values_to = "value")` transformer plusieurs colonnes en une seule variable.
+* `pivot_wider(names_from = "name", values_from = "value")` transformer plusieurs variables en une seule colonne.
 
 ```
 # La variable treatment (avec les modalités A, B, C ...) est transformée en colonne (A, B, C D). La valeur est la somme des decrease. Chaque ligne correspond à une valeur de rowpos.
@@ -138,7 +101,7 @@ OrchardSprays %>%
 
 ### Faire une opération sur toutes les variables
 
-| Fonction | Defintion |
+| Fonction | Défintion |
 |---|---|
 | `rowSums()` | somme |
 
@@ -166,7 +129,7 @@ OrchardSprays %>%
 | `median` | Médiane |
 | `sd` | Ecart-type |
 
-## Les jointures
+### Les jointures
 
 A %>% jointure(B, <by=c( "var1" = "var2")> )
 * `inner_join(data)` A et B
@@ -206,31 +169,3 @@ Option :
 * `scale(fromage,center=T,scale=T)` centrer et réduire les données.
 * `Sys.sleep(seconde)` attendre un nombre de seconde avant la suite de l'exécution.
 * `grepl( symbole, variable)` test si le symbole est contenu dans la variable.
-
-## Connecter R à une bdd
-
-`library(DBI)`
-
-* `dbListTables(connection)` Liste des tables.
-
-### Connecteur
-
-| Connecteur | Library | |
-|---|---|---|
-| MySQL | `RMySQL`| `MySQL()` |
-
-### Créer une connexion.
-
-```
-dbConnect(MySQL(), paramètre)
-on.exit(dbDisconnect(con))
-```
-Paramètre : 
-* `dbname = "smur"`
-* `host = "10.60.11.4"`
-* `port = 3306`
-* `user = "statistique"`
-* `password = "statistique"`
-
-* `requete = sqlInterpolate(connection, "SELECT * FROM acte WHERE acte_code = ?id", id = acteId)` créer et controler les variables utilisées dans la requete.
-* `dbGetQuery(connection, requete)` exécuter la requete.
