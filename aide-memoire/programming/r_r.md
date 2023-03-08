@@ -72,3 +72,31 @@ for(i in 1:nrow(g)){
 ## Expressions régulières
 
 * `str_view_all(vecteur, exp_re)` rechercher une expression régulière.
+
+## Connecter R à une bdd
+
+`library(DBI)`
+
+* `dbListTables(connection)` Liste des tables.
+
+### Connecteur
+
+| Connecteur | Library | |
+|---|---|---|
+| MySQL | `RMySQL`| `MySQL()` |
+
+### Créer une connexion.
+
+```
+dbConnect(MySQL(), paramètre)
+on.exit(dbDisconnect(con))
+```
+Paramètre : 
+* `dbname = "smur"`
+* `host = "10.60.11.4"`
+* `port = 3306`
+* `user = "statistique"`
+* `password = "statistique"`
+
+* `requete = sqlInterpolate(connection, "SELECT * FROM acte WHERE acte_code = ?id", id = acteId)` créer et controler les variables utilisées dans la requete.
+* `dbGetQuery(connection, requete)` exécuter la requete.
