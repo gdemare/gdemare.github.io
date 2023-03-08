@@ -18,6 +18,11 @@
 
 * `print("Hello")` afficher un message.
 
+## Environnement et variables
+
+* `rm (list=ls ())` supprimer les variables de l'environnement.
+* `typeof(var)` renvoie le type de variable.
+
 ## Les vecteurs
 
 ### Créer un vecteur
@@ -35,6 +40,7 @@
 * `unique(x)` valeurs uniques
 * `c(vec1, vec2)` concaténer deux vecteurs.
 * `paste(vec1, vec2, sep=" ")` fusionner deux chaines.
+* `length(vec)` taille du vecteur.
 
 ## Fonction
 ```
@@ -69,7 +75,45 @@ for(i in 1:nrow(g)){
 
 ### While - tant que c'est vrai
 
-## Expressions régulières
+## Manipuler les dates
+
+Package : lubridate.
+
+* `as.Date( '2017-10-12', format= )` convertir en date.
+* `as_datetime()` convertir en date time.
+
+| Définition | R | Exemple |
+|---|---|---|
+| Année | `%Y` | 2001 |
+| Année | `%y` | 01 |
+| Mois | `%m` | 09 |
+| Jour | `%d` | 11 |
+| Heure | `%H` | 12 |
+| Minute | `%M` | 15 |
+| seconde | `%S` | 06 |
+
+* `time_length( interval(date1, date2), type )` calculer un âge.
+date + ajout calculer une date
+* `years(nbre)` année.
+* `months(nbre)` mois.
+* `days(3)` jour.
+* `weekdays(nbre)` jour de la semaine.
+* `hours(heure)` heure.
+* `format( datetime, format = '')` format d'affichage d'une date et de l'heure.
+
+## Manipuler le texte
+
+* `nchar()` compter le nbre de caractères.
+* `substr(text,debut, fin)` extraire une chaine charactère.
+* `gsub(schèma, remplacement, variable) ` remplacer un schèma par une nouvelle chaine de caractères.
+* `str_count(text, motif)` compter le nombre d'occurence (`stringr`)
+* `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
+* `strsplit(variable, symbole)` séparer une variable en fonction d'un symbole.
+* `trim(texte)` supprimer les espaces (package `gdata`).
+* `str_to_title(texte)` mettre les premiers caractères en majuscule (package `stringr`).
+* `toupper(texte)` mettre les caractères en majuscule.
+
+### Expressions régulières
 
 * `str_view_all(vecteur, exp_re)` rechercher une expression régulière.
 
