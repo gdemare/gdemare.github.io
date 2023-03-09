@@ -1,8 +1,9 @@
+Les types de données sont sans `as`.
 | Fonction | Type |
 |---|---|
-| `character()` | caractère |
-| `integer()` | nombre entier |
-| `double()` | décimal |
+| `as.character()` | caractère |
+| `as.integer()` | nombre entier |
+| `as.double()` | décimal |
 | `as.Date(character())` | date |
 
 Les variables des dataframe sont par defaut en Factor.
