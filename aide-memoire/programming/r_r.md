@@ -115,6 +115,8 @@ date + ajout calculer une date
 
 ### Expressions régulières
 
+Library `stringr`
+
 * `str_view_all(vecteur, exp_re)` rechercher une expression régulière.
 
 ## Connecter R à une bdd
