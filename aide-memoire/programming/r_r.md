@@ -104,7 +104,7 @@ date + ajout calculer une date
 ## Manipuler le texte
 
 * `nchar()` compter le nbre de caractères.
-* `substr(text,debut, fin)` extraire une chaine charactère.
+* `str_sub(i, (text, start = debut, end = fin)` extraire une chaine charactère.
 * `gsub(schèma, remplacement, variable) ` remplacer un schèma par une nouvelle chaine de caractères.
 * `str_count(text, motif)` compter le nombre d'occurence (`stringr`)
 * `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
