@@ -119,6 +119,11 @@ Library `stringr`
 
 * `str_view_all(vecteur, exp_re)` rechercher une expression régulière.
 
+| Symbole | Définition |
+|---|---|
+| `*` | une ou plusieurs fois | 
+| `.` | jocker |
+
 ## Connecter R à une bdd
 
 `library(DBI)`
