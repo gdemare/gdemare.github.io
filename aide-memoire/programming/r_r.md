@@ -118,6 +118,8 @@ date + ajout calculer une date
 Library `stringr`
 
 * `str_view_all(vecteur, exp_re)` rechercher une expression régulière.
+* `str_extract(texte, exp_re) extraire un texte.
+*`str_locate(texte, exp_re) postion de début et de fin de l'expression.
 
 | Symbole | Définition |
 |---|---|
