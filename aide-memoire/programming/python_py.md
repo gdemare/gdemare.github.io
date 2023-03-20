@@ -591,3 +591,11 @@ Library `subprocess`
 
 * `call([sys.executable, 'C:\\temp\\hello2.py'], shell=True)` importer un script python.
 * `['java', '-jar', 'temp.jar' param1, param2]` exécuter un script java.
+
+## Nbconvert
+
+Expoter un fichier ipynl en hmtl ou en pdf :
+jupyter nbconvert --to pdf --template  fichier.ipynb
+
+* `--to html` en html.
+* `--no-input` masquer le code.
