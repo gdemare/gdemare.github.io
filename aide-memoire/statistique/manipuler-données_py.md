@@ -50,12 +50,11 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 
 ### Opération sur les données
 
-
 Fonctions :
 * `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable.
 * `.fillna(0)` remplacer les valeurs manquantes.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
-
+* `df = df.rename({"ancien" : "nouveau"})` renommer une colonne.
 Paramètres :
 * `inplace=True` pour remplacer les données.
 
