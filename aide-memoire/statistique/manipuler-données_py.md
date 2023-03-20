@@ -54,7 +54,7 @@ Fonctions :
 * `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable.
 * `.fillna(0)` remplacer les valeurs manquantes.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
-* `df = df.rename({"ancien" : "nouveau"}, inplace=True)` renommer une colonne.
+* `.rename({"ancien" : "nouveau"}, inplace=True)` renommer une colonne.
 Paramètres :
 * `inplace=True` pour remplacer les données.
 
