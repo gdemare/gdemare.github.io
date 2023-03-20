@@ -5,27 +5,6 @@ fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15,5))
 ```
 Attention dans ce cas indiquer l'argument : `ax = axes[i]` lorsqu'il n'y a qu'une ligne.
 
-## Avec pandas
-
-Les dataframe pandas intégrent directement des représentations graphiques.
-
-`data.plot( <x=>, <y=< )`
-Type de graphique :
-* `area()`
-* `density()`
-* `line()`
-* `pie()`
-* `bar()`
-* `barh()`
-	* Paramètres :
-		* `stacked=True` empilé.
-* `scatter()`
-* `hist()`
-
-Paramètres : 
-*  `legend=False` enlever la légende
-*  `ax=` déterminer la position du graphique avec les fenetres subdivisées.
-
 #### Ajouter plusieurs graphiques sur une image
 
 ```
@@ -104,10 +83,18 @@ Graphiques :
 * `heatmap(protfreq, annot=True)` matrice de température. Paramètres :
 	* `annot_kws={"fontsize":8}` taille des annotations.
 	* `fmt='.0f'` changer le format des nombres (0 indique le nbre de décimals).
-* `displot(vecteur)` afficher la distribution d'un vecteur quantitatif.
+* `histplot(vecteur)` afficher la distribution d'un vecteur quantitatif.
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
+
+Superposer deux graphiques :
+```
+fig, ax1 = pl.subplots()
+sns.histplot(x=donnee['RT [min]'], ax = ax1)
+ax2 = ax1.twinx()
+sns.lineplot(x=x, y=y, color = 'r', ax= ax2)
+```
 
 #### Ajouter un élément au graphique
 
@@ -142,4 +129,25 @@ rcParams.update({'figure.autolayout': True})
 `from matplotlib_venn import venn2, venn3`
 
 * `venn2(subsets = (10, 5, 2), set_labels = ('Group A', 'Group B'))`
-* `venn3(subsets = (10, 8, 22, 6,9,4,2))` 
+* `venn3(subsets = (10, 8, 22, 6,9,4,2))`
+
+## Avec pandas
+
+Les dataframe pandas intégrent directement des représentations graphiques.
+
+`data.plot( <x=>, <y=< )`
+Type de graphique :
+* `area()`
+* `density()`
+* `line()`
+* `pie()`
+* `bar()`
+* `barh()`
+	* Paramètres :
+		* `stacked=True` empilé.
+* `scatter()`
+* `hist()`
+
+Paramètres : 
+*  `legend=False` enlever la légende
+*  `ax=` déterminer la position du graphique avec les fenetres subdivisées.
