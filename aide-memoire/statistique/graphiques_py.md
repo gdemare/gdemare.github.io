@@ -35,12 +35,13 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 ### Paramètres des axes
 
-* `pyplot.show()` afficher le graphique.
-* `pyplot.axis([xmin, xmax, ymin, ymax])` changer l'affichage des axes. 
+* `pl.show()` afficher le graphique.
+* `pl.axis([xmin, xmax, ymin, ymax])` changer l'affichage des axes. 
 	* `"off"` ne pas afficher d'axe. 	
 
-* `pyplot.grid(True)` afficher une grille.
-* `plt.xticks(rotation=45)` changer la rotation des étiquettes de données.
+* `pl.grid(True)` afficher une grille.
+* `pl.xticks(rotation=45)` changer la rotation des étiquettes de données.
+* `pl.yscale('log')` passer en échelle logarithmique. 
 
 ### Etiquettes, libellés et titre
 
