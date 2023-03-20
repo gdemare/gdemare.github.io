@@ -229,6 +229,13 @@ def fonction (param1, param2=10):
 
 `=10` valeur par défaut de la variable.
 
+##### Fonctions mathématiques
+
+```
+x = np.linspace(0, 135, 135)
+y = list(map( ma_fonction,x))
+```
+
 ### Déclarer une classe
 
 ```
