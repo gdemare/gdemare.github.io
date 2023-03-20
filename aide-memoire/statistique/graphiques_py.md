@@ -1,8 +1,5 @@
 * `fig = plt.figure(figsize=(25,20))`  changer la taille du graphique.
-
-```
-fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15,5))
-```
+* `fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15,5))` sous diviser un graphique en plusieurs cases ou superposer deux graphiques (sans nrows/ncols).
 Attention dans ce cas indiquer l'argument : `ax = axes[i]` lorsqu'il n'y a qu'une ligne.
 
 #### Ajouter plusieurs graphiques sur une image
@@ -45,12 +42,12 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 * `pyplot.grid(True)` afficher une grille.
 * `plt.xticks(rotation=45)` changer la rotation des étiquettes de données.
 
-### Etiquettes et libellés
+### Etiquettes, libellés et titre
 
-* `pyplot.xlabel(texte)` libellé axe des abcisses.
-* `pyplot.ylabel(texte)` libellé axe des ordonnées.
-* `title(titre)` ajouter un titre.
-* `text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
+* `pl.xlabel(texte)` libellé axe des abcisses.
+* `pl.ylabel(texte)` libellé axe des ordonnées.
+* `pl.title(titre)` ajouter un titre.
+* `pl.text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
 
 ### Camembert 
 
@@ -95,6 +92,7 @@ sns.histplot(x=donnee['RT [min]'], ax = ax1)
 ax2 = ax1.twinx()
 sns.lineplot(x=x, y=y, color = 'r', ax= ax2)
 ```
+
 
 #### Ajouter un élément au graphique
 
