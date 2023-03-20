@@ -602,7 +602,9 @@ Library `subprocess`
 ## Nbconvert
 
 Expoter un fichier ipynl en hmtl ou en pdf :
-`jupyter nbconvert --to pdf --template  fichier.ipynb`
+`jupyter nbconvert --to pdf --no-input fichier.ipynb`
 
+Paramètres :
 * `--to html` en html.
 * `--no-input` masquer le code.
+* ` --template theme` avec un theme.
