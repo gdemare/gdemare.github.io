@@ -1,3 +1,5 @@
+Calcul de p-value directement en ligne [BiostaTGV](https://biostatgv.sentiweb.fr/?module=tests)
+
 * H0 : l'hypothèse la plus simple (ou contraignante). Par exemple, les moyennes sont égales.
 * H1 : la négation de H0.
 
