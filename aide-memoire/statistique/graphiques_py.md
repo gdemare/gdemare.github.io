@@ -82,6 +82,7 @@ Graphiques :
 	* `annot_kws={"fontsize":8}` taille des annotations.
 	* `fmt='.0f'` changer le format des nombres (0 indique le nbre de décimals).
 * `histplot(vecteur)` afficher la distribution d'un vecteur quantitatif.
+* 	* ` multiple="stack"`empiler les valeurs avec `hue="var"`.
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
