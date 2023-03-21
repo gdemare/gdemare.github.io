@@ -363,7 +363,7 @@ c = conn.cursor()
 Les variables à utiliser dans la requête doivent etre declarées par un `?`.
 S'il y en a plusieurs, il faut les organiser sous la forme d'une liste.
 
-NB : Penser à convertir le résultat en liste.
+_NB :_ Penser à convertir le résultat en liste.
 
 * `conn.commit()` écrire ou modifier la bdd en exécutant la requête.
 
@@ -411,7 +411,7 @@ with open(dossier + '/data.js', 'w', encoding='UTF8) as file:
 
 ### Importer un fichier 
 
-* `open('fichier.txt', 'w', encoding = 'utf-8')` ouvrir un fichier. Rmq : `open` permet de créer un fichier.
+* `open('fichier.txt', 'w', encoding = 'utf-8')` ouvrir un fichier. _Rmq :_ `open` permet de créer un fichier.
 L'encoding est généralement ISO-Latin-1 ou utf-8.
 Paramètre :
 	* `w` (write) pour écrire.
@@ -420,11 +420,10 @@ Paramètre :
 * `fichier.write('text')` ajouter des lignes au fichier (on créer le fichier avec open).
 * `fichier.close()` fermer le fichier.
 
-lire le fichier en une seule ligne.
-
 ### Ecrire une page html
 
 `from yattag import Doc`
+
 ```
 doc, tag, text = Doc().tagtext()
 
@@ -506,7 +505,7 @@ root.mainloop()
 
 ### Element de la fenêtre
 
-Sou bibliothèque à importer `from tkinter import ttk`
+Bibliothèque à importer `from tkinter import ttk`
 
 1. Déclarer l'élément `bouton = ...`
 2. Afficher l'élément `bouton.pack()`
@@ -571,14 +570,14 @@ driver = webdriver.Chrome(chrome_options=options, service=s) #ouvrir le navigate
 
 | Référence | Définition |
 |---|---|
-| `CLASS_NAME` | nom de la classe |
-| `CSS_SELECTOR` | css selector |
-| `ID` | identifiant de la balise |
-| `LINK_TEXT` | texte |
-| `PARTIAL_LINK_TEXT` | morceau de texte |
-| `NAME` | nom de la balise |
-| `TAG_NAME` | balise |
-| `XPATH` | xpath |
+| `CLASS_NAME` | Nom de la classe |
+| `CSS_SELECTOR` | Css selector |
+| `ID` | Identifiant de la balise |
+| `LINK_TEXT` | Texte |
+| `PARTIAL_LINK_TEXT` | Morceau de texte |
+| `NAME` | Nom de la balise |
+| `TAG_NAME` | Balise |
+| `XPATH` | Xpath |
 
 Action sur l'élément sélectionner :
 * `.send_keys(valeur)` remplir les valeurs.
