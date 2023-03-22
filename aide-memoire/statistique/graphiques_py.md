@@ -82,10 +82,12 @@ Graphiques :
 	* `annot_kws={"fontsize":8}` taille des annotations.
 	* `fmt='.0f'` changer le format des nombres (0 indique le nbre de décimals).
 * `histplot(vecteur)` afficher la distribution d'un vecteur quantitatif.
-* 	* ` multiple="stack"`empiler les valeurs avec `hue="var"`.
+	* ` multiple="stack"`empiler les valeurs avec `hue="var"`.
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
+
+### Superposer deux graphiques
 
 Superposer deux graphiques :
 ```
@@ -95,6 +97,12 @@ ax2 = ax1.twinx()
 sns.lineplot(x=x, y=y, color = 'r', ax= ax2)
 ```
 
+### faire plusieurs graphique en fonction d'une condition
+
+```
+g = sns.FacetGrid(donnee, col="condition")
+g.map(sns.histplot, "% ACN", binwidth=2).set(yscale = 'log')
+```
 
 #### Ajouter un élément au graphique
 
