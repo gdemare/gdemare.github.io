@@ -61,11 +61,14 @@ If (condition1) {
 
 * `gci` liste des fichiers.
 Paramètre : 
-  - `-File` lister uniquement les fichiers.
-  - `-Recurse` lister en plus les fichiers des sous dossiers.
+  - `-fi` lister uniquement les fichiers.
+  - `-r` lister en plus les fichiers des sous dossiers.
 * `Get-Item fichier` 
 * `select fichier` 
 Paramètre :
    - ` -Property` récupérer les propriétés d'un fichier. Lorsqu'il y en a plusieurs, il faut les séparer par un `,` (`fullName`, ` LastWriteTime`).
-* `Remove-Item chemin` supprimer des fichiers.
- * `dossier -Recurse` supprime les fichiers et les dossiers.	 
+* `ri chemin` supprimer des fichiers.
+	* `dossier -Recurse` supprime les fichiers et les dossiers.
+	* `-Force` suppimer de façon récursive.
+* `gci -r -fi *psm*.xlsx | ri -Force` trouver des fichiers et les supprimer de façon récursives.
+ 
