@@ -18,10 +18,15 @@ Comparatif des écouteurs : [AudioBudjet](https://audiobudget.com/leaderboard/ie
 * [Résumé d'émissions scientifiques](https://taxonomie.github.io/)
 * [Science relationnelle](https://raw.githack.com/gdemare/science/master/index.html)
 
+Disponible sur le Window Store :
+* Brave
+* Firefox
+* Visual Studio Code
+* Vlc
+
 Logiciels Windows :
 * [Adguard](https://adguard.com/en/download.html)
 * [Anki](https://apps.ankiweb.net/)
-* [Brave](https://brave.com/fr/)
 * [Calibre](https://calibre-ebook.com/download)
 * [Cryptomator](https://cryptomator.org/downloads/)
 * [Deemix](https://deemix.app/gui) - [Reddit Deemix](https://www.reddit.com/r/deemix/)
@@ -34,8 +39,6 @@ Logiciels Windows :
 * [Keeweb](https://keeweb.info/)
 * [pCloud](https://www.pcloud.com/fr/download-free-online-cloud-file-storage.html)
 * [Mail spring](https://github.com/Foundry376/Mailspring)
-* [Visual studio studio](https://apps.microsoft.com/store/detail/XP9KHM4BK9FZ7Q)
-* [VlC](https://www.videolan.org/index.fr.html)
 * Zotero, références bibliographiques.
 
 Bureautique :
