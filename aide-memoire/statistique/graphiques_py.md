@@ -145,16 +145,16 @@ Les dataframe pandas intégrent directement des représentations graphiques.
 
 `data.plot( <x=>, <y=< )`
 Type de graphique :
-* `area()`
+* `area()` 
 * `density()`
-* `line()`
-* `pie()`
-* `bar()`
-* `barh()`
+* `line()` lignes.
+* `pie()` camembert.
+* `bar()` diagramme en barre.
+* `barh()` diagramme en barre horizontal : `.sort_values()` pour classer les données. 
 	* Paramètres :
 		* `stacked=True` empilé.
-* `scatter()`
-* `hist()`
+* `scatter()` nuage de points.
+* `hist()` histogramme.
 
 Paramètres : 
 *  `legend=False` enlever la légende
