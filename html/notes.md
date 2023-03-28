@@ -37,8 +37,9 @@ Logiciels Windows :
 * [Harmonoid Music](https://harmonoid.com/)
 * [Google drive](https://www.google.com/drive/download/)
 * [Keeweb](https://keeweb.info/)
-* [pCloud](https://www.pcloud.com/fr/download-free-online-cloud-file-storage.html)
 * [Mail spring](https://github.com/Foundry376/Mailspring)
+* [Miktex (latex)](https://miktex.org/)
+* [pCloud](https://www.pcloud.com/fr/download-free-online-cloud-file-storage.html)
 * Zotero, références bibliographiques.
 
 Bureautique :
