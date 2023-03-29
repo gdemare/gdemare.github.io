@@ -23,10 +23,9 @@ Package `import pandas as pd`
 
 * `donnee.dtypes` renvoie le type de données de chaque colonne.
 * `donnee.index` nom des lignes.
-* `donnee.columns` nom des colones.
+* `donnee.columns` nom des colones (`data.columns.values` pour ne récupérer que les valeurs et pour renommer les colonnes) .
 * `donnee.head()` renvoie les premières lignes du pandaframe.
 * `donnee.describe()` tableau récapitulatif des données (moyenne, médiane, écart type,...). Les valeurs manquantes ne sont pas prises en compte.
-
 * `stack(niveau)` modifier les niveaux de données.
 
 ### Déclarer un tableau Pandas
@@ -54,9 +53,9 @@ Fonctions :
 * `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable.
 * `.fillna(0)` remplacer les valeurs manquantes.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
-* `.rename({"ancien" : "nouveau"}, inplace=True)` renommer une colonne.
+* `.rename({"ancien" : "nouveau"}, inplace=True)` renommer une colonne (ou `.columns.values = [col1, col2]`).
 Paramètres :
-* `inplace=True` pour remplacer les données.
+	* `inplace=True` pour remplacer les données.
 
 Autres fonctions :
 * `.apply(fonction, axis=1)` appliquer une fonction sur les données. Rmq pour ajouter la colonne il faut passer par `tableau["colonne"] = `.
