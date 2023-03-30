@@ -12,12 +12,11 @@ Indicateurs :
 * Centroïde
 * Espérance-maximisation
 
+On parle de standarisation des données et non de normalisation lorsque les données sont centrées (moins la moyenne) et réduite (diviser par l'écart type).
+
 # Méthodes
 
-* Construire des groupes d'individus similaire en fonction d'une variable d'intérêt non triviale
-
 Covariance est l'espérance du produit de X-E(X)*Y-E(Y)
-
 
 ### Etape d'un projet d'apprentissage autonatique
 
@@ -29,14 +28,16 @@ Covariance est l'espérance du produit de X-E(X)*Y-E(Y)
 6. Evaluer
 7. Exporter le modèle.
 
-## utilisé des méthodes
+## Méthodes
 
-### supervisé
+### Supervisées
 
 Prédiction (classification et régression)
 
-### non supervisé
+### Non supervisées
+
+Construire des groupes d'individus similaire en fonction d'une variable d'intérêt non triviale.
 
 * Cluestering regrouper les données pour trouver des stuctures de données.
 * Découvrir des strucutres de données, résumé les données, détecter des individus atypiques.
-* réduction de dimension, estimation de la densité
+* Réduction de dimension, estimation de la densité
