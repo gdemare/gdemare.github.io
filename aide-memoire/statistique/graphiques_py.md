@@ -87,6 +87,7 @@ Graphiques :
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
 * `boxplot()` boxplot.
+* `scatterplot(comm, x='CTR-PTROTAC', y='P3')` nuage de points.
 
 ### Superposer deux graphiques
 
@@ -111,7 +112,7 @@ g.map(sns.histplot, "% ACN", binwidth=2).set(yscale = 'log')
 Paramètres : 
 * `linestyle=':'` type de lignes (`:` pointillé, `--` tiré ).
 
-### transformation des axes
+### Transformer des axes
 
 `graph.set_xscale()` changer le type d'axes (type : `log`, `symlog`, ...).
 `graph.get_xticklabels()` récupérer la valeur des axes.
