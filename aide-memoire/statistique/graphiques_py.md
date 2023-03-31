@@ -86,7 +86,7 @@ Graphiques :
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
-* `boxplot()` boxplot.
+* `boxplot(x=valeur, y=groupe)` boxplot.
 * `scatterplot(comm, x='CTR-PTROTAC', y='P3')` nuage de points.
 
 ### Superposer deux graphiques
@@ -99,7 +99,7 @@ ax2 = ax1.twinx()
 sns.lineplot(x=x, y=y, color = 'r', ax= ax2)
 ```
 
-### faire plusieurs graphique en fonction d'une condition
+### Faire plusieurs graphiques en fonction d'une condition
 
 ```
 g = sns.FacetGrid(donnee, col="condition")
