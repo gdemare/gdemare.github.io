@@ -39,7 +39,20 @@ git clone https://github.com/jkbr/httpie.git
 sudo python setup.py install
 ```
 
-`sys.path.append('/path/to/whatever')` ajouter une classe depuis un script.
+## Créer un module et l'impoter
+
+```
+	 ____ 'module1.py' 		
+dossier_|
+	|____ 'module2.py'
+```
+
+Pour importer les fichiers class dans python :
+
+```
+sys.path.append('chemin/dossier')
+from fichier import class
+``` 
 
 #### MàJ des packages
 
