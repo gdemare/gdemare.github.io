@@ -86,6 +86,7 @@ Graphiques :
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
+* `boxplot()` boxplot.
 
 ### Superposer deux graphiques
 
