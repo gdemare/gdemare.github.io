@@ -39,6 +39,8 @@ git clone https://github.com/jkbr/httpie.git
 sudo python setup.py install
 ```
 
+`sys.path.append('/path/to/whatever')` ajouter une classe depuis un script.
+
 #### MàJ des packages
 
 * `pip list --outdated` liste des packages avec des màj disponibles.
