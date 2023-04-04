@@ -97,7 +97,7 @@ writer = pd.ExcelWriter(fichier, engine = 'xlsxwriter')
 ### Tableau croisé et modification de variables
 
 * `pd.crosstab( ligne, colonne)` faire un tableau croisé avec deux variables avec la possibilité de calculer la proportion.
-	* `normalize='index'` calcul les fréquences.	
+	* `normalize='index'` calcul les fréquences.
 * `pivot(data, columns='country', values='quantity', index='fruit')` faire un tableau crois sans fonction d'aggrégation. Il faut s'assurer que la transformation ne permet d'obtenir d'une ligne par index. Paramètres :
 	* ` margins = True, margins_name='Total'`ajouter une ligne totale.
 * `pivot_table(data, columns='country', values='quantity', index='fruit', aggfunc='sum')` faire un tableau croisé avec fonction d'aggrégation.
