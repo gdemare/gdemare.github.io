@@ -12,5 +12,7 @@
 ## Deux distributions
 
 * `scipy.stats.wilcoxon(X1, X2)` test de Wilcoxon.
+Sortie :
+*  `.pvalue`
 
 ## Corrélation
