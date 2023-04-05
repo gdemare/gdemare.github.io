@@ -223,6 +223,10 @@ Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela 
 
 * `output_list = [print(a, b) for a, b in list( comparaison.columns )]` appliquer une fonction à une liste.
 
+
+Library : `from itertools import combinations`
+`combinations(comparatif.columns, 2)`  combinaison d'éléments d'une liste sans redondance
+
 #### La boucle tant que
 
 Les instructions sont répétées jusqu'a que ce soit la condition devienne fausse.
@@ -621,4 +625,4 @@ Expoter un fichier ipynl en hmtl ou en pdf :
 Paramètres :
 * `--to html` en html.
 * `--no-input` masquer le code.
-* ` --template theme` avec un theme.
+* ` --template theme` avec un thème.
