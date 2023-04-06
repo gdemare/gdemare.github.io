@@ -122,6 +122,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 |---|---|
 | `.mean()` | moyenne |
 | `.median()` | médiane |
+| `.std()` | écart type |
 | `.size()` | nombre de lignes |
 | `.count()` | nombre de lignes |
 | `.value_counts()` | tableau effecitf par modalité |
