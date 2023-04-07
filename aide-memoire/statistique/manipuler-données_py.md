@@ -77,6 +77,8 @@ def present_fct(row):
 
 * `pd.read_csv(fichier, sep="\t")` lire un fichier csv.
 * `pd.read_excel(fichier, sheet_name=1/feuille)` lire un fichier excel.
+* `pd.ExcelFile( excel )` sinon pour importer un fichier et récupérer des informations.
+	* `.sheet_names` renvoie le nom des feuilles d'un fichier Excel. 
 
 ### Exporter 
 
