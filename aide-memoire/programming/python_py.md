@@ -33,7 +33,12 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 NB : il est possible de stocker le nom des library à utiliser dans un fichier.
 
-Cloner un dossier github : 
+#### MàJ des packages
+
+* `pip list --outdated` liste des packages avec des màj disponibles.
+* `pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}` maj en passant par le PowerShell.
+
+#### Cloner un dossier github : 
 ```
 git clone https://github.com/jkbr/httpie.git
 sudo python setup.py install
@@ -53,11 +58,6 @@ Pour importer les fichiers class dans python :
 sys.path.append('chemin/dossier')
 from fichier import class
 ``` 
-
-#### MàJ des packages
-
-* `pip list --outdated` liste des packages avec des màj disponibles.
-* `pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}` maj en passant par le PowerShell.
 
 ## Instructions de bases
 
