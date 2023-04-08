@@ -29,7 +29,7 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 ### Installer un module
 
 * `pip install package` installer une bibliothèque. Paramètre
- * `-r package1, package2` installer plusieurs librarys en une seule fois. Pour créer l'installation d'un programme python, il est possible de créer un fichier `requirements.txt` qui contient la liste des library. Il suffit d'exécuter `pip install -r requirements.txt` pour installer tous les modules.
+	* `-r package1, package2` installer plusieurs librarys en une seule fois. Pour créer l'installation d'un programme python, il est possible de créer un fichier `requirements.txt` qui contient la liste des library. Il suffit d'exécuter `pip install -r requirements.txt` pour installer tous les modules.
 
 NB : il est possible de stocker le nom des library à utiliser dans un fichier.
 
