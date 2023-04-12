@@ -136,7 +136,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 | `.std()` | écart type |
 | `.size()` | nombre de lignes |
 | `.count()` | nombre de lignes |
-| `.value_counts()` | tableau effecitf par modalité |
+| `.value_counts()` | tableau effecitf par modalité `normalize=True` renvoie les % |
 
 #### Fonction pandas
 
