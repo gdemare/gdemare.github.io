@@ -81,6 +81,7 @@ Graphiques :
 * `heatmap(protfreq, annot=True)` matrice de température. Paramètres :
 	* `annot_kws={"fontsize":8}` taille des annotations.
 	* `fmt='.0f'` changer le format des nombres (0 indique le nbre de décimals).
+* `clustermap()`
 * `histplot(vecteur)` afficher la distribution d'un vecteur quantitatif.
 	* ` multiple="stack"`empiler les valeurs avec `hue="var"`.
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
