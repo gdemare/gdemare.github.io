@@ -18,6 +18,13 @@ Exemple : `map( ma_fonction, liste )` la fonction est sans parenthèse.
 | `list()` | convertie en liste |
 | `variable.decode()` | de bytes à normale (byte est signalé par un b avant la valeur.) |
 
+### Standariser les données 
+
+`import sklearn.preprocessing`
+
+* `preprocessing.StandardScaler().fit_transform(comparatif)` standariser les données.
+* `preprocessing.Normalizer(norm='l1').fit_transform(data)` normaliser les données.
+
 ## Pandas (data frame)
 Package `import pandas as pd`
 
