@@ -22,7 +22,7 @@ Exemple : `map( ma_fonction, liste )` la fonction est sans parenthèse.
 
 `import sklearn.preprocessing`
 
-* `preprocessing.StandardScaler().fit_transform(comparatif)` standariser les données.
+* `preprocessing.StandardScaler().fit_transform(comparatif)` standariser les données _Attention la standarisation a lieu par colonne (transposer)_ .
 * `preprocessing.Normalizer(norm='l1').fit_transform(data)` normaliser les données.
 
 ## Pandas (data frame)
