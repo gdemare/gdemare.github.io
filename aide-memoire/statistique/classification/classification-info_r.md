@@ -41,8 +41,6 @@ Option type en fonction du type de modèle
  
 ## Comparer la performance de modèles
 
-[R](https://github.com/gdemare/aide-memoire/blob/master/methodes/r/modele-classification.md).
-
 ### Courbe de (Receiver Operating Characteristic)
 
 ```
