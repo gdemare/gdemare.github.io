@@ -29,6 +29,8 @@
 ## Guides
 
 * [A Practical Beginner’s Guide to Proteomics](https://jessegmeyerlab.github.io/proteomics-tutorial)
+* [Proteomics data analysis](https://pnnl-comp-mass-spec.github.io/proteomics-data-analysis-tutorial/index.html)
+* [Introduction to analysing microbial proteomics data in R]https://microsud.github.io/Bacterial-Proteomics-in-R/tutorial_main_doc.html#KEGG_metabolic_map
 
 ## R
 * [Package R for proteomics](https://lgatto.github.io/RforProteomics/news/index.html)
