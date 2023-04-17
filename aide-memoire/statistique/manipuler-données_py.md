@@ -137,6 +137,7 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 | `.size()` | nombre de lignes |
 | `.count()` | nombre de lignes |
 | `.value_counts()` | tableau effecitf par modalité `normalize=True` renvoie les % |
+| `nunique()` | nbre de valeurs unques |
 
 #### Fonction pandas
 
