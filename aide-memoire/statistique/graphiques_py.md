@@ -49,6 +49,12 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 * `pl.ylabel(texte)` libellé axe des ordonnées.
 * `pl.title(titre)` ajouter un titre.
 * `pl.text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
+* `pl.legend(loc='upper right')` position de la légende.
+
+Masquer un axe :
+```ax = pl.gca()
+ax.get_yaxis().set_visible(False)
+```
 
 ### Camembert 
 
