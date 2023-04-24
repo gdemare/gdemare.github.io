@@ -73,6 +73,7 @@ ax.get_yaxis().set_visible(False)
 
 * `plt.boxplot(vecteur)` boxplot.
 * `pl.matshow(mat_cor)` matrice de corrélation.
+* `pl.fill_between(valeur_moyenne, valeur_dessus, valeur_dessous, color='b', alpha=0.2)` ajouter un intervalle d'erreur.
 
 ## Seaborn
 
