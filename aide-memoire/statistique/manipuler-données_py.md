@@ -64,7 +64,7 @@ Fonctions :
 * `.rename({"ancien" : "nouveau"}, inplace=True)` renommer une colonne (ou `.columns.values = [col1, col2]`).
 Paramètres :
 	* `inplace=True` pour remplacer les données.
-* `.set_index('colonne', inplace=True)` mettre une colonne comme index.
+	* `.set_index('colonne', inplace=True)` mettre une colonne comme index.
 
 Autres fonctions :
 * `.apply(fonction, axis=1)` appliquer une fonction sur les données. Rmq pour ajouter la colonne il faut passer par `tableau["colonne"] = `.
@@ -77,6 +77,11 @@ def present_fct(row):
         value =0
     return value
 ```
+
+#### Les intervalles 
+
+`interval(left, right )`
+intervalle.right/.left récupérer la valeur.
 
 ### Ajouter des individus
 
