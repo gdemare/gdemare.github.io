@@ -21,6 +21,8 @@ Paramètres :
 
 Installer les packages Python [mkdocs](https://www.mkdocs.org/) et [mkdocs material](https://squidfunk.github.io/mkdocs-material/)
 
+`mkdocs new my-project` créer un projet.
+
 Le fichier de configuation est `mkdocs.yml` :
 ```
 site_name: Mes notes
