@@ -19,27 +19,28 @@ Comparatif des écouteurs : [AudioBudjet](https://audiobudget.com/leaderboard/ie
 * [Science relationnelle](https://raw.githack.com/gdemare/science/master/index.html)
 
 Disponible sur le Window Store :
-* Brave
+* Brave, navigateur internet basé sur Chrome avec un bloqueur de pub intégré.
 * Firefox
-* Visual Studio Code
-* Vlc
+* Visual Studio Code, environnement de programmation.
+* Vlc, lecteur media.
+* [Fluent search](https://www.fluentsearch.net/), log
 
 Logiciels Windows :
-* [Adguard](https://adguard.com/en/download.html)
-* [Anki](https://apps.ankiweb.net/)
-* [Calibre](https://calibre-ebook.com/download)
-* [Cryptomator](https://cryptomator.org/downloads/)
-* [Deemix](https://deemix.app/gui) - [Reddit Deemix](https://www.reddit.com/r/deemix/)
+* [Adguard](https://adguard.com/en/download.html), bloqueur de pubs indispensables.
+* [Anki](https://apps.ankiweb.net/), cartes pour l'apprentissage par répétition.
+* [Calibre](https://calibre-ebook.com/download), gérer sa bibliothèque numérique.
+* [Cryptomator](https://cryptomator.org/downloads/), pour chiffrer ses données numériques sur les cloud.
+* [Deemix](https://deemix.app/gui) - [Reddit Deemix](https://www.reddit.com/r/deemix/), télécharger des musiques depuis deezer.
 * [Dropbox](https://www.dropbox.com/)
-* [Fluent reader](https://github.com/yang991178/fluent-reader/releases)
-* [Fluent search](https://www.fluentsearch.net/)
-* [FreeFileSync](https://freefilesync.org/download.php)
-* [Harmonoid Music](https://harmonoid.com/)
+* [Fluent reader](https://github.com/yang991178/fluent-reader/releases), aggrégateur de flux rss.
+* [FreeFileSync](https://freefilesync.org/download.php), synchroniser des répertoires et des fichiers.
+* [Harmonoid Music](https://harmonoid.com/), lecteur audio avec une interface agréable.
 * [Google drive](https://www.google.com/drive/download/)
-* [Keeweb](https://keeweb.info/)
-* [Mail spring](https://github.com/Foundry376/Mailspring)
+* [Keeweb](https://keeweb.info/), garde
+* [Mail spring](https://github.com/Foundry376/Mailspring), 
 * [Miktex (latex)](https://miktex.org/)
 * [pCloud](https://www.pcloud.com/fr/download-free-online-cloud-file-storage.html)
+* [pandoc](https://pandoc.org/) convertir des fichiers en word, markdown, html.
 * Zotero, références bibliographiques.
 
 Bureautique :
