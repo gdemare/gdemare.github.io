@@ -62,6 +62,8 @@ Bureautique :
 * [F-droid](https://f-droid.org/)
 Anysoftkeyboard, Bromite, NewPipe, Auxio, Retro music, Geometric weather
 * Google TV : pour youtube sans pub [SmartTubeNext](https://github.com/yuliskov/SmartTubeNext#readme)
+* Lawnchair, launcher android.
+* ToDark, gestionnaire de taches.
 
 ### Sécurité
 
