@@ -9,7 +9,7 @@ Convertir du markdown en word, html, pdf.
 Expoter un fichier ipynl en hmtl ou en pdf :
 `jupyter nbconvert --to pdf --no-input fichier.ipynb`
 
-Paramètres :
+Paramètres :  
 * `--to html` en html.
 * `--no-input` masquer le code.
 * ` --template theme` avec un thème.
@@ -65,6 +65,8 @@ Les fichiers de documentations sont à mettre dans le dossier `docs`.
 
 
 ### Les boites
+
+Attentin, il faut que la tabulation mesure 4 espaces.
 
 * `!!!` pour une box afficher
 * `???` pour une box retrécie.
