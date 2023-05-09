@@ -4,6 +4,9 @@ Convertir du markdown en word, html, pdf.
 
 `pandoc fichier -o sortie.docx`
 
+grid_tables
+`-t markdown-multiline_tables-grid_tables` elimier des extensison dans les convertions.
+
 ## Nbconvert
 
 Expoter un fichier ipynl en hmtl ou en pdf :
