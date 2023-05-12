@@ -98,7 +98,8 @@ Graphiques :
 * `barplot()` diagramme en barre.
 * `boxplot(x=valeur, y=groupe)` boxplot.
 * `scatterplot(comm, x='CTR-PTROTAC', y='P3')` nuage de points.
-* `lineplot(x=, y=)` lignes.
+	* `s=1` taille des points. 
+* `lineplot(x=, y=)` lignes.	
 
 ### Superposer deux graphiques
 
