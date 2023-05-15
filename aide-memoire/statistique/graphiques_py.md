@@ -43,12 +43,13 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 
 * `pl.grid(True)` afficher une grille.
 * `pl.xticks(rotation=45)` changer la rotation des étiquettes de données.
-* `pl.yscale('log')` passer en échelle logarithmique. 
+* `pl.yscale('log')` passer en échelle logarithmique. paramètre :
+	* `base=2` changer la base
 
 ### Etiquettes, libellés et titre
 
-* `pl.xlabel(texte)` libellé axe des abcisses.
-* `pl.ylabel(texte)` libellé axe des ordonnées.
+* `pl.xlabel(texte)` libellés de l'axe des abcisses.
+* `pl.ylabel(texte)` libellés de l'axe des ordonnées.
 * `pl.title(titre)` ajouter un titre.
 * `pl.text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
 * `pl.legend(loc='upper right')` position de la légende (légende à l'extérieur du graphique `plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)`).
