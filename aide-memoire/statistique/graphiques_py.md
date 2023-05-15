@@ -52,6 +52,8 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 * `pl.title(titre)` ajouter un titre.
 * `pl.text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
 * `pl.legend(loc='upper right')` position de la légende (légende à l'extérieur du graphique `plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)`).
+* `pl.grid()` afficher une grille.
+
 
 Masquer un axe :
 ```ax = pl.gca()
