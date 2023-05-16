@@ -1,11 +1,11 @@
-* `fig = plt.figure(figsize=(25,20))`  changer la taille du graphique.
-* `fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15,5))` sous diviser un graphique en plusieurs cases ou superposer deux graphiques (sans nrows/ncols).
+* `fig = pl.figure(figsize=(25,20))`  changer la taille du graphique.
+* `fig, axes = pl.subplots(nrows=1, ncols=3, figsize=(15,5))` sous diviser un graphique en plusieurs cases ou superposer deux graphiques (sans nrows/ncols).
 Attention dans ce cas indiquer l'argument : `ax = axes[i]` lorsqu'il n'y a qu'une ligne.
 
 #### Ajouter plusieurs graphiques sur une image
 
 ```
-fig, axes = plt.subplots(nrows = 2, ncols=1 )
+fig, axes = pl.subplots(nrows = 2, ncols=1 )
 graph_sans = pd.crosstab( data['ligne'], data['colonne'], normalize='index').plot.bar(stacked=True, ax= axes[0])
 graph_avec = pd.crosstab( data['ligne'], data['colonne'], normalize='index').plot.bar(stacked=True, ax= axes[1])
 ```
@@ -13,7 +13,7 @@ graph_avec = pd.crosstab( data['ligne'], data['colonne'], normalize='index').plo
 ## Graphique avec pyplot
 
 `from matplotlib import pyplot as pl`
-à la fin, on peut forcer l'affichage avec `plt.show()`
+à la fin, on peut forcer l'affichage avec `pl.show()`
 
 Utiliser le style de seaborn : `sns.set()`
 
@@ -52,7 +52,8 @@ Exemple : `ro--` points rouges reliés par des traits en pointillé.
 * `pl.ylabel(texte)` libellés de l'axe des ordonnées.
 * `pl.title(titre)` ajouter un titre.
 * `pl.text(x, y, texte)` placer du texte n'importe ou dans la fenêtre.
-* `pl.legend(loc='upper right')` position de la légende (légende à l'extérieur du graphique `plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)`).
+* `pl.legend(loc='upper right')` position de la légende (légende à l'extérieur du graphique `pl.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)`).
+	* `title="titre"` titre de la box.
 * `pl.grid()` afficher une grille.
 
 
@@ -71,12 +72,12 @@ ax.get_yaxis().set_visible(False)
 
 ### Ajouter plusieurs graphiques à une seule image
 
-* `plt.figure('train', (largeur, hauteur))` créer une image subdiviser.
+* `pl.figure('train', (largeur, hauteur))` créer une image subdiviser.
 * `subplot(nb_lignes, nb_col, i+1)` ajouter un graphique à l'image. Les  positions sont numérotées à partir de 1.
 
 ### Autres
 
-* `plt.boxplot(vecteur)` boxplot.
+* `pl.boxplot(vecteur)` boxplot.
 * `pl.matshow(mat_cor)` matrice de corrélation.
 * `pl.fill_between(valeur_moyenne, valeur_dessus, valeur_dessous, color='b', alpha=0.2)` ajouter un intervalle d'erreur.
 
