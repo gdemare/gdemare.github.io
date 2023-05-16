@@ -139,6 +139,7 @@ Paramètres :
 * `graph.set(xlabel='x-axis label', ylabel='y-axis label')` titre des deux axes.
 * `graph.set_title("Colors vs Values")` ajouter un titre.
 * `graph.set_xticklabels( fig.get_xticklabels(), rotation=45, horizontalalignment='right')` changer la rotation des libellés.
+* `pl.xticks(valeur, libellé)` changer les libellés des axes.
 
 ## Enregister un graphique 
 
