@@ -61,7 +61,7 @@ Fonctions :
 * `pd.qcut(variable, nb_groupe)` discrétiser une variable en créant des groupes d'effectifs uniformes.
 * `.fillna(0)` remplacer les valeurs manquantes.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
-* `.rename({"ancien" : "nouveau"}, inplace=True)` renommer une colonne (ou `.columns.values = [col1, col2]`).
+* `.rename(columns=/index={"ancien" : "nouveau"})` renommer une colonne (ou `.columns.values = [col1, col2]`).
 Paramètres :
 	* `inplace=True` pour remplacer les données.
 	* `.set_index('colonne', inplace=True)` mettre une colonne comme index.
