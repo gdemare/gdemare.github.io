@@ -563,6 +563,7 @@ ou `.askopenfilename()`
 
 Library `yt-dlp` avec `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
 * `--merge-output-format mkv --remux mkv` convertir le fichier en mkv. Cela nécessite de télécharger ffmpeg et de déclarer la variable environnement /bin.
+* `youtube-dl --extract-audio --audio-format mp3 <video URL>` télécharger le son de la vidéo en mp3.
 
 ## Selenium
 
