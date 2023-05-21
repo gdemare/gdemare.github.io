@@ -1,8 +1,9 @@
 Extension `fichier.ps1`
+Actvier l'exécution de scripts PowerShell dans Windows (admin) : `set-executionpolicy unrestricted`
 
 ## Opérateur 
 
-`instruction1 | instruction2 ` rediriger la sortie de l'instruction 1 vers la 2.
+`instruction1 | instruction2` rediriger la sortie de l'instruction 1 vers la 2.
 
 ## Les boucles et les conditions
 
