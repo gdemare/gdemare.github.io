@@ -128,6 +128,14 @@ g.map(sns.histplot, "% ACN", binwidth=2).set(yscale = 'log')
 Paramètres : 
 * `linestyle=':'` type de lignes (`:` pointillé, `--` tiré ).
 
+### Ajouter les étiquettes de valeurs sur le graphique 
+
+```
+bars = sns.graph(...)
+for container in graph1.containers:
+    bars.bar_label(container)
+```
+
 ### Transformer des axes
 
 `graph.set_xscale()` changer le type d'axes (type : `log`, `symlog`, ...).
