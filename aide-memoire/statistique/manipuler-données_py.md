@@ -35,6 +35,12 @@ Package `import pandas as pd`
 * `donnee.describe()` tableau récapitulatif des données (moyenne, médiane, écart type,...). Les valeurs manquantes ne sont pas prises en compte.
 * `stack(niveau)` modifier les niveaux de données.
 
+créer un jeu de données aléatoire.
+```
+index = [ np.random.randint(0,len(data)) for i in range(5000)]
+export = data.iloc[ index,: ]
+```
+
 ### Déclarer un tableau Pandas
 
 * `pd.DataFrame({ "col1" : valeurs, 'col2' : valeurs})` créer un data frame. Vide lorsqu'il n'y a pas d'arguments. Paramètres :
