@@ -226,7 +226,8 @@ Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela 
 
 Library : `from itertools import combinations`
 
-* `combinations(comparatif.columns, 2)`  combinaison d'éléments d'une liste sans redondance
+* `combinations( [1, 2, 3], 2)`  combinaison d'éléments d'une liste sans redondance (il n'y aura pas la valeur '2, 2').
+* `combinations_with_replacement( [1, 2, 3], 2)` combinaison avec redondance (il y aura la valeur '2, 2').
 
 #### La boucle tant que
 
