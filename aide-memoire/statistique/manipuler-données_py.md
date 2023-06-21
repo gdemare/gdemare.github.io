@@ -48,6 +48,7 @@ export = data.iloc[ index,: ]
 	* `column= nom_colonnes`
 * `dataframe.astype({'Survived': 'float'})` déclarer (à vérif) ou changer le type de variable d'un data frame.
 * `data = pd.DataFrame(columns = ['chemin', 'fichier', 'extension'] )` créer un dataframe vide.
+* `data_copy = data.copy()` copier un dataframe dans une autre variable. Attention sinon cela créer des dataframes liés.
 
 ### Sélectionner et extraire des données
 
