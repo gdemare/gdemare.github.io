@@ -130,6 +130,8 @@ Argument `aggfunc` :
 * `tableau_croise.reset_index()` Transformer un tableau croisé en tableau.
 * `melt(data, id_vars='fruit', value_vars=colonnes)` transformer plusieurs variables en une seule.
 
+* `columns.get_level_values(level)` récupérer les valeurs de l'index dans le cas de plusieurs sous catégories.
+
 ### Ajouter une variable
 
 * `data["nouvelle"] = valeur` ajouter directement.
