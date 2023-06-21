@@ -12,6 +12,7 @@ fichiers = [
 { chemin: 'database/talend', general: 1, r: 0, sas:0, py:0},
 { chemin: 'informatique/autres-programmes', general: 1, r: 0, sas:0, py:0},
 { chemin: 'informatique/dns', general: 1, r: 0, sas:0, py:0},
+{ chemin: 'informatique/premiere-pro', general: 1, r: 0, sas:0, py:0},
 { chemin: 'microsoft/batch', general: 1, r: 0, sas:0, py:0},
 { chemin: 'microsoft/excel', general: 1, r: 0, sas:0, py:0},
 { chemin: 'microsoft/outlook', general: 1, r: 0, sas:0, py:0},
