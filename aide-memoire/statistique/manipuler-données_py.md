@@ -130,6 +130,8 @@ Argument `aggfunc` :
 * `tableau_croise.reset_index()` Transformer un tableau croisé en tableau.
 * `melt(data, id_vars='fruit', value_vars=colonnes)` transformer plusieurs variables en une seule.
 
+* `columns.get_level_values(level)` récupérer les valeurs de l'index dans le cas de plusieurs sous catégories.
+
 ### Ajouter une variable
 
 * `data["nouvelle"] = valeur` ajouter directement.
@@ -177,6 +179,11 @@ Paramètres :
 	* `na=none` (False)
 * `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition. S'il y a plusieurs conditions, il faut les mettre entre parenthèses.
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
+
+Vérifier les propriétés d'une colonne :
+
+* `pd.api.types.is_numeric_dtype(colonne)` c'est numériques ?
+* `pd.api.types.is_string_dtype` c'est un chaine de caractère ?
 
 ### Graphiques directement depuis pandas
 
