@@ -34,3 +34,26 @@ st.plotly_chart( acp_fig )
 
 pd.api.types.is_numeric_dtype
 is_string_dtype
+
+px.bar(data_canada, x='year', y='pop') diagramme en barre la fonction counte le nombre de lignes.
+
+columns.get_level_values(level) récupérer les valeurs de l'index.
+
+Ajouter un panneau qui se déplit :
+with st.expander("See explanation"):
+    st.write(\"\"\"
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    \"\"\")
+    st.image("https://static.streamlit.io/examples/dice.jpg")
+
+
+st.divider() ajotue run barre horizontale.
+
+px.imshow([[1, 20, 30],
+                 [20, 1, 60],
+                 [30, 60, 1]]) heatmap.
+
+
+`st.multiselect(text, valeur possible, valeur par défaut)`
