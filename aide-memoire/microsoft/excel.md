@@ -128,3 +128,7 @@ Il faut calculer la taille des classes (abscisses).
 *	2 sur deux échantillons de variance égale (homoscédastique)
 *	3 sur deux échantillons de variances différentes (hétéroscédastique)
 
+# Nbre aléatoires
+
+`ALEA.ENTRE.BORNES(borne_inf, borne_sup)` génére un nombre aléatoire entre deux nombres.
+
