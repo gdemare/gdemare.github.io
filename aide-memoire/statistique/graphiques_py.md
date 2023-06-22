@@ -100,6 +100,7 @@ Graphiques :
 * `ecdfplot(data, x='var')` cumule le nombre d'effectifs.
    *  `complementary=True` inverser le cumule.
 * `barplot()` diagramme en barre.
+	* `orient=v/h` horizontal, vertical. 	
 * `boxplot(x=valeur, y=groupe)` boxplot.
 * `scatterplot(comm, x='CTR-PTROTAC', y='P3')` nuage de points.
 	* `s=1` taille des points. 
