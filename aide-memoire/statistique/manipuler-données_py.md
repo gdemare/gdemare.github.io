@@ -210,6 +210,7 @@ Library `import matplotlib.pyplot as plt`
 	* renvoie la diagonale.
 * `np.reshape( donnee, (dimension) )`
  * `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
+* `np.unique()` renvoie les valeurs uniques.
 
 ### Opération sur les valeurs
 
