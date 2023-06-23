@@ -211,6 +211,7 @@ Library `import matplotlib.pyplot as plt`
 * `np.reshape( donnee, (dimension) )`
  * `order='C'` préciser la facon de réordonnées les éléments. `'F'` 
 * `np.unique()` renvoie les valeurs uniques.
+* `np.sign(nbre)` renvoie le signe.
 
 ### Opération sur les valeurs
 
