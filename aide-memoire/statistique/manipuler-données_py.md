@@ -179,7 +179,9 @@ Paramètres :
 	* `na=none` (False)
 * `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition. S'il y a plusieurs conditions, il faut les mettre entre parenthèses.
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
-
+* `data.nsmallest(30, 'p value')` top des valeurs les plus faibles.
+* `data.nlargest(30, 'p value')` top des valeurs les plus élevées.
+   
 Vérifier les propriétés d'une colonne :
 
 * `pd.api.types.is_numeric_dtype(colonne)` c'est numériques ?
