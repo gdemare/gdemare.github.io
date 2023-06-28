@@ -104,7 +104,7 @@ intervalle.right/.left récupérer la valeur.
 ### Exporter 
 
 * `tableau.to_csv('fichier.csv', sep='separateur')` exporter un data en csv.
-* `tableau.to_excel('fichier.xlsx', sheet_name="feuill")` exporter un data en csv.
+* `tableau.to_excel('fichier.xlsx', sheet_name="feuill")` exporter un data en excel.
 
 Paramètres :
 * `index=False` les index.
