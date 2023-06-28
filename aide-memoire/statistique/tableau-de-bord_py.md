@@ -64,6 +64,16 @@ Il faut charge le graphique dans une variable.
 
 `st.download_button(label = 'Download data', data = prc_common_mat.to_csv(), file_name = 'common-percentage.csv')` bouton de téléchargement de ficher.
 
+```
+buffer = io.BytesIO()
+with pd.ExcelWriter(buffer, engine='xlsxwriter') as writer:
+    # Write each dataframe to a different worksheet.
+    prc_common_mat.to_excel(writer, sheet_name='Sheet1', index=False)
+
+download2 = st.download_button(label="Download data as Excel", data=buffer, file_name='large_df.xlsx', mime='application/vnd.ms-excel')
+```
+Bouton pour télécharger un fichier excel.
+
 # Plotly : les graphiques interactifs
 
 `import plotly.express as px`
