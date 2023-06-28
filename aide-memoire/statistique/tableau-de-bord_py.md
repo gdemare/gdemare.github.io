@@ -60,6 +60,10 @@ Il faut charge le graphique dans une variable.
     * `theme=None` 
     * `use_container_width=True` 
 
+### Boutons download
+
+`st.download_button(label = 'Download data', data = prc_common_mat.to_csv(), file_name = 'common-percentage.csv')` bouton de téléchargement de ficher.
+
 # Plotly : les graphiques interactifs
 
 `import plotly.express as px`
