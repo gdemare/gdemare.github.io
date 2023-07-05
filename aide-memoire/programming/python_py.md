@@ -33,6 +33,12 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 NB : il est possible de stocker le nom des library à utiliser dans un fichier.
 
+#### Générer un fichier requirements.txt
+
+package `pipreqs`
+
+`pipreqs /path/to/project` générer le fichier requirements.
+
 #### MàJ des packages
 
 * `pip list --outdated` liste des packages avec des màj disponibles.
