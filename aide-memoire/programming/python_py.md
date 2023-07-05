@@ -35,9 +35,9 @@ NB : il est possible de stocker le nom des library à utiliser dans un fichier.
 
 #### Générer un fichier requirements.txt
 
-package `pipreqs`
+* `pip freeze > requirements.txt`
+* [old] package `pipreqs` avec `pipreqs /path/to/project` générer le fichier requirements.
 
-`pipreqs /path/to/project` générer le fichier requirements.
 
 #### MàJ des packages
 
