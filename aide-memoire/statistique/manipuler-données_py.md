@@ -164,7 +164,7 @@ Paramètres :
 * `pd.merge(gauche, droite, how = type_jointure, on = clé)` joindre deux tables.
 Paramètres : 
 	* `how = inner/left/right/outer/cross`  outer	est union (ou) et inner est intersection (et).
-	* `left_on/righ_on=colonne` id de la jonction.
+	* `left_on/right_on=colonne` id de la jonction.
 	* `left_index/right_index = True/False` si la clée l'index. 
 * `pd.concat([jointure, nvdf])` concaténer deux tableaux avec la même structure. Attention les dataframes sont à déclarer sans "".
 
