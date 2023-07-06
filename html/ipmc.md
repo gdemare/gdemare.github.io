@@ -2,6 +2,7 @@
 
 * [Webmail](https://webmail.ipmc.cnrs.fr)
 * [Janus](https://sesame.cnrs.fr)
+* [Samples webapp](https://samples.streamlit.app/)
 
 ## Python
 
