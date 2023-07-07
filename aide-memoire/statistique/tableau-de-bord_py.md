@@ -24,6 +24,16 @@ Package `streamlit`
 `file = st.file_uploader("Please choose a file")`
 `data = pd.read_excel(file)`
 
+#### importer plusieurs fichiers en même temps
+
+```
+uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
+for uploaded_file in uploaded_files:
+    bytes_data = uploaded_file.read()
+    st.write("filename:", uploaded_file.name)
+    st.write(bytes_data)
+```
+
 #### Panneau dépliant
 
 Ajouter un panneau qui se déplit :
