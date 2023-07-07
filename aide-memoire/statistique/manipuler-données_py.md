@@ -137,7 +137,8 @@ Argument `aggfunc` :
 * `data["nouvelle"] = valeur` ajouter directement.
 * `tableau.assign( nomCol = valeur )` 
 Pour appliquer des fonctions, il faut utiliser la library numpy.
-* `df.insert(position, 'col_name', [value1, value2, value3, ...])` insérer une colonne à une position.
+* `df.insert(position, 'col_name', [value1, value2, value3, ...])` insérer une colonne à une position. Enregistre automatiquement la colonne de faire =.
+* `colonne = pop("columne")` sauvegarde la colonne dans une variable et la supprime du dataframe.
 
 ### Grouper les données
 
