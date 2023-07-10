@@ -178,7 +178,8 @@ Paramètres :
 * `.unique()` liste des valeurs pour une colonne.
 * `value_counts()` permet de renvoyer le nombre de lignes uniques.
 * `colonne.str.contains("mot")` contient le mot. Paramètres :
-	* `na=none` (False)
+	* `na=none` ? valeur a renvoyer lorsque la recherche n'a pas été trouvé ?(False).
+ 	* `case=False` Prendre en compte la caste.	 
 * `data[ data["colonne"] == True ]` filtrer les données en fonction d'une condition. S'il y a plusieurs conditions, il faut les mettre entre parenthèses.
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
 * `data.nsmallest(30, 'p value')` top des valeurs les plus faibles.
