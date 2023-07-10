@@ -82,6 +82,7 @@ Bouton pour télécharger un fichier excel.
 ## Ajouter des éléments
 
 * `fig.add_vline(y=0.9)` ajouter une ligne verticale, horizontale.
+   * `line_color = "red"` changer la couleur de la ligne.
 
 Paramètres généraux :
 
