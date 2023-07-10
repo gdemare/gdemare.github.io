@@ -11,7 +11,6 @@ Package `streamlit`
 
 ## Titre et texte
 
-
 `st.divider()` ajouter run barre horizontale.
 `st.subheader('Raw data')` ajouter un sous titre.
 `st.header('Raw data')` ajouter un sous titre.
@@ -21,43 +20,26 @@ Package `streamlit`
 
 #### importer un fichier 
 
-`file = st.file_uploader("Please choose a file")`
-`data = pd.read_excel(file)`
-
-#### importer plusieurs fichiers en même temps
-
-```
-uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
-for uploaded_file in uploaded_files:
-    bytes_data = uploaded_file.read()
-    st.write("filename:", uploaded_file.name)
-    st.write(bytes_data)
-```
+* `file = st.file_uploader("Please choose a file")` Paramètre : 
+    * `accept_multiple_files=True` importer plusieurs fichiers à la fois. 
 
 #### Panneau dépliant
 
 Ajouter un panneau qui se déplit :
 ```
 with st.expander("See explanation"):
-    st.write(\"\"\"
-        The chart above shows some numbers I picked for you.
-        I rolled actual dice for these, so they're *guaranteed* to
-        be random.
-    \"\"\")
     st.image("https://static.streamlit.io/examples/dice.jpg")
 ```
 
 #### Module pour créer un bouton pour afficher les données 
 
-```
-if st.checkbox('Show raw data'):
-    st.subheader('Raw data')
-    st.write(data)
-```
+* `if st.checkbox('Show raw data'):` case à cocher.
+* 
 
 ### Input 
 
-`st.multiselect(text, valeur possible, valeur par défaut)`
+`st.multiselect(text, valeur possible, valeur par défaut)` zone de sélection.
+`st.text_input(text, value ='')` zone de saisie.
 
 ### Graphique plotly
 
@@ -88,19 +70,24 @@ Bouton pour télécharger un fichier excel.
 
 `import plotly.express as px`
 
-
 * `px.scatter(df, x=, y="sepal_length", color="species")`
 * `px.bar(data_canada, x='year', y='pop')` diagramme en barre la fonction counte le nombre de lignes.
 * `px.imshow(table)` heatmap. Paramètres :
     * `zmin=0, zmax=100` changer le min et le max de la légende.
     * `color_continuous_scale='Greens'` changer la palette de couleur 
 
+* `px.histogram(data, x= data[var_ind], log_y=True )` histogramme.
+
+## Ajouter des éléments
+
+* `fig.add_vline(y=0.9)` ajouter une ligne verticale, horizontale.
+
 Paramètres généraux :
 
 * `title = 'titre'`
 * `color = variable_groupe`
+  `log_y=True` pour passer en echelle logarithmique.
 
 ### Modifier les axes 
 
 `common_heatmap.update_xaxes( tickangle = 50)` changer l'orientation des étiquettes.
-
