@@ -38,8 +38,9 @@ with st.expander("See explanation"):
 
 ### Input 
 
-`st.multiselect(text, valeur possible, valeur par défaut)` zone de sélection.
-`st.text_input(text, value ='')` zone de saisie.
+* `st.multiselect(text, valeur possible, valeur par défaut)` zone de sélection multiples (plusieurs choix).
+* `st.text_input(text, value ='')` zone de saisie.
+* st.selectbox( 'Columns', (data.columns), ) zone de saisie simple.
 
 ### Graphique plotly
 
