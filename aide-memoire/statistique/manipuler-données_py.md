@@ -66,6 +66,7 @@ _RMQ_ `:` permet de sélectionner tous ce qui se trouve avant ou après (ex : `2
 Fonctions :
 * `pd.cut( vecteur, bins=range(0, 150, 10) )` discrétiser une variable en fonction d'intervalles.
 * `pd.qcut(variable, nb_groupe)` discrétiser une variable en créant des groupes d'effectifs uniformes.
+	*  `duplicates ='drop'` supprime les intervalles redondants. 	
 * `.fillna(0)` remplacer les valeurs manquantes.
 * `.drop_duplicates(keep='last')` supprimer les doublons.
 * `.rename(columns=/index={"ancien" : "nouveau"})` renommer une colonne (ou `.columns.values = [col1, col2]`).
