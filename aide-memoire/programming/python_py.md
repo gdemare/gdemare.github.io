@@ -182,6 +182,9 @@ Variable de sortie :
 | `$` | en fin de chaîne |
 | `[0-9]{4}` | Nbre de fois qu'apparait un chiffre |
 | `\w` | équivalent à [a-zA-Z0-9_] |
+| `?` | négation |
+
+* `"[^.?-]*"` tous les caractères avant `-`.
 
 ### Les dates
 Package : `datetime`
