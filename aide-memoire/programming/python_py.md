@@ -175,6 +175,7 @@ Variable de sortie :
 | `\s` (`\S`) | espace |
 | `\d` | chiffre | 
 | `\` | caractère d'échappement |
+| `.` | jocker toute les caractères |
 | `*` | n'importe quel symbole plusieurs fois `[2-6]` séq de 2 à 6 |
 | `[]` | ecrite l'expression à l'intérieur |
 | `^` | position du début |
