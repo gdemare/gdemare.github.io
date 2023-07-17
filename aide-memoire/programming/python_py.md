@@ -217,7 +217,8 @@ else:
 | `is None` | null |
 | `in` | vérifier la présence d'un caractère (appartient). |
 | `.endswith("fin")` | se termine par | 
-| `pd.isna` ou `np.isnan` | valeur manquante |
+| `pd.isna()` ou `np.isnan()` | vérifier si c'est une valeur manquante |
+| `np.nan` | valeur manquante |
 |  `np.invert(vecteur)` | transforme vrai en faux |
 
 Condition : `==`, `>=`, `>`, `!=`
