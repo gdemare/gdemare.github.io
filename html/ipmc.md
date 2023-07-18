@@ -24,7 +24,6 @@
 
 * [Expasy](https://web.expasy.org/protparam)
 * [Recherche de séquences peptidiques](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins)
-* [UniProt](https://www.uniprot.org)
 * [Séquancage - Standford](https://data-science-sequencing.github.io)
 
 ## Guides
@@ -42,3 +41,18 @@
 # non classé
 
 [Homology search](https://molbiol-tools.ca/Homology.htm) page avec le lien de nombreux outils en ligne pour les protéines.
+
+## Uniprot 
+
+Base de données avec des protéines [UniProt](https://www.uniprot.org)
+
+* Mapping ID : convertir des identifiants (ex: id gene associé à l'id protéines).
+
+## ProteoRe
+
+Environnement d'analyse des protéines [ProteoRE Galaxy](https://proteore.org/) 
+
+* Enrichissement de données.
+* Graphiques,...
+
+Il semble y avoir pleins d'outils hyper intéressants et la possiblié de créer des workflows. 
