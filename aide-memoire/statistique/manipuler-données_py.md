@@ -157,8 +157,8 @@ Pour appliquer des fonctions, il faut utiliser la library numpy.
 
 #### Fonction pandas
 
-`.str.rsplit(séparateur)` sépare une chaine de caractères.
-Paramètres :
+* `.str.rsplit(séparateur)` sépare une chaine de caractères. Paramètres :
+
 	* `expand=True` créer une variable pour chaque séparation.
 
 ### Jointure 
