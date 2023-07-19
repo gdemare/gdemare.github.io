@@ -26,6 +26,12 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 `python` démarrer une session python.
 
+## Les environnements en Python
+
+Permet d'installer plusieurs versions différentes sur la meme machine.
+
+* `conda update` mettre a jour tous les packages.
+
 ### Installer un module
 
 * `pip install package` installer une bibliothèque. Paramètre
