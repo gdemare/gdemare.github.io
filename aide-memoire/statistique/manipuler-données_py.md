@@ -184,6 +184,7 @@ Paramètres :
 * `data[ data['colonne'].isin( ['KO_EF_01', 'KO_EF_02', 'KO_EF_03']) ]` in pour les conditions dans un tableau.
 * `data.nsmallest(30, 'p value')` top des valeurs les plus faibles.
 * `data.nlargest(30, 'p value')` top des valeurs les plus élevées.
+* `vecteur.notnull() / .notna()` valeur non nulle 'nan' et  none.
    
 Vérifier les propriétés d'une colonne :
 
