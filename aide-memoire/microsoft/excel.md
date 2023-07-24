@@ -132,3 +132,9 @@ Il faut calculer la taille des classes (abscisses).
 
 `ALEA.ENTRE.BORNES(borne_inf, borne_sup)` génére un nombre aléatoire entre deux nombres.
 
+## Chaine de caractères 
+
+* `SUBSTR(chaîne_de_caractères; début; longueur)` 
+* `NBCAR(texte)` renvoie le nombre de caractères de la chaine.
+* `CHERCHE("ul";texte; )` renvoie la positon de la chaine de caractères.
+* `STXT(texte; position début; nb_caractères)` renvoie la sous chaine de caractères.
