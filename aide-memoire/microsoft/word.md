@@ -22,3 +22,10 @@
 
 1. Appuyez sur Ctrl-A pour sélectionner tout le texte du document.
 2. Appuyez sur F9
+
+### Changer le début de la numérotation des pages 
+
+1. Insérer le numéro des pages.
+2. Dans En-tête et pied de page.
+3. Dans `Numéro des pages` > `Format des numéros des pages`
+4. `Numérotation des pages` > `à parti de `
