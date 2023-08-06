@@ -16,3 +16,9 @@
 
 1. `Fichier > options > vérification`
 2. Cocher `majuscules accentuée en francais`
+
+
+### Actualiser la numérotation des légendes
+
+1. Appuyez sur Ctrl-A pour sélectionner tout le texte du document.
+2. Appuyez sur F9
