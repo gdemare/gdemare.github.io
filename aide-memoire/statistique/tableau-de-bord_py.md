@@ -11,10 +11,13 @@ Package `streamlit`
 
 ## Titre et texte
 
-`st.divider()` ajouter run barre horizontale.
-`st.subheader('Raw data')` ajouter un sous titre.
-`st.header('Raw data')` ajouter un sous titre.
-`st.title('ACP')` titre 
+* `st.divider()` ajouter run barre horizontale.
+* `st.subheader('Raw data')` ajouter un sous titre.
+* `st.header('Raw data')` ajouter un sous titre.
+* `st.title('ACP')` titre.
+* `st.write(data)` afficher un tableau de données.
+* `st.markdown(texte)` afficher du markdown.
+* `st.text(texte)` afficher du texte.
 
 ## Elements de strucutres (boites, menu dépliants)
 
@@ -40,7 +43,7 @@ with st.expander("See explanation"):
 
 * `st.multiselect(text, valeur possible, valeur par défaut)` zone de sélection multiples (plusieurs choix).
 * `st.text_input(text, value ='')` zone de saisie.
-* st.selectbox( 'Columns', (data.columns), ) zone de saisie simple.
+* `st.selectbox( 'Columns', (data.columns), )` zone de saisie simple.
 
 ### Graphique plotly
 
