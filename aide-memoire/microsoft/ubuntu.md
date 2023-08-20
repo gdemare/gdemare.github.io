@@ -15,5 +15,38 @@ Disponibles dans la logitèque Ubuntu :
 * Brave, navigateur internet sans pub.
 * Dropbox
 * Mailspring, client email.
+* Visual code
 * Vlc
-* 
+
+## Ajouter un dépôt
+
+1. Ouvrir `Logiciels et mises à jour`
+2. Autres logiciels et Ajouter, le lien vers le dépôt.
+
+Il est possible de le faire directement en ajouter une ligne au fichier : 
+`/etc/apt/sources.list`
+
+* [dropbox](https://www.dropbox.com/install-linux)
+
+## Ajouter le programme pour personnaliser gnome
+
+### gnome-shell-extension-manager
+
+Extensions a ajouter :
+
+* Clipboard Indicator, pour avoir l'historique des copiés.
+
+## Flathub
+
+[Flathub](https://flathub.org/)
+
+* Cryptomator, logiciel de cryptage spécialisé pour le cloud.
+* Github, pour gérer les fichiers github.
+
+## Logiciel par défaut
+
+* `gnome-text-editor` éditeur de texte.
+
+## Python 
+
+`sudo apt install python3-pip` ajouter pip pour installer les library python.
