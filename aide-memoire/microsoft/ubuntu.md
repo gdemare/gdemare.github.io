@@ -12,7 +12,8 @@
 
 Disponibles dans la logitèque Ubuntu :
 
-* Mailspring
-* Vlc
+* Brave, navigateur internet sans pub.
 * Dropbox
+* Mailspring, client email.
+* Vlc
 * 
