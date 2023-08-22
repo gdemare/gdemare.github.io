@@ -38,15 +38,13 @@ Extensions a ajouter :
 
 ## Flathub
 
-[Flathub](https://flathub.org/)
+[Flathub](https://flathub.org/) logithèque avec les applications en appimage. 
 
 * Cryptomator, logiciel de cryptage spécialisé pour le cloud.
 * Github, pour gérer les fichiers github.
+* Resonance, lecteur musique.
 
 ## Logiciel par défaut
 
 * `gnome-text-editor` éditeur de texte.
 
-## Python 
-
-`sudo apt install python3-pip` ajouter pip pour installer les library python.
