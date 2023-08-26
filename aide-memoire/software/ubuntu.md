@@ -16,7 +16,7 @@ Disponibles dans la logitèque Ubuntu :
 * Dropbox
 * Mailspring, client email.
 * Visual code
-* Vlc
+* Vlc, lecteur multi média.
 
 ## Ajouter un dépôt
 
@@ -42,9 +42,13 @@ Extensions a ajouter :
 
 * Cryptomator, logiciel de cryptage spécialisé pour le cloud.
 * Github, pour gérer les fichiers github.
-* Resonance, lecteur musique.
+* Raisonnance, Music, (gnome music) lecteur musique.
+
+`flatpak install flathub org.gnome.Music` exemple d'installation par le terminal.
 
 ## Logiciel par défaut
 
 * `gnome-text-editor` éditeur de texte.
 
+
+`sudo dpkg -i package` installer un package deb.
