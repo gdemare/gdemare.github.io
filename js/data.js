@@ -75,6 +75,7 @@ fichiers = [
 { chemin: 'statistique/cluestering/clustering-variables', general: 1, r: 0, sas:1, py:0},
 { chemin: 'statistique/cluestering/CAH', general: 1, r: 1, sas:1, py:1},
 { chemin: 'software/word', general: 1, r: 0, sas:0, py:0},
+{ chemin: 'software/github', general: 1, r: 0, sas:0, py:0},
 { chemin: 'software/batch', general: 1, r: 0, sas:0, py:0},
 { chemin: 'software/outlook', general: 1, r: 0, sas:0, py:0},
 { chemin: 'software/premiere-pro', general: 1, r: 0, sas:0, py:0},
