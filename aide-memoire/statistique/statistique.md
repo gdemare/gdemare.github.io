@@ -20,12 +20,12 @@ Covariance est l'espérance du produit de X-E(X)*Y-E(Y)
 
 ### Etape d'un projet d'apprentissage autonatique
 
-1. Pré traitement des données
-2. Constituion d'un jeu d'apprentissage et de test
-3. Choix de l'algorithme
-4. Adapter les paramètres de l'algorithme aux données
-5. Prédire
-6. Evaluer
+1. Pré traitement des données.
+2. Constitution d'un jeu d'apprentissage et de test.
+3. Choix de l'algorithme.
+4. Adapter les paramètres de l'algorithme aux données.
+5. Prédire.
+6. Evaluer.
 7. Exporter le modèle.
 
 ## Méthodes
