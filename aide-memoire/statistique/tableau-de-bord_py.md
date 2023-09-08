@@ -70,6 +70,10 @@ download2 = st.download_button(label="Download data as Excel", data=buffer, file
 ```
 Bouton pour télécharger un fichier excel.
 
+## Instructions spécials à mettre avant les fonctions
+
+* `@st.cache_data` prévenir de la fuite de données.
+
 # Plotly : les graphiques interactifs
 
 `import plotly.express as px`
