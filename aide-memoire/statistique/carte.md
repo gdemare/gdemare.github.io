@@ -1,2 +1,0 @@
-Globe ------------projection--------------> carte
-          

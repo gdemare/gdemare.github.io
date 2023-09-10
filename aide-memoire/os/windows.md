@@ -49,9 +49,3 @@ Logiciels Windows :
 * [pCloud](https://www.pcloud.com/fr/download-free-online-cloud-file-storage.html)
 * [pandoc](https://pandoc.org/) convertir des fichiers en word, markdown, html.
 * Zotero, références bibliographiques.
-
-### Thunderbird
-
-Exporter ses emails dans un fichier : 
-* sélectionner le dossier (ou l'email)
-* outils > exporter

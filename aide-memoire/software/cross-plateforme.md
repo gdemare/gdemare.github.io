@@ -1,3 +1,9 @@
+### Thunderbird
+
+Exporter ses emails dans un fichier : 
+* sélectionner le dossier (ou l'email)
+* outils > exporter
+
 ## Pandoc
 
 Convertir du markdown en word, html, pdf.
