@@ -2,8 +2,9 @@
 
 Package : `datetime`
 
-| fonction | definition |
-|---|---|
-| `today()` | date du jour |
-| `date + datetime.timedelta(-31)` | Ajouter des jours a une date.|
-| `date.strftime("%Y/%m/%d")` | tranformer le format d'une date |
+* `today()` date du jour.
+* `date + datetime.timedelta(-31)` ajouter des jours a une date.
+* `dt.datetime.strptime('2023-09-12', '%Y-%m-%d')` convertir un champ en date.
+* `datetime.date()` récupérer que la date
+* `colonne.dt.isocalendar()` renvoie un tableau avec l'année, le numero de la semaine et le jour.
+* `dt.datetime.today()` date et heure actuelles.

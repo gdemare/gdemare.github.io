@@ -191,6 +191,20 @@ Vérifier les propriétés d'une colonne :
 * `pd.api.types.is_numeric_dtype(colonne)` c'est numériques ?
 * `pd.api.types.is_string_dtype` c'est un chaine de caractère ?
 
+### Les dates
+
+* `pd.Timestamp('2017-01-01T12') convertir un texte en date.
+* `pd.to_datetime(data_new['date']) convertir une colonne en date.
+
+Récupérer les inforamtions sur une date : `datetemps.<>`
+
+Python 			| Définition
+----------------|--------------
+`.day_name()`	| jour de la semaine 
+`month`			| num du mois
+`year`			| année
+`day`			| num du jour
+
 ### Graphiques directement depuis pandas
 
 Library `import matplotlib.pyplot as plt`

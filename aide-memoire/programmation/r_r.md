@@ -82,15 +82,15 @@ Package : lubridate.
 * `as.Date( '2017-10-12', format= )` convertir en date.
 * `as_datetime()` convertir en date time.
 
-| Définition | R | Exemple |
-|---|---|---|
-| Année | `%Y` | 2001 |
-| Année | `%y` | 01 |
-| Mois | `%m` | 09 |
-| Jour | `%d` | 11 |
-| Heure | `%H` | 12 |
-| Minute | `%M` | 15 |
-| seconde | `%S` | 06 |
+Définition	| R 	| Exemple
+------------|-------|-------------
+Année 		| `%Y`	| 2001
+Année 		| `%y`	| 01
+Mois 		| `%m`	| 09
+Jour 		| `%d`	| 11
+Heure 		| `%H`	| 12
+Minute 		| `%M`	| 15
+Seconde 	| `%S`	| 06
 
 * `time_length( interval(date1, date2), type )` calculer un âge.
 date + ajout calculer une date
@@ -118,17 +118,17 @@ date + ajout calculer une date
 Library `stringr`
 
 * `str_view_all(vecteur, exp_re)` rechercher une expression régulière.
-* `str_extract(texte, exp_re) extraire un texte.
-*`str_locate(texte, exp_re) postion de début et de fin de l'expression.
+* `str_extract(texte, exp_re)` extraire un texte.
+* `str_locate(texte, exp_re)` postion de début et de fin de l'expression.
 
-| Symbole | Définition |
-|---|---|
-| `*` | une ou plusieurs fois | 
-| `.` | jocker |
+Symbole	| Définition
+--------|-----------------
+`*`		| une ou plusieurs fois
+`.` 	| jocker
 
 ## Connecter R à une bdd
 
-`library(DBI)`
+Bibliothèque `library(DBI)`
 
 * `dbListTables(connection)` Liste des tables.
 
@@ -144,7 +144,7 @@ Library `stringr`
 dbConnect(MySQL(), paramètre)
 on.exit(dbDisconnect(con))
 ```
-Paramètre : 
+Paramètres : 
 * `dbname = "smur"`
 * `host = "10.60.11.4"`
 * `port = 3306`

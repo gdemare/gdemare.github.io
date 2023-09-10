@@ -141,6 +141,7 @@ Liste des variables par défaut :
 * `liste = [ val1, val2]` déclarer une liste.
 * `liste[]` afficher un élément.
 * `del liste[numéro]` supprimer une valeur.
+* `liste.sort(reverse=False)` trier un vecteur. Le résultat est automatiquement enregistré.
 
 #### Les dictionnaires
 
@@ -643,3 +644,22 @@ Library `subprocess`
 
 * `call([sys.executable, 'C:\\temp\\hello2.py'], shell=True)` importer un script python.
 * `['java', '-jar', 'temp.jar' param1, param2]` exécuter un script java.
+
+### Spotdl
+
+Installation : `pip install spotdl`
+
+[Spotify downloader](https://github.com/spotDL/spotify-downloader) pour télécharger depuis spotify.
+
+Requis : `sudo apt install ffmpeg`
+
+`spotdl download [song] ou [playlistUrl]` télécharger une chanson ou plusieurs.
+
+
+## Environnement en python
+
+* `python3 -m venv nom_environnement` créer un environnement python.
+* `source python_env/bin/activate` activer l'environnement.
+* `deactivate` désactiver l'environnement.
+
+code . ajouter l'environement à Visual Code.
