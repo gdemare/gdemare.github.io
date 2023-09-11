@@ -120,14 +120,15 @@ Liste des variables par défaut :
 
 * `type(variable)` renvoie le type de variable.
 
-| Fonction | Définition | 
-|---|---|
-| `list(variable)` | convertir en liste |
-| `int()` | convertir en entier |
-| `float()` | convertir en float | 
-| `str()` | convertir en texte |
+Fonction		| Définition 
+------------------------|-------------
+`list(variable)` 	| convertir en liste
+`int()`			| convertir en entier
+`float()` 		| convertir en float 
+`str()` 		| convertir en texte
 
 * `texte.split('séparateur')` transformer un caractère en liste en fonction d'un séparateur.
+* `format( nombre '.2f' )` format des chiffres le 2 correspond à 2 nbre après la virgule.
 
 #### Vecteurs et listes
 `[] = vecteur` et `() = liste` (appelé tupple) Rmq : Les listes ne sont pas modifiables.
