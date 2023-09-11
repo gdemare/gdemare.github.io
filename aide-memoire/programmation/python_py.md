@@ -110,8 +110,9 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 
 * `a = valeur` créer et affecter une valeur à une variable.
 * `a, b = val1, val2` affecter plusieurs variables en même temps.
-* `input("afficher")` saisie utilisateur (convertir en nombre la saisie `int(...)`). 
-
+* `input("afficher")` saisie utilisateur (convertir en nombre la saisie `int(...)`).
+* `del variable` supprimer une variable.
+ 
 Liste des variables par défaut :
 * `%pwd` dossier par défaut.
 
@@ -214,6 +215,8 @@ elif condition:
 else:
 	instruction
 ```
+
+
 #### Les opérateurs logiques (booléens)
 
 | Symbole | Opération |
@@ -241,7 +244,6 @@ for i in séquence:
 Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela parcourt les lettres).
 
 * `output_list = [print(a, b) for a, b in list( comparaison.columns )]` appliquer une fonction à une liste.
-
 
 Library : `from itertools import combinations`
 
@@ -296,7 +298,7 @@ declarer = classe() # invoquer la classe.
 | `//` | division entière → a // b est le quotient de l'entier a par l'entier b |
 | `/` | division avec des nombres flottants |
 | `a ** b` | puisance |
-| `a % b` | modulo |
+| `a % b` | modulo (reste division euclidienne |
 
 ### Fonctions mathématiques 
 
