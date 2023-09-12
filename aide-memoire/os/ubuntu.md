@@ -13,10 +13,15 @@
 Disponibles dans la logitèque Ubuntu :
 
 * Brave, navigateur internet sans pub.
-* Dropbox
+* Dessin de Romain F T, logiciel de dessins très simple.
 * Mailspring, client email.
 * Visual code
 * Vlc, lecteur multi média.
+
+Disponible sur le site internet de l'entreprise :
+
+* Crytpomator
+* Dropbox
 
 ## Ajouter un dépôt
 
