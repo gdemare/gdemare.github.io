@@ -76,16 +76,17 @@ from fichier import class
 ## Les matrices
 
 library : `NumPy`
+
 * `a = np.array([ [11,12,13], [21,22,23] ])` déclarer une matrice.
 * `np.shape(a)` dimension d'une matrice .
 
-| Opérateur | Définition |
-|--|--|
-| `a*b` | multiplication |
-| `np.dot(a,b)` | produit matriciel (NxM et MxO)|
-| `a.T` | transposition |
+Opérateur 	| Définition
+----------------|--------------
+`a*b` 		| multiplication
+`np.dot(a,b)`	| produit matriciel (NxM et MxO)|
+`a.T` 		| transposition
 
-`np.random.randn(n)` générer n nombres aléatoire.
+* `np.random.randn(n)` générer n nombres aléatoire.
 
 ### Importer des fonctions
 
@@ -94,7 +95,7 @@ library : `NumPy`
 * `module.fonction()` utiliser une fonction d'un module.
 * `help(module)`afficher les informations sur un module.
 * `from module import partieModule` importer uniquement un sous module.
-`*` importer toutes les fonctions.
+* `*` importer toutes les fonctions.
 
 ### Les instructions
 
@@ -128,7 +129,7 @@ Fonction		| Définition
 `str()` 		| convertir en texte
 
 * `texte.split('séparateur')` transformer un caractère en liste en fonction d'un séparateur.
-* `format( nombre '.2f' )` ou `f"{3.4562:.2f}"` format des chiffres le 2 correspond à 2 nbre après la virgule.
+* `format( nombre, '.2f' )` ou `f"{3.4562:.2f}"` format des chiffres le 2 correspond à 2 nbre après la virgule. Attention, converti en texte.
 
 #### Vecteurs et listes
 `[] = vecteur` et `() = liste` (appelé tupple) Rmq : Les listes ne sont pas modifiables.
@@ -160,12 +161,12 @@ Le dictionnaire est un objet particulier. L'accés aux valeurs fait par l'id.
 
 ### Texte
 
-| Fonction | définition |
-|---|---|
-| `chr(nbre)` | convertie un nombre en sa lettre correspondante|
-| `len(texte)` | nombre de caractère de la chaine |
-| `.lower()` | mettre un texte en minuscule |
-| `.upper()` | mettre un texte en majuscule |
+Fonction 	| définition
+----------------|-----------------
+`chr(nbre)`	| convertie un nombre en sa lettre correspondante
+`len(texte)`	| nombre de caractère de la chaine
+`.lower()`	| mettre un texte en minuscule
+`.upper()`	| mettre un texte en majuscule
 
 #### Expression régulière (regex)
 
@@ -173,35 +174,38 @@ Library `re`. Une expression régulière est déclarée comme `r"expr"`.
 
 `re.search( a_rechercher, texte )` rechercher une expression regex ou un mot.
 
-Variable de sortie : 
+Variable de sortie :
+
 * `.group(0)` pour accéder aux résultat de la recherche.
 * `.span()` la position.
 * `.start()` la première position.
 * `.end()` . 
 
-| Symbole | Définition (négation) | 
-|---|---|
-| `\s` (`\S`) | espace |
-| `\d` | chiffre | 
-| `\` | caractère d'échappement |
-| `.` | jocker toute les caractères |
-| `*` | n'importe quel symbole plusieurs fois `[2-6]` séq de 2 à 6 |
-| `[]` | ecrite l'expression à l'intérieur |
-| `^` | position du début |
-| `$` | en fin de chaîne |
-| `[0-9]{4}` | Nbre de fois qu'apparait un chiffre |
-| `\w` | équivalent à [a-zA-Z0-9_] |
-| `?` | négation |
+Symbole 	| Définition (négation)
+----------------|--------------
+`\s` (`\S`) 	| espace
+`\d` 		| chiffre
+`\` 		| caractère d'échappement
+`.` 		| jocker tous les caractères
+`*` 		| n'importe quel symbole plusieurs fois `[2-6]` séq de 2 à 6
+`[]` 		| ecrite l'expression à l'intérieur
+`^` 		| position du début
+`$` 		| en fin de chaîne
+`[0-9]{4}`	| Nbre de fois qu'apparait un chiffre
+`\w`		| équivalent à [a-zA-Z0-9_]
+`?`		| négation
+
+Exemples :
 
 * `"[^.?-]*"` tous les caractères avant `-`.
 
 ### Les dates
 Package : `datetime`
 
-| Fonction | définition |
-|---|---|
-| `date.today()` | aujourd'hui |
-| `date.weekday()` | numéro du jour de la semaine  |
+Fonction 		| Définition
+------------------------|----------------
+`date.today()`		| aujourd'hui
+`date.weekday()`	| numéro du jour de la semaine
 
 * `datetime.strptime(texte, '%d.%m.%Y')` convertir en date et time.
 * `variable.strftime('%Y-%m-%d')` avec un affichage particulier.
@@ -217,20 +221,19 @@ else:
 	instruction
 ```
 
-
 #### Les opérateurs logiques (booléens)
 
-| Symbole | Opération |
-|---|---|
-| `and` ou `&` | et |
-| `or` ou `|` | ou |
-| `not condition` ou `~` | negation |
-| `is None` | null |
-| `in` | vérifier la présence d'un caractère (appartient). |
-| `.endswith("fin")` | se termine par | 
-| `pd.isna()` ou `np.isnan()` | vérifier si c'est une valeur manquante |
-| `np.nan` | valeur manquante |
-|  `np.invert(vecteur)` | transforme vrai en faux |
+Symbole 			| Opération
+--------------------------------|------------------------
+`and` ou `&` 			| et
+`or` ou `|` 			| ou
+`not condition` ou `~` 		| négation
+`is None` 			| null
+`in` 				| vérifier la présence d'un caractère (appartient)
+`.endswith("fin")` 		| se termine par
+`pd.isna()` ou `np.isnan()` 	| vérifier si c'est une valeur manquante
+`np.nan` 			| valeur manquante
+`np.invert(vecteur)` 		| transforme vrai en faux
 
 Condition : `==`, `>=`, `>`, `!=`
 
@@ -291,25 +294,23 @@ declarer = classe() # invoquer la classe.
 
 ## Les opérateurs
 
-| Symbole | Opération |
-|---|---|
-| `+` | addition |
-| `-` | soustraction |
-| `*` | multiplication |
-| `//` | division entière → a // b est le quotient de l'entier a par l'entier b |
-| `/` | division avec des nombres flottants |
-| `a ** b` | puisance |
-| `a % b` | modulo (reste division euclidienne |
+Symbole		| Opération
+----------------|-----------------------
+`+` 		| addition
+`-` 		| soustraction
+`*` 		| multiplication
+`//` 		| division entière → a // b est le quotient de l'entier a par l'entier b
+`/` 		| division avec des nombres flottants
+`a ** b`	| puisance
+`a % b`		| modulo (reste division euclidienne
 
 ### Fonctions mathématiques 
 
-| Fonction | Définition | 
-|---|---|
-| `range(nbre1, nbre2 <,pas> )` | créer une liste de nombres. |
-| `round(numeric,nbre de decimal)` | arrondir un nombre |
-| `max(vecteur)` | maximum |
-| `min(vecteur)` | minimum |
-| `abs(valeur)` | valeur absolue |
+* `range(nbre1, nbre2 <,pas> )` créer une liste de nombres (attention pour l'afficher il faut la convertir en liste `list()` 
+* `round(numeric,nbre de decimal)` arrondir un nombre.
+* `max(vecteur)` maximum.
+* `min(vecteur)` minimum.
+* `abs(valeur)` valeur absolue.
 
 #### Nombre aléatoire
 
@@ -348,11 +349,12 @@ Paramètre :
 * `texte.replace('ancien', 'nouveau')` remplacer un caractère.
 * `re.split(`\n`, texte )` séparer une chaîne de caractères en fonction d'un motif.
 
-| Caractère | Définition |
-|---|---|
-| `\'` | Apostrophe |
-| `\n` | Retour à la ligne |
-| `\\` | backlash (\) |
+Caractère 	| Définition
+----------------|---------------
+`\'` 		| Apostrophe
+`\n` 		| Retour à la ligne
+`\\` 		| backlash (\)
+`\t`		| Tabulation
 
 ## ASCII
 
@@ -361,10 +363,10 @@ Paramètre :
 
 ## Autres fonctions utiles
 
-| Fonction | Définition |
-|---|---|
-| `texte.strip()` | supprimer les espaces.|
-| `len(texte)` | nombre de caractères |
+Fonction 	| Définition
+----------------|----------------
+`texte.strip()`	| supprimer les espaces
+`len(texte)`	| nombre de caractères
 
 ## Manipuler les images
 
@@ -416,26 +418,26 @@ _NB :_ Penser à convertir le résultat en liste.
 
 Package `os` 
 
-| Fonction | Définition |
-|---|---|
-| `remove(fichier)` | supprimer un fichier. |
-| `getcwd()` | dossier actuel. |
-| `chdir(dossier)` | changer le dossier par défaut. |
-| `listdir()` | liste des dossiers et fichiers d'une répertoire. |
-| `mkdir(nom)` | créer un dossier |
-| `rmdir(dossier)` | supprimer un dossier |
-| `name` | renvoie le nom de l'os actuel |
-| `path.exists(chemin)` | existence d'un répertoire ou dossier |
-| `path.basename(chemin/fichier)` | renvoie le nom du fichier sans le chemin |
-| `path.isfile(fichier)` | vérifier l'existence d'un fichier |
+Fonction 			| Définition
+--------------------------------|-----------------
+`remove(fichier)` 		| supprimer un fichier
+`getcwd()` 			| dossier actuel
+`chdir(dossier)` 		| changer le dossier par défaut
+`listdir()` 			| liste des dossiers et fichiers d'une répertoire
+`mkdir(nom)` 			| créer un dossier
+`rmdir(dossier)` 		| supprimer un dossier
+`name`				| renvoie le nom de l'os actuel
+`path.exists(chemin)` 		| existence d'un répertoire ou dossier
+`path.basename(chemin/fichier)`	| renvoie le nom du fichier sans le chemin
+`path.isfile(fichier)` 		| vérifier l'existence d'un fichier
 
 library : `shutil`
 
-Fonction | Définition
----|---
-`shutil.copy(fichier, dossier ou fichier)` | copier un fichier
-`shutil.move( fichier, dossier_destination )` | renommer un fichier
-`shutil.rename( ancien, nouveau)` | renommer un fichier 
+Fonction					| Définition
+------------------------------------------------|----------------------
+`shutil.copy(fichier, dossier ou fichier)` 	| copier un fichier
+`shutil.move( fichier, dossier_destination )`	| renommer un fichier
+`shutil.rename( ancien, nouveau)` 		| renommer un fichier 
 
 Package `glob`
 
@@ -495,6 +497,7 @@ NB : Possibilite d'inclure des boucles et des conditions à l'interieur du doc.a
 ### Convertir un fichier Word en Pdf
 
 package `docx2pdf`
+
 * `convert("fichier.docx", destination)` convertir docx en pdf.
 
 ### Excel en python
@@ -618,16 +621,16 @@ driver = webdriver.Chrome(chrome_options=options, service=s) #ouvrir le navigate
 
 `from selenium.webdriver.common.by import By` 
 
-| Référence | Définition |
-|---|---|
-| `CLASS_NAME` | Nom de la classe |
-| `CSS_SELECTOR` | Css selector |
-| `ID` | Identifiant de la balise |
-| `LINK_TEXT` | Texte |
-| `PARTIAL_LINK_TEXT` | Morceau de texte |
-| `NAME` | Nom de la balise |
-| `TAG_NAME` | Balise |
-| `XPATH` | Xpath |
+Référence 		| Définition
+------------------------|----------------
+`CLASS_NAME` 		| Nom de la classe
+`CSS_SELECTOR` 		| Css selector
+`ID` 			| Identifiant de la balise
+`LINK_TEXT` 		| Texte
+`PARTIAL_LINK_TEXT`	| Morceau de texte
+`NAME`			| Nom de la balise
+`TAG_NAME` 		| Balise
+`XPATH` 		| Xpath
 
 Action sur l'élément sélectionner :
 * `.send_keys(valeur)` remplir les valeurs.
