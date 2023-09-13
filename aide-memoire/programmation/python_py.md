@@ -132,6 +132,7 @@ Fonction		| Définition
 * `format( nombre, '.2f' )` ou `f"{3.4562:.2f}"` format des chiffres le 2 correspond à 2 nbre après la virgule. Attention, converti en texte.
 
 #### Vecteurs et listes
+
 `[] = vecteur` et `() = liste` (appelé tupple) Rmq : Les listes ne sont pas modifiables.
 
 * `var[nbre]` extraire une valeur.
@@ -239,15 +240,22 @@ Condition : `==`, `>=`, `>`, `!=`
 
 ### Les boucles
 
+* `break` permet de sortir des deux types de boucles.
+
 #### La boucle for
 
 ```
 for i in séquence:
 	instruction
 ```
-Séquence peut etre une liste, `range(a,b)` ou une chaîne de caractères (cela parcourt les lettres).
 
-* `output_list = [print(a, b) for a, b in list( comparaison.columns )]` appliquer une fonction à une liste.
+* `output_list = [print(a, b) for a, b in list( comparaison.columns )]` appliquer une fonction à une liste en une ligne.
+
+Séquence peut etre :
+
+* une liste ou une chaîne de caractères (cela parcourt les lettres).
+* `range(début, fin, pas)` une liste d'entier.
+* `for index, val in enumerate(liste)` renvoie l'indice et la valeur.
 
 Library : `from itertools import combinations`
 
@@ -316,23 +324,23 @@ Symbole		| Opération
 
 library : `random`
 
-| Fonction | Défintion |
-|---|---|
-| `randint(nb1,nb2)` | nbre entier au hasard entre nb1 et nb2 |
-| `random()` | nbre aléatoire entre [0;1] |
-| `randrange(nbre)` | nbre entier aléatoire entre 0 et nbre|
-| `gauss(mu, sigma)` | nbre aléatoire par la loi normale | 
+Fonction 		| Défintion
+------------------------|-------------------
+`randint(nb1,nb2)`	| nbre entier au hasard entre nb1 et nb2
+`random()` 		| nbre aléatoire entre [0;1]
+`randrange(nbre)` 	| nbre entier aléatoire entre 0 et nbre
+`gauss(mu, sigma)` 	| nbre aléatoire par la loi normale
 
 #### Fonction mathématique
 
 Bibliothèque `math`
 
-| fonction | définition |
-|---|---|
-| `sin()` | sinus | 
-| `cos()` | cosinus |
-| `tan()` | tangente |
-| `factorial()` | factoriel |
+Fonction 	| Définition
+----------------|----------------
+`sin()`		| sinus
+`cos()`		| cosinus
+`tan()`		| tangente
+`factorial()`	| factoriel
 
 ## Le texte
 
@@ -355,6 +363,22 @@ Caractère 	| Définition
 `\n` 		| Retour à la ligne
 `\\` 		| backlash (\)
 `\t`		| Tabulation
+
+#### Formatage des variables en f-string 
+
+Exemple 	| Formatage		| Résultat 
+----------------|-----------------------|---------------
+`{3.14872:.3f}` | nbre de décimale	| 3.148
+`{314872:e}`	| en puissance		| 3.148720e+05
+`{1_314_872}`	| en puissance		| 1314872
+
+Example 		| Position			| Résultat
+------------------------|-------------------------------|---------------
+`{'texte':10}`		| décalle de 10			| `    314872`
+`f"{314872:^10} mots`	| centre			| `   313     mots`
+`f"{313:*^10} mots"`	| centre avec symbole		| `***313**** mots`
+`f"{314872:<10} mots"`	| décalle le texte gauche	| `314872     mots`
+`f"{313:>10} mots"`	| décalle à droite		| `       313 mots`
 
 ## ASCII
 
