@@ -1,3 +1,8 @@
+## Les meilleurs applications 
+
+* [Cryptomator](https://cryptomator.org/), logicel de cryptage spécialisé pour le cloud.
+* [Simplenote](https://simplenote.com/), logiciels de prises de notes en markdown.
+
 ### Thunderbird
 
 Exporter ses emails dans un fichier : 

@@ -73,6 +73,14 @@ for(i in 1:nrow(g)){
 }
 ```
 
+## Les matrices 
+
+* `det(A)` déterminant.
+* `dim(A)` dimension.
+* `t(A)` transposer.
+* `solve(A)` inverser une matrice.
+* `A %*% B` mutiplication de matrices.
+
 ### While - tant que c'est vrai
 
 ## Manipuler les dates
