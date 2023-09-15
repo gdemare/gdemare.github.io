@@ -19,6 +19,7 @@ Données
 Objectifs d'un DWH : Bénéficier d’une source d’information commune, homogène, normalisée et fiable​
 
 Les quatres fonctions d'un SID :
+
 * Collecter
 * Intégrer
 * Diffuser
@@ -27,7 +28,6 @@ Les quatres fonctions d'un SID :
 ## Outils libre pour documenter le schéma relationnel
 
 [Schema Spy](http://schemaspy.org/)
-
 
 ## Bases métiers 
 
@@ -55,10 +55,10 @@ Stocke des données non structurées contrairement aux bases classiques.
 Système opérationnel
 base de données de production
 
-Entrepôt de données
+Entrepôt de données :
 
-| Datamarts et Entrepôt | Données Décisionnel |
-|---|---|
+Datamarts et Entrepôt | Données Décisionnel |
+------------------------|---|
 | Spécifique à un métier, usages. | Transversale |
 
 ## OnLine Transactional Processiong (OLTP)
@@ -127,6 +127,10 @@ Map Reduce
 
 ## Méthodologie d'un projet d'intégration des données
 
-### 
- * 1/ table de dimensions
- * 2/ table de fait
+Les types de tables :
+
+* De dimensions, table qui contient les informations décrivent l'enregistrement de la table de fait. Elles servent notamment à filtrer les données de la table de fait.
+* De fait, table qui contient les indicateurs et les données mesurables sur les faits et les événements.
+
+!!! note
+  Généralemenent, une table de fait est associés à plusieurs tables de dimensions.
