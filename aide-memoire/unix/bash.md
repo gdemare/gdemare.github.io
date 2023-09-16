@@ -133,7 +133,8 @@ NB on peut utiliser `apt` sans get ou cache notamment sur les chromebooks.
 
 *  `dpkg` logicel de gestion des paquets debian (.deb).
 	* `-l` lister les packages installer.
- 	* -i package installer un package.
+ 	* `-i package` installer un package.
+  	* `-r package` désinstaller un package.	 	
 
 #### Application snap
 
