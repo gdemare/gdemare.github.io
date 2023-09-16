@@ -129,6 +129,18 @@ NB on peut utiliser `apt` sans get ou cache notamment sur les chromebooks.
 * `apt-get autoremove paquet` supprimer un paquet.
 * `apt-get upgrade` mettre à jour tous les paquets.
 *  `aptitude show paquet | grep install` vérifier si le package est installé.
+*  `apt list --installed` lister les logicels installés.
+
+*  `dpkg` logicel de gestion des paquets debian (.deb).
+	* `-l` lister les packages installer.
+ 	* `-i package` installer un package.
+  	* `-r package` désinstaller un package.	 	
+
+#### Application snap
+
+`snap list` lister les applications snap installées.
+`snap install package` installer une application snap.
+`snap remove package` désinstaller une application snap.
 
 ## RTFM : lisez le manuel!
 		
