@@ -110,11 +110,11 @@ Paramètres :
 	* Méthode absolue : attribuer les droits en 3 chiffres via l'addition.
 	* Méthode relative : attribuer les droits avec 9 lettres. 	
 
-| Action | Lettre | Chiffre |	
-|---|---|---|
-|read | r | 4 |
-| write | w | 2 |
-| execute | x | 1 |
+Action 	| Lettre	| Chiffre	
+--------|-----------|---
+read 	| r 		| 4
+write 	| w 		| 2
+execute | x 		| 1
 
 Paramètres :
 * `R` affecter résursivement.
@@ -122,13 +122,14 @@ Paramètres :
 * `su utilisateur` changer d'utilisateur.
 	
 ## Installer des programes avec apt-get
+
 NB on peut utiliser `apt` sans get ou cache notamment sur les chromebooks.
 * `apt-get update` mettre à jour le cache des paquets.
 * `apt-cache search paquet` rechercher un parquet.
 * `apt-get install paquet` installer un paquet.
 * `apt-get autoremove paquet` supprimer un paquet.
 * `apt-get upgrade` mettre à jour tous les paquets.
-*  `aptitude show paquet | grep install` vérifier si le package est installé.
+*  `apt show paquet | grep install` vérifier si le package est installé.
 *  `apt list --installed` lister les logicels installés.
 
 *  `dpkg` logicel de gestion des paquets debian (.deb).
