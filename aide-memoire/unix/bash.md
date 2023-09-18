@@ -138,9 +138,9 @@ NB on peut utiliser `apt` sans get ou cache notamment sur les chromebooks.
 
 #### Application snap
 
-`snap list` lister les applications snap installées.
-`snap install package` installer une application snap.
-`snap remove package` désinstaller une application snap.
+* `snap list` lister les applications snap installées.
+* `snap install package` installer une application snap.
+* `snap remove package` désinstaller une application snap.
 
 ## RTFM : lisez le manuel!
 		
