@@ -163,7 +163,8 @@ Fonction		| Définition
 * `liste1 + liste2` concaténer deux listes 
 * `len(liste)` taille de la liste.
 * `liste = [ val1, val2]` déclarer une liste.
-* `liste[]` afficher un élément.
+* `liste[pos1][pos2]` afficher un élément.
+* `liste[4:]` sélectionner tous les éléments à partir du 4ème. Attention dans le cas de `4:7` prend l'élément 4, 5 et 6. 
 * `del liste[numéro]` supprimer une valeur.
 * `liste.sort(reverse=False)` trier un vecteur. Le résultat est automatiquement enregistré.
 
@@ -202,21 +203,6 @@ Variable de sortie :
 * `.start()` la première position.
 * `.end()` . 
 
-<<<<<<< Updated upstream
-Symbole 	| Définition (négation)
-----------------|--------------
-`\s` (`\S`) 	| espace
-`\d` 		| chiffre
-`\` 		| caractère d'échappement
-`.` 		| jocker tous les caractères
-`*` 		| n'importe quel symbole plusieurs fois `[2-6]` séq de 2 à 6
-`[]` 		| ecrite l'expression à l'intérieur
-`^` 		| position du début
-`$` 		| en fin de chaîne
-`[0-9]{4}`	| Nbre de fois qu'apparait un chiffre
-`\w`		| équivalent à [a-zA-Z0-9_]
-`?`		| négation
-=======
 Symbole 		| Définition (négation)
 ----------------|--------------
 `\s` (`\S`) 	| espace
@@ -230,7 +216,6 @@ Symbole 		| Définition (négation)
 `[0-9]{4}`		| Nbre de fois qu'apparait un chiffre
 `\w`			| équivalent à [a-zA-Z0-9_]
 `?`				| négation
->>>>>>> Stashed changes
 
 Exemples :
 
@@ -371,11 +356,11 @@ Fonction 		| Défintion
 
 Bibliothèque `math`
 
-Fonction 	| Définition
+Fonction 		| Définition
 ----------------|----------------
-`sin()`		| sinus
-`cos()`		| cosinus
-`tan()`		| tangente
+`sin()`			| sinus
+`cos()`			| cosinus
+`tan()`			| tangente
 `factorial()`	| factoriel
 
 ## Le texte
@@ -402,19 +387,20 @@ Caractère 	| Définition
 
 #### Formatage des variables en f-string 
 
-Exemple 	| Formatage		| Résultat 
+Exemple 		| Formatage		|	 Résultat 
 ----------------|-----------------------|---------------
-`{3.14872:.3f}` | nbre de décimale	| 3.148
-`{314872:e}`	| en puissance		| 3.148720e+05
-`{1_314_872}`	| en puissance		| 1314872
+`{3.14872:.3f}` | nbre de décimale		| `3.148`
+`{314872:e}`	| en puissance			| `3.148720e+05`
+`{1_314_872}`	| en puissance			| `1314872`
+`3:3d`			| décale les entiers	| `   3`
 
 Example 		| Position			| Résultat
 ------------------------|-------------------------------|---------------
-`{'texte':10}`		| décalle de 10			| `    314872`
-`f"{314872:^10} mots`	| centre			| `   313     mots`
-`f"{313:*^10} mots"`	| centre avec symbole		| `***313**** mots`
-`f"{314872:<10} mots"`	| décalle le texte gauche	| `314872     mots`
-`f"{313:>10} mots"`	| décalle à droite		| `       313 mots`
+`{'texte':10}`			| décalle de 10					| `    314872`
+`f"{314872:^10} mots`	| centre						| `   313     mots`
+`f"{313:*^10} mots"`	| centre avec symbole			| `***313**** mots`
+`f"{314872:<10} mots"`	| décalle le texte gauche		| `314872     mots`
+`f"{313:>10} mots"`		| décalle à droite				| `       313 mots`
 
 ## ASCII
 
