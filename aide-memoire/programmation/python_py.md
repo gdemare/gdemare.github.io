@@ -346,6 +346,7 @@ Symbole		| Opération
 * `max(vecteur)` maximum.
 * `min(vecteur)` minimum.
 * `abs(valeur)` valeur absolue.
+* `.count('a compter')` compter le nombre de valeurs 
 
 #### Nombre aléatoire
 
