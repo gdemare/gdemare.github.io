@@ -173,6 +173,7 @@ Fonction		| Définition
 * `liste[4:]` sélectionner tous les éléments à partir du 4ème. Attention dans le cas de `4:7` prend l'élément 4, 5 et 6. 
 * `del liste[numéro]` supprimer une valeur.
 * `liste.sort(reverse=False)` trier un vecteur. Le résultat est automatiquement enregistré.
+* `set(liste)` renvoie les valeurs uniques pour une liste.
 
 #### Les dictionnaires
 
