@@ -1,3 +1,5 @@
+## Installation et configuration
+
 NB : les chemins s'écrivent avec le `/`.
 
 Environement de développement : Jupyter
@@ -8,11 +10,11 @@ pip install --upgrade jupyterthemes
 jt -t chesterish
 ```
 
-## Extension
+### Extension
 
 `.pyw` fichier python exécutable.
 
-## Configurer Python sur Windows
+### Configurer Python sur Windows
 
 * Copier le chemin de la licence et des programmes python.
 * `Panneau de configuration\Système et sécurité\Système > Paramètre système avancé > Variable d'environnement`
@@ -26,26 +28,25 @@ Répéter l'opération pour le sous dossier library/bin et scripts
 
 `python` démarrer une session python.
 
-## Les environnements en Python
+### Les environnements en Python
 
 Permet d'installer plusieurs versions différentes sur la meme machine.
 
 * `conda update` mettre a jour tous les packages.
 
-### Installer un module
+#### Installer un module
 
 * `pip install package` installer une bibliothèque. Paramètre
 	* `-r package1, package2` installer plusieurs librarys en une seule fois. Pour créer l'installation d'un programme python, il est possible de créer un fichier `requirements.txt` qui contient la liste des library. Il suffit d'exécuter `pip install -r requirements.txt` pour installer tous les modules.
 
 NB : il est possible de stocker le nom des library à utiliser dans un fichier.
 
-#### Générer un fichier requirements.txt
+##### Générer un fichier requirements.txt
 
 * `pip freeze > requirements.txt`
 * [old] package `pipreqs` avec `pipreqs /path/to/project` générer le fichier requirements.
 
-
-#### MàJ des packages
+##### MàJ des packages
 
 * `pip list --outdated` liste des packages avec des màj disponibles.
 * `pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}` maj en passant par le PowerShell.
@@ -56,12 +57,12 @@ git clone https://github.com/jkbr/httpie.git
 sudo python setup.py install
 ```
 
-## Créer un module et l'impoter
+### Créer un module et l'impoter
 
 ```
-	 ____ 'module1.py' 		
+	 	____ 'module1.py' 		
 dossier_|
-	|____ 'module2.py'
+		|____ 'module2.py'
 ```
 
 Pour importer les fichiers class dans python :
@@ -71,9 +72,28 @@ sys.path.append('chemin/dossier')
 from fichier import class
 ``` 
 
+### Environnement en python
+
+* `python3 -m venv nom_environnement` créer un environnement python.
+* `source python_env/bin/activate` activer l'environnement.
+* `deactivate` désactiver l'environnement.
+
+code > . : ajouter l'environement à Visual Code.
+
+### Convertir un python en application
+
+Library `pyinstaller`
+
+`pyinstaller script.py`
+
+Paramètres :
+
+*`--noconsole` --w
+* `--onefile`
+
 ## Instructions de bases
 
-## Les matrices
+### Les matrices
 
 library : `NumPy`
 
@@ -326,11 +346,11 @@ Symbole		| Opération
 `//` 		| division entière → a // b est le quotient de l'entier a par l'entier b
 `/` 		| division avec des nombres flottants
 `a ** b`	| puisance
-`a % b`		| modulo (reste division euclidienne
+`a % b`		| modulo (reste division euclidienne)
 
 ### Fonctions mathématiques 
 
-* `range(nbre1, nbre2 <,pas> )` créer une liste de nombres (attention pour l'afficher il faut la convertir en liste `list()` 
+* `range(nbre1, nbre2 <,pas> )` créer une liste de nombres (attention pour l'afficher il faut la convertir en liste `list()`). 
 * `round(numeric,nbre de decimal)` arrondir un nombre.
 * `max(vecteur)` maximum.
 * `min(vecteur)` minimum.
@@ -426,31 +446,6 @@ Coordonné et position des pixels (x, y) correspont à (largeur, hauteur).
 * `var_img.putpixel( (x,y), (r,g,b))` changer la couleur d'un pixel.
 * `afficher_image(image)` afficher l'image.
 * `Image.new(mode = 'RGB', size = (x,y))` créer une nouvelle image.
-
-## Sqlite 3
-
-Package `sqlite3`
-
-### Connexion à la database
-
-```
-conn = sqlite3.connect('base de donnees.db')
-c = conn.cursor()
-```
-
-`conn.close()` deconnection de la dbb.
-
-### Soumettre une requête
-
-* `c.execute('''requete''')`
-* `c.executemany('''requete''', liste)`
-
-Les variables à utiliser dans la requête doivent etre declarées par un `?`.
-S'il y en a plusieurs, il faut les organiser sous la forme d'une liste.
-
-_NB :_ Penser à convertir le résultat en liste.
-
-* `conn.commit()` écrire ou modifier la bdd en exécutant la requête.
 
 ## Les fichiers
 
@@ -625,87 +620,7 @@ root.attributes('-topmost', True)
 open_file = filedialog.askdirectory()
 print(open_file)
 ```
+
 ou `.askopenfilename()`
 * `fichier = re.search(r'((?!(/|\\)).)*$' , open_file).group(0)` le fichier.
 * `dossier = open_file.replace(fichier, "")` le dossier.
-
-## Autres
-
-### Télécharger des vidéos depuis Youtube
-
-Library `yt-dlp` (`youtube-dl`en python sinon c'est en power shell) avec `yt-dlp 'id_youtube'` télécharger dans la meilleur qualité.
-* `--merge-output-format mkv --remux mkv` convertir le fichier en mkv. Cela nécessite de télécharger ffmpeg et de déclarer la variable environnement /bin.
-* `yt-dlp --extract-audio --audio-format mp3 <video URL>` télécharger le son de la vidéo en mp3.
-
-## Selenium
-
-Library `selenium`
-
-Chromedriver à télécharger `https://chromedriver.chromium.org/downloads`
-
-```
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-import time
-
-options = Options()
-options.binary_location = "C:\\Program Files (x86)\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-s = Service('C:\\Users\\Guigui\\Downloads\\chromedriver.exe')
-driver = webdriver.Chrome(chrome_options=options, service=s) #ouvrir le navigateur
-```
-
-* `driver.get(url)` charger une page web.
-* `driver.find_element('balise', 'valeur')` sélectionner un élément sur la page.
-
-`from selenium.webdriver.common.by import By` 
-
-Référence 		| Définition
-------------------------|----------------
-`CLASS_NAME` 		| Nom de la classe
-`CSS_SELECTOR` 		| Css selector
-`ID` 			| Identifiant de la balise
-`LINK_TEXT` 		| Texte
-`PARTIAL_LINK_TEXT`	| Morceau de texte
-`NAME`			| Nom de la balise
-`TAG_NAME` 		| Balise
-`XPATH` 		| Xpath
-
-Action sur l'élément sélectionner :
-* `.send_keys(valeur)` remplir les valeurs.
-* `.click` cliquer sur la sélection.
-
-## Convertir un python en application
-
-Library `pyinstaller`
-
-`pyinstaller script.py`
-`--noconsole` --w
-`--onefile`
-
-## Importer un script python
-
-Library `subprocess`
-
-* `call([sys.executable, 'C:\\temp\\hello2.py'], shell=True)` importer un script python.
-* `['java', '-jar', 'temp.jar' param1, param2]` exécuter un script java.
-
-### Spotdl
-
-Installation : `pip install spotdl`
-
-[Spotify downloader](https://github.com/spotDL/spotify-downloader) pour télécharger depuis spotify.
-
-Requis : `sudo apt install ffmpeg`
-
-`spotdl download [song] ou [playlistUrl]` télécharger une chanson ou plusieurs.
-
-
-## Environnement en python
-
-* `python3 -m venv nom_environnement` créer un environnement python.
-* `source python_env/bin/activate` activer l'environnement.
-* `deactivate` désactiver l'environnement.
-
-code . ajouter l'environement à Visual Code.

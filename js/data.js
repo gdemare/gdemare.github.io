@@ -16,6 +16,7 @@ fichiers = [
 { chemin: 'os/webapp', general: 1, r: 0, sas:0, py:0},
 { chemin: 'os/windows', general: 1, r: 0, sas:0, py:0},
 { chemin: 'programmation/java', general: 1, r: 0, sas:0, py:0},
+{ chemin: 'programmation/modules-supplementaires', general: 0, r: 0, sas:0, py:1},
 { chemin: 'programmation/python', general: 0, r: 0, sas:0, py:1},
 { chemin: 'programmation/r', general: 0, r: 1, sas:0, py:0},
 { chemin: 'programmation/web/css', general: 1, r: 0, sas:0, py:0},
