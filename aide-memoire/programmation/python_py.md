@@ -10,6 +10,12 @@ pip install --upgrade jupyterthemes
 jt -t chesterish
 ```
 
+### Lancer visual code avec python
+
+Dans le Terminal : 
+1. `conda activate ppoulain-python`
+2. `code .`
+
 ### Extension
 
 `.pyw` fichier python exécutable.
