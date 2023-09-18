@@ -500,6 +500,17 @@ Paramètre :
 * `fichier.write('text')` ajouter des lignes au fichier (on créer le fichier avec open).
 * `fichier.close()` fermer le fichier.
 
+Pour lire ou écrire un fichier de façon proprement (cad pour éviter les erreurs) il est conseillé d'utiliser with :
+
+```
+with open("zoo.txt", 'r') as filin:
+	 # type de fichiers
+```
+
+* `filin.read()` charge tout le contenu dans une variable texte.
+* `filin.readlines()` créer un élément de liste par ligne.
+* `[ligne for ligne in filin]`  renvoie les lignes du fichier.
+
 ### Ecrire une page html
 
 `from yattag import Doc`
