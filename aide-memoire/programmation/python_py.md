@@ -509,7 +509,24 @@ with open("zoo.txt", 'r') as filin:
 
 * `filin.read()` charge tout le contenu dans une variable texte.
 * `filin.readlines()` créer un élément de liste par ligne.
-* `[ligne for ligne in filin]`  renvoie les lignes du fichier.
+* `filin.readline()` renvoie une ligne à chaque appel.
+* `[ligne for ligne in filin]`  renvoie les lignes du fichier (méthode à privilégier).
+
+Avec `w` :
+
+* `filin.write()` ecrire dans un fichier (plusieurs instruction font aller à la ligne).
+
+Propriétés fichier :
+
+* `.name` renvoie le nom du fichier.
+
+Lire et écrire un fichier simultanément : 
+```
+with open("zoo.txt", 'r') as fichier1, open("vincenne.txt", 'w') as fichier2:
+	# type de fichiers
+	for i in fichier1.readlines():
+		fichier2.write( i )
+```
 
 ### Ecrire une page html
 
