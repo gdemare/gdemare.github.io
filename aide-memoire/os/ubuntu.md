@@ -40,9 +40,9 @@ Configuration pour OneDrive :
 7. Entrer et se logger
 8. Selection 1 pour personel.
 9. yes pour confirmer.
-10. q pour quitter
-11. dans le dossier, exécuter : rclone --vfs-cache-mode writes mount OneDrive: ~/Onedrive &
-12. Créer un script rclone --vfs-cache-mode writes mount OneDrive: ~/Onedrive & notify-send "Onedrive Connected" "Microsoft successfully mounted"
+10. `q` pour quitter
+11. dans le dossier, exécuter : `rclone --vfs-cache-mode writes mount OneDrive: ~/Onedrive &`
+12. Créer un script `rclone --vfs-cache-mode writes mount OneDrive: ~/Onedrive & notify-send "Onedrive Connected" "Microsoft successfully mounted"`
 
 ## Ajouter un dépôt
 
