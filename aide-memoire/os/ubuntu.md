@@ -66,7 +66,8 @@ Extensions a ajouter :
 
 * Cryptomator, logiciel de cryptage spécialisé pour le cloud.
 * Github, pour gérer les fichiers github.
-* Raisonnance, Music, (gnome music) lecteur musique.
+* Raisonnance, lecteur musique (attention jolie mais pas optimiser au 2023-09-20).
+* Shortwave, radios en ligne.
 
 ## Logiciel par défaut
 
