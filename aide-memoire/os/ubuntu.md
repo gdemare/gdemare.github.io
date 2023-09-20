@@ -24,7 +24,7 @@ Disponible sur le site internet de l'entreprise :
 * Crytpomator
 * [dropbox](https://www.dropbox.com/install-linux)
 
-## Rclone, les clouds
+## Rclone, les clouds (OneDrive, Google Drive)
 
 [rclone](https://rclone.org/downloads/)
 
