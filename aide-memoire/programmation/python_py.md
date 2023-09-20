@@ -347,7 +347,7 @@ Symbole		| Opération
 * `max(vecteur)` maximum.
 * `min(vecteur)` minimum.
 * `abs(valeur)` valeur absolue.
-* `.count('a compter')` compter le nombre de valeurs 
+* `.count('a compter')` compter le nombre de valeurs  
 
 #### Nombre aléatoire
 
@@ -365,11 +365,12 @@ Fonction 		| Défintion
 Bibliothèque `math`
 
 Fonction 		| Définition
-----------------|----------------
+------------------------|----------------
 `sin()`			| sinus
 `cos()`			| cosinus
 `tan()`			| tangente
-`factorial()`	| factoriel
+`factorial()`		| factoriel
+`math.exp(valeur)`	| exponentielle
 
 ## Le texte
 
