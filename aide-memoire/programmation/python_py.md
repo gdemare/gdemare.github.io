@@ -370,7 +370,8 @@ Fonction 		| Définition
 `cos()`			| cosinus
 `tan()`			| tangente
 `factorial()`		| factoriel
-`math.exp(valeur)`	| exponentielle
+`exp()`			| exponentielle
+`log()`			| logarithme
 
 ## Le texte
 
