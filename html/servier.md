@@ -12,4 +12,5 @@
 * [Golem](https://github.com/ThinkR-open/golem), optimise le développement des applications shiny.
 * [roxygen2](https://github.com/r-lib/roxygen2), doc sur les fonctions R.
 
+
 * [the Book of Apps for Statistics Teaching (BOAST)](https://educationshinyappteam.github.io/), bouquin portait sur le développement d'applications R Shiny qui semble assez complet.
