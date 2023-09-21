@@ -40,7 +40,7 @@ Non agrégées           | Non agrégées | Agrégées
 
 Les spécificités des types de bases données :
 
-Type de bases de données  | Type de données stockées          [ Optimiser pour
+Type de bases de données  | Type de données stockées          | Optimiser pour
 --------------------------|-----------------------------------|---------
 Datamarts et Entrepôt     | Spécifique à un métier, un usage  | écriture et les modifications (OLTP)
 Données Décisionnel       | Transversale                      | analyse (OLAP)
