@@ -202,4 +202,8 @@ $('#Bipmc').click(function() {
   loadContenu(url+"html/ipmc.md",1, "contenu");
 });
 
+$('#Bservier').click(function() {
+  loadContenu(url+"html/servier.md",1, "contenu");
+});
+
 });
