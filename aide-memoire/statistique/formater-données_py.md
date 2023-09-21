@@ -8,3 +8,15 @@ Package : `datetime`
 * `datetime.date()` récupérer que la date
 * `colonne.dt.isocalendar()` renvoie un tableau avec l'année, le numero de la semaine et le jour.
 * `dt.datetime.today()` date et heure actuelles.
+  
+## Extraire la partie d'une date
+
+* `date.strftime(format)` extraire la partie d'une date.
+
+Format | Définition
+-------|---------
+`%Ỳ`   | année
+`%m`   | mois numéro
+`%B`   | mois nom
+`%d`   | jour numéro
+`%A`   | jour nom
