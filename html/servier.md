@@ -8,7 +8,6 @@
 
 ### Packages et autres ressources intéressants
 
-
 * [Golem](https://github.com/ThinkR-open/golem), optimise le développement des applications shiny.
 * [roxygen2](https://github.com/r-lib/roxygen2), doc sur les fonctions R.
 
