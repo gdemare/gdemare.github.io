@@ -1,4 +1,4 @@
-# Shiny
+## Shiny
 ```
 library(shiny)
 library(shinydashboard)
@@ -11,7 +11,7 @@ server = function(input, output) {
 shinyApp(ui = ui, server = server) #executer l'application
 ```
 
-# Interface utilisateur
+### Interface utilisateur
 
 ```
 dashboardPage(
@@ -22,11 +22,11 @@ dashboardPage(
 * `title = titre` titrer l'application
 * `skin = couleur` theme utilisé.
 
-### Entête
+#### Entête
 
 `dashboardHeader(title = "titre", titleWidth = largeur)`
 
-### Menu
+#### Menu
 
 `dashboardSidebar(width = largeur, title = titre)`
 Ajouter un onglet :
@@ -37,7 +37,7 @@ sidebarMenu(
       )
 ```
 
-## Corps de la page
+#### Corps de la page
 
 ```
 dashboardBody(
@@ -57,9 +57,9 @@ Parametres :
 * `badgeLabel = nom, badgeColor = couleur` Ajouter un badge
 * `disable = TRUE` desactiver la barre.
 
-### Contenu des onglets
+##### Contenu des onglets
 
-#### Panneau de saisie
+###### Panneau de saisie
 
 `mainPanel()` principale
 `sidebarPanel()` saisie
@@ -92,7 +92,7 @@ output$nom <- renderValueBox({
     valueBox(a completer)
 })
 ```
-## zone de saisie
+###### zone de saisie
 
 * `type(inputId = id, ....)`
 * `input$id`
@@ -119,7 +119,7 @@ R                                                 | Type
 Option :
     * `label = 'titre'` texte a afficher.
 
-# Server
+### Server
 
 ```
 server = function(input, output) {
@@ -142,13 +142,13 @@ Package `DT` Afficher un dataframe
 
 * `renderDataTable({dataFrame}, options = list(scrollX = TRUE))` si l'affichage depasse de l'écran.
 
-## Variable réactive
+#### Variable réactive
 
 * `variable = reactive(valeur de la variable)` actualiser la rapport en fonction de la variable.
 * `variable()` utiliser une variable reactive.
 * `eventReactive(input$action, {variable})` réactive variable à la suite d'un evenement.
 
-## Liste interactive utilisant une variable reactivie
+#### Liste interactive utilisant une variable reactivie
 
 ```
 ui :
@@ -163,7 +163,7 @@ server :
                 choices = as.list(genre)$genre_label, selected = 1)
 ```
 
-# Selection sur un tableau
+### Selection sur un tableau
 library(DT)
 ```
 output$tableau <- DT::renderDataTable({ 
@@ -172,8 +172,22 @@ output$tableau <- DT::renderDataTable({
 input$tableau_rows_selected # indice des lignes selectionnées
 ```
 
+## Déployer l'application
+
 `selection = valeur`
     * `single` une seule ligne.
+
+requis la bibliothèque `rsconnect`
+
+1. Découper le projet en deux fichiers : sever.R et ui.R.
+2. Générer un jeton depuis le site [shinyapps](https://www.shinyapps.io) : Token. 
+
+### Tester et déployer l'application
+
+* `runApp()` tester l'application.
+* `deployApp()` déployer l'application.
+
+-------------------
 
 # Récupérer des données depuis une page Html vers R
 
