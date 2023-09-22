@@ -58,10 +58,11 @@ Parametres :
 * `disable = TRUE` desactiver la barre.
 
 ### Contenu des onglets
+
 #### Panneau de saisie
 
-mainPanel() principale
-sidebarPanel() saisie
+`mainPanel()` principale
+`sidebarPanel()` saisie
 
 Code            | Type
 ----------------|-----------------
@@ -112,6 +113,8 @@ R                                                 | Type
 `sliderInput()`                                   | barre de défilement
 `textInput()`                                     |
 `textAreaInput()`                                 | zone de saisie de texte.
+`HTML("## markdown")`                             | afficher du texte makdown directement
+`renderMarkdown(fichier)`                         | afficher du texte markdown
 
 Option :
     * `label = 'titre'` texte a afficher.
