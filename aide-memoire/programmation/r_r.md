@@ -5,6 +5,7 @@
 
 ### Manipuler les fichiers
 
+* `dirname(sys.frame(1)$ofile)` dossier du script actuel.
 * `setwd(dossier)` changer le dossier de travail.
 * `getwd()` chemin du dossier de tavail.
 * `source(fichier)` exécuter un script.
