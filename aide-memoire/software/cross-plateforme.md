@@ -33,7 +33,7 @@ Paramètres :
 
 #### Installation 
 
-Installer les packages Python [mkdocs](https://www.mkdocs.org/) et [mkdocs material](https://squidfunk.github.io/mkdocs-material/)
+Installer les packages Python [mkdocs](https://www.mkdocs.org/) et [mkdocs material](https://squidfunk.github.io/mkdocs-material/), sur le dernier site il y a tout, de l'installation à la personnalisation.
 
 `mkdocs new my-project` créer un projet.
 
