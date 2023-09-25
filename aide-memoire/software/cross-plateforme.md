@@ -71,6 +71,47 @@ nav:
 
 `mkdocs serve` exécuter le serveur.
 
+### Déployer sur github
+
+1. Passer son répertoire en public : Settings > General > Danger zone > Change repository visibility
+2. Settings > Actions > General > Workflow Permissions and select Read and write permissions.
+3. Créer un fichier dans .github/workflows/ci.yml
+
+```
+name: ci 
+on:
+  push:
+    branches:
+      - master 
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v3
+        with:
+          key: mkdocs-material-${{ github.ref }} 
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install \
+                mkdocs-material \
+                mkdocstrings \
+                mkdocs-glightbox \
+                mkdocs-git-revision-date-localized-plugin \
+
+      - run: mkdocs gh-deploy --force
+```
+
+4. Settings > Pages et mettre Branch :`gh-pages`
+
+
 ### Le contenu 
 
 Les fichiers de documentations sont à mettre dans le dossier `docs`.
