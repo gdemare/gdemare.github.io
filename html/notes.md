@@ -27,3 +27,5 @@
 #### Nixon re-run
 
 Changer l'heure : rester appuyer sur le bouton gauche durant 3 secondes.
+
+* [Magazine cool](https://www.agirparlaculture.be/)
