@@ -11,7 +11,7 @@
 
 ## TV
 
-* Culturebox, émission de musique.
+* Culturebox, émission de musique sur France 4.
   
 ## Emission de Radio France
 
@@ -19,8 +19,10 @@
 * [LSD](https://www.radiofrance.fr/franceculture/podcasts/lsd-la-serie-documentaire), la série documentaire en quatre épisodes sur chaque thème.
 * [La conversation sicentifique](https://www.radiofrance.fr/franceculture/podcasts/la-conversation-scientifique) interview mené par Etienne Klein.
 * [Interception](https://www.radiofrance.fr/franceinter/podcasts/interception), l'émission de reportages.
-* [Affaire sensible](https://www.radiofrance.fr/franceinter/podcasts/affaires-sensibles)
-* Philippe Collin.
+* [Affaire sensible](https://www.radiofrance.fr/franceinter/podcasts/affaires-sensibles), l'émission culte de Drouel.
+* Face à l'histoire de Philippe Collin.
+* Mécanisme du vivant
+* Radio de...
 
 ## Autres
 
