@@ -1,3 +1,5 @@
+https://build.koreader.rocks/download/nightly/v2024.11-210-ga641207f7_2025-02-21/koreader-kindlehf-v2024.11-210-ga641207f7_2025-02-21.zip
+
 ## Ressources 
 
 * [Radicaux chinois](https://ltl-chinois.fr/radicaux-chinois/)
