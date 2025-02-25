@@ -35,3 +35,12 @@ Changer l'heure : rester appuyer sur le bouton gauche durant 3 secondes.
 * [Magazine cool](https://www.agirparlaculture.be/)
 * [Les Vols d'Alexi](https://lesvolsdalexi.com) vols avec des billets d'avions pas chers.
 * [Brompton Quebec](https://bromptonquebec.wordpress.com/author/depannezvous/) blog sur les Bromptons.
+
+
+The StarDict format dictionary files have suffixes *.idx, *.ifo or *.ifo.gz, *.dict or *.dict.dz.
+
+https://github.com/BoboTiG/ebook-reader-dict?tab=readme-ov-file dictionnaire avec l'étymologie.
+
+koreader/data/dict directory for Kindle
+
+Cliquer sur un mot et rester appuyer sur le dictionnaire pour le définir par défaut.
