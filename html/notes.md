@@ -30,6 +30,6 @@
 
 Changer l'heure : rester appuyer sur le bouton gauche durant 3 secondes.
 
-* [Magazine cool](https://www.agirparlaculture.be/)
+* [Agir par la culture](https://www.agirparlaculture.be/) magazine intéressant.
 * [Les Vols d'Alexi](https://lesvolsdalexi.com) vols avec des billets d'avions pas chers.
 * [Brompton Quebec](https://bromptonquebec.wordpress.com/author/depannezvous/) blog sur les Bromptons.
